@@ -1,0 +1,165 @@
+{
+  "task": "retrieval/baseline",
+  "seed": 42,
+  "fetch_k": 20,
+  "tolerance": 0.01,
+  "paper": {
+    "P@1": 0.896,
+    "P@3": 0.909,
+    "P@5": 0.891,
+    "P@10": 0.888,
+    "nDCG@5": 0.899,
+    "nDCG@10": 0.901,
+    "MRR": 0.934,
+    "MAP": 0.896
+  },
+  "engine": {
+    "SIM_WEIGHT": 0.65,
+    "RECENCY_WEIGHT": 0.35,
+    "RECENCY_MIN_YEAR": 1990,
+    "RECENCY_MAX_YEAR": 2026,
+    "TOP_K_default": 5,
+    "embed_model": "all-MiniLM-L6-v2"
+  },
+  "fresh_vs_stored_identical_top20_lists": 100,
+  "fresh_rerun": {
+    "queries_evaluated": 77,
+    "queries_total": 100,
+    "queries_skipped_no_relevant_label": [
+      "Q014",
+      "Q069",
+      "Q071",
+      "Q072",
+      "Q073",
+      "Q074",
+      "Q075",
+      "Q076",
+      "Q078",
+      "Q079",
+      "Q080",
+      "Q081",
+      "Q082",
+      "Q083",
+      "Q084",
+      "Q085",
+      "Q086",
+      "Q087",
+      "Q088",
+      "Q089",
+      "Q090",
+      "Q099",
+      "Q100"
+    ],
+    "metrics": {
+      "P@1": 0.8961,
+      "P@3": 0.9091,
+      "P@5": 0.8909,
+      "P@10": 0.8883,
+      "nDCG@5": 0.8992,
+      "nDCG@10": 0.9013,
+      "MRR": 0.934,
+      "MAP": 0.8957
+    },
+    "diff_vs_paper": {
+      "P@1": 0.0001,
+      "P@3": 0.0001,
+      "P@5": -0.0001,
+      "P@10": 0.0003,
+      "nDCG@5": 0.0002,
+      "nDCG@10": 0.0003,
+      "MRR": 0.0,
+      "MAP": -0.0003
+    },
+    "within_tol_targets": {
+      "P@5": true,
+      "MRR": true,
+      "MAP": true,
+      "nDCG@10": true
+    }
+  },
+  "stored_phase1_ranking": {
+    "queries_evaluated": 77,
+    "queries_total": 100,
+    "queries_skipped_no_relevant_label": [
+      "Q014",
+      "Q069",
+      "Q071",
+      "Q072",
+      "Q073",
+      "Q074",
+      "Q075",
+      "Q076",
+      "Q078",
+      "Q079",
+      "Q080",
+      "Q081",
+      "Q082",
+      "Q083",
+      "Q084",
+      "Q085",
+      "Q086",
+      "Q087",
+      "Q088",
+      "Q089",
+      "Q090",
+      "Q099",
+      "Q100"
+    ],
+    "metrics": {
+      "P@1": 0.8961,
+      "P@3": 0.9091,
+      "P@5": 0.8909,
+      "P@10": 0.8883,
+      "nDCG@5": 0.8992,
+      "nDCG@10": 0.9013,
+      "MRR": 0.934,
+      "MAP": 0.8957
+    },
+    "diff_vs_paper": {
+      "P@1": 0.0001,
+      "P@3": 0.0001,
+      "P@5": -0.0001,
+      "P@10": 0.0003,
+      "nDCG@5": 0.0002,
+      "nDCG@10": 0.0003,
+      "MRR": 0.0,
+      "MAP": -0.0003
+    },
+    "within_tol_targets": {
+      "P@5": true,
+      "MRR": true,
+      "MAP": true,
+      "nDCG@10": true
+    }
+  },
+  "reproduced": true,
+  "env": {
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6"
+  },
+  "phase1": {
+    "commit": "5c3410153fd4f0305938d75ff18bc9bd7dac6513",
+    "src_evaluation_data_modified": false,
+    "sha256": {
+      "src/rag/rag_query_engine.py": "32ae3d215cd2b52f8edc18e79472f14f639dcf5b04038e770f40c9d4756ab5fb",
+      "src/rag/bm25_baseline.py": "ea82ed49c7b4fdf43357ce24abce36650932759a69d840204e01a84aa6f64962",
+      "src/hysor_rrf.py": "1d27b891a793a66ee5fb2fb4b4304f8c7bf5e5e627312b5ed552f59a8270a194",
+      "src/hysor_ablation.py": "56fd7fb1798d5a5fa0b36094dbb5eebc05ddd458c60beaaf11a12b2591aac270",
+      "evaluation/gold_queries.csv": "816aa52f9d26bbcfd2683951f385948a2e27026443ce18e88dc5e36d8cc0d389",
+      "evaluation/gold_relevance.csv": "78d9ba5da57c83c4399149d72fee632ac51609937c4b00a1fe6206c7be9bfa7c",
+      "evaluation/retrieval_results.csv": "6ff3abd3b93b6b56c2e610e1585c04b5cbaccba52f759a84d26f03837f88710a",
+      "evaluation/bm25_results.csv": "584b410a5b8200bb0662a58b0dcbab79aa9fc982b40f47512b4e4d28005fd5ca",
+      "data/processed/asrs_faiss_meta.csv": "59d96d8ce6b257c8fc088b2e67b5a48e2e0964eed7e4ee5395b80dc7d3d9b43f",
+      "data/processed/asrs_faiss.index": "fd32b7184c2d69f3841149c0ad56f8afbbb25dcf1c9e73eb8c9ba490528f4d29"
+    }
+  },
+  "phase1_extra_sha256": {
+    "evaluation/retrieval_results_enriched.csv": "c5c8d0caba828b01d465fdba00e228f5b73a2a7c22d76736724ec3b40f62c6c9"
+  },
+  "output_sha256": {
+    "phase2/retrieval/baseline/hysor_fresh_top20.csv": "2ab99ee6178083d5f2d8643cdb033c56c50afd69e1ed022e0b8b378d54d2ca99",
+    "phase2/retrieval/baseline/per_query_fresh_rerun.csv": "3eba0efb07554de864b9f5903600d920a56991d1a144fa24fcfb600ad12e9363",
+    "phase2/retrieval/baseline/per_query_stored_phase1_ranking.csv": "3eba0efb07554de864b9f5903600d920a56991d1a144fa24fcfb600ad12e9363"
+  }
+}

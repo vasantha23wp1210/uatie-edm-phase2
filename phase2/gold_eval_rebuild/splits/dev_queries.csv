@@ -1,0 +1,21 @@
+query_id,query_text,scenario_bucket,difficulty,expected_intent,expected_phase,gold_incident_ids,relevance_notes
+Q001,late runway change during approach,runway_change,medium,ATC_OPERATIONAL_ERROR,Approach,,"Runway reassignment on approach, expect ATC operational error + approach phase"
+Q002,runway was changed on final,runway_change,medium,ATC_OPERATIONAL_ERROR,Final,,"Late runway change on final approach, risk of unstable approach"
+Q003,ATC assigned different landing runway during arrival,runway_change,medium,ATC_OPERATIONAL_ERROR,Approach,,"Runway reassignment during arrival, before final"
+Q004,new runway assigned close to touchdown,runway_change,hard,ATC_OPERATIONAL_ERROR,Final,,"Very late runway change, high workload on final"
+Q005,runway change requiring FMS reprogramming on approach,runway_change,medium,ATC_OPERATIONAL_ERROR,Approach,,Focus on automation reconfiguration + runway change
+Q006,visual approach with last minute runway change,runway_change,medium,ATC_OPERATIONAL_ERROR,Approach,,Visual approach plus runway reassignment
+Q007,runway change resulting in go around,runway_change,medium,ATC_OPERATIONAL_ERROR,Final,,Go-around due to late runway change
+Q008,different runway cleared after intercepting localizer,runway_change,hard,ATC_OPERATIONAL_ERROR,Approach,,Localizer intercept then runway change
+Q009,controller switched landing runway due traffic,runway_change,easy,ATC_OPERATIONAL_ERROR,Approach,,ATC initiated runway switch for traffic sequence
+Q010,runway reassignment caused confusion on approach,runway_change,medium,ATC_OPERATIONAL_ERROR,Approach,,Confusion in cockpit after runway reassignment
+Q011,runway change while aircraft established on ILS,runway_change,hard,ATC_OPERATIONAL_ERROR,Approach,,ILS established then runway change
+Q012,change from intersecting to parallel runway during approach,runway_change,hard,ATC_OPERATIONAL_ERROR,Approach,,Intersecting/parallel runway switch
+Q013,ATC changed runway due sudden wind shift,runway_change,medium,ATC_OPERATIONAL_ERROR,Approach,,Wind-related runway change
+Q014,runway reassignment after gear-down selection,runway_change,medium,ATC_OPERATIONAL_ERROR,Final,,Late change after landing configuration
+Q015,runway change issued while vectoring to final,runway_change,medium,ATC_OPERATIONAL_ERROR,Approach,,Vectors to final then runway change
+Q016,arrival runway changed twice during approach,runway_change,hard,ATC_OPERATIONAL_ERROR,Approach,,Multiple runway changes
+Q017,runway change while on short final with traffic ahead,runway_change,hard,ATC_OPERATIONAL_ERROR,Final,,Runway change with traffic sequencing complexity
+Q018,new runway assigned after approach briefing completed,runway_change,medium,ATC_OPERATIONAL_ERROR,Approach,,Briefing completed then runway reassignment
+Q019,runway change to shorter runway on approach,runway_change,medium,ATC_OPERATIONAL_ERROR,Approach,,Runway length factor in reassignment
+Q020,ATC issued circle-to-land to different runway late in approach,runway_change,hard,ATC_OPERATIONAL_ERROR,Approach,,Circle-to-land as runway change mechanism

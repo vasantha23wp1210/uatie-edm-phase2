@@ -1,0 +1,260 @@
+{"sent_id": "S001", "text": "a b767-400 flt crew deviated from xing restr alt and exceeded 250 kts below 10000 ft while trying to accommodate sct request for high spd on seavu arr to lax.", "entities": [[2, 6, "AIRCRAFT_TYPE"], [76, 84, "ALTITUDE"]]}
+{"sent_id": "S002", "text": "ga pilot reported overtaking a slower aircraft during departure from pao airport resulting in an airborne conflict.", "entities": [[69, 80, "AIRPORT"]]}
+{"sent_id": "S003", "text": "l39 pilot reports possible hypoxia at 17;000 ft after noting that cockpit altitude is 12;000 ft.", "entities": [[38, 47, "ALTITUDE"], [86, 95, "ALTITUDE"]]}
+{"sent_id": "S004", "text": "general aviation pilot on ifr flight plan reports interference on sav approach frequency 125.3 with rdu departure.", "entities": [[89, 94, "FREQUENCY"]]}
+{"sent_id": "S005", "text": "a cl604 crew properly preflight briefed the teb runway 24 ruudy 2 departure then set 2;000 ft in the autopilot altitude capture window and so overshot the initial level off altitude of 1;500 ft.", "entities": [[2, 7, "AIRCRAFT_TYPE"], [48, 57, "RUNWAY"], [85, 93, "ALTITUDE"], [185, 193, "ALTITUDE"]]}
+{"sent_id": "S006", "text": "air carrier flight crew departing ogg reports not complying with atc clearance to climb via the sweep 1; fly heading 020.", "entities": [[109, 120, "HEADING"]]}
+{"sent_id": "S007", "text": "acr captain reports damage to b737 while parked; by the ground crew towing an air cart into position for start.", "entities": [[30, 34, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S008", "text": "an individual ran onto the runway to take photographs during the miss.", "entities": []}
+{"sent_id": "S009", "text": "a320 first officer reports that when the hhood 2 rnav arrival to pdx landing runways 28l and r is entered in the fmgc; the mea of 7200 feet between hhood and blrun is not honored.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [77, 88, "RUNWAY"], [130, 139, "ALTITUDE"]]}
+{"sent_id": "S010", "text": "first officer reports leveling off 3000 ft above assigned altitude during an unrestricted descent from fl300 on a test flight.", "entities": [[35, 42, "ALTITUDE"], [103, 108, "FLIGHT_LEVEL"]]}
+{"sent_id": "S011", "text": "zhu ctlr voiced concern regarding ongoing radio problems with freq 133.75.", "entities": [[67, 73, "FREQUENCY"]]}
+{"sent_id": "S012", "text": "a319 captain reported an uncommanded climb during approach to cle airport.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [62, 73, "AIRPORT"]]}
+{"sent_id": "S013", "text": "b777 flight crew landing runway 16l at rjaa is instructed to contact tower on frequency 118.2 and is cleared to land.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [25, 35, "RUNWAY"], [88, 93, "FREQUENCY"]]}
+{"sent_id": "S014", "text": "an air carrier flight crew; distracted while viewing a meteor shower; turned to heading 360 when atc's call was actually to climb to fl360.", "entities": [[80, 91, "HEADING"], [133, 138, "FLIGHT_LEVEL"]]}
+{"sent_id": "S015", "text": "a dc-10 fire warning system indicated an engine three fire during climb with the b loop deferred so an emergency was declared and the aircraft returned to the departure airport.", "entities": [[2, 7, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S016", "text": "crj50 first officer describes missing the left turn from taxiway k to k6 for takeoff on runway 9l at phl.", "entities": [[0, 5, "AIRCRAFT_TYPE"], [88, 97, "RUNWAY"]]}
+{"sent_id": "S017", "text": "cessna 172 instructor pilot reported inadvertently descending below 500 feet agl while conducting engine failure training.", "entities": [[68, 76, "ALTITUDE"]]}
+{"sent_id": "S018", "text": "first officer reported multiple systems failures and an inoperative primary flight display caused a diversion and subsequent cancellation of flight due to crew fatigue.", "entities": []}
+{"sent_id": "S019", "text": "uas pilot reported they unknowingly flew their uas into a tfr.", "entities": []}
+{"sent_id": "S020", "text": "to compensate for the drag of the dead prop he elected to land on a parallel taxiway which reduced the length of his final by some 1;000 ft.", "entities": [[131, 139, "ALTITUDE"]]}
+{"sent_id": "S021", "text": "erj-190 reported executing a go-around at bos airport after experiencing an uncommanded roll approaching 1000 feet.", "entities": [[0, 7, "AIRCRAFT_TYPE"], [42, 53, "AIRPORT"], [105, 114, "ALTITUDE"]]}
+{"sent_id": "S022", "text": "ce-550b flight crew reported a temporary loss of communications; autopilot; and an altitude loss due to severe turbulence.", "entities": []}
+{"sent_id": "S023", "text": "helicopter pilot reports lost comm during flight to m21 after being instructed to contact campbell approach on 118.1.", "entities": [[111, 116, "FREQUENCY"]]}
+{"sent_id": "S024", "text": "an aircraft departed hou and turned right heading 300 degrees.", "entities": [[42, 53, "HEADING"]]}
+{"sent_id": "S025", "text": "gulfstream captain reported they passed the runway 28l hold short line on taxiway a1 at hwd.", "entities": [[44, 54, "RUNWAY"]]}
+{"sent_id": "S026", "text": "despite the frequency change on the published charts to 122.8; pilots wishing to control runway lighting must use the previous frequency of 122.3.", "entities": [[56, 61, "FREQUENCY"], [140, 145, "FREQUENCY"]]}
+{"sent_id": "S027", "text": "technician reported a new aircraft was delivered without correct cockpit placards; causing a delay in updating aircraft records and installing missing placards.", "entities": []}
+{"sent_id": "S028", "text": "while climbing through fl260; an md-82 engine failed with a loud bang and yaw so an emergency was declared; the qrh completed and the flight returned to the departure airport.", "entities": [[23, 28, "FLIGHT_LEVEL"], [33, 38, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S029", "text": "b737 first officer reported the charted 111.50 ils frequency for las runway 26l is an error and should read 111.75.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [40, 46, "FREQUENCY"], [69, 79, "RUNWAY"], [108, 114, "FREQUENCY"]]}
+{"sent_id": "S030", "text": "air carrier flight crew reported radio altimeter malfunction on approach to mem airport and speculated possible 5g interference as a contributing factor.", "entities": [[76, 87, "AIRPORT"]]}
+{"sent_id": "S031", "text": "air carrier captain reported a communications breakdown between the flight crew and ground personnel regarding the selection of a suitable destination alternate airport.", "entities": []}
+{"sent_id": "S032", "text": "b787-9 crew reported descending below cleared altitude due to confusion over the meters to feet conversion.", "entities": [[0, 4, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S033", "text": "rwy 24 became active causing a close in rwy change and a potential conflict with vfr tfc.", "entities": [[0, 6, "RUNWAY"]]}
+{"sent_id": "S034", "text": "an md80's tcas processor severely disrupted vhf radio reception on frequency 128.0.", "entities": [[3, 7, "AIRCRAFT_TYPE"], [77, 82, "FREQUENCY"]]}
+{"sent_id": "S035", "text": "a lr45 on the teb5 sid leveled at 2000 ft when the autoplt failed to capture 1500 ft.", "entities": [[34, 41, "ALTITUDE"], [77, 84, "ALTITUDE"]]}
+{"sent_id": "S036", "text": "b737 flight crew reported a dirty sock smell after beginning to taxi for takeoff.", "entities": [[0, 4, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S037", "text": "found fuel line pinched at wing fold.", "entities": []}
+{"sent_id": "S038", "text": "a small transport aircraft crew was out of contact with zma at 16;000 ft between frequency 127.22 and 135.6 because of a frequency dead spot at their altitude.", "entities": [[63, 72, "ALTITUDE"], [91, 97, "FREQUENCY"], [102, 107, "FREQUENCY"]]}
+{"sent_id": "S039", "text": "hcf controller voiced concern regarding the on-going problems with 127.6 in certain areas; noting the problem has existed for a long period and should be resolved.", "entities": [[67, 72, "FREQUENCY"]]}
+{"sent_id": "S040", "text": "tracon controller reported a corporate jet on approach crossed through the final approach course and descended below the published crossing restriction resulting in flight below the minimum vectoring altitude.", "entities": []}
+{"sent_id": "S041", "text": "a md11 with pratt and whitney engines developed a fadec fault.", "entities": [[2, 6, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S042", "text": "at 400 ft the captain took the aircraft and both pilots shifted to outside monitoring allowing a high sink rate.", "entities": [[3, 9, "ALTITUDE"]]}
+{"sent_id": "S043", "text": "light aircraft pilot reported an nmac with another aircraft in the vicinity of dmw airport.", "entities": [[79, 90, "AIRPORT"]]}
+{"sent_id": "S044", "text": "b737 first officer reported rejecting takeoff due to ground conflict with departing aircraft.", "entities": [[0, 4, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S045", "text": "a safe ground gate return was executed.", "entities": []}
+{"sent_id": "S046", "text": "atc intended that the crew maintain heading 020 and ignore the sweep 1.", "entities": [[36, 47, "HEADING"]]}
+{"sent_id": "S047", "text": "be5 pax door opened at 4000 ft in imc.", "entities": [[23, 30, "ALTITUDE"]]}
+{"sent_id": "S048", "text": "despite the door being disarmed; they noticed the escape slide was partially deployed.", "entities": []}
+{"sent_id": "S049", "text": "air carrier captain reported a flight attendant was slightly injured when they made an abrupt stop on the taxiway at lfpg/cdg airport to avoid a collision with a van.", "entities": [[122, 133, "AIRPORT"]]}
+{"sent_id": "S050", "text": "after changing freqs to final apch control; this ctlr insists they were given rwy 24r and gave the flt crew a vector to intercept rwy 24r loc.", "entities": [[78, 85, "RUNWAY"], [130, 137, "RUNWAY"]]}
+{"sent_id": "S051", "text": "ga pilot reported being unable to contact atc due to possible controller under staffing resulting in a class c airspace violation.", "entities": []}
+{"sent_id": "S052", "text": "while being vectored for an ils in vmc conditions the crew of a boeing 737 was given a heading of 120 degrees and the pilot flying; utilizing the autopilot and autothrottle functions; mistook the ias selector for the heading select dial and set 120 knots.", "entities": [[87, 101, "HEADING"]]}
+{"sent_id": "S053", "text": "an air carrier pilot commented that standard rnav design; such as the phx snobl 2; should have a clear bold top procedure clearance altitude (8;000 feet) depicted on the chart to prevent confusion with higher constraints (9;000 feet) in bold print.", "entities": [[142, 152, "ALTITUDE"], [222, 232, "ALTITUDE"]]}
+{"sent_id": "S054", "text": "an air carrier captain reported confusing taxi instructions to mdw runway 22l which included crossing runway 22l on taxiway papa; then november; romeo; the approach end of runway 22r; hold short of runway 22l.", "entities": [[67, 77, "RUNWAY"], [102, 112, "RUNWAY"], [172, 182, "RUNWAY"], [198, 208, "RUNWAY"]]}
+{"sent_id": "S055", "text": "md80 flt crew has an unstabilized apch to dfw.", "entities": [[0, 4, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S056", "text": "repairs take overnight and ferry fight is refused in the morning when crew learns that the repair does not cover all of the faults reported.", "entities": []}
+{"sent_id": "S057", "text": "pilot believes that process interferes with far 121.563.", "entities": [[48, 55, "FREQUENCY"]]}
+{"sent_id": "S058", "text": "pilot reported a ship in apra harbor nearby gum airport is causing erroneous tcas traffic advisories during final approach.", "entities": [[44, 55, "AIRPORT"]]}
+{"sent_id": "S059", "text": "a dispatcher reported that an erj-190 was dispatched with fuel planned at fl250 when the flight actually flew at fl210 and therefore did not meet far 121.639.", "entities": [[30, 37, "AIRCRAFT_TYPE"], [74, 79, "FLIGHT_LEVEL"], [113, 118, "FLIGHT_LEVEL"], [150, 157, "FREQUENCY"]]}
+{"sent_id": "S060", "text": "b737 check airman reported the aircraft checklist verbiage needs to be changed to avoid improper action.", "entities": [[0, 4, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S061", "text": "air carrier captain reported being unable to find guidance in company flight manuals for hazmat lithium ion powered wheelchair transporting procedures.", "entities": []}
+{"sent_id": "S062", "text": "ce560 first officer reports track deviation arriving rsw on the shfty1 due to notam requiring heading of 238 degrees instead of 328 degrees.", "entities": [[94, 108, "HEADING"]]}
+{"sent_id": "S063", "text": "a c-560 fms rsw runway 6 cshel four departure reads 'radar vectors; junlo...' but the textual chart states 'rwy 6: climb heading 058 or as assigned by atc to 540'.", "entities": [[2, 7, "AIRCRAFT_TYPE"], [16, 24, "RUNWAY"], [108, 113, "RUNWAY"], [121, 132, "HEADING"]]}
+{"sent_id": "S064", "text": "reporter noted the condition had been written up five times in the previous seven days.", "entities": []}
+{"sent_id": "S065", "text": "this was the fourth instance of this exact event despite the aircraft being returned to service following each of the prior three events.", "entities": []}
+{"sent_id": "S066", "text": "b767-400 flight crew departing runway 33 was cleared for a left turn after takeoff heading 110; which was set in the mcp.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [31, 40, "RUNWAY"], [83, 94, "HEADING"]]}
+{"sent_id": "S067", "text": "goes around and diverts to a vfr arpt.", "entities": [[29, 37, "AIRPORT"]]}
+{"sent_id": "S068", "text": "b757-200 captain reported wake turbulence in cruise at fl360 from an a380 at fl370.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [55, 60, "FLIGHT_LEVEL"], [69, 73, "AIRCRAFT_TYPE"], [77, 82, "FLIGHT_LEVEL"]]}
+{"sent_id": "S069", "text": "reporter notes that the newly commissioned hll vor; five miles south of pfn and just south of the approach/departure paths of the kpam afb northwest/southeast runways utilizes the same frequency (114.3) as did pfn before it was decomissioned.", "entities": [[196, 201, "FREQUENCY"]]}
+{"sent_id": "S070", "text": "air carrier captain reported experiencing a taxiway incursion at smf airport.", "entities": [[65, 76, "AIRPORT"]]}
+{"sent_id": "S071", "text": "after landing they are queried as to why they used 118.2 which is for runway 16r and 118.35 should be used for the left.", "entities": [[51, 56, "FREQUENCY"], [70, 80, "RUNWAY"], [85, 91, "FREQUENCY"]]}
+{"sent_id": "S072", "text": "air carrier; with zma climbing to fl380; described a tcas ra event; turning slightly from the observed traffic; the reporter noting that a certain impact would have occurred had not the turn been initiated.", "entities": [[34, 39, "FLIGHT_LEVEL"]]}
+{"sent_id": "S073", "text": "an atr72 experienced a catastrophic eng failure and fire indication on tkof.", "entities": [[3, 8, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S074", "text": "a319 captain experiences an airframe vibration climbing out of 15;000 ft.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [63, 72, "ALTITUDE"]]}
+{"sent_id": "S075", "text": "the undamaged airplane completed its journey only yards short of the hard surface.", "entities": []}
+{"sent_id": "S076", "text": "the pilot diverted to the nearest suitable airport.", "entities": []}
+{"sent_id": "S077", "text": "an a320 flt crew reports both engines surging during climb and cruise at fl360.", "entities": [[3, 7, "AIRCRAFT_TYPE"], [73, 78, "FLIGHT_LEVEL"]]}
+{"sent_id": "S078", "text": "an air carrier crew following a line of three aircraft was issued a hold short of den runway 17r at ed.", "entities": [[86, 96, "RUNWAY"]]}
+{"sent_id": "S079", "text": "zid ctlr described near operror at fl380 when conflicting tfc was nordo and coord with adjacent sector was hurried.", "entities": [[35, 40, "FLIGHT_LEVEL"]]}
+{"sent_id": "S080", "text": "a330 captain reported smelling a strong odor and fumes after takeoff; and then again on descent to a lesser degree.", "entities": [[0, 4, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S081", "text": "advised of more than 20 pax on board than shown; which resulted in an additional payload of nearly 4000 lbs above that used for tkof calculations.", "entities": []}
+{"sent_id": "S082", "text": "a crj-900 flight crew reported difficulty programming the fms following a late runway change during arrival to clt airport.", "entities": [[2, 9, "AIRCRAFT_TYPE"], [111, 122, "AIRPORT"]]}
+{"sent_id": "S083", "text": "a b737-700 flt crew was clbing through fl357 to fl400 when atc asked for leveloff at fl360.", "entities": [[2, 6, "AIRCRAFT_TYPE"], [39, 44, "FLIGHT_LEVEL"], [48, 53, "FLIGHT_LEVEL"], [85, 90, "FLIGHT_LEVEL"]]}
+{"sent_id": "S084", "text": "an air carrier crew was cleared to taxi from lax runway 6r; left on taxiway e; and right on taxiway r. the crew entered taxiway e-13 which was mistaken for taxiway r claiming that the taxiways are close together and that the signage does not clearly differentiate r from e-13 coming from the west.", "entities": [[49, 58, "RUNWAY"]]}
+{"sent_id": "S085", "text": "an air carrier pilot reported a fix missing in their fms database for rnav and vor approaches to runway 26l at elp airport.", "entities": [[97, 107, "RUNWAY"], [111, 122, "AIRPORT"]]}
+{"sent_id": "S086", "text": "a corporate jet flight crew reported a det runway 33 runway incursion on taxiway j at taxiway a because the hold short lines are faded and unexpectedly close to taxiway a after turning toward runway 33 on taxiway j.", "entities": [[43, 52, "RUNWAY"], [192, 201, "RUNWAY"]]}
+{"sent_id": "S087", "text": "zhu ctlr expressed concern regarding unreliable 128.15 receivers when the diversity algorithm function is enabled.", "entities": [[48, 54, "FREQUENCY"]]}
+{"sent_id": "S088", "text": "mlg pic reported a tfc conflict at hdn arpt and had to take evasive action to avoid a ga acft on apch to the same rwy.", "entities": [[35, 43, "AIRPORT"]]}
+{"sent_id": "S089", "text": "a pilot was on short final to ctaf x35 runway 28 reported a near miss with an aircraft not making the faa recommended ctaf position reports as it departed.", "entities": [[35, 38, "AIRPORT"], [39, 48, "RUNWAY"]]}
+{"sent_id": "S090", "text": "a320 flight crew reported wake vortex encounter at fl350 that resulted in an injury to a flight attendant.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [51, 56, "FLIGHT_LEVEL"]]}
+{"sent_id": "S091", "text": "a319 captain reported being cleared to back taxi on runway 23r at mmmx and exit at taxiway b2.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [52, 62, "RUNWAY"]]}
+{"sent_id": "S092", "text": "ground personnel reported refusing to load large main gear tires due to possible injury during aircraft loading.", "entities": []}
+{"sent_id": "S093", "text": "light aircraft pilot reported some damage resulted from an unstabilized approach and hard landing at zzz airport.", "entities": [[101, 112, "AIRPORT"]]}
+{"sent_id": "S094", "text": "a320 flight crew reports loss of green hydraulic system pressure at fl340 due to loss of green system fluid.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [68, 73, "FLIGHT_LEVEL"]]}
+{"sent_id": "S095", "text": "a320 first officer reported an inflight upset at fl360 from wake turbulence encounter with the preceding a319.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [49, 54, "FLIGHT_LEVEL"], [105, 109, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S096", "text": "pc-24 captain reported encountering wake turbulence climbing through fl320 from a nearby b757 in ztl artcc airspace.", "entities": [[69, 74, "FLIGHT_LEVEL"], [89, 93, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S097", "text": "b757 captain reported responding to a tcas ra during cruise at fl350; yet atc reported there was no traffic in the area.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [63, 68, "FLIGHT_LEVEL"]]}
+{"sent_id": "S098", "text": "pct ctlr experienced operror at 4000 ft when anticipated course divergence failed btwn arr and dep acft.", "entities": [[32, 39, "ALTITUDE"]]}
+{"sent_id": "S099", "text": "a mechanic reports about his efforts to locate his leatherman tool after servicing the #2 engine oil on an a319 at their hangar ramp area.", "entities": [[107, 111, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S100", "text": "fractional captain reported the ils frequency for runway 34 at xna; as published by jeppesen chart 21-2 (110.55); was incorrect.", "entities": [[50, 59, "RUNWAY"], [105, 111, "FREQUENCY"]]}
+{"sent_id": "S101", "text": "p31 ctlr described nmac at 3000 ft between mil heli and unknown tfc citing p31/eglin afb airspace/operational proc as causal factor.", "entities": [[27, 34, "ALTITUDE"]]}
+{"sent_id": "S102", "text": "md80 flt crew has a compressor stall of the r eng while at fl350 in cruise.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [59, 64, "FLIGHT_LEVEL"]]}
+{"sent_id": "S103", "text": "small aircraft instructor pilot reported his student landed on dwh taxiway foxtrot after being cleared to land on runway 35r.", "entities": [[114, 124, "RUNWAY"]]}
+{"sent_id": "S104", "text": "flight crew flying emb jet exceeded 250 kt restriction under 10;000 ft.", "entities": [[61, 70, "ALTITUDE"]]}
+{"sent_id": "S105", "text": "air carrier flight crew reported taxiing past the mynn runway hold-short line due to fatigue; task saturation; and airport signage and marking issues.", "entities": []}
+{"sent_id": "S106", "text": "it is suggested that the faa make 132.5 the designated frequency.", "entities": [[34, 39, "FREQUENCY"]]}
+{"sent_id": "S107", "text": "pa32t pilot reported partial power loss at 200 feet after takeoff.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [43, 51, "ALTITUDE"]]}
+{"sent_id": "S108", "text": "emb-190 pilot reported the captain's cockpit windscreen cracked inflight.", "entities": []}
+{"sent_id": "S109", "text": "an air carrier captain executed a go-around on the sfo loc dme 28l at minimums (460 ft) and because no other approach was available the flight diverted to a nearby airport.", "entities": [[80, 86, "ALTITUDE"]]}
+{"sent_id": "S110", "text": "embraer-545 fractional pilot crew reported a cockpit window malfunction during cruise flight.", "entities": []}
+{"sent_id": "S111", "text": "the instructor stated this is not the first encounter at this location due to no communication from the aircraft with other aircraft in the traffic pattern.", "entities": []}
+{"sent_id": "S112", "text": "an air carrier first officer reported a near miss at 5;000 feet with an small aircraft as it climbed near klide intersection while on approach to sjc runway 30l.", "entities": [[53, 63, "ALTITUDE"], [150, 160, "RUNWAY"]]}
+{"sent_id": "S113", "text": "air carrier captain reported a hard stop by tug driver while pushing back from the gate during daylight vmc at den airport.", "entities": [[111, 122, "AIRPORT"]]}
+{"sent_id": "S114", "text": "a b737-ng overflying dfw 40 sm south at fl370 had 111.75 selected on the vhf radio heads and the app mode engaged causing a twenty five degree roll right.", "entities": [[2, 6, "AIRCRAFT_TYPE"], [40, 45, "FLIGHT_LEVEL"], [50, 56, "FREQUENCY"]]}
+{"sent_id": "S115", "text": "a helicopter instructor pilot reported a near miss with an agricultural helicopter in a rural california area.", "entities": []}
+{"sent_id": "S116", "text": "corporate jet captain reported being cleared to taxi via the northern route to runway 24l; but did not hold short of taxiway d as required by the standard taxi route description.", "entities": [[79, 89, "RUNWAY"]]}
+{"sent_id": "S117", "text": "a dispatcher is relieved of duty for one hour during a very busy time period for counseling; including termination threats; because company aircraft fueling guidelines were not always being followed even when the dispatcher felt far 121.647 was properly utilized.", "entities": [[233, 240, "FREQUENCY"]]}
+{"sent_id": "S118", "text": "b737 flight crew experiences a gpws obstacle warning during the vor runway 8 approach after descending below mda prior to having the runway clearly in sight.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [68, 76, "RUNWAY"]]}
+{"sent_id": "S119", "text": "crj900 captain stated the difference in intensity and brightness between incandescent runway edge lighting and led centerline lighting at boi rwy 10r is hazardous.", "entities": [[0, 6, "AIRCRAFT_TYPE"], [142, 149, "RUNWAY"]]}
+{"sent_id": "S120", "text": "dfw ils 17l/35r frequency is 111.75.", "entities": [[29, 35, "FREQUENCY"]]}
+{"sent_id": "S121", "text": "zny ctlr experienced a loss of separation at 16000 ft during very busy tfc and wx devs.", "entities": [[45, 53, "ALTITUDE"]]}
+{"sent_id": "S122", "text": "c310 pilot reported a total electrical failure inbound to hum that resulted in an msy mode c veil transponder violation.", "entities": [[0, 4, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S123", "text": "a b737 captain taxiing to runway 19r on taxiway b at las missed taxiway g thinking it was b7.", "entities": [[2, 6, "AIRCRAFT_TYPE"], [26, 36, "RUNWAY"]]}
+{"sent_id": "S124", "text": "air carrier ramp personnel reported dangerous goods cargo incorrectly configured for air transport.", "entities": []}
+{"sent_id": "S125", "text": "vfr tower controller described a potential separation issue when the approach controller failed to insure required separation between two ifr arrivals.", "entities": []}
+{"sent_id": "S126", "text": "an a320 captain noted that departing den runway 08 at night; only 2;000 to 3;000 feet of centerline lights preceding the aircraft are visible.", "entities": [[3, 7, "AIRCRAFT_TYPE"], [41, 50, "RUNWAY"], [75, 85, "ALTITUDE"]]}
+{"sent_id": "S127", "text": "commercial jet flight crew reported difficulty obtaining approach clearance.", "entities": []}
+{"sent_id": "S128", "text": "emb-145 first officer reported cabin altitude climbed above 10;000 feet and was uncontrollable.", "entities": [[60, 71, "ALTITUDE"]]}
+{"sent_id": "S129", "text": "a g200 captain reported they experienced left cockpit windshield delamination at fl430.", "entities": [[81, 86, "FLIGHT_LEVEL"]]}
+{"sent_id": "S130", "text": "after complying with a tcas ra the flight crew obtained a new clearance to a safe landing.", "entities": []}
+{"sent_id": "S131", "text": "a b737-700 had a nose lndg gear steering sleeve and collar change order accomplished.", "entities": [[2, 6, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S132", "text": "a grumman a65 instructor and student on a right down wind for pne runway 24 had a nmac with an aircraft released by tower.", "entities": [[66, 75, "RUNWAY"]]}
+{"sent_id": "S133", "text": "general aviation pilot reported nearly entering a 'do not enter' area at sjt airport that did not have visible markings or signage.", "entities": [[73, 84, "AIRPORT"]]}
+{"sent_id": "S134", "text": "zdc controller described a tcas ra event when one air carrier was issued a climb to fl230; read back fl260; but was missed; the reporter alleging cockpit background noise on the frequency contributed to the read back error.", "entities": [[84, 89, "FLIGHT_LEVEL"], [101, 106, "FLIGHT_LEVEL"]]}
+{"sent_id": "S135", "text": "a b747-400 plt believes his acr may be violating far 121.485 crew rest requirements.", "entities": [[2, 6, "AIRCRAFT_TYPE"], [53, 60, "FREQUENCY"]]}
+{"sent_id": "S136", "text": "while the captain coordinated with a flight attendant about an unruly passenger; the distracted first officer turned the b737-800's altitude set window to fl240 instead of selecting heading 240 to deviate around weather; overshooting the assigned fl220 by 250 ft.", "entities": [[121, 125, "AIRCRAFT_TYPE"], [155, 160, "FLIGHT_LEVEL"], [182, 193, "HEADING"], [247, 252, "FLIGHT_LEVEL"], [256, 262, "ALTITUDE"]]}
+{"sent_id": "S137", "text": "an air carrier captain comments about the unsafe clt airport ground operations by taxiing aircraft; ground crew; ramp operations; and conflicts with aircraft pushed from concourse end gates onto ramp roadways.", "entities": [[49, 60, "AIRPORT"]]}
+{"sent_id": "S138", "text": "with little recent experience at the airport; a light aircraft pilot crossed runway 30 at bzn without a clearance.", "entities": [[77, 86, "RUNWAY"]]}
+{"sent_id": "S139", "text": "the student and instructor pilots aboard a citabria suffered an nmac while in the traffic pattern of uncontrolled airport x49 with an orbiting helicopter pilot who elected not to identify and declare his intentions on ctaf.", "entities": [[122, 125, "AIRPORT"]]}
+{"sent_id": "S140", "text": "when asked if they were able the 'rnav visual approach runway 19l' at las the flight crew assumed the controller meant could they fly the visual to 19l backed up by the rnav.", "entities": [[55, 65, "RUNWAY"]]}
+{"sent_id": "S141", "text": "the flight crew of a b737-800 declared an emergency and returned to their departure airport when the right side leading edge devices extended at fl340.", "entities": [[21, 25, "AIRCRAFT_TYPE"], [145, 150, "FLIGHT_LEVEL"]]}
+{"sent_id": "S142", "text": "the pilot declared an emergency; made a 180 degree turn and landed safely on the runway he had just departed.", "entities": []}
+{"sent_id": "S143", "text": "ga pilot reported experiencing an airborne conflict while on approach to vld airport.", "entities": [[73, 84, "AIRPORT"]]}
+{"sent_id": "S144", "text": "the departure is not checked after the runway change and somehow the brycc3 is the active departure at takeoff; resulting in a track deviation.", "entities": []}
+{"sent_id": "S145", "text": "a b737 crew questioned mu value methodology and validity after departing mke runway 1l with a 'wet good' report; when poor controllability during takeoff indicated 'fair to poor' conditions.", "entities": [[2, 6, "AIRCRAFT_TYPE"], [77, 86, "RUNWAY"]]}
+{"sent_id": "S146", "text": "air carrier flight crew reports a different interpretation of tower instructions to fly heading 242 after takeoff with a pdc of the rocky7 departure.", "entities": [[88, 99, "HEADING"]]}
+{"sent_id": "S147", "text": "emb-190 pilot reported acars and dual bleed air failure lead to pressurization failure resulted in descent and troubleshooting.", "entities": []}
+{"sent_id": "S148", "text": "ga pilot flying reported an nmac without a traffic alert from atc.", "entities": []}
+{"sent_id": "S149", "text": "an a319 flight crew was surprised when the autoflight system; armed to capture the ils; inexplicably began a descent while increasing thrust.", "entities": [[3, 7, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S150", "text": "an air turn back and precautionary landing were made at departure airport.", "entities": []}
+{"sent_id": "S151", "text": "b-787 flight crew reported severe mountain wave that resulted in an over-speed and a loss of 700 feet in altitude during cruise at fl 410.", "entities": [[93, 101, "ALTITUDE"], [131, 137, "FLIGHT_LEVEL"]]}
+{"sent_id": "S152", "text": "reporter is cleared back to 6500 ft and vectored back around for a visual landing.", "entities": [[28, 35, "ALTITUDE"]]}
+{"sent_id": "S153", "text": "atc provided the correct frequency of 111.55 and the approach was completed uneventfully.", "entities": [[38, 44, "FREQUENCY"]]}
+{"sent_id": "S154", "text": "a b777 crew reports that an intl flt exceeds 12 hours more than 50% of the time but his acr will only schedule 3 plts; violating far 121.473.", "entities": [[2, 6, "AIRCRAFT_TYPE"], [133, 140, "FREQUENCY"]]}
+{"sent_id": "S155", "text": "reportedly; the flight crew misheard atc cleared them to 2;000 feet which is below the msa in the area.", "entities": [[57, 67, "ALTITUDE"]]}
+{"sent_id": "S156", "text": "pa-28 instructor pilot reported an nmac with another aircraft in the vicinity  of cma airport.", "entities": [[0, 5, "AIRCRAFT_TYPE"], [82, 93, "AIRPORT"]]}
+{"sent_id": "S157", "text": "flight returned to departure airport for an inspection.", "entities": []}
+{"sent_id": "S158", "text": "a plt rpts lack of fencing at kyu allowed a bike riding child to nearly collide with his prop.", "entities": []}
+{"sent_id": "S159", "text": "the winds were gusting and barometer rising rapidly at the time.", "entities": []}
+{"sent_id": "S160", "text": "hou controller described possible runway incursion event when failing to properly identify a landing runway during parallel operations; the crossing traffic causing an asde-x alarm; apparently across the hold lines but still clear of the runway edge.", "entities": []}
+{"sent_id": "S161", "text": "ga pilot reported possibly flying too close to obstacles during a flight.", "entities": []}
+{"sent_id": "S162", "text": "air traffic controller reported aircraft on departure was cleared to 170 but stopped climb at 7000 feet resulting inflight towards terrain.", "entities": [[94, 103, "ALTITUDE"]]}
+{"sent_id": "S163", "text": "an md88 crew departing lga rwy 31 turned to hdg 360\u00b0 instead of hdg 340\u00b0 because of a distraction with the acft's unusual tkof configuration.", "entities": [[3, 7, "AIRCRAFT_TYPE"], [27, 33, "RUNWAY"], [44, 51, "HEADING"], [64, 71, "HEADING"]]}
+{"sent_id": "S164", "text": "the controller wanted the aircraft to turn left heading 300 degrees.", "entities": [[48, 59, "HEADING"]]}
+{"sent_id": "S165", "text": "tracon controller reported observing an aircraft do unusual turns and descend; checked with appropriate tower and found out aircraft was descending and lining up for a wrong airport.", "entities": []}
+{"sent_id": "S166", "text": "a captain reports about a dual air conditioning pack shutdown in flight at fl270; resulting in an emergency descent.", "entities": [[75, 80, "FLIGHT_LEVEL"]]}
+{"sent_id": "S167", "text": "a319 flight crew reports being accused of not clearing runway 1 at dca; after landing; in a timely manner causing a go around.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [55, 63, "RUNWAY"]]}
+{"sent_id": "S168", "text": "a fa900 captain flying the teb runway 24 rnav engaged lnav but failed to engage vnav and the aircraft leveled at 2;000 ft before being descended back to 1;500 ft.", "entities": [[31, 40, "RUNWAY"], [113, 121, "ALTITUDE"], [153, 161, "ALTITUDE"]]}
+{"sent_id": "S169", "text": "flight crew reported receiving a 'caution terrain' aural warning message due to an antenna near the faf to orf airport.", "entities": [[107, 118, "AIRPORT"]]}
+{"sent_id": "S170", "text": "ga pilot reported a near miss with another aircraft while both were conducting traffic pattern work at stc airport.", "entities": [[103, 114, "AIRPORT"]]}
+{"sent_id": "S171", "text": "emb 170 flight crew reported they were informed that an escape slide was inadvertently deployed after the ferry flight due to the door not being disarmed.", "entities": []}
+{"sent_id": "S172", "text": "the flight crew of a b737ng was switched to and landed on runway 28l at fll after failing to recall a company restriction to not do so.", "entities": [[58, 68, "RUNWAY"]]}
+{"sent_id": "S173", "text": "while descending in vnav to cross zizzi at 16;000 ft; the flight crew of an e-145 had to manually return the aircraft to its programmed crossing restriction when the autopilot failed to capture the altitude.", "entities": [[43, 52, "ALTITUDE"]]}
+{"sent_id": "S174", "text": "a b737-900 crew parked and with no acars aft cg or tipping alert; deplaning began.", "entities": [[2, 6, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S175", "text": "the flight leader declared an emergency for him as he prepared for a safe landing on a closed runway.", "entities": []}
+{"sent_id": "S176", "text": "acr at fl 330 with zsu experienced tcas ra with b747.", "entities": [[7, 13, "FLIGHT_LEVEL"], [48, 52, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S177", "text": "air carrier captain reported monterrey center was unreachable and unusable from south of the mty vor area up to the us border.", "entities": []}
+{"sent_id": "S178", "text": "a fatigued air carrier captain expressed displeasure at the company's notification for--as well as the content of--computer based training on amalgamated regular and emergency procedures for the company's newly merged flight crews.", "entities": []}
+{"sent_id": "S179", "text": "a b737 passenger reported seeing a uas on short final to lax runway 7r.", "entities": [[2, 6, "AIRCRAFT_TYPE"], [61, 70, "RUNWAY"]]}
+{"sent_id": "S180", "text": "the engine is shut down and the flight returns to the departure airport.", "entities": []}
+{"sent_id": "S181", "text": "an air carrier employee reports that towing b777 and b767 aircraft using the towbarless tow vehicles (tltv) takes much longer than taxiing aircraft resulting in extended shadowing of the ils approach coupler for runway 9r at chicago's ord airport.", "entities": [[44, 48, "AIRCRAFT_TYPE"], [53, 57, "AIRCRAFT_TYPE"], [212, 221, "RUNWAY"], [235, 246, "AIRPORT"]]}
+{"sent_id": "S182", "text": "flight diverted without further incident.", "entities": []}
+{"sent_id": "S183", "text": "maintenance technicians reported incorrectly re-assembled rudder control cables went unnoticed and failed during subsequent flight; when aircraft returned to field without incident.", "entities": []}
+{"sent_id": "S184", "text": "md-80 captain reported diverting to a nearby airport after shutting down the #1 engine.", "entities": [[0, 5, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S185", "text": "an air carrier pilot reports his aircraft pitching in response to glideslope and localizer fluctuations at 3;300 ft while flying a coupled ils to sea runway 16l.", "entities": [[107, 115, "ALTITUDE"], [150, 160, "RUNWAY"]]}
+{"sent_id": "S186", "text": "the crew started a turn towards tik while cleared for a visual approach to okc runway 17l.", "entities": [[79, 89, "RUNWAY"]]}
+{"sent_id": "S187", "text": "a b737-700 flight crew received a 'low altitude' alert from approach control after being cleared for a visual approach.", "entities": [[2, 6, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S188", "text": "air carrier captain reported difficulty receiving atis in a timely manner at jnu airport and requested that digital atis be installed.", "entities": [[77, 88, "AIRPORT"]]}
+{"sent_id": "S189", "text": "the captain; while enroute to ord; discovered that he had departed without a required alternate airport.", "entities": []}
+{"sent_id": "S190", "text": "with no rest obtained during his break he is overcome with fatigue and falls asleep while on duty in the cockpit.", "entities": []}
+{"sent_id": "S191", "text": "a pilot approached uuu and discovered communication of ctaf frequency 122.8 was so dense that timely reporting of traffic position and intentions was not possible.", "entities": [[70, 75, "FREQUENCY"]]}
+{"sent_id": "S192", "text": "b747-200 departed with incorrect weights calculated.", "entities": [[0, 4, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S193", "text": "a chief inspector for a helicopter repair and conract service provider; reports their director of maintenance (dom) had generated a logbook entry and posted an airworthiness directive in the eurocopter as-350's records as completed; without a review by quality control.", "entities": []}
+{"sent_id": "S194", "text": "be400 flt crew at fl390 has right engine fuel filter bypass light illuminate followed shortly by the left engine.", "entities": [[0, 5, "AIRCRAFT_TYPE"], [18, 23, "FLIGHT_LEVEL"]]}
+{"sent_id": "S195", "text": "zkc ctlr experienced operror at approx fl380 when issuing dscnt clrnc with acft in close prox.", "entities": [[39, 44, "FLIGHT_LEVEL"]]}
+{"sent_id": "S196", "text": "a fire erupted in a b737 overhead bin which was extinguished by the flight attendants with halon.", "entities": [[20, 24, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S197", "text": "air carrier captain reported encountering wake turbulence descending into bos in trail of a heavy b767; and expressed concern about an apparent recent change to atc procedures allowing reduced separation to heavy b767 aircraft.", "entities": [[98, 102, "AIRCRAFT_TYPE"], [213, 217, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S198", "text": "the crew does not agree; believing the controller is confusing the fms bridge visual 28r with the quiet bridge visual runway 28r; which uses different fixes and crossing altitudes.", "entities": [[118, 128, "RUNWAY"]]}
+{"sent_id": "S199", "text": "air carrier captain reported being issued holding instructions to hold at peeko on the back course to runway 10 at ome; right turns with the first officer flying.", "entities": [[102, 111, "RUNWAY"]]}
+{"sent_id": "S200", "text": "b727 flt crew has #2 eng fire warning after tkof from zzz.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [54, 57, "AIRPORT"]]}
+{"sent_id": "S201", "text": "q400 captain experiences frequency interference (loud static) over 123.77 (pdx tower) that is hard to talk over via the interphone.", "entities": [[67, 73, "FREQUENCY"]]}
+{"sent_id": "S202", "text": "after much discussion and several runups the reporter departs for another airport and returns some time later with no problems.", "entities": []}
+{"sent_id": "S203", "text": "b737 captain reported auto pressurization failure at fl330.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [53, 58, "FLIGHT_LEVEL"]]}
+{"sent_id": "S204", "text": "an air taxi crew at 6;000 ft was issued a traffic advisory at 5;500 ft by roa tracon on vectors for roa.", "entities": [[20, 28, "ALTITUDE"], [62, 70, "ALTITUDE"]]}
+{"sent_id": "S205", "text": "air carrier first officer reported poor lighting for taxiway signage resulted in a taxiway incursion at ind airport.", "entities": [[104, 115, "AIRPORT"]]}
+{"sent_id": "S206", "text": "c182 plt believes he created a rwy incursion on mkc rwy 1-19 at txwy h1.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [52, 57, "RUNWAY"]]}
+{"sent_id": "S207", "text": "air carrier captain reported a runway 22 localizer anomaly at lit airport.", "entities": [[31, 40, "RUNWAY"], [62, 73, "AIRPORT"]]}
+{"sent_id": "S208", "text": "flt crew returned to dep arpt and landed overweight.", "entities": [[21, 29, "AIRPORT"]]}
+{"sent_id": "S209", "text": "two other fos also add their perspectives.", "entities": []}
+{"sent_id": "S210", "text": "b737 captain reports a severe turbulence encounter at fl320 resulting in a 600 foot altitude loss.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [54, 59, "FLIGHT_LEVEL"], [75, 83, "ALTITUDE"]]}
+{"sent_id": "S211", "text": "a b757-200 at fl340 on start of dscnt has the rudder trim stuck at 2 units l. the trim was still stuck on taxi in and started to work at the gate.", "entities": [[2, 6, "AIRCRAFT_TYPE"], [14, 19, "FLIGHT_LEVEL"]]}
+{"sent_id": "S212", "text": "a320 flight crew reports being cleared for the rnav visual to runway 19r at las but can't locate the procedure on their ipads.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [62, 72, "RUNWAY"]]}
+{"sent_id": "S213", "text": "air carrier departure from a foreign airport initiated a take off when reportedly atc issued 'line up and wait' followed by 'after take off fly heading 030'; which was interpreted as a take off clearance.", "entities": [[144, 155, "HEADING"]]}
+{"sent_id": "S214", "text": "an air taxi captain at 2;000 ft on approach to hpn misunderstood n90 vectors and turned to 170 vs 270 and then; in turbulence; descended below 2;000 ft causing a low altitude alarm.", "entities": [[23, 31, "ALTITUDE"], [143, 151, "ALTITUDE"]]}
+{"sent_id": "S215", "text": "air carrier flight crew reported entering an uncharted and poorly lighted island area while taxiing at sat airport.", "entities": [[103, 114, "AIRPORT"]]}
+{"sent_id": "S216", "text": "an e145 flight crew climbing on a heading of 092 degrees to intercept course 079 into ronii per the summt rnav sid from atl was advised of a course deviation by the tower despite the fact their nav display showed them to be following the procedure as published.", "entities": [[34, 48, "HEADING"]]}
+{"sent_id": "S217", "text": "b737-800 flight crew at fl410 reported encountering turbulence downwind of a thunderstorm causing the aircraft to roll sharply right and left and activating the stick shaker.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [24, 29, "FLIGHT_LEVEL"]]}
+{"sent_id": "S218", "text": "available publications do not state 11000 ft to fl580 may be released by range ctrl; but that sfc to 11000 ft is always hot.", "entities": [[36, 44, "ALTITUDE"], [48, 53, "FLIGHT_LEVEL"], [101, 109, "ALTITUDE"]]}
+{"sent_id": "S219", "text": "b757 flight crew reported an engine failure during a change of altitude resulted in a diversion.", "entities": [[0, 4, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S220", "text": "the pilot of a mooney m20 experienced a landing gear collapse during landing for unknown reasons.", "entities": []}
+{"sent_id": "S221", "text": "a b737-300 flight crew conducted an emergency descent following the loss of pressurization at fl330.", "entities": [[2, 6, "AIRCRAFT_TYPE"], [94, 99, "FLIGHT_LEVEL"]]}
+{"sent_id": "S222", "text": "air carrier captain reported atc frequency does not match published frequencies on jeppesen approach charts for den airport.", "entities": [[112, 123, "AIRPORT"]]}
+{"sent_id": "S223", "text": "during a pushback using hand signals; a b737 captain persisted in requiring a visual check of the nose bypass pin which had; in fact; been left in.", "entities": [[40, 44, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S224", "text": "with the autothrottles engaged the acft achieved 280 kts while leveling at 4000 ft.", "entities": [[75, 82, "ALTITUDE"]]}
+{"sent_id": "S225", "text": "an air carrier captain reported flights departing from mia airport routinely have passengers which have recently received posterior implant surgery.", "entities": [[55, 66, "AIRPORT"]]}
+{"sent_id": "S226", "text": "flight returns to the departure airport for an overweight landing.", "entities": []}
+{"sent_id": "S227", "text": "a320 flight crew experiences what is described as bump or rhythmic light chop at fl350.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [81, 86, "FLIGHT_LEVEL"]]}
+{"sent_id": "S228", "text": "ztl ctlr voiced concern regarding continuing freq 125.57 and 120.45 failures.", "entities": [[50, 56, "FREQUENCY"], [61, 67, "FREQUENCY"]]}
+{"sent_id": "S229", "text": "c170 pilot reported a runway excursion during landing due to gusty winds.", "entities": [[0, 4, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S230", "text": "a captain and first officer of a ce-560xl report on their write-up for a compass deviation card entrees being faded and difficult to read.", "entities": []}
+{"sent_id": "S231", "text": "c182 pilot attempts takeoff on short taxiway thinking he is on the runway when takeoff clearance is received.", "entities": [[0, 4, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S232", "text": "ga pilot reported an nmac in the pattern at vdf airport.", "entities": [[44, 55, "AIRPORT"]]}
+{"sent_id": "S233", "text": "a b757-200 flight crew declared an emergency and diverted to the nearest suitable airport when the captain's windshield shattered at fl340 following an overheat condition.", "entities": [[2, 6, "AIRCRAFT_TYPE"], [133, 138, "FLIGHT_LEVEL"]]}
+{"sent_id": "S234", "text": "b737 captain reported a cabin pressure malfunction which caused them to initiate an immediate descent and divert to a precautionary landing.", "entities": [[0, 4, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S235", "text": "b777 on vectors for visual apch to sfo rwy 1l at 4000 ft experienced tcas ra with vfr tfc climbing to 3500 ft; atc issued tfc info.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [39, 45, "RUNWAY"], [49, 56, "ALTITUDE"], [102, 109, "ALTITUDE"]]}
+{"sent_id": "S236", "text": "the captain stated they missed going to femto during the departure as expected by atc.", "entities": []}
+{"sent_id": "S237", "text": "a dhc-8 flt crew lost pressurization in cruise flight at 24000 ft.", "entities": [[2, 7, "AIRCRAFT_TYPE"], [57, 65, "ALTITUDE"]]}
+{"sent_id": "S238", "text": "wishing to align the pfd heading bug to the aircraft heading of 295 degrees; the pilot not flying of a b737ng mistakenly reset the mcp altitude alert from the cleared 27;000 to 29;500.", "entities": [[53, 67, "HEADING"]]}
+{"sent_id": "S239", "text": "while in a managed descent on the wahuu arrival to den; an a320 captain reports crossing sayge at 17;230 feet when a chirp is heard and the autopilot reverts to v/s at -1100 fpm.", "entities": [[59, 63, "AIRCRAFT_TYPE"], [98, 109, "ALTITUDE"]]}
+{"sent_id": "S240", "text": "crj550 flight crew reported they experienced an elevator jam while in the landing flare.", "entities": [[0, 6, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S241", "text": "a controller was aware of a landing strip which he says is illegal.", "entities": []}
+{"sent_id": "S242", "text": "ifr general aviation pilot experienced a 100 ft assent from assigned altitude because of turbulence; reporting same to atc; fellow pilot suggesting not to admit slight altitude variations to atc.", "entities": [[41, 47, "ALTITUDE"]]}
+{"sent_id": "S243", "text": "b737ng captain reported an inflight upset occurred at fl270 descending into ord 11 miles in trail of a b747.", "entities": [[54, 59, "FLIGHT_LEVEL"], [103, 107, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S244", "text": "ecam actions are accomplished and flight returns to the departure airport.", "entities": []}
+{"sent_id": "S245", "text": "a320 captain reported a 'burning plastic' odor during descent which resulted in the entire flight crew experiencing physiological symptoms.", "entities": [[0, 4, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S246", "text": "b737 bizjet strikes cl60 while taxiing in congested ramp area.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [20, 24, "AIRCRAFT_TYPE"]]}
+{"sent_id": "S247", "text": "an air carrier captain provided a detailed account of the events leading up to his refusal to fly a later assignment due to fatigue.", "entities": []}
+{"sent_id": "S248", "text": "atc issues a climb to 3;000 ft and indicates the mva in this area is being revised.", "entities": [[22, 30, "ALTITUDE"]]}
+{"sent_id": "S249", "text": "pa28 pilot reports that the designated frequency for zjx at rjv and vdi airports is not usable below 2;000 ft while frequency 132.5 can be used down to 1;000 ft.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [101, 109, "ALTITUDE"], [126, 131, "FREQUENCY"], [152, 160, "ALTITUDE"]]}
+{"sent_id": "S250", "text": "an ac90 on tkof clb btwn 700-1000 ft returned to the dep arpt due to capt's altimeter reading field elevation.", "entities": [[29, 36, "ALTITUDE"], [53, 61, "AIRPORT"]]}
+{"sent_id": "S251", "text": "md80 flight crew experienced epr roll back passing fl320 during climb in icing conditions.", "entities": [[0, 4, "AIRCRAFT_TYPE"], [51, 56, "FLIGHT_LEVEL"]]}
+{"sent_id": "S252", "text": "sma acft experienced slc class b incursion; claiming multiple freq changes and unclear atc handling as contributing factors.", "entities": []}
+{"sent_id": "S253", "text": "emb-145 flight crew mistook frequency assignment of 134.02 for clearance to fl340 and climbed over 3;000 ft above their assigned altitude until advised by atc of the error.", "entities": [[52, 58, "FREQUENCY"], [76, 81, "FLIGHT_LEVEL"], [99, 107, "ALTITUDE"]]}
+{"sent_id": "S254", "text": "a pa28 plt entered imc near atl and asked for radar vectors on 121.5 only to discover his mode c failed.", "entities": [[2, 6, "AIRCRAFT_TYPE"], [63, 68, "FREQUENCY"]]}
+{"sent_id": "S255", "text": "if they are all extended at the same time there will be six tray-tables overlapping each other and blocking the exit path on both sides of the plane.", "entities": []}
+{"sent_id": "S256", "text": "the reporter noted that vfr aircraft routinely traverse the localizer at the glide path altitude for the runway 18 localizer at pie airport.", "entities": [[105, 114, "RUNWAY"], [128, 139, "AIRPORT"]]}
+{"sent_id": "S257", "text": "emb-145 crew failed to change the departure runway in their fms when cleared to runway 15r at iah (vice their planned runway 9).", "entities": [[80, 90, "RUNWAY"], [118, 126, "RUNWAY"]]}
+{"sent_id": "S258", "text": "the pilot of a cessna twin reported crossing the runway 30l hold short line; in part because the lines were faded and hard to see.", "entities": [[49, 59, "RUNWAY"]]}
+{"sent_id": "S259", "text": "a traffic conflict resulted when an a319 captain misheard and acted unilaterally on a clearance to fly a 280 degree heading as a climb to fl280.", "entities": [[36, 40, "AIRCRAFT_TYPE"], [138, 143, "FLIGHT_LEVEL"]]}
+{"sent_id": "S260", "text": "a b767-300 in cruise at fl390 declared an emer and diverted due to lavatory smoke detectors activated and haze in cabin air.", "entities": [[2, 6, "AIRCRAFT_TYPE"], [24, 29, "FLIGHT_LEVEL"]]}

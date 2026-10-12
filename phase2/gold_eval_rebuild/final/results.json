@@ -1,0 +1,433 @@
+{
+  "task": "gold_eval_rebuild/finalize",
+  "seed": 42,
+  "k": 10,
+  "rrf_depth": 50,
+  "rrf_k": 60,
+  "n_permutations": 10000,
+  "systems": [
+    "bm25",
+    "faiss",
+    "hybrid",
+    "rrf"
+  ],
+  "test_label_source": {
+    "judge_notes_prefix_counts": {
+      "LLM-judged (Claude)": 1748
+    },
+    "rows": 1748,
+    "relevance_counts": {
+      "0": 374,
+      "1": 736,
+      "2": 638
+    }
+  },
+  "spotcheck_agreement": {
+    "n_pairs": 100,
+    "n_queries": 63,
+    "exact_agreement": 0.55,
+    "cohen_kappa": 0.3394,
+    "quadratic_weighted_kappa": 0.5758,
+    "binary_ge1_agreement": 0.75,
+    "binary_ge1_kappa": 0.4292,
+    "confusion_rows_user_cols_test_labels_0_1_2": [
+      [
+        17,
+        20,
+        3
+      ],
+      [
+        1,
+        14,
+        13
+      ],
+      [
+        1,
+        7,
+        24
+      ]
+    ],
+    "user_relevant_rate": 0.6,
+    "test_label_relevant_rate": 0.81,
+    "disagreements": 45
+  },
+  "dev_calibration_reference": {
+    "n_pairs": 362,
+    "exact_agreement": 0.3591,
+    "cohen_kappa": 0.0619,
+    "quadratic_weighted_kappa": 0.4311,
+    "binary_relevant_ge1_kappa": 0.1151,
+    "binary_relevant_ge1_agreement": 0.5166,
+    "label_counts_human": {
+      "0": 99,
+      "1": 165,
+      "2": 98
+    },
+    "label_counts_llm": {
+      "0": 218,
+      "1": 87,
+      "2": 57
+    },
+    "confusion_rows_human_cols_llm_0_1_2": [
+      [
+        71,
+        19,
+        9
+      ],
+      [
+        144,
+        16,
+        5
+      ],
+      [
+        3,
+        52,
+        43
+      ]
+    ],
+    "per_query_exact_agreement": {
+      "Q001": 0.8667,
+      "Q002": 0.3529,
+      "Q003": 0.1053,
+      "Q004": 0.45,
+      "Q005": 0.5556,
+      "Q006": 0.2222,
+      "Q007": 0.3684,
+      "Q008": 0.1765,
+      "Q009": 0.2222,
+      "Q010": 0.3889,
+      "Q011": 0.375,
+      "Q012": 0.3333,
+      "Q013": 0.2941,
+      "Q014": 1.0,
+      "Q015": 0.4,
+      "Q016": 0.4211,
+      "Q017": 0.25,
+      "Q018": 0.25,
+      "Q019": 0.1765,
+      "Q020": 0.1053
+    }
+  },
+  "test": {
+    "relevant_ge1": {
+      "metrics": {
+        "bm25": {
+          "p5": 0.845,
+          "p10": 0.8238,
+          "mrr": 0.9356,
+          "map10": 0.7858,
+          "ndcg10": 0.7081,
+          "judged_at_10": 1.0
+        },
+        "faiss": {
+          "p5": 0.8075,
+          "p10": 0.8,
+          "mrr": 0.9128,
+          "map10": 0.7372,
+          "ndcg10": 0.6593,
+          "judged_at_10": 1.0
+        },
+        "hybrid": {
+          "p5": 0.79,
+          "p10": 0.795,
+          "mrr": 0.8754,
+          "map10": 0.7272,
+          "ndcg10": 0.6299,
+          "judged_at_10": 1.0
+        },
+        "rrf": {
+          "p5": 0.775,
+          "p10": 0.6775,
+          "mrr": 0.9542,
+          "map10": 0.6114,
+          "ndcg10": 0.6354,
+          "judged_at_10": 0.7962
+        }
+      },
+      "queries_with_relevant": 80,
+      "randomisation_ndcg10": {
+        "bm25_vs_faiss": {
+          "mean_diff": 0.0488,
+          "p_value": 0.0936
+        },
+        "bm25_vs_hybrid": {
+          "mean_diff": 0.0781,
+          "p_value": 0.0148
+        },
+        "bm25_vs_rrf": {
+          "mean_diff": 0.0727,
+          "p_value": 0.0004
+        },
+        "faiss_vs_hybrid": {
+          "mean_diff": 0.0293,
+          "p_value": 0.0564
+        },
+        "faiss_vs_rrf": {
+          "mean_diff": 0.0238,
+          "p_value": 0.1769
+        },
+        "hybrid_vs_rrf": {
+          "mean_diff": -0.0055,
+          "p_value": 0.8029
+        }
+      }
+    },
+    "ndcg10_by_bucket_ge1": {
+      "crm_workload": {
+        "bm25": 0.643,
+        "faiss": 0.6072,
+        "hybrid": 0.5504,
+        "rrf": 0.542
+      },
+      "maintenance": {
+        "bm25": 0.7686,
+        "faiss": 0.8034,
+        "hybrid": 0.7854,
+        "rrf": 0.7392
+      },
+      "phraseology": {
+        "bm25": 0.6907,
+        "faiss": 0.6518,
+        "hybrid": 0.5923,
+        "rrf": 0.6364
+      },
+      "runway_incursion": {
+        "bm25": 0.6518,
+        "faiss": 0.6934,
+        "hybrid": 0.6394,
+        "rrf": 0.6073
+      },
+      "unstable_approach": {
+        "bm25": 0.763,
+        "faiss": 0.5611,
+        "hybrid": 0.603,
+        "rrf": 0.6361
+      },
+      "weather": {
+        "bm25": 0.6939,
+        "faiss": 0.7442,
+        "hybrid": 0.6738,
+        "rrf": 0.65
+      }
+    },
+    "relevant_ge2": {
+      "metrics": {
+        "bm25": {
+          "p5": 0.485,
+          "p10": 0.425,
+          "mrr": 0.6579,
+          "map10": 0.4275,
+          "ndcg10": 0.5344,
+          "judged_at_10": 1.0
+        },
+        "faiss": {
+          "p5": 0.4175,
+          "p10": 0.3938,
+          "mrr": 0.621,
+          "map10": 0.3737,
+          "ndcg10": 0.4975,
+          "judged_at_10": 1.0
+        },
+        "hybrid": {
+          "p5": 0.3825,
+          "p10": 0.3712,
+          "mrr": 0.5688,
+          "map10": 0.3266,
+          "ndcg10": 0.4539,
+          "judged_at_10": 1.0
+        },
+        "rrf": {
+          "p5": 0.465,
+          "p10": 0.3763,
+          "mrr": 0.6738,
+          "map10": 0.395,
+          "ndcg10": 0.5093,
+          "judged_at_10": 0.7962
+        }
+      },
+      "queries_with_relevant": 73,
+      "randomisation_ndcg10": {
+        "bm25_vs_faiss": {
+          "mean_diff": 0.0369,
+          "p_value": 0.3322
+        },
+        "bm25_vs_hybrid": {
+          "mean_diff": 0.0805,
+          "p_value": 0.0365
+        },
+        "bm25_vs_rrf": {
+          "mean_diff": 0.0251,
+          "p_value": 0.3575
+        },
+        "faiss_vs_hybrid": {
+          "mean_diff": 0.0437,
+          "p_value": 0.0155
+        },
+        "faiss_vs_rrf": {
+          "mean_diff": -0.0118,
+          "p_value": 0.6214
+        },
+        "hybrid_vs_rrf": {
+          "mean_diff": -0.0554,
+          "p_value": 0.0731
+        }
+      }
+    }
+  },
+  "dev": {
+    "relevant_ge1": {
+      "metrics": {
+        "bm25": {
+          "p5": 0.22,
+          "p10": 0.135,
+          "mrr": 0.4117,
+          "map10": 0.0878,
+          "ndcg10": 0.1313,
+          "judged_at_10": 0.525
+        },
+        "faiss": {
+          "p5": 0.91,
+          "p10": 0.925,
+          "mrr": 0.95,
+          "map10": 0.9072,
+          "ndcg10": 0.7606,
+          "judged_at_10": 1.0
+        },
+        "hybrid": {
+          "p5": 0.91,
+          "p10": 0.92,
+          "mrr": 0.95,
+          "map10": 0.9058,
+          "ndcg10": 0.7296,
+          "judged_at_10": 1.0
+        },
+        "rrf": {
+          "p5": 0.55,
+          "p10": 0.51,
+          "mrr": 0.875,
+          "map10": 0.3973,
+          "ndcg10": 0.4778,
+          "judged_at_10": 0.765
+        }
+      },
+      "queries_with_relevant": 19,
+      "randomisation_ndcg10": {
+        "bm25_vs_faiss": {
+          "mean_diff": -0.6293,
+          "p_value": 0.0001
+        },
+        "bm25_vs_hybrid": {
+          "mean_diff": -0.5983,
+          "p_value": 0.0001
+        },
+        "bm25_vs_rrf": {
+          "mean_diff": -0.3465,
+          "p_value": 0.0001
+        },
+        "faiss_vs_hybrid": {
+          "mean_diff": 0.0309,
+          "p_value": 0.154
+        },
+        "faiss_vs_rrf": {
+          "mean_diff": 0.2827,
+          "p_value": 0.0001
+        },
+        "hybrid_vs_rrf": {
+          "mean_diff": 0.2518,
+          "p_value": 0.0001
+        }
+      }
+    },
+    "relevant_ge2": {
+      "metrics": {
+        "bm25": {
+          "p5": 0.09,
+          "p10": 0.065,
+          "mrr": 0.135,
+          "map10": 0.0552,
+          "ndcg10": 0.0983,
+          "judged_at_10": 0.525
+        },
+        "faiss": {
+          "p5": 0.46,
+          "p10": 0.405,
+          "mrr": 0.6821,
+          "map10": 0.4359,
+          "ndcg10": 0.5868,
+          "judged_at_10": 1.0
+        },
+        "hybrid": {
+          "p5": 0.44,
+          "p10": 0.375,
+          "mrr": 0.6752,
+          "map10": 0.3845,
+          "ndcg10": 0.5249,
+          "judged_at_10": 1.0
+        },
+        "rrf": {
+          "p5": 0.28,
+          "p10": 0.23,
+          "mrr": 0.602,
+          "map10": 0.2741,
+          "ndcg10": 0.4023,
+          "judged_at_10": 0.765
+        }
+      },
+      "queries_with_relevant": 19,
+      "randomisation_ndcg10": {
+        "bm25_vs_faiss": {
+          "mean_diff": -0.4884,
+          "p_value": 0.0001
+        },
+        "bm25_vs_hybrid": {
+          "mean_diff": -0.4266,
+          "p_value": 0.0003
+        },
+        "bm25_vs_rrf": {
+          "mean_diff": -0.304,
+          "p_value": 0.0001
+        },
+        "faiss_vs_hybrid": {
+          "mean_diff": 0.0618,
+          "p_value": 0.0624
+        },
+        "faiss_vs_rrf": {
+          "mean_diff": 0.1845,
+          "p_value": 0.0331
+        },
+        "hybrid_vs_rrf": {
+          "mean_diff": 0.1226,
+          "p_value": 0.1398
+        }
+      }
+    }
+  },
+  "phase1": {
+    "commit": "5c3410153fd4f0305938d75ff18bc9bd7dac6513",
+    "src_evaluation_data_modified": false,
+    "sha256": {
+      "src/rag/rag_query_engine.py": "32ae3d215cd2b52f8edc18e79472f14f639dcf5b04038e770f40c9d4756ab5fb",
+      "src/rag/bm25_baseline.py": "ea82ed49c7b4fdf43357ce24abce36650932759a69d840204e01a84aa6f64962",
+      "src/hysor_rrf.py": "1d27b891a793a66ee5fb2fb4b4304f8c7bf5e5e627312b5ed552f59a8270a194",
+      "src/hysor_ablation.py": "56fd7fb1798d5a5fa0b36094dbb5eebc05ddd458c60beaaf11a12b2591aac270",
+      "evaluation/gold_queries.csv": "816aa52f9d26bbcfd2683951f385948a2e27026443ce18e88dc5e36d8cc0d389",
+      "evaluation/gold_relevance.csv": "78d9ba5da57c83c4399149d72fee632ac51609937c4b00a1fe6206c7be9bfa7c",
+      "evaluation/retrieval_results.csv": "6ff3abd3b93b6b56c2e610e1585c04b5cbaccba52f759a84d26f03837f88710a",
+      "evaluation/bm25_results.csv": "584b410a5b8200bb0662a58b0dcbab79aa9fc982b40f47512b4e4d28005fd5ca",
+      "data/processed/asrs_faiss_meta.csv": "59d96d8ce6b257c8fc088b2e67b5a48e2e0964eed7e4ee5395b80dc7d3d9b43f",
+      "data/processed/asrs_faiss.index": "fd32b7184c2d69f3841149c0ad56f8afbbb25dcf1c9e73eb8c9ba490528f4d29"
+    }
+  },
+  "input_sha256": {
+    "gold_eval_rebuild/judgements/test_to_judge.csv": "1985be24eda024858703b93fb6658c8a3c8ceeacee66ce65da31326f343deeeb",
+    "gold_eval_rebuild/judgements/test_judged.csv": "3cd95b28fee4e45d33e358e2ca957dc65f589c4e7006d68b382d4282f74047a5",
+    "gold_eval_rebuild/judgements/spotcheck_100_human.csv": "6ca0c1f0825d0881fc5b460de818cf98ae232550391beeba08a8ce04948d4fc6",
+    "gold_eval_rebuild/splits/qrels_dev_phase1_manual.csv": "f34209c00ffc7244fcb7378924d2ddf73c4bb80f9ffb7d64ad5150caac84b19f",
+    "gold_eval_rebuild/pool/system_runs_top10.csv": "bfc7d1652e98fcff14c98a22f305400430bc052feba8f51fc3d4a6957f6e9424"
+  },
+  "output_sha256": {
+    "gold_eval_rebuild/qrels/qrels_test.csv": "0d13fbf4c84bb9f10f415aac1823eee9b36483cd815c2972fb7f722ee279d783",
+    "gold_eval_rebuild/pool/rrf_runs_top10.csv": "511c284493f34199916839b0b55f4da192b0d01de24c9b8351aeee8b007afe3f",
+    "gold_eval_rebuild/final/per_query_test_ge1.csv": "ccb6895717aaca9d7ea2ab82bbc478d6fe41366006dc522927ff33988b28b10d"
+  }
+}

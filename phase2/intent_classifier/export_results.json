@@ -1,0 +1,47 @@
+{
+  "task": "intent_classifier/export",
+  "status": "STOPPED: waiting for judgements/intent_labelled.csv",
+  "seed": 42,
+  "min_summary_chars": 40,
+  "records_total": 113468,
+  "records_eligible": 113235,
+  "rule_unclassified_pct_all_records": 39.08,
+  "sample_per_stratum": {
+    "ATC_Operational_Error": 19,
+    "Emergency_Event": 19,
+    "Runway_Incursion": 18,
+    "Ground_Incident": 18,
+    "Communication_Failure": 18,
+    "Airspace_Violation": 18,
+    "IMC_Spatial_Disorientation": 18,
+    "Weather_Deviation": 18,
+    "Crew_Resource_Management": 18,
+    "Maintenance_Error": 18,
+    "Procedural_Non_Compliance": 18,
+    "Unclassified": 200
+  },
+  "gold_split": {
+    "test": 201,
+    "dev": 199
+  },
+  "phase1": {
+    "commit": "5c3410153fd4f0305938d75ff18bc9bd7dac6513",
+    "src_evaluation_data_modified": false,
+    "sha256": {
+      "src/rag/rag_query_engine.py": "32ae3d215cd2b52f8edc18e79472f14f639dcf5b04038e770f40c9d4756ab5fb",
+      "src/rag/bm25_baseline.py": "ea82ed49c7b4fdf43357ce24abce36650932759a69d840204e01a84aa6f64962",
+      "src/hysor_rrf.py": "1d27b891a793a66ee5fb2fb4b4304f8c7bf5e5e627312b5ed552f59a8270a194",
+      "src/hysor_ablation.py": "56fd7fb1798d5a5fa0b36094dbb5eebc05ddd458c60beaaf11a12b2591aac270",
+      "evaluation/gold_queries.csv": "816aa52f9d26bbcfd2683951f385948a2e27026443ce18e88dc5e36d8cc0d389",
+      "evaluation/gold_relevance.csv": "78d9ba5da57c83c4399149d72fee632ac51609937c4b00a1fe6206c7be9bfa7c",
+      "evaluation/retrieval_results.csv": "6ff3abd3b93b6b56c2e610e1585c04b5cbaccba52f759a84d26f03837f88710a",
+      "evaluation/bm25_results.csv": "584b410a5b8200bb0662a58b0dcbab79aa9fc982b40f47512b4e4d28005fd5ca",
+      "data/processed/asrs_faiss_meta.csv": "59d96d8ce6b257c8fc088b2e67b5a48e2e0964eed7e4ee5395b80dc7d3d9b43f",
+      "data/processed/asrs_faiss.index": "fd32b7184c2d69f3841149c0ad56f8afbbb25dcf1c9e73eb8c9ba490528f4d29"
+    }
+  },
+  "output_sha256": {
+    "phase2/intent_classifier/splits/gold_key.csv": "7d1fc5ca0611297b612aba4bbe603c436c02d1bf25ad0459e4bb21f3689ce3a9",
+    "phase2/intent_classifier/judgements/intent_to_label.csv": "ae818439f526e7846990ba20a27959219b2d6b183ffdb4d7f2971de3dbd4893c"
+  }
+}

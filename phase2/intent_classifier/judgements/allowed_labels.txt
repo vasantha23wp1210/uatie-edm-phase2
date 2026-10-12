@@ -1,0 +1,12 @@
+ATC_Operational_Error
+Emergency_Event
+Runway_Incursion
+Ground_Incident
+Communication_Failure
+Airspace_Violation
+IMC_Spatial_Disorientation
+Weather_Deviation
+Crew_Resource_Management
+Maintenance_Error
+Procedural_Non_Compliance
+Unclassified

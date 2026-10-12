@@ -1,0 +1,2 @@
+-r phase2/gold_eval_rebuild/requirements.txt
+spacy==3.8.7
