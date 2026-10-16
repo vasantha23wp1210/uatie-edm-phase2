@@ -1,0 +1,2180 @@
+{
+  "task": "intent_classifier",
+  "seed": 42,
+  "label_provenance": {
+    "LLM-judged (Devin), pending user review": 400
+  },
+  "silver_train_records": 68928,
+  "silver_class_counts": {
+    "Maintenance_Error": 11763,
+    "Airspace_Violation": 11471,
+    "ATC_Operational_Error": 11397,
+    "Emergency_Event": 9036,
+    "Weather_Deviation": 8310,
+    "Ground_Incident": 6471,
+    "IMC_Spatial_Disorientation": 3444,
+    "Runway_Incursion": 2456,
+    "Crew_Resource_Management": 2191,
+    "Communication_Failure": 1876,
+    "Procedural_Non_Compliance": 513
+  },
+  "gold": {
+    "dev": 199,
+    "test": 201
+  },
+  "gold_label_counts": {
+    "dev": {
+      "Maintenance_Error": 49,
+      "Procedural_Non_Compliance": 43,
+      "Unclassified": 30,
+      "Ground_Incident": 14,
+      "Emergency_Event": 13,
+      "ATC_Operational_Error": 11,
+      "Communication_Failure": 10,
+      "Runway_Incursion": 10,
+      "Weather_Deviation": 7,
+      "Crew_Resource_Management": 7,
+      "IMC_Spatial_Disorientation": 5
+    },
+    "test": {
+      "Maintenance_Error": 48,
+      "Procedural_Non_Compliance": 40,
+      "Unclassified": 23,
+      "Ground_Incident": 18,
+      "Emergency_Event": 17,
+      "ATC_Operational_Error": 17,
+      "Communication_Failure": 12,
+      "Weather_Deviation": 8,
+      "Runway_Incursion": 6,
+      "Crew_Resource_Management": 6,
+      "Airspace_Violation": 5,
+      "IMC_Spatial_Disorientation": 1
+    }
+  },
+  "models": {
+    "keyword_rules_phase1": {
+      "threshold": null,
+      "dev": {
+        "n": 199,
+        "accuracy": 0.3618,
+        "macro_f1": 0.4082,
+        "macro_f1_present_labels": 0.4453,
+        "per_class": {
+          "ATC_Operational_Error": {
+            "precision": 0.6667,
+            "recall": 0.5455,
+            "f1": 0.6,
+            "support": 11
+          },
+          "Emergency_Event": {
+            "precision": 0.7778,
+            "recall": 0.5385,
+            "f1": 0.6364,
+            "support": 13
+          },
+          "Runway_Incursion": {
+            "precision": 0.5556,
+            "recall": 0.5,
+            "f1": 0.5263,
+            "support": 10
+          },
+          "Ground_Incident": {
+            "precision": 0.6667,
+            "recall": 0.4286,
+            "f1": 0.5217,
+            "support": 14
+          },
+          "Communication_Failure": {
+            "precision": 0.6667,
+            "recall": 0.6,
+            "f1": 0.6316,
+            "support": 10
+          },
+          "Airspace_Violation": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "IMC_Spatial_Disorientation": {
+            "precision": 0.2222,
+            "recall": 0.4,
+            "f1": 0.2857,
+            "support": 5
+          },
+          "Weather_Deviation": {
+            "precision": 0.3333,
+            "recall": 0.4286,
+            "f1": 0.375,
+            "support": 7
+          },
+          "Crew_Resource_Management": {
+            "precision": 0.4444,
+            "recall": 0.5714,
+            "f1": 0.5,
+            "support": 7
+          },
+          "Maintenance_Error": {
+            "precision": 0.8889,
+            "recall": 0.1633,
+            "f1": 0.2759,
+            "support": 49
+          },
+          "Procedural_Non_Compliance": {
+            "precision": 0.7778,
+            "recall": 0.1628,
+            "f1": 0.2692,
+            "support": 43
+          },
+          "Unclassified": {
+            "precision": 0.18,
+            "recall": 0.6,
+            "f1": 0.2769,
+            "support": 30
+          }
+        },
+        "confusion_rows_gold_cols_pred": [
+          [
+            6,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            5
+          ],
+          [
+            1,
+            0,
+            5,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            6,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            6,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            3,
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            1,
+            8,
+            1,
+            35
+          ],
+          [
+            1,
+            1,
+            0,
+            1,
+            0,
+            1,
+            2,
+            5,
+            2,
+            0,
+            7,
+            23
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            5,
+            2,
+            1,
+            1,
+            0,
+            1,
+            18
+          ]
+        ],
+        "unclassified_pred_pct": 50.25
+      },
+      "test": {
+        "n": 201,
+        "accuracy": 0.3333,
+        "macro_f1": 0.3765,
+        "macro_f1_present_labels": 0.3765,
+        "per_class": {
+          "ATC_Operational_Error": {
+            "precision": 0.6,
+            "recall": 0.3529,
+            "f1": 0.4444,
+            "support": 17
+          },
+          "Emergency_Event": {
+            "precision": 0.8,
+            "recall": 0.4706,
+            "f1": 0.5926,
+            "support": 17
+          },
+          "Runway_Incursion": {
+            "precision": 0.5556,
+            "recall": 0.8333,
+            "f1": 0.6667,
+            "support": 6
+          },
+          "Ground_Incident": {
+            "precision": 0.5556,
+            "recall": 0.2778,
+            "f1": 0.3704,
+            "support": 18
+          },
+          "Communication_Failure": {
+            "precision": 0.6667,
+            "recall": 0.5,
+            "f1": 0.5714,
+            "support": 12
+          },
+          "Airspace_Violation": {
+            "precision": 0.1111,
+            "recall": 0.2,
+            "f1": 0.1429,
+            "support": 5
+          },
+          "IMC_Spatial_Disorientation": {
+            "precision": 0.1111,
+            "recall": 1.0,
+            "f1": 0.2,
+            "support": 1
+          },
+          "Weather_Deviation": {
+            "precision": 0.1111,
+            "recall": 0.125,
+            "f1": 0.1176,
+            "support": 8
+          },
+          "Crew_Resource_Management": {
+            "precision": 0.4444,
+            "recall": 0.6667,
+            "f1": 0.5333,
+            "support": 6
+          },
+          "Maintenance_Error": {
+            "precision": 1.0,
+            "recall": 0.1875,
+            "f1": 0.3158,
+            "support": 48
+          },
+          "Procedural_Non_Compliance": {
+            "precision": 1.0,
+            "recall": 0.225,
+            "f1": 0.3673,
+            "support": 40
+          },
+          "Unclassified": {
+            "precision": 0.12,
+            "recall": 0.5217,
+            "f1": 0.1951,
+            "support": 23
+          }
+        },
+        "confusion_rows_gold_cols_pred": [
+          [
+            6,
+            0,
+            0,
+            0,
+            2,
+            4,
+            2,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            9
+          ],
+          [
+            0,
+            0,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            5,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            10
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            6,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            4
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            4,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            2,
+            0,
+            0,
+            0,
+            1,
+            1,
+            9,
+            0,
+            33
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1,
+            4,
+            2,
+            0,
+            9,
+            20
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            0,
+            3,
+            2,
+            3,
+            0,
+            0,
+            0,
+            12
+          ]
+        ],
+        "unclassified_pred_pct": 49.75
+      },
+      "unclassified_pct_all_records": 39.08
+    },
+    "logreg_minilm": {
+      "threshold_chosen_on_dev": 0.3,
+      "dev_macro_f1_by_threshold": {
+        "0.0": 0.3573,
+        "0.05": 0.3573,
+        "0.1": 0.3573,
+        "0.15": 0.3573,
+        "0.2": 0.3592,
+        "0.25": 0.3722,
+        "0.3": 0.3848,
+        "0.35": 0.3756,
+        "0.4": 0.3739,
+        "0.45": 0.3755,
+        "0.5": 0.38,
+        "0.55": 0.3829,
+        "0.6": 0.3779,
+        "0.65": 0.3399,
+        "0.7": 0.3251,
+        "0.75": 0.327,
+        "0.8": 0.3121,
+        "0.85": 0.2735,
+        "0.9": 0.2404,
+        "0.95": 0.1757
+      },
+      "dev": {
+        "n": 199,
+        "accuracy": 0.3869,
+        "macro_f1": 0.3848,
+        "macro_f1_present_labels": 0.4198,
+        "per_class": {
+          "ATC_Operational_Error": {
+            "precision": 0.5385,
+            "recall": 0.6364,
+            "f1": 0.5833,
+            "support": 11
+          },
+          "Emergency_Event": {
+            "precision": 0.6154,
+            "recall": 0.6154,
+            "f1": 0.6154,
+            "support": 13
+          },
+          "Runway_Incursion": {
+            "precision": 0.5833,
+            "recall": 0.7,
+            "f1": 0.6364,
+            "support": 10
+          },
+          "Ground_Incident": {
+            "precision": 0.4615,
+            "recall": 0.4286,
+            "f1": 0.4444,
+            "support": 14
+          },
+          "Communication_Failure": {
+            "precision": 0.5,
+            "recall": 0.4,
+            "f1": 0.4444,
+            "support": 10
+          },
+          "Airspace_Violation": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "IMC_Spatial_Disorientation": {
+            "precision": 0.1579,
+            "recall": 0.6,
+            "f1": 0.25,
+            "support": 5
+          },
+          "Weather_Deviation": {
+            "precision": 0.3125,
+            "recall": 0.7143,
+            "f1": 0.4348,
+            "support": 7
+          },
+          "Crew_Resource_Management": {
+            "precision": 0.15,
+            "recall": 0.4286,
+            "f1": 0.2222,
+            "support": 7
+          },
+          "Maintenance_Error": {
+            "precision": 0.7308,
+            "recall": 0.3878,
+            "f1": 0.5067,
+            "support": 49
+          },
+          "Procedural_Non_Compliance": {
+            "precision": 0.44,
+            "recall": 0.2558,
+            "f1": 0.3235,
+            "support": 43
+          },
+          "Unclassified": {
+            "precision": 0.1905,
+            "recall": 0.1333,
+            "f1": 0.1569,
+            "support": 30
+          }
+        },
+        "confusion_rows_gold_cols_pred": [
+          [
+            7,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            8,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            2,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            7,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            4,
+            6,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            4,
+            2,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            5,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            3,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            4,
+            0,
+            3,
+            1,
+            1,
+            2,
+            2,
+            4,
+            19,
+            7,
+            5
+          ],
+          [
+            3,
+            0,
+            0,
+            2,
+            0,
+            1,
+            3,
+            4,
+            8,
+            3,
+            11,
+            8
+          ],
+          [
+            1,
+            0,
+            0,
+            1,
+            2,
+            8,
+            4,
+            3,
+            1,
+            0,
+            6,
+            4
+          ]
+        ],
+        "unclassified_pred_pct": 10.55
+      },
+      "test": {
+        "n": 201,
+        "accuracy": 0.4328,
+        "macro_f1": 0.3983,
+        "macro_f1_present_labels": 0.3983,
+        "per_class": {
+          "ATC_Operational_Error": {
+            "precision": 0.5833,
+            "recall": 0.4118,
+            "f1": 0.4828,
+            "support": 17
+          },
+          "Emergency_Event": {
+            "precision": 0.5909,
+            "recall": 0.7647,
+            "f1": 0.6667,
+            "support": 17
+          },
+          "Runway_Incursion": {
+            "precision": 0.3571,
+            "recall": 0.8333,
+            "f1": 0.5,
+            "support": 6
+          },
+          "Ground_Incident": {
+            "precision": 0.7222,
+            "recall": 0.7222,
+            "f1": 0.7222,
+            "support": 18
+          },
+          "Communication_Failure": {
+            "precision": 0.375,
+            "recall": 0.5,
+            "f1": 0.4286,
+            "support": 12
+          },
+          "Airspace_Violation": {
+            "precision": 0.2222,
+            "recall": 0.4,
+            "f1": 0.2857,
+            "support": 5
+          },
+          "IMC_Spatial_Disorientation": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "Weather_Deviation": {
+            "precision": 0.1667,
+            "recall": 0.375,
+            "f1": 0.2308,
+            "support": 8
+          },
+          "Crew_Resource_Management": {
+            "precision": 0.3158,
+            "recall": 1.0,
+            "f1": 0.48,
+            "support": 6
+          },
+          "Maintenance_Error": {
+            "precision": 0.75,
+            "recall": 0.4375,
+            "f1": 0.5526,
+            "support": 48
+          },
+          "Procedural_Non_Compliance": {
+            "precision": 0.6,
+            "recall": 0.225,
+            "f1": 0.3273,
+            "support": 40
+          },
+          "Unclassified": {
+            "precision": 0.125,
+            "recall": 0.087,
+            "f1": 0.1026,
+            "support": 23
+          }
+        },
+        "confusion_rows_gold_cols_pred": [
+          [
+            7,
+            0,
+            1,
+            0,
+            4,
+            3,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            13,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            5,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            13,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            6,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            2,
+            3,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            6,
+            1,
+            3,
+            1,
+            0,
+            2,
+            5,
+            1,
+            21,
+            3,
+            4
+          ],
+          [
+            2,
+            2,
+            0,
+            1,
+            2,
+            1,
+            3,
+            4,
+            6,
+            4,
+            9,
+            6
+          ],
+          [
+            0,
+            1,
+            2,
+            1,
+            2,
+            3,
+            3,
+            5,
+            2,
+            1,
+            1,
+            2
+          ]
+        ],
+        "unclassified_pred_pct": 7.96
+      },
+      "test_on_rule_unclassified_records": {
+        "n": 100,
+        "accuracy": 0.34,
+        "macro_f1": 0.2985,
+        "macro_f1_present_labels": 0.3257,
+        "per_class": {
+          "ATC_Operational_Error": {
+            "precision": 0.5,
+            "recall": 0.3333,
+            "f1": 0.4,
+            "support": 3
+          },
+          "Emergency_Event": {
+            "precision": 0.4545,
+            "recall": 0.5556,
+            "f1": 0.5,
+            "support": 9
+          },
+          "Runway_Incursion": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "Ground_Incident": {
+            "precision": 0.8571,
+            "recall": 0.6,
+            "f1": 0.7059,
+            "support": 10
+          },
+          "Communication_Failure": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "Airspace_Violation": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667,
+            "support": 2
+          },
+          "IMC_Spatial_Disorientation": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Weather_Deviation": {
+            "precision": 0.2222,
+            "recall": 0.4,
+            "f1": 0.2857,
+            "support": 5
+          },
+          "Crew_Resource_Management": {
+            "precision": 0.0909,
+            "recall": 1.0,
+            "f1": 0.1667,
+            "support": 1
+          },
+          "Maintenance_Error": {
+            "precision": 0.65,
+            "recall": 0.3939,
+            "f1": 0.4906,
+            "support": 33
+          },
+          "Procedural_Non_Compliance": {
+            "precision": 0.3333,
+            "recall": 0.15,
+            "f1": 0.2069,
+            "support": 20
+          },
+          "Unclassified": {
+            "precision": 0.1538,
+            "recall": 0.1667,
+            "f1": 0.16,
+            "support": 12
+          }
+        },
+        "confusion_rows_gold_cols_pred": [
+          [
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            6,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            5,
+            0,
+            1,
+            1,
+            0,
+            2,
+            4,
+            1,
+            13,
+            3,
+            2
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            1,
+            4,
+            4,
+            3,
+            5
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            2,
+            2,
+            2,
+            1,
+            1,
+            2
+          ]
+        ],
+        "unclassified_pred_pct": 13.0
+      },
+      "train_seconds": 54.9
+    },
+    "distilbert": {
+      "threshold_chosen_on_dev": 0.85,
+      "dev_macro_f1_by_threshold": {
+        "0.0": 0.3491,
+        "0.05": 0.3491,
+        "0.1": 0.3491,
+        "0.15": 0.3491,
+        "0.2": 0.3491,
+        "0.25": 0.3491,
+        "0.3": 0.3491,
+        "0.35": 0.3549,
+        "0.4": 0.3582,
+        "0.45": 0.3762,
+        "0.5": 0.3806,
+        "0.55": 0.3891,
+        "0.6": 0.3882,
+        "0.65": 0.3821,
+        "0.7": 0.383,
+        "0.75": 0.3931,
+        "0.8": 0.3972,
+        "0.85": 0.4062,
+        "0.9": 0.4011,
+        "0.95": 0.3469
+      },
+      "dev": {
+        "n": 199,
+        "accuracy": 0.397,
+        "macro_f1": 0.4062,
+        "macro_f1_present_labels": 0.4432,
+        "per_class": {
+          "ATC_Operational_Error": {
+            "precision": 0.5714,
+            "recall": 0.3636,
+            "f1": 0.4444,
+            "support": 11
+          },
+          "Emergency_Event": {
+            "precision": 0.9,
+            "recall": 0.6923,
+            "f1": 0.7826,
+            "support": 13
+          },
+          "Runway_Incursion": {
+            "precision": 0.6,
+            "recall": 0.6,
+            "f1": 0.6,
+            "support": 10
+          },
+          "Ground_Incident": {
+            "precision": 0.3684,
+            "recall": 0.5,
+            "f1": 0.4242,
+            "support": 14
+          },
+          "Communication_Failure": {
+            "precision": 0.6,
+            "recall": 0.6,
+            "f1": 0.6,
+            "support": 10
+          },
+          "Airspace_Violation": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "IMC_Spatial_Disorientation": {
+            "precision": 0.2,
+            "recall": 0.4,
+            "f1": 0.2667,
+            "support": 5
+          },
+          "Weather_Deviation": {
+            "precision": 0.125,
+            "recall": 0.1429,
+            "f1": 0.1333,
+            "support": 7
+          },
+          "Crew_Resource_Management": {
+            "precision": 0.5,
+            "recall": 0.5714,
+            "f1": 0.5333,
+            "support": 7
+          },
+          "Maintenance_Error": {
+            "precision": 0.8571,
+            "recall": 0.2449,
+            "f1": 0.381,
+            "support": 49
+          },
+          "Procedural_Non_Compliance": {
+            "precision": 0.8571,
+            "recall": 0.2791,
+            "f1": 0.4211,
+            "support": 43
+          },
+          "Unclassified": {
+            "precision": 0.1975,
+            "recall": 0.5333,
+            "f1": 0.2883,
+            "support": 30
+          }
+        },
+        "confusion_rows_gold_cols_pred": [
+          [
+            4,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            9,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            0,
+            6,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            6,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            1,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            4,
+            1,
+            0,
+            0,
+            1,
+            0,
+            12,
+            1,
+            29
+          ],
+          [
+            1,
+            0,
+            0,
+            3,
+            0,
+            0,
+            3,
+            5,
+            2,
+            1,
+            12,
+            16
+          ],
+          [
+            1,
+            0,
+            0,
+            1,
+            1,
+            5,
+            3,
+            1,
+            1,
+            0,
+            1,
+            16
+          ]
+        ],
+        "unclassified_pred_pct": 40.7
+      },
+      "test": {
+        "n": 201,
+        "accuracy": 0.403,
+        "macro_f1": 0.4097,
+        "macro_f1_present_labels": 0.4097,
+        "per_class": {
+          "ATC_Operational_Error": {
+            "precision": 0.7143,
+            "recall": 0.2941,
+            "f1": 0.4167,
+            "support": 17
+          },
+          "Emergency_Event": {
+            "precision": 0.8,
+            "recall": 0.4706,
+            "f1": 0.5926,
+            "support": 17
+          },
+          "Runway_Incursion": {
+            "precision": 0.4167,
+            "recall": 0.8333,
+            "f1": 0.5556,
+            "support": 6
+          },
+          "Ground_Incident": {
+            "precision": 0.52,
+            "recall": 0.7222,
+            "f1": 0.6047,
+            "support": 18
+          },
+          "Communication_Failure": {
+            "precision": 0.6667,
+            "recall": 0.5,
+            "f1": 0.5714,
+            "support": 12
+          },
+          "Airspace_Violation": {
+            "precision": 0.1,
+            "recall": 0.2,
+            "f1": 0.1333,
+            "support": 5
+          },
+          "IMC_Spatial_Disorientation": {
+            "precision": 0.1,
+            "recall": 1.0,
+            "f1": 0.1818,
+            "support": 1
+          },
+          "Weather_Deviation": {
+            "precision": 0.25,
+            "recall": 0.375,
+            "f1": 0.3,
+            "support": 8
+          },
+          "Crew_Resource_Management": {
+            "precision": 0.4,
+            "recall": 0.6667,
+            "f1": 0.5,
+            "support": 6
+          },
+          "Maintenance_Error": {
+            "precision": 0.9375,
+            "recall": 0.3125,
+            "f1": 0.4688,
+            "support": 48
+          },
+          "Procedural_Non_Compliance": {
+            "precision": 0.8182,
+            "recall": 0.225,
+            "f1": 0.3529,
+            "support": 40
+          },
+          "Unclassified": {
+            "precision": 0.1594,
+            "recall": 0.4783,
+            "f1": 0.2391,
+            "support": 23
+          }
+        },
+        "confusion_rows_gold_cols_pred": [
+          [
+            5,
+            0,
+            1,
+            0,
+            2,
+            3,
+            2,
+            0,
+            0,
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            8,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            7
+          ],
+          [
+            0,
+            0,
+            5,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            13,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            6,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            3
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            3,
+            0,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            4,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            2,
+            5,
+            0,
+            0,
+            1,
+            2,
+            1,
+            15,
+            1,
+            20
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            1,
+            2,
+            2,
+            4,
+            3,
+            1,
+            9,
+            16
+          ],
+          [
+            0,
+            0,
+            1,
+            4,
+            0,
+            3,
+            1,
+            3,
+            0,
+            0,
+            0,
+            11
+          ]
+        ],
+        "unclassified_pred_pct": 34.33
+      },
+      "test_on_rule_unclassified_records": {
+        "n": 100,
+        "accuracy": 0.26,
+        "macro_f1": 0.146,
+        "macro_f1_present_labels": 0.1592,
+        "per_class": {
+          "ATC_Operational_Error": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3
+          },
+          "Emergency_Event": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 9
+          },
+          "Runway_Incursion": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "Ground_Incident": {
+            "precision": 0.4615,
+            "recall": 0.6,
+            "f1": 0.5217,
+            "support": 10
+          },
+          "Communication_Failure": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "Airspace_Violation": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 2
+          },
+          "IMC_Spatial_Disorientation": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "Weather_Deviation": {
+            "precision": 0.6667,
+            "recall": 0.4,
+            "f1": 0.5,
+            "support": 5
+          },
+          "Crew_Resource_Management": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "Maintenance_Error": {
+            "precision": 0.8571,
+            "recall": 0.1818,
+            "f1": 0.3,
+            "support": 33
+          },
+          "Procedural_Non_Compliance": {
+            "precision": 0.5,
+            "recall": 0.1,
+            "f1": 0.1667,
+            "support": 20
+          },
+          "Unclassified": {
+            "precision": 0.1562,
+            "recall": 0.8333,
+            "f1": 0.2632,
+            "support": 12
+          }
+        },
+        "confusion_rows_gold_cols_pred": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            7
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            6,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            3,
+            0,
+            0,
+            1,
+            1,
+            0,
+            6,
+            1,
+            19
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            1,
+            2,
+            15
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            10
+          ]
+        ],
+        "unclassified_pred_pct": 64.0
+      },
+      "model": "distilbert/distilbert-base-uncased",
+      "revision": "12040accade4e8a0f71eabdb258fecc2e7e948be",
+      "epochs": 3,
+      "train_records": 3300,
+      "per_class_cap": 300,
+      "max_len": 96,
+      "lr": 5e-05,
+      "batch": 32,
+      "epoch_loss": [
+        1.5945,
+        0.5113,
+        0.2355
+      ],
+      "train_plus_full_corpus_inference_seconds": 4080.7
+    }
+  },
+  "model_chosen_on_dev_macro_f1": "distilbert",
+  "intent_v2_all_records": {
+    "records": 113468,
+    "unclassified_pct": 38.14,
+    "target_unclassified_lt_15pct_met": false,
+    "agreement_with_rules_on_rule_classified_pct": 77.17,
+    "rule_unclassified_now_classified": 13154,
+    "distribution": {
+      "Unclassified": 43275,
+      "Ground_Incident": 11670,
+      "Maintenance_Error": 10990,
+      "Airspace_Violation": 9421,
+      "Emergency_Event": 8447,
+      "Weather_Deviation": 7558,
+      "ATC_Operational_Error": 6704,
+      "IMC_Spatial_Disorientation": 4131,
+      "Runway_Incursion": 4039,
+      "Crew_Resource_Management": 2798,
+      "Procedural_Non_Compliance": 2492,
+      "Communication_Failure": 1943
+    }
+  },
+  "target_test_accuracy_ge_085_met": false,
+  "env": {
+    "python": "3.11.15",
+    "cpu_count": 8
+  },
+  "phase1": {
+    "commit": "5c3410153fd4f0305938d75ff18bc9bd7dac6513",
+    "src_evaluation_data_modified": false,
+    "sha256": {
+      "src/rag/rag_query_engine.py": "32ae3d215cd2b52f8edc18e79472f14f639dcf5b04038e770f40c9d4756ab5fb",
+      "src/rag/bm25_baseline.py": "ea82ed49c7b4fdf43357ce24abce36650932759a69d840204e01a84aa6f64962",
+      "src/hysor_rrf.py": "1d27b891a793a66ee5fb2fb4b4304f8c7bf5e5e627312b5ed552f59a8270a194",
+      "src/hysor_ablation.py": "56fd7fb1798d5a5fa0b36094dbb5eebc05ddd458c60beaaf11a12b2591aac270",
+      "evaluation/gold_queries.csv": "816aa52f9d26bbcfd2683951f385948a2e27026443ce18e88dc5e36d8cc0d389",
+      "evaluation/gold_relevance.csv": "78d9ba5da57c83c4399149d72fee632ac51609937c4b00a1fe6206c7be9bfa7c",
+      "evaluation/retrieval_results.csv": "6ff3abd3b93b6b56c2e610e1585c04b5cbaccba52f759a84d26f03837f88710a",
+      "evaluation/bm25_results.csv": "584b410a5b8200bb0662a58b0dcbab79aa9fc982b40f47512b4e4d28005fd5ca",
+      "data/processed/asrs_faiss_meta.csv": "59d96d8ce6b257c8fc088b2e67b5a48e2e0964eed7e4ee5395b80dc7d3d9b43f",
+      "data/processed/asrs_faiss.index": "fd32b7184c2d69f3841149c0ad56f8afbbb25dcf1c9e73eb8c9ba490528f4d29"
+    }
+  },
+  "output_sha256": {
+    "phase2/intent_classifier/out/intent_v2.csv": "97a80ec484ff39cd467ee48bf22d6492b36b52973cae43af963322da1f02a300",
+    "phase2/intent_classifier/out/gold_predictions.csv": "78a6868c81042f97d490a4c692d0e0f9715d8ff81b9e1468a5627a0d071b70e8"
+  }
+}

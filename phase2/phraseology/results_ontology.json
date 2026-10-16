@@ -1,0 +1,35 @@
+{
+  "phase1_committed_ttl": {
+    "triples": 7883,
+    "named_individuals": 0,
+    "typed_subjects": 1310
+  },
+  "phase1_repro": {
+    "triples": 7883,
+    "named_individuals": 0,
+    "typed_subjects": 1310,
+    "caa_phrase_individuals": 514,
+    "icao_phrase_individuals": 196,
+    "circumstance_nodes": 94,
+    "service_nodes": 13,
+    "speaker_nodes": 3,
+    "ttl_sha256": "8c36b57e617a5c84b0bc5f7a3a922ad3ec040a88cddfaca05d590d707dbc0d6d"
+  },
+  "phase2": {
+    "triples": 8579,
+    "named_individuals": 0,
+    "typed_subjects": 1545,
+    "caa_phrase_individuals": 514,
+    "icao_phrase_individuals": 431,
+    "circumstance_nodes": 94,
+    "service_nodes": 13,
+    "speaker_nodes": 3,
+    "ttl_sha256": "5b07dc9c5adfbfe9943bff4867f27aba70f786638fa8c0f25c989a1d457e95a6"
+  },
+  "paper_claims": {
+    "triples": 4880,
+    "individuals": 703
+  },
+  "script_sha256": "83e3f811199529f3e811c510dfdee56c321407c9b68c3ec360429412f6ee922d",
+  "phase1_repro_isomorphic_to_committed": true
+}

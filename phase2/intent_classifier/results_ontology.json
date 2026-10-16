@@ -1,0 +1,50 @@
+{
+  "phase1_source_sha256": "59940c35abcc376b83e2fe57df3af3c350db089466895813ba050779b822866f",
+  "runs": {
+    "phase1_repro": {
+      "incident_individuals": 113468,
+      "intent_individuals": 12,
+      "intent_triples": 113468,
+      "strong_phraseme_triples": 655,
+      "weak_phraseme_triples": 9640,
+      "incident_graph_triples": 983098,
+      "merged_triples": 989421,
+      "unclassified_records": 44340,
+      "phraseology_ttl": "phase1",
+      "intent": "phase1 rules",
+      "asrs_nlp_annotated.csv_sha256": "3180f0c23a3620d7ccf8dbbd6914653cb8ce0295b08249fb7945c01893566f24",
+      "asrs_incidents.ttl_sha256": "357b4e366539a0a45b5e0077f42d36533c99a9e033293327dc198bb00df73f69",
+      "uatie_edm_merged.ttl_sha256": "fc5b838c07f98b61d1bec4a455863a871885b44a8b0058dafcb50538ec7e14cd"
+    },
+    "intent_v2_phase1_ttl": {
+      "incident_individuals": 113468,
+      "intent_individuals": 12,
+      "intent_triples": 113468,
+      "strong_phraseme_triples": 359,
+      "weak_phraseme_triples": 6560,
+      "incident_graph_triples": 979722,
+      "merged_triples": 986046,
+      "unclassified_records": 43275,
+      "phraseology_ttl": "phase1",
+      "intent": "intent_v2",
+      "asrs_nlp_annotated.csv_sha256": "878c411eee1bfb909a0a4d4522b08b8cbfac321ce9d818c2f699dd6e25c71184",
+      "asrs_incidents.ttl_sha256": "01f6716047a6440b02527b09f3bf1d13e9d6908fe34de6b83b46e3d6f122e67e",
+      "uatie_edm_merged.ttl_sha256": "5626d3fbb8054fe60e1d5cce71c309fb43746f94639a9da99f96a4a4f1289deb"
+    },
+    "phase2": {
+      "incident_individuals": 113468,
+      "intent_individuals": 12,
+      "intent_triples": 113468,
+      "strong_phraseme_triples": 359,
+      "weak_phraseme_triples": 6560,
+      "incident_graph_triples": 979722,
+      "merged_triples": 986742,
+      "unclassified_records": 43275,
+      "phraseology_ttl": "phase2",
+      "intent": "intent_v2",
+      "asrs_nlp_annotated.csv_sha256": "878c411eee1bfb909a0a4d4522b08b8cbfac321ce9d818c2f699dd6e25c71184",
+      "asrs_incidents.ttl_sha256": "01f6716047a6440b02527b09f3bf1d13e9d6908fe34de6b83b46e3d6f122e67e",
+      "uatie_edm_merged.ttl_sha256": "e2ad1f76cf63e1794813cb59c328bab9fcd0f8d54cc1ccf64aaa8e972e83b693"
+    }
+  }
+}

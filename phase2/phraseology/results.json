@@ -1,0 +1,122 @@
+{
+  "extraction": {
+    "doc4444_ch12": {
+      "rows": 580,
+      "speaker": {
+        "ATC": 487,
+        "Pilot": 91,
+        "Aircraft/tow vehicle": 2
+      },
+      "emergency": 4,
+      "gnss": 17,
+      "sections": 102
+    },
+    "doc9432": {
+      "rows": 677,
+      "speaker": {
+        "ATC": 345,
+        "Pilot": 332
+      },
+      "emergency": 14,
+      "gnss": 0
+    }
+  },
+  "crossmap": {
+    "caa_rows": 514,
+    "icao_corpus_rows": 1180,
+    "icao_corpus_by_source": {
+      "ICAO Doc 9432 (Manual of Radiotelephony)": 627,
+      "ICAO Doc 4444 (PANS-ATM) Ch. 12": 553
+    },
+    "before_phase1_tfidf": {
+      "No Match": 260,
+      "Partial Match": 124,
+      "Close Match": 65,
+      "Exact/Near-Exact": 65
+    },
+    "after_tfidf": {
+      "No Match": 25,
+      "Partial Match": 41,
+      "Close Match": 47,
+      "Exact/Near-Exact": 401
+    },
+    "after_embedding": {
+      "No Match": 0,
+      "Partial Match": 25,
+      "Close Match": 63,
+      "Exact/Near-Exact": 426
+    },
+    "caa_unique_pct": {
+      "before_phase1": 50.58,
+      "after_tfidf": 4.86,
+      "after_embedding": 0.0
+    },
+    "emergency": {
+      "caa_rows": 3,
+      "caa_rows_matched_tfidf_gt_0.30": 3,
+      "icao_rows_by_source": {
+        "ICAO Doc 9432 (Manual of Radiotelephony)": 14,
+        "ICAO Doc 4444 (PANS-ATM) Ch. 12": 4
+      }
+    },
+    "gnss": {
+      "caa_rows": 21,
+      "caa_rows_matched_tfidf_gt_0.30": 16,
+      "icao_rows_by_source": {
+        "ICAO Doc 4444 (PANS-ATM) Ch. 12": 17
+      }
+    },
+    "tier_agreement_tfidf_vs_embedding": 0.8424,
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "inputs_sha256": {
+      "phase1:data/processed/CAA_ATC_section8_enriched.csv": "baa386c98d3201c5722878fb0c12e38bec329d25d45b2f30b9bcadd75b8166d7",
+      "phase1:data/processed/CAA_ICAO_crossmap.csv": "360afe8f9b4290437614339dad0f6c511b4d9ea1919a798d50342635ffd4e8c3",
+      "data/phraseology_sources/CAA_ATC_Section8.pdf": "a5ea96a6283ba0b2d2b15f5fe89ed6a806e127f918cef509c25103b1fd1ca2f5",
+      "data/phraseology_sources/ICAO-Doc-9432.pdf": "1253b575eb2c2361d90fc9bef55bfa430c3be7803c18b7a7f2d8c90e3411973b",
+      "data/phraseology_sources/doc_4444_pans_atm.pdf": "54094a7eab12b9581895d70a6d4442c993a44ec610f4c23cc029e1963330799a"
+    },
+    "output_sha256": {
+      "phase2/phraseology/out/CAA_ICAO_crossmap_v2.csv": "1d538c11b71a6837a5c9866c3d1f11632a62a1db8ed153f0f03836223b5f1c2f"
+    }
+  },
+  "ontology": {
+    "phase1_committed_ttl": {
+      "triples": 7883,
+      "named_individuals": 0,
+      "typed_subjects": 1310
+    },
+    "phase1_repro": {
+      "triples": 7883,
+      "named_individuals": 0,
+      "typed_subjects": 1310,
+      "caa_phrase_individuals": 514,
+      "icao_phrase_individuals": 196,
+      "circumstance_nodes": 94,
+      "service_nodes": 13,
+      "speaker_nodes": 3,
+      "ttl_sha256": "8c36b57e617a5c84b0bc5f7a3a922ad3ec040a88cddfaca05d590d707dbc0d6d"
+    },
+    "phase2": {
+      "triples": 8579,
+      "named_individuals": 0,
+      "typed_subjects": 1545,
+      "caa_phrase_individuals": 514,
+      "icao_phrase_individuals": 431,
+      "circumstance_nodes": 94,
+      "service_nodes": 13,
+      "speaker_nodes": 3,
+      "ttl_sha256": "5b07dc9c5adfbfe9943bff4867f27aba70f786638fa8c0f25c989a1d457e95a6"
+    },
+    "paper_claims": {
+      "triples": 4880,
+      "individuals": 703
+    },
+    "script_sha256": "83e3f811199529f3e811c510dfdee56c321407c9b68c3ec360429412f6ee922d",
+    "phase1_repro_isomorphic_to_committed": true
+  },
+  "verification_sample": {
+    "rows": 20,
+    "reviewed": 0,
+    "status": "pending user review"
+  }
+}

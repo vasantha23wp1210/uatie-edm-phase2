@@ -1,0 +1,581 @@
+source,section,section_title,category,marker,item,phrase,speaker,is_emergency,is_gnss
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1,,,,,General,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.1,,,,,DESCRIPTION a) FLIGHT LEVEL (number); or OF LEVELS (SUBSEQUENTLY REFERRED TO AS “(LEVEL)”) b) (number) METRES,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.1,,,,c,(number) FEET,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,,"LEVEL CHANGES, a) CLIMB (or DESCEND); REPORTS AND RATES followed as necessary by: 1) TO (level)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,,"2) TO AND MAINTAIN BLOCK (level) TO (level); 3) TO REACH (level) AT (or BY) (time or significant point); 4) REPORT LEAVING (or REACHING, or PASSING) (level); 5) AT (number) METRES PER SECOND (or FEET PER MINUTE) [OR GREATER (or OR LESS)]; 6) REPORT STARTING ACCELERATION (or DECELERATION)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,b,MAINTAIN AT LEAST (number) METRES (or FEET) ABOVE (or BELOW) (aircraft call sign),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,c,REQUEST LEVEL (or FLIGHT LEVEL or ALTITUDE) CHANGE FROM (name of unit) [AT (time or significant point)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,d,STOP CLIMB (or DESCENT) AT (level),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,e,CONTINUE CLIMB (or DESCENT) TO (level),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,f,EXPEDITE CLIMB (or DESCENT) [UNTIL PASSING (level)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,g,WHEN READY CLIMB (or DESCEND) TO (level),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,h,EXPECT CLIMB (or DESCENT) AT (time or significant point),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,*,i,REQUEST DESCENT AT (time),Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,j,IMMEDIATELY,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,k,AFTER PASSING (significant point),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,l,AT (time or significant point),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,m,WHEN READY (instruction),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,n,MAINTAIN OWN SEPARATION AND VMC [FROM (level)] [TO (level)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,o,"MAINTAIN OWN SEPARATION AND VMC ABOVE (or BELOW, or TO) (level)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,p,IF UNABLE (alternative instructions) AND ADVISE,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,*,q,UNABLE,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,*,r,TCAS RA,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,s,ROGER,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,*,t,"CLEAR OF CONFLICT, RETURNING TO (assigned clearance)",Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,u,ROGER (or alternative instructions),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,*,v,CLEAR OF CONFLICT (assigned clearance) RESUMED,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,w,ROGER (or alternative instructions),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,*,x,"UNABLE, TCAS RA",Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,y,ROGER,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,z,CLIMB VIA SID TO (level),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,aa,"[CLIMB VIA SID TO (level)], CANCEL LEVEL RESTRICTION(S)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,bb,"[CLIMB VIA SID TO (level)], CANCEL LEVEL RESTRICTION(S) AT (point(s))",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,cc,"[CLIMB VIA SID TO (level)], CANCEL SPEED RESTRICTION(S)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,dd,"[CLIMB VIA SID TO (level)], CANCEL SPEED RESTRICTION(S) AT (point(s))",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,ee,"CLIMB UNRESTRICTED TO (level) (or) CLIMB TO (level), CANCEL LEVEL AND SPEED RESTRICTIONS",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,ff,DESCEND VIA STAR TO (level),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,gg,"[DESCEND VIA STAR TO (level)], CANCEL LEVEL RESTRICTION(S)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,hh,"[DESCEND VIA STAR TO (level)], CANCEL LEVEL RESTRICTION(S) AT (point(s))",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,ii,"[DESCEND VIA STAR TO (level)], CANCEL SPEED RESTRICTION(S)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,jj,"[DESCEND VIA STAR TO (level)], CANCEL SPEED RESTRICTION(S) AT (point(s))",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.2, ... instruction that a climb (or descent) to a level within the vertical range ,,,kk,"DESCEND UNRESTRICTED TO (level) or DESCEND TO (level), CANCEL LEVEL AND SPEED RESTRICTIONS. * Denotes pilot transmission",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.3,MINIMUM FUEL,,*,a,MINIMUM FUEL,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.3,MINIMUM FUEL,,,b,ROGER [NO DELAY EXPECTED or EXPECT (delay information)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.4,TRANSFER AND/OR OF CONTROL FREQUENCY CHANGE,,,a,CONTACT (unit call sign) (frequency) [NOW],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.4,TRANSFER AND/OR OF CONTROL FREQUENCY CHANGE,,,b,AT (or OVER) (time or place) [or WHEN] [PASSING/LEAVING/REACHING (level)] CONTACT (unit call sign) (frequency),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.4,TRANSFER AND/OR OF CONTROL FREQUENCY CHANGE,,,c,IF NO CONTACT (instructions),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.4,TRANSFER AND/OR OF CONTROL FREQUENCY CHANGE,,*,e,REQUEST CHANGE TO (frequency),Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.4,TRANSFER AND/OR OF CONTROL FREQUENCY CHANGE,,,f,FREQUENCY CHANGE APPROVED,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.4,TRANSFER AND/OR OF CONTROL FREQUENCY CHANGE,,,g,MONITOR (unit call sign) (frequency),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.4,TRANSFER AND/OR OF CONTROL FREQUENCY CHANGE,,*,h,MONITORING (frequency),Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.4,TRANSFER AND/OR OF CONTROL FREQUENCY CHANGE,,,i,WHEN READY CONTACT (unit call sign) (frequency),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.4,TRANSFER AND/OR OF CONTROL FREQUENCY CHANGE,,,j,REMAIN THIS FREQUENCY. * Denotes pilot transmission,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.5,8.33 KHZ CHANNEL SPACING term “point” is used only in the context of naming the ,,,a,CONFIRM EIGHT POINT THREE THREE,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.5,8.33 KHZ CHANNEL SPACING term “point” is used only in the context of naming the ,,*,b,AFFIRM EIGHT POINT THREE THREE,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.5,8.33 KHZ CHANNEL SPACING term “point” is used only in the context of naming the ,,*,c,NEGATIVE EIGHT POINT THREE THREE,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.5,8.33 KHZ CHANNEL SPACING term “point” is used only in the context of naming the ,,,d,CONFIRM UHF,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.5,8.33 KHZ CHANNEL SPACING term “point” is used only in the context of naming the ,,*,e,AFFIRM UHF,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.5,8.33 KHZ CHANNEL SPACING term “point” is used only in the context of naming the ,,*,f,NEGATIVE UHF,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.5,8.33 KHZ CHANNEL SPACING term “point” is used only in the context of naming the ,,,g,CONFIRM EIGHT POINT THREE THREE EXEMPTED,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.5,8.33 KHZ CHANNEL SPACING term “point” is used only in the context of naming the ,,*,h,AFFIRM EIGHT POINT THREE THREE EXEMPTED,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.5,8.33 KHZ CHANNEL SPACING term “point” is used only in the context of naming the ,,*,i,NEGATIVE EIGHT POINT THREE THREE EXEMPTED,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.5,8.33 KHZ CHANNEL SPACING term “point” is used only in the context of naming the ,,,j,DUE EIGHT POINT THREE THREE REQUIREMENT. * Denotes pilot transmission,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.6,CHANGE OF CALL SIGN,,,a,CHANGE YOUR CALL SIGN TO (new call sign) [UNTIL FURTHER ADVISED],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.6,CHANGE OF CALL SIGN,,,b,REVERT TO FLIGHT PLAN CALL SIGN (call sign) [AT (significant point)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.7,TRAFFIC INFORMATION,,,a,TRAFFIC (information),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.7,TRAFFIC INFORMATION,,,b,NO REPORTED TRAFFIC,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.7,TRAFFIC INFORMATION,,*,c,LOOKING OUT,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.7,TRAFFIC INFORMATION,,*,d,TRAFFIC IN SIGHT,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.7,TRAFFIC INFORMATION,,*,e,NEGATIVE CONTACT [reasons],Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.7,TRAFFIC INFORMATION,,,f,[ADDITIONAL] TRAFFIC (direction) BOUND (type of aircraft) (level) ESTIMATED (or OVER) (significant point) AT (time),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.7,TRAFFIC INFORMATION,,,g,"TRAFFIC IS (classification) UNMANNED FREE BALLOON(S) WAS [or ESTIMATED] OVER (place) AT (time) REPORTED (level(s)) [or LEVEL UNKNOWN] MOVING (direction) (other pertinent information, if any). * Denotes pilot transmission",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.8,METEOROLOGICAL CONDITIONS,,,a,[SURFACE] WIND (number) DEGREES (speed) (units),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.8,METEOROLOGICAL CONDITIONS,,,b,WIND AT (level) (number) DEGREES (number) KILOMETRES PER HOUR (or KNOTS),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.8,METEOROLOGICAL CONDITIONS,,,,direction and speed and any significant variations thereof,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.8,METEOROLOGICAL CONDITIONS,,,c,VISIBILITY (distance) (units) [direction],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.8,METEOROLOGICAL CONDITIONS,,,d,RUNWAY VISUAL RANGE (or RVR) [RUNWAY (number)] (distance) (units),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.8,METEOROLOGICAL CONDITIONS,,,e,RUNWAY VISUAL RANGE (or RVR) RUNWAY (number) NOT AVAILABLE (or NOT REPORTED),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.8,METEOROLOGICAL CONDITIONS,,,f,"RUNWAY VISUAL RANGE (or RVR) [RUNWAY (number)] (first position) (distance) (units), (second position) (distance) (units), (third position) (distance) (units)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.8,METEOROLOGICAL CONDITIONS,,,,"representative of the touchdown zone, midpoint zone and the roll-out/stop end zone, respectively",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.8,METEOROLOGICAL CONDITIONS,,,,"indication of these locations may be omitted, provided that the reports are passed in the order of touchdown zone, followed by the midpoint zone and ending with the roll-out/stop end zone report",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.8,METEOROLOGICAL CONDITIONS,,,g,"RUNWAY VISUAL RANGE (or RVR) [RUNWAY (number)] (first position) (distance) (units), (second position) NOT AVAILABLE, (third position) (distance) (units)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.8,METEOROLOGICAL CONDITIONS,,,h,PRESENT WEATHER (details),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.8,METEOROLOGICAL CONDITIONS,,,i,"CLOUD (amount, [(type)] and height of base) (units) (or SKY CLEAR)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.8,METEOROLOGICAL CONDITIONS,,,,"type of cloud are in Chapter 11, 11.4.3.2.3",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.8,METEOROLOGICAL CONDITIONS,,,j,CAVOK,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.8,METEOROLOGICAL CONDITIONS,,,k,TEMPERATURE [MINUS] (number) (and/or DEWPOINT [MINUS] (number)),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.8,METEOROLOGICAL CONDITIONS,,,l,QNH (number) [units],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.8,METEOROLOGICAL CONDITIONS,,,m,QFE (number) [(units)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.8,METEOROLOGICAL CONDITIONS,,,n,(aircraft type) REPORTED (description) ICING (or TURBULENCE) [IN CLOUD] (area) (time),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.8,METEOROLOGICAL CONDITIONS,,,o,REPORT FLIGHT CONDITIONS,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.9,POSITION REPORTING,,,a,NEXT REPORT AT (significant point),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.9,POSITION REPORTING,,,b,OMIT POSITION REPORTS [UNTIL (specify)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.9,POSITION REPORTING,,,c,RESUME POSITION REPORTING,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.10,ADDITIONAL REPORTS,,,a,REPORT PASSING (significant point),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.10,ADDITIONAL REPORTS,,,b,REPORT (distance) MILES (GNSS or DME) FROM (name of DME station) (or significant point),ATC,False,True
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.10,ADDITIONAL REPORTS,,*,c,(distance) MILES (GNSS or DME) FROM (name of DME station) (or significant point),Pilot,False,True
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.10,ADDITIONAL REPORTS,,,d,REPORT PASSING (three digits) RADIAL (name of VOR) VOR,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.10,ADDITIONAL REPORTS,,,e,REPORT (GNSS or DME) DISTANCE FROM (significant point) or (name of DME station),ATC,False,True
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.10,ADDITIONAL REPORTS,,*,f,(distance) MILES (GNSS or DME) FROM (name of DME station) (or significant point). * Denotes pilot transmission,Pilot,False,True
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.11,AERODROME INFORMATION,,,a,[(location)] RUNWAY SURFACE CONDITION RUNWAY (number) (condition),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.11,AERODROME INFORMATION,,,b,[(location)] RUNWAY SURFACE CONDITION RUNWAY (number) NOT CURRENT,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.11,AERODROME INFORMATION,,,c,LANDING SURFACE (condition),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.11,AERODROME INFORMATION,,,d,CAUTION CONSTRUCTION WORK (location),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.11,AERODROME INFORMATION,,,e,"CAUTION (specify reasons) RIGHT (or LEFT), (or BOTH SIDES) OF RUNWAY [number]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.11,AERODROME INFORMATION,,,f,CAUTION WORK IN PROGRESS (or OBSTRUCTION) (position and any necessary advice),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.11,AERODROME INFORMATION,,,g,"RUNWAY REPORT AT (observation time) RUNWAY (number) (type of precipitant) UP TO (depth of deposit) MILLIMETRES. ESTIMATED SURFACE FRICTION GOOD (or MEDIUM TO GOOD, or MEDIUM, or MEDIUM TO POOR, or POOR",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.11,AERODROME INFORMATION,,,h,"BRAKING ACTION REPORTED BY (aircraft type) AT (time) GOOD (or MEDIUM to GOOD, or MEDIUM, or MEDIUM to POOR, or POOR)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.11,AERODROME INFORMATION,,,i,"RUNWAY (or TAXIWAY) (number) WET [or STANDING WATER, or SNOW REMOVED (length and width as applicable), or TREATED, or COVERED WITH PATCHES OF DRY SNOW (or WET SNOW, or COMPACTED SNOW, or SLUSH, or FROZEN SLUSH, or ICE, or WET ICE, or ICE UNDERNEATH, or ICE AND SNOW, or SNOWDRIFTS, or FROZEN RUTS AND RIDGES)]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.11,AERODROME INFORMATION,,,j,TOWER OBSERVES (weather information),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.11,AERODROME INFORMATION,,,k,PILOT REPORTS (weather information),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.12,OPERATIONAL STATUS OF VISUAL NON-VISUAL AND AIDS,,,a,(specify visual or non-visual aid) RUNWAY (number) (description of deficiency),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.12,OPERATIONAL STATUS OF VISUAL NON-VISUAL AND AIDS,,,b,(type) LIGHTING (unserviceability),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.12,OPERATIONAL STATUS OF VISUAL NON-VISUAL AND AIDS,,,c,GBAS/SBAS/MLS/ILS CATEGORY (category) (serviceability state),ATC,False,True
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.12,OPERATIONAL STATUS OF VISUAL NON-VISUAL AND AIDS,,,d,TAXIWAY LIGHTING (description of deficiency),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.12,OPERATIONAL STATUS OF VISUAL NON-VISUAL AND AIDS,,,e,(type of visual approach slope indicator) RUNWAY (number) (description of deficiency),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.13,REDUCED VERTICAL SEPARATION (RVSM) MINIMUM OPERATIONS,,,a,CONFIRM RVSM APPROVED,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.13,REDUCED VERTICAL SEPARATION (RVSM) MINIMUM OPERATIONS,,*,b,AFFIRM RVSM,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.13,REDUCED VERTICAL SEPARATION (RVSM) MINIMUM OPERATIONS,,*,c,"NEGATIVE RVSM [(supplementary information, e.g. State aircraft)]",Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.13,REDUCED VERTICAL SEPARATION (RVSM) MINIMUM OPERATIONS,,,d,"UNABLE ISSUE CLEARANCE INTO RVSM AIRSPACE, MAINTAIN [or DESCEND TO, or CLIMB TO] (level)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.13,REDUCED VERTICAL SEPARATION (RVSM) MINIMUM OPERATIONS,,*,e,UNABLE RVSM DUE TURBULENCE,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.13,REDUCED VERTICAL SEPARATION (RVSM) MINIMUM OPERATIONS,,*,f,UNABLE RVSM DUE EQUIPMENT,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.13,REDUCED VERTICAL SEPARATION (RVSM) MINIMUM OPERATIONS,,,g,REPORT WHEN ABLE TO RESUME RVSM,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.13,REDUCED VERTICAL SEPARATION (RVSM) MINIMUM OPERATIONS,,,h,CONFIRM ABLE TO RESUME RVSM,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.13,REDUCED VERTICAL SEPARATION (RVSM) MINIMUM OPERATIONS,,*,i,READY TO RESUME RVSM. * Denotes pilot transmission,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.14,GNSS SERVICE STATUS,,,a,GNSS REPORTED UNRELIABLE (or GNSS MAY NOT BE AVAILABLE [DUE TO INTERFERENCE]); 1) IN THE VICINITY OF (location) (radius) [BETWEEN (levels)]; or 2) IN THE AREA OF (description) (or IN (name) FIR) [BETWEEN (levels)],ATC,False,True
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.14,GNSS SERVICE STATUS,,,b,"BASIC GNSS (or SBAS, or GBAS) UNAVAILABLE FOR (specify operation) [FROM (time) TO (time) (or UNTIL FURTHER NOTICE)]",ATC,False,True
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.14,GNSS SERVICE STATUS,,*,c,"BASIC GNSS UNAVAILABLE [DUE TO (reason, e.g. LOSS OF RAIM or RAIM ALERT)]",Pilot,False,True
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.14,GNSS SERVICE STATUS,,*,d,GBAS (orSBAS) UNAVAILABLE,Pilot,False,True
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.14,GNSS SERVICE STATUS,,*,e,CONFIRM GNSS NAVIGATION; and,Pilot,False,True
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.14,GNSS SERVICE STATUS,,*,f,AFFIRM GNSS NAVIGATION. * Denotes pilot transmission,Pilot,False,True
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.1.15,DEGRADATION OF AIRCRAFT NAVIGATION PERFORMANCE,,,,"UNABLE RNP (specify type) (or RNAV) [DUE TO (reason, e.g. LOSS OF RAIM or RAIM ALERT)]",ATC,False,True
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.1,ISSUANCE OF A CLEARANCE,Area control services,,a,(name of unit) CLEARS (aircraft call sign),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.1,ISSUANCE OF A CLEARANCE,Area control services,,b,(aircraft call sign) CLEARED TO,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.1,ISSUANCE OF A CLEARANCE,Area control services,,c,RECLEARED (amended clearance details) [REST OF CLEARANCE UNCHANGED],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.1,ISSUANCE OF A CLEARANCE,Area control services,,d,RECLEARED (amended route portion) TO (significant point of original route) [REST OF CLEARANCE UNCHANGED],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.1,ISSUANCE OF A CLEARANCE,Area control services,,e,ENTER CONTROLLED AIRSPACE (or CONTROL ZONE) [VIA (significant point or route)] AT (level) [AT (time)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.1,ISSUANCE OF A CLEARANCE,Area control services,,f,"LEAVE CONTROLLED AIRSPACE (or CONTROL ZONE) [VIA (significant point or route)] AT (level) (or CLIMBING, or DESCENDING)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.1,ISSUANCE OF A CLEARANCE,Area control services,,g,JOIN (specify) AT (significant point) AT (level) [AT (time)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.2,INDICATION OF ROUTE AND CLEARANCE LIMIT,Area control services,,a,FROM (location) TO (location),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.2,INDICATION OF ROUTE AND CLEARANCE LIMIT,Area control services,,b,"TO (location), followed as necessary by: 1) DIRECT; 2) VIA (route and/or significant points); 3) FLIGHT PLANNED ROUTE",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.2,INDICATION OF ROUTE AND CLEARANCE LIMIT,Area control services,,,"phrase are in Chapter 4, 4.5.7.2. 4) VIA (distance) DME ARC (direction) OF (name of DME station)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.2,INDICATION OF ROUTE AND CLEARANCE LIMIT,Area control services,,c,(route) NOT AVAILABLE DUE (reason) ALTERNATIVE[S] IS/ARE (routes) ADVISE,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.3,MAINTENANCE OF SPECIFIED LEVELS,Area control services,,a,MAINTAIN (level) [TO (significant point)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.3,MAINTENANCE OF SPECIFIED LEVELS,Area control services,,b,MAINTAIN (level) UNTIL PASSING (significant point),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.3,MAINTENANCE OF SPECIFIED LEVELS,Area control services,,c,MAINTAIN (level) UNTIL (minutes) AFTER PASSING (significant point),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.3,MAINTENANCE OF SPECIFIED LEVELS,Area control services,,d,MAINTAIN (level) UNTIL (time),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.3,MAINTENANCE OF SPECIFIED LEVELS,Area control services,,e,MAINTAIN (level) UNTIL ADVISED BY (name of unit),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.3,MAINTENANCE OF SPECIFIED LEVELS,Area control services,,f,MAINTAIN (level) UNTIL FURTHER ADVISED,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.3,MAINTENANCE OF SPECIFIED LEVELS,Area control services,,g,MAINTAIN (level) WHILE IN CONTROLLED AIRSPACE,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.3,MAINTENANCE OF SPECIFIED LEVELS,Area control services,,h,MAINTAIN BLOCK (level) TO (level),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.3,MAINTENANCE OF SPECIFIED LEVELS,Area control services,,,“DESCEND” or “CLIMB” when instructing an aircraft to change level,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.4,SPECIFICATION OF CRUISING LEVELS,Area control services,,a,"CROSS (significant point) AT (or ABOVE, or BELOW) (level)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.4,SPECIFICATION OF CRUISING LEVELS,Area control services,,b,CROSS (significant point) AT (time) OR LATER (or BEFORE) AT (level),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.4,SPECIFICATION OF CRUISING LEVELS,Area control services,,c,CRUISE CLIMB BETWEEN (levels) (or ABOVE (level)),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.4,SPECIFICATION OF CRUISING LEVELS,Area control services,,d,"CROSS (distance) MILES, (GNSS or DME) [(direction)] OF (name of DME station) OR (distance) [(direction)] OF (significant point) AT (or ABOVE or BELOW) (level)",ATC,False,True
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.5,EMERGENCY DESCENT,Area control services,*,a,EMERGENCY DESCENT (intentions),Pilot,True,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.5,EMERGENCY DESCENT,Area control services,,b,"ATTENTION ALL AIRCRAFT IN THE VICINITY OF [or AT] (significant point or location) EMERGENCY DESCENT IN PROGRESS FROM (level) (followed as necessary by specific instructions, clearances, traffic information, etc.). * Denotes pilot transmission",ATC,True,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.6,IF CLEARANCE CANNOT BE ISSUED IMMEDIATELY UPON REQUEST,Area control services,,,EXPECT CLEARANCE (or type of clearance) AT (time),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.7,WHEN CLEARANCE FOR DEVIATION CANNOT BE ISSUED,Area control services,,,"UNABLE, TRAFFIC (direction) BOUND (type of aircraft) (level) ESTIMATED (or OVER) (significant point) AT (time) CALL SIGN (call sign) ADVISE INTENTIONS",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.8,SEPARATION INSTRUCTIONS,Area control services,,a,CROSS (significant point) AT (time) [OR LATER (or OR BEFORE)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.8,SEPARATION INSTRUCTIONS,Area control services,,b,ADVISE IF ABLE TO CROSS (significant point) AT (time or level),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.8,SEPARATION INSTRUCTIONS,Area control services,,c,MAINTAIN MACH (number) [OR GREATER (or OR LESS)] [UNTIL (significant point)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.8,SEPARATION INSTRUCTIONS,Area control services,,d,DO NOT EXCEED MACH (number),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.8,SEPARATION INSTRUCTIONS,Area control services,,e,CONFIRM ESTABLISHED ON THE TRACK BETWEEN (significant point) AND (significant point) [WITH ZERO OFFSET],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.8,SEPARATION INSTRUCTIONS,Area control services,*,f,ESTABLISHED ON THE TRACK BETWEEN (significant point) AND (significant point) [WITH ZERO OFFSET],Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.8,SEPARATION INSTRUCTIONS,Area control services,,g,MAINTAIN TRACK BETWEEN (significant point) AND (significant point). REPORT ESTABLISHED ON THE TRACK,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.8,SEPARATION INSTRUCTIONS,Area control services,*,h,ESTABLISHED ON THE TRACK,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.8,SEPARATION INSTRUCTIONS,Area control services,,i,CONFIRM ZERO OFFSET,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.8,SEPARATION INSTRUCTIONS,Area control services,*,j,AFFIRM ZERO OFFSET. * Denotes pilot transmission,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.9,"INSTRUCTIONS ASSOCIATED WITH (OFFSET), FLYING A TRACK PARALLEL TO THE CLEARED ROUTE",Area control services,,a,ADVISE IF ABLE TO PROCEED PARALLEL OFFSET,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.9,"INSTRUCTIONS ASSOCIATED WITH (OFFSET), FLYING A TRACK PARALLEL TO THE CLEARED ROUTE",Area control services,,b,PROCEED OFFSET (distance) RIGHT/LEFT OF (route) (track) [CENTRE LINE] [AT (significant point or time)] [UNTIL (significant point or time)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.2.9,"INSTRUCTIONS ASSOCIATED WITH (OFFSET), FLYING A TRACK PARALLEL TO THE CLEARED ROUTE",Area control services,,c,CANCEL OFFSET (instructions to rejoin cleared flight route or other information),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.1,DEPARTURE INSTRUCTIONS,Approach control services,,a,[AFTER DEPARTURE] TURN RIGHT (or LEFT) HEADING (three digits) (or CONTINUE RUNWAY HEADING) (or TRACK EXTENDED CENTRE LINE) TO (level or significant point) [(other instructions as required)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.1,DEPARTURE INSTRUCTIONS,Approach control services,,b,AFTER REACHING (or PASSING) (level or significant point) (instructions),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.1,DEPARTURE INSTRUCTIONS,Approach control services,,c,"TURN RIGHT (or LEFT) HEADING (three digits) TO (level) [TO INTERCEPT (track, route, airway, etc.)]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.1,DEPARTURE INSTRUCTIONS,Approach control services,,d,(standard departure name and number) DEPARTURE,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.1,DEPARTURE INSTRUCTIONS,Approach control services,,e,"TRACK (three digits) DEGREES [MAGNETIC (or TRUE)] TO (or FROM) (significant point) UNTIL (time, or REACHING (fix or significant point or level)) [BEFORE PROCEEDING ON COURSE]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.1,DEPARTURE INSTRUCTIONS,Approach control services,,f,CLEARED (designation) DEPARTURE,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.1,DEPARTURE INSTRUCTIONS,Approach control services,,,"are in Chapter 4, 4.5.7.2",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.1,DEPARTURE INSTRUCTIONS,Approach control services,,g,"CLEARED DIRECT (waypoint), CLIMB TO (level), EXPECT TO REJOIN SID [(SID designator)] [AT (waypoint)], then REJOIN SID [(SID designator)] [AT (waypoint)]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.1,DEPARTURE INSTRUCTIONS,Approach control services,,h,"CLEARED DIRECT (waypoint),CLIMB TO (level), then REJOIN SID (SID designator) AT (waypoint)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,a,CLEARED (designation) ARRIVAL,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,b,CLEARED TO (clearance limit) (designation),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,c,CLEARED (or PROCEED) (details of route to be followed),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,d,"CLEARED DIRECT (waypoint), DESCEND TO (level), EXPECT TO REJOIN STAR [(STAR designator)] AT (waypoint), then REJOIN STAR [(STAR designator)] [AT (waypoint)]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,e,"CLEARED DIRECT (waypoint), DESCEND TO (level), then REJOIN STAR (STAR designator) AT (waypoint)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,f,CLEARED (type of approach) APPROACH [RUNWAY (number)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,g,CLEARED (type of approach) RUNWAY (number) FOLLOWED BY CIRCLING TO RUNWAY (number),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,h,CLEARED APPROACH [RUNWAY (number)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,i,COMMENCE APPROACH AT (time),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,*,j,REQUEST STRAIGHT-IN [(type of approach)] APPROACH [RUNWAY (number)],Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,k,CLEARED STRAIGHT-IN [(type of approach)] APPROACH [RUNWAY (number)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,l,REPORT VISUAL,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,m,REPORT RUNWAY [LIGHTS] IN SIGHT,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,*,n,REQUEST VISUAL APPROACH,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,o,CLEARED VISUAL APPROACH RUNWAY (number),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,p,ADVISE ABLE TO ACCEPT VISUAL APPROACH RUNWAY (number),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,q,"CLEARED VISUAL APPROACH RUNWAY (number), MAINTAIN OWN SEPARATION FROM PRECEDING (aircraft type and wake turbulence category as appropriate) [CAUTION WAKE TURBULENCE]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,r,"REPORT (significant point); [OUTBOUND, or INBOUND]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,s,REPORT COMMENCING PROCEDURE TURN,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,*,t,REQUEST VMC DESCENT,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,u,MAINTAIN OWN SEPARATION,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,v,MAINTAIN VMC,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,w,ARE YOU FAMILIAR WITH (name) APPROACH PROCEDURE,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,*,x,REQUEST (type of approach) APPROACH [RUNWAY (number)],Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,*,y,REQUEST (MLS/RNAV plain-language designator),Pilot,False,True
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.2,APPROACH INSTRUCTIONS,Approach control services,,z,CLEARED (MLS/RNAV plain-language designator). * Denotes pilot transmission,ATC,False,True
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.3,HOLDING CLEARANCES,Approach control services,,a,"HOLD VISUAL [OVER] (position), (or BETWEEN (two prominent landmarks))",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.3,HOLDING CLEARANCES,Approach control services,,b,"CLEARED (or PROCEED) TO (significant point, name of facility or fix) [MAINTAIN (or CLIMB or DESCEND TO) (level)] HOLD [(direction)] AS PUBLISHED EXPECT APPROACH CLEARANCE (or FURTHER CLEARANCE) AT (time)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.3,HOLDING CLEARANCES,Approach control services,*,c,REQUEST HOLDING INSTRUCTIONS,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.3,HOLDING CLEARANCES,Approach control services,,d,"CLEARED (or PROCEED) TO (significant point, name of facility or fix) [MAINTAIN (or CLIMB or DESCEND TO) (level)] HOLD [(direction)] [(specified) RADIAL, COURSE, INBOUND TRACK (three digits) DEGREES] [RIGHT (or LEFT) HAND PATTERN] [OUTBOUND TIME (number) MINUTES] EXPECT APPROACH CLEARANCE (or FURTHER CLEARANCE) AT (time) (additional instructions, if necessary)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.3,HOLDING CLEARANCES,Approach control services,,e,"CLEARED TO THE (three digits) RADIAL OF THE (name) VOR AT (distance) DME FIX [MAINTAIN (or CLIMB or DESCEND TO) (level)] HOLD [(direction)] [RIGHT (or LEFT) HAND PATTERN] [OUTBOUND TIME (number) MINUTES] EXPECT APPROACH CLEARANCE (or FURTHER CLEARANCE) AT (time) (additional instructions, if necessary)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.3,HOLDING CLEARANCES,Approach control services,,f,"CLEARED TO THE (three digits) RADIAL OF THE (name) VOR AT (distance) DME FIX [MAINTAIN (or CLIMB or DESCEND TO) (level)] HOLD BETWEEN (distance) AND (distance) DME [RIGHT (or LEFT) HAND PATTERN] EXPECT APPROACH CLEARANCE (or FURTHER CLEARANCE) AT (time) (additional instructions, if necessary). * Denotes pilot transmission",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.4,EXPECTED APPROACH TIME,Approach control services,,a,NO DELAY EXPECTED,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.4,EXPECTED APPROACH TIME,Approach control services,,b,EXPECTED APPROACH TIME (time),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.4,EXPECTED APPROACH TIME,Approach control services,,c,REVISED EXPECTED APPROACH TIME (time),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.3.4,EXPECTED APPROACH TIME,Approach control services,,d,DELAY NOT DETERMINED (reasons),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4,Phraseologies for use on and in the vicinity,Phraseologies for use on and in the vicinity,,,of the aerodrome,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.1,IDENTIFICATION OF AIRCRAFT,Phraseologies for use on and in the vicinity,,,SHOW LANDING LIGHTS,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.2,ACKNOWLEDGEMENT BY VISUAL MEANS,Phraseologies for use on and in the vicinity,,a,ACKNOWLEDGE BY MOVING AILERONS (or RUDDER),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.2,ACKNOWLEDGEMENT BY VISUAL MEANS,Phraseologies for use on and in the vicinity,,b,ACKNOWLEDGE BY ROCKING WINGS,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.2,ACKNOWLEDGEMENT BY VISUAL MEANS,Phraseologies for use on and in the vicinity,,c,ACKNOWLEDGE BY FLASHING LANDING LIGHTS,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.3,STARTING PROCEDURES,Phraseologies for use on and in the vicinity,*,a,[aircraft location] REQUEST START UP,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.3,STARTING PROCEDURES,Phraseologies for use on and in the vicinity,*,b,"[aircraft location] REQUEST START UP, INFORMATION (ATIS identification)",Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.3,STARTING PROCEDURES,Phraseologies for use on and in the vicinity,,c,START UP APPROVED,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.3,STARTING PROCEDURES,Phraseologies for use on and in the vicinity,,d,START UP AT (time),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.3,STARTING PROCEDURES,Phraseologies for use on and in the vicinity,,e,EXPECT START UP AT (time),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.3,STARTING PROCEDURES,Phraseologies for use on and in the vicinity,,f,START UP AT OWN DISCRETION,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.3,STARTING PROCEDURES,Phraseologies for use on and in the vicinity,,g,EXPECT DEPARTURE (time) START UP AT OWN DISCRETION,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.4,PUSHBACK PROCEDURES,Phraseologies for use on and in the vicinity,*,a,[aircraft location] REQUEST PUSHBACK,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.4,PUSHBACK PROCEDURES,Phraseologies for use on and in the vicinity,,b,PUSHBACK APPROVED,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.4,PUSHBACK PROCEDURES,Phraseologies for use on and in the vicinity,,c,STAND BY,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.4,PUSHBACK PROCEDURES,Phraseologies for use on and in the vicinity,,d,PUSHBACK AT OWN DISCRETION,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.4,PUSHBACK PROCEDURES,Phraseologies for use on and in the vicinity,,e,EXPECT (number) MINUTES DELAY DUE (reason). * Denotes pilot transmission,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.5,TOWING PROCEDURES,Phraseologies for use on and in the vicinity,†,a,REQUEST TOW [company name] (aircraft type) FROM (location) TO (location),Aircraft/tow vehicle,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.5,TOWING PROCEDURES,Phraseologies for use on and in the vicinity,,b,TOW APPROVED VIA (specific routing to be followed),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.5,TOWING PROCEDURES,Phraseologies for use on and in the vicinity,,c,HOLD POSITION,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.5,TOWING PROCEDURES,Phraseologies for use on and in the vicinity,,d,STAND BY. † Denotes transmission from aircraft/tow vehicle combination,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.6,TO AND/OR REQUEST TIME CHECK AERODROME DATA FOR DEPARTURE,Phraseologies for use on and in the vicinity,*,a,REQUEST TIME CHECK,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.6,TO AND/OR REQUEST TIME CHECK AERODROME DATA FOR DEPARTURE,Phraseologies for use on and in the vicinity,,b,TIME (time),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.6,TO AND/OR REQUEST TIME CHECK AERODROME DATA FOR DEPARTURE,Phraseologies for use on and in the vicinity,*,c,REQUEST DEPARTURE INFORMATION,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.6,TO AND/OR REQUEST TIME CHECK AERODROME DATA FOR DEPARTURE,Phraseologies for use on and in the vicinity,,d,"RUNWAY (number), WIND (direction and speed) (units) QNH (or QFE) (number) [(units)] TEMPERATURE [MINUS] (number), [VISIBILITY (distance) (units) (or RUNWAY VISUAL RANGE (or RVR) (distance) (units))] [TIME (time)]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.6,TO AND/OR REQUEST TIME CHECK AERODROME DATA FOR DEPARTURE,Phraseologies for use on and in the vicinity,,,"available, those that represent the roll-out/stop end zone should be used for take-off. * Denotes pilot transmission",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,*,a,[aircraft type] [wake turbulence category if “heavy”] [aircraft location] REQUEST TAXI [intentions],Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,*,b,[aircraft type] [wake turbulence category if “heavy”] [aircraft location] (flight rules) TO (aerodrome of destination) REQUEST TAXI [intentions],Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,,c,TAXI TO HOLDING POINT [number] [RUNWAY (number)] [HOLD SHORT OF RUNWAY (number) (or CROSS RUNWAY (number))] [TIME (time)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,*,d,[aircraft type] [wake turbulence category if “heavy”] REQUEST DETAILED TAXI INSTRUCTIONS,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,,e,TAXI TO HOLDING POINT [number] [RUNWAY (number)] VIA (specific route to be followed) [TIME (time)] [HOLD SHORT OF RUNWAY (number) (or CROSS RUNWAY (number))],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,,f,TAXI TO HOLDING POINT [number] (followed by aerodrome information as applicable) [TIME (time)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,,g,TAKE (or TURN) FIRST (or SECOND) LEFT (or RIGHT),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,,h,TAXI VIA (identification of taxiway),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,,i,TAXI VIA RUNWAY (number),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,,j,"TAXI TO TERMINAL (or other location, e.g. GENERAL AVIATION AREA) [STAND (number)]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,*,k,REQUEST AIR-TAXIING FROM (or VIA) TO (location or routing as appropriate),Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,,l,"AIR-TAXI TO (or VIA) (location or routing as appropriate) [CAUTION (dust, blowing snow, loose debris, taxiing light aircraft, personnel, etc.)]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,,m,"AIR TAXI VIA (direct, as requested, or specified route) TO (location, heliport, operating or movement area, active or inactive runway). AVOID (aircraft or vehicles or personnel)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,*,n,REQUEST BACKTRACK,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,,o,BACKTRACK APPROVED,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,,p,BACKTRACK RUNWAY (number),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,*,q,[(aircraft location)] REQUEST TAXI TO (destination on aerodrome),Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,,r,TAXI STRAIGHT AHEAD,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,,s,TAXI WITH CAUTION,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,,t,GIVE WAY TO (description and position of other aircraft),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,*,u,GIVING WAY TO (traffic),Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,*,v,TRAFFIC (or type of aircraft) IN SIGHT,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,,w,TAXI INTO HOLDING BAY,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,,x,FOLLOW (description of other aircraft or vehicle),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,,y,VACATE RUNWAY,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,*,z,RUNWAY VACATED,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,,aa,EXPEDITE TAXI [(reason)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,*,bb,EXPEDITING,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,,cc,[CAUTION] TAXI SLOWER [reason],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.7,TAXI PROCEDURES,Phraseologies for use on and in the vicinity,*,dd,SLOWING DOWN. * Denotes pilot transmission,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.8,HOLDING,Phraseologies for use on and in the vicinity,‡,a,"HOLD (direction) OF (position, runway number, etc.)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.8,HOLDING,Phraseologies for use on and in the vicinity,‡,b,HOLD POSITION,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.8,HOLDING,Phraseologies for use on and in the vicinity,‡,c,HOLD (distance) FROM (position),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.8,HOLDING,Phraseologies for use on and in the vicinity,‡,d,HOLD SHORT OF (position),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.8,HOLDING,Phraseologies for use on and in the vicinity,*,e,HOLDING,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.8,HOLDING,Phraseologies for use on and in the vicinity,*,f,"HOLDING SHORT. ‡ Requires specific acknowledgement from the pilot. * Denotes pilot transmission. The procedure words ROGER and WILCO are insufficient acknowledgement of the instructions HOLD, HOLD POSITION and HOLD SHORT OF (position). In each case the acknowledgement shall be by the phraseology HOLDING or HOLDING SHORT, as appropriate",Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.9,TO CROSS A RUNWAY,Phraseologies for use on and in the vicinity,*,a,REQUEST CROSS RUNWAY (number),Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.9,TO CROSS A RUNWAY,Phraseologies for use on and in the vicinity,,,"aircraft (e.g. night, low visibility), the instruction should always be accompanied by a request to report when the aircraft has vacated the runway",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.9,TO CROSS A RUNWAY,Phraseologies for use on and in the vicinity,,b,CROSS RUNWAY (number) [REPORT VACATED],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.9,TO CROSS A RUNWAY,Phraseologies for use on and in the vicinity,,c,EXPEDITE CROSSING RUNWAY (number) TRAFFIC (aircraft type) (distance) KILOMETRES (or MILES) FINAL,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.9,TO CROSS A RUNWAY,Phraseologies for use on and in the vicinity,,d,"TAXI TO HOLDING POINT [number] [RUNWAY (number)] VIA (specific route to be followed), [HOLD SHORT OF RUNWAY (number)] or [CROSS RUNWAY (number)]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.9,TO CROSS A RUNWAY,Phraseologies for use on and in the vicinity,*,,Denotes pilot transmission,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.10,PREPARATION TAKE-OFF FOR,Phraseologies for use on and in the vicinity,,a,UNABLE TO ISSUE (designator) DEPARTURE (reasons),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.10,PREPARATION TAKE-OFF FOR,Phraseologies for use on and in the vicinity,,b,REPORT WHEN READY [FOR DEPARTURE],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.10,PREPARATION TAKE-OFF FOR,Phraseologies for use on and in the vicinity,,c,ARE YOU READY [FOR DEPARTURE]?,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.10,PREPARATION TAKE-OFF FOR,Phraseologies for use on and in the vicinity,,d,ARE YOU READY FOR IMMEDIATE DEPARTURE?,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.10,PREPARATION TAKE-OFF FOR,Phraseologies for use on and in the vicinity,*,e,READY,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.10,PREPARATION TAKE-OFF FOR,Phraseologies for use on and in the vicinity,,f,LINE UP [AND WAIT],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.10,PREPARATION TAKE-OFF FOR,Phraseologies for use on and in the vicinity,†,g,LINE UP RUNWAY (number),Aircraft/tow vehicle,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.10,PREPARATION TAKE-OFF FOR,Phraseologies for use on and in the vicinity,,h,LINE UP. BE READY FOR IMMEDIATE DEPARTURE,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.10,PREPARATION TAKE-OFF FOR,Phraseologies for use on and in the vicinity,‡,i,(condition) LINE UP (brief reiteration of the condition),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.10,PREPARATION TAKE-OFF FOR,Phraseologies for use on and in the vicinity,*,j,(condition) LINING UP (brief reiteration of the condition),Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.10,PREPARATION TAKE-OFF FOR,Phraseologies for use on and in the vicinity,,k,[THAT IS] CORRECT (or NEGATIVE) [I SAY AGAIN] ... (as appropriate). * Denotes pilot transmission. † When there is the possibility of confusion during multiple runway operations. ‡ Provisions concerning the use of conditional clearances are contained in 12.2.7,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.11,TAKE-OFF CLEARANCE,Phraseologies for use on and in the vicinity,,a,RUNWAY (number) CLEARED FOR TAKE-OFF [REPORT AIRBORNE],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.11,TAKE-OFF CLEARANCE,Phraseologies for use on and in the vicinity,,b,(traffic information) RUNWAY (number) CLEARED FOR TAKE-OFF,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.11,TAKE-OFF CLEARANCE,Phraseologies for use on and in the vicinity,,c,TAKE OFF IMMEDIATELY OR VACATE RUNWAY [(instructions)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.11,TAKE-OFF CLEARANCE,Phraseologies for use on and in the vicinity,,d,TAKE OFF IMMEDIATELY OR HOLD SHORT OF RUNWAY,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.11,TAKE-OFF CLEARANCE,Phraseologies for use on and in the vicinity,,e,"HOLD POSITION, CANCEL TAKE-OFF I SAY AGAIN CANCEL TAKE-OFF (reasons)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.11,TAKE-OFF CLEARANCE,Phraseologies for use on and in the vicinity,*,f,HOLDING,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.11,TAKE-OFF CLEARANCE,Phraseologies for use on and in the vicinity,,g,STOP IMMEDIATELY [(repeat aircraft call sign) STOP IMMEDIATELY],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.11,TAKE-OFF CLEARANCE,Phraseologies for use on and in the vicinity,*,h,STOPPING,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.11,TAKE-OFF CLEARANCE,Phraseologies for use on and in the vicinity,,i,"CLEARED FOR TAKE-OFF [FROM (location)] (present position, taxiway, final approach and take-off area, runway and number)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.11,TAKE-OFF CLEARANCE,Phraseologies for use on and in the vicinity,*,j,REQUEST DEPARTURE INSTRUCTIONS,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.11,TAKE-OFF CLEARANCE,Phraseologies for use on and in the vicinity,,k,"AFTER DEPARTURE TURN RIGHT (or LEFT, or CLIMB) (instructions as appropriate). * Denotes pilot transmission. HOLDING and STOPPING are the procedural responses to e) and g) respectively",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.12,TURN OR CLIMB INSTRUCTIONS TAKE-OFF AFTER,Phraseologies for use on and in the vicinity,*,a,REQUEST RIGHT (or LEFT) TURN,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.12,TURN OR CLIMB INSTRUCTIONS TAKE-OFF AFTER,Phraseologies for use on and in the vicinity,,b,RIGHT (or LEFT) TURN APPROVED,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.12,TURN OR CLIMB INSTRUCTIONS TAKE-OFF AFTER,Phraseologies for use on and in the vicinity,,c,WILL ADVISE LATER FOR RIGHT (or LEFT) TURN,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.12,TURN OR CLIMB INSTRUCTIONS TAKE-OFF AFTER,Phraseologies for use on and in the vicinity,,d,REPORT AIRBORNE,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.12,TURN OR CLIMB INSTRUCTIONS TAKE-OFF AFTER,Phraseologies for use on and in the vicinity,,e,AIRBORNE (time),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.12,TURN OR CLIMB INSTRUCTIONS TAKE-OFF AFTER,Phraseologies for use on and in the vicinity,,f,AFTER PASSING (level) (instructions),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.12,TURN OR CLIMB INSTRUCTIONS TAKE-OFF AFTER,Phraseologies for use on and in the vicinity,,g,CONTINUE RUNWAY HEADING (instructions),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.12,TURN OR CLIMB INSTRUCTIONS TAKE-OFF AFTER,Phraseologies for use on and in the vicinity,,h,TRACK EXTENDED CENTRE LINE (instructions),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.12,TURN OR CLIMB INSTRUCTIONS TAKE-OFF AFTER,Phraseologies for use on and in the vicinity,,i,CLIMB STRAIGHT AHEAD (instructions). * Denotes pilot transmission,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.13,ENTERING AN AERODROME TRAFFIC CIRCUIT,Phraseologies for use on and in the vicinity,*,a,[aircraft type] (position) (level) FOR LANDING,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.13,ENTERING AN AERODROME TRAFFIC CIRCUIT,Phraseologies for use on and in the vicinity,,b,JOIN [(direction of circuit)] (position in circuit) (runway number) [SURFACE] WIND (direction and speed) (units) [TEMPERATURE [MINUS] (number)] QNH (or QFE) (number) [(units)] [TRAFFIC (detail)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.13,ENTERING AN AERODROME TRAFFIC CIRCUIT,Phraseologies for use on and in the vicinity,,c,"MAKE STRAIGHT-IN APPROACH, RUNWAY (number) [SURFACE] WIND (direction and speed) (units) [TEMPERATURE [MINUS] (number)] QNH (or QFE) (number) [(units)] [TRAFFIC (detail)]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.13,ENTERING AN AERODROME TRAFFIC CIRCUIT,Phraseologies for use on and in the vicinity,*,d,(aircraft type) (position) (level) INFORMATION (ATIS identification) FOR LANDING,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.13,ENTERING AN AERODROME TRAFFIC CIRCUIT,Phraseologies for use on and in the vicinity,,e,JOIN (position in circuit) [RUNWAY (number)] QNH (or QFE) (number) [(units)] [TRAFFIC (detail)]. * Denotes pilot transmission,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.14,IN THE CIRCUIT,Phraseologies for use on and in the vicinity,*,a,"(position in circuit, e.g. DOWNWIND/FINAL)",Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.14,IN THE CIRCUIT,Phraseologies for use on and in the vicinity,,b,NUMBER ... FOLLOW (aircraft type and position) [additional instructions if required]. * Denotes pilot transmission,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.15,APPROACH INSTRUCTIONS FINAL”,Phraseologies for use on and in the vicinity,,a,MAKE SHORT APPROACH,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.15,APPROACH INSTRUCTIONS FINAL”,Phraseologies for use on and in the vicinity,,c,"REPORT BASE (or FINAL, or LONG FINAL)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.15,APPROACH INSTRUCTIONS FINAL”,Phraseologies for use on and in the vicinity,,d,CONTINUE APPROACH [PREPARE FOR POSSIBLE GO AROUND],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.16,LANDING CLEARANCE,Phraseologies for use on and in the vicinity,,a,RUNWAY (number) CLEARED TO LAND,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.16,LANDING CLEARANCE,Phraseologies for use on and in the vicinity,,b,(traffic information) RUNWAY (number) CLEARED TO LAND,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.16,LANDING CLEARANCE,Phraseologies for use on and in the vicinity,,c,CLEARED TOUCH AND GO,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.16,LANDING CLEARANCE,Phraseologies for use on and in the vicinity,,d,MAKE FULL STOP,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.16,LANDING CLEARANCE,Phraseologies for use on and in the vicinity,*,e,REQUEST LOW APPROACH (reasons),Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.16,LANDING CLEARANCE,Phraseologies for use on and in the vicinity,,f,CLEARED LOW APPROACH [RUNWAY (number)] [(altitude restriction if required) (go around instructions)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.16,LANDING CLEARANCE,Phraseologies for use on and in the vicinity,*,g,REQUEST LOW PASS (reasons),Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.16,LANDING CLEARANCE,Phraseologies for use on and in the vicinity,,h,CLEARED LOW PASS [as in f)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.16,LANDING CLEARANCE,Phraseologies for use on and in the vicinity,*,i,"REQUEST STRAIGHT-IN (or CIRCLING APPROACH, LEFT (or RIGHT) TURN TO (location))",Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.16,LANDING CLEARANCE,Phraseologies for use on and in the vicinity,,j,"MAKE STRAIGHT-IN (or CIRCLING APPROACH, LEFT (or RIGHT) TURN TO (location, runway, taxiway, final approach and take-off area)) [ARRIVAL (or ARRIVAL ROUTE) (number, name, or code)]. [HOLD SHORT OF (active runway, extended runway centre line, other)]. [REMAIN (direction or distance) FROM (runway, runway centre line, other helicopter or aircraft)]. [CAUTION (power lines, unlighted obstructions, wake turbulence, etc.)]. CLEARED TO LAND. * Denotes pilot transmission",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.17,DELAYING AIRCRAFT,Phraseologies for use on and in the vicinity,,a,CIRCLE THE AERODROME,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.17,DELAYING AIRCRAFT,Phraseologies for use on and in the vicinity,,b,"ORBIT (RIGHT, or LEFT) [FROM PRESENT POSITION]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.17,DELAYING AIRCRAFT,Phraseologies for use on and in the vicinity,,c,MAKE ANOTHER CIRCUIT,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.18,MISSED APPROACH,Phraseologies for use on and in the vicinity,,a,GO AROUND,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.18,MISSED APPROACH,Phraseologies for use on and in the vicinity,*,b,GOING AROUND. * Denotes pilot transmission,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.19,INFORMATION TO AIRCRAFT,Phraseologies for use on and in the vicinity,,a,LANDING GEAR APPEARS DOWN,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.19,INFORMATION TO AIRCRAFT,Phraseologies for use on and in the vicinity,,b,"RIGHT (or LEFT, or NOSE) WHEEL APPEARS UP (or DOWN)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.19,INFORMATION TO AIRCRAFT,Phraseologies for use on and in the vicinity,,c,WHEELS APPEAR UP,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.19,INFORMATION TO AIRCRAFT,Phraseologies for use on and in the vicinity,,d,"RIGHT (or LEFT, or NOSE) WHEEL DOES NOT APPEAR UP (or DOWN)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.19,INFORMATION TO AIRCRAFT,Phraseologies for use on and in the vicinity,,e,CAUTION WAKE TURBULENCE [FROM ARRIVING (or DEPARTING) (type of aircraft)] [additional information as required],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.19,INFORMATION TO AIRCRAFT,Phraseologies for use on and in the vicinity,,f,CAUTION JET BLAST,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.19,INFORMATION TO AIRCRAFT,Phraseologies for use on and in the vicinity,,g,CAUTION SLIPSTREAM,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.20,RUNWAY VACATING AND COMMUNICATIONS AFTER LANDING,Phraseologies for use on and in the vicinity,,a,CONTACT GROUND (frequency),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.20,RUNWAY VACATING AND COMMUNICATIONS AFTER LANDING,Phraseologies for use on and in the vicinity,,b,WHEN VACATED CONTACT GROUND (frequency),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.20,RUNWAY VACATING AND COMMUNICATIONS AFTER LANDING,Phraseologies for use on and in the vicinity,,c,EXPEDITE VACATING,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.20,RUNWAY VACATING AND COMMUNICATIONS AFTER LANDING,Phraseologies for use on and in the vicinity,,d,YOUR STAND (or GATE) (designation),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.20,RUNWAY VACATING AND COMMUNICATIONS AFTER LANDING,Phraseologies for use on and in the vicinity,,e,"TAKE (or TURN) FIRST (or SECOND, or CONVENIENT) LEFT (or RIGHT) AND CONTACT GROUND (frequency)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.20,RUNWAY VACATING AND COMMUNICATIONS AFTER LANDING,Phraseologies for use on and in the vicinity,,f,AIR-TAXI TO HELICOPTER STAND (or) HELICOPTER PARKING POSITION (area),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.20,RUNWAY VACATING AND COMMUNICATIONS AFTER LANDING,Phraseologies for use on and in the vicinity,,g,"AIR-TAXI TO (or VIA) (location or routing as appropriate) [CAUTION (dust, blowing snow, loose debris, taxiing light aircraft, personnel, etc.)]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.4.20,RUNWAY VACATING AND COMMUNICATIONS AFTER LANDING,Phraseologies for use on and in the vicinity,,h,"AIR-TAXI VIA (direct, as requested, or specified route) TO (location, heliport, operating or movement area, active or inactive runway). AVOID (aircraft or vehicles or personnel)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.1,ESTIMATES AND REVISIONS,Coordination between ATS units,,a,ESTIMATE [direction of flight] (aircraft call sign) [SQUAWKING (SSR code)] (type) ESTIMATED (significant point) (time) (level) (or DESCENDING FROM (level) TO (level)) [SPEED (filed TAS)] (route) [REMARKS],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.1,ESTIMATES AND REVISIONS,Coordination between ATS units,,b,ESTIMATE (significant point) ON (aircraft call sign),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.1,ESTIMATES AND REVISIONS,Coordination between ATS units,,c,NO DETAILS,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.1,ESTIMATES AND REVISIONS,Coordination between ATS units,,,(aircraft type) (destination); [SQUAWKING (SSR code)] [ESTIMATED] (significant point) (time) AT (level),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.1,ESTIMATES AND REVISIONS,Coordination between ATS units,,,available the receiving station shall reply to b) NO DETAILS and transmitting station shall pass full estimate as in a),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.1,ESTIMATES AND REVISIONS,Coordination between ATS units,,d,"ESTIMATE UNMANNED FREE BALLOON(S) (identification and classification) ESTIMATED OVER (place) AT (time) REPORTED FLIGHT LEVEL(S) (figure or figures) [or FLIGHT LEVEL UNKNOWN] MOVING (direction) ESTIMATED GROUND SPEED (figure) (other pertinent information, if any)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.1,ESTIMATES AND REVISIONS,Coordination between ATS units,,e,REVISION (aircraft call sign) (details as necessary),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.2,TRANSFER OF CONTROL,Coordination between ATS units,,a,REQUEST RELEASE OF (aircraft call sign),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.2,TRANSFER OF CONTROL,Coordination between ATS units,,b,(aircraft call sign) RELEASED [AT (time)] [conditions/restrictions],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.2,TRANSFER OF CONTROL,Coordination between ATS units,,c,IS (aircraft call sign) RELEASED [FOR CLIMB (or DESCENT)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.2,TRANSFER OF CONTROL,Coordination between ATS units,,d,(aircraft call sign) NOT RELEASED [UNTIL (time or significant point)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.2,TRANSFER OF CONTROL,Coordination between ATS units,,e,UNABLE (aircraft call sign) [TRAFFIC IS (details)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.3,CHANGE OF CLEARANCE,Coordination between ATS units,,a,MAY WE CHANGE CLEARANCE OF (aircraft call sign) TO (details of alteration proposed),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.3,CHANGE OF CLEARANCE,Coordination between ATS units,,b,AGREED TO (alteration of clearance) OF (aircraft call sign),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.3,CHANGE OF CLEARANCE,Coordination between ATS units,,c,UNABLE (aircraft call sign),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.3,CHANGE OF CLEARANCE,Coordination between ATS units,,d,"UNABLE (desired route, level, etc.) [FOR (aircraft call sign)] [DUE (reason)] (alternative clearance proposed)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.4,APPROVAL REQUEST,Coordination between ATS units,,a,APPROVAL REQUEST (aircraft call sign) ESTIMATED DEPARTURE FROM (significant point) AT (time),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.4,APPROVAL REQUEST,Coordination between ATS units,,b,(aircraft call sign) REQUEST APPROVED [(restriction if any)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.4,APPROVAL REQUEST,Coordination between ATS units,,c,(aircraft call sign) UNABLE (alternative instructions),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.5,INBOUND RELEASE,Coordination between ATS units,,,"[INBOUND RELEASE] (aircraft call sign) [SQUAWKING (SSR code)] (type) FROM (departure point) RELEASED AT (significant point, or time, or level) CLEARED TO AND ESTIMATING (clearance limit) (time) AT (level) [EXPECTED APPROACH TIME or NO DELAY EXPECTED] CONTACT AT (time)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.6,HANDOVER,Coordination between ATS units,,,HANDOVER (aircraft call sign) [SQUAWKING (SSR code)] POSITION (aircraft position) (level),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.7,EXPEDITION OF CLEARANCE,Coordination between ATS units,,a,EXPEDITE CLEARANCE (aircraft call sign) EXPECTED DEPARTURE FROM (place) AT (time),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.7,EXPEDITION OF CLEARANCE,Coordination between ATS units,,b,"EXPEDITE CLEARANCE (aircraft call sign) [ESTIMATED] OVER (place) AT (time) REQUESTS (level or route, etc.)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.8,REDUCED VERTICAL SEPARATION (RVSM) MINIMUM OPERATIONS,Coordination between ATS units,,a,"NEGATIVE RVSM [(supplementary information, e.g. State aircraft)]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.5.8,REDUCED VERTICAL SEPARATION (RVSM) MINIMUM OPERATIONS,Coordination between ATS units,,b,"UNABLE RVSM DUE TURBULENCE (or EQUIPMENT, as applicable)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.6.1,OPERATIONAL STATUS,Phraseologies to be used related to CPDLC,,a,[ALL STATIONS] CPDLC FAILURE (instructions),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.6.1,OPERATIONAL STATUS,Phraseologies to be used related to CPDLC,,b,"CPDLC MESSAGE FAILURE (appropriate clearance, instruction, information or request)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.6.1,OPERATIONAL STATUS,Phraseologies to be used related to CPDLC,,c,"DISREGARD CPDLC (message type) MESSAGE, BREAK (correct clearance, instruction, information or request)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.6.1,OPERATIONAL STATUS,Phraseologies to be used related to CPDLC,,d,[ALL STATIONS] STOP SENDING CPDLC REQUESTS [UNTIL ADVISED] [(reason)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.3.6.1,OPERATIONAL STATUS,Phraseologies to be used related to CPDLC,,e,[ALL STATIONS] RESUME NORMAL CPDLC OPERATIONS,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4,ATS SURVEILLANCE,"ATS SURVEILLANCE the provision of air traffic services. The phraseologies services are also applicable, as appropriate, when",,,SERVICE PHRASEOLOGIES,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4,ATS SURVEILLANCE,"ATS SURVEILLANCE the provision of air traffic services. The phraseologies services are also applicable, as appropriate, when",,,detailed in the sections above for use in the provision of air traffic an ATS surveillance system is used,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.1,IDENTIFICATION OF AIRCRAFT,General ATS surveillance service phraseologies,,a,REPORT HEADING [AND FLIGHT LEVEL (or ALTITUDE)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.1,IDENTIFICATION OF AIRCRAFT,General ATS surveillance service phraseologies,,b,FOR IDENTIFICATION TURN LEFT (or RIGHT) HEADING (three digits),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.1,IDENTIFICATION OF AIRCRAFT,General ATS surveillance service phraseologies,,c,TRANSMIT FOR IDENTIFICATION AND REPORT HEADING,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.1,IDENTIFICATION OF AIRCRAFT,General ATS surveillance service phraseologies,,d,RADAR CONTACT [position],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.1,IDENTIFICATION OF AIRCRAFT,General ATS surveillance service phraseologies,,e,IDENTIFIED [position],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.1,IDENTIFICATION OF AIRCRAFT,General ATS surveillance service phraseologies,,f,"NOT IDENTIFIED [reason], [RESUME (or CONTINUE) OWN NAVIGATION]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.2,POSITION INFORMATION,General ATS surveillance service phraseologies,,,POSITION (distance) (direction) OF (significant point) (or OVER or ABEAM (significant point)),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.3,VECTORING INSTRUCTIONS,General ATS surveillance service phraseologies,,a,LEAVE (significant point) HEADING (three digits),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.3,VECTORING INSTRUCTIONS,General ATS surveillance service phraseologies,,b,CONTINUE HEADING (three digits),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.3,VECTORING INSTRUCTIONS,General ATS surveillance service phraseologies,,c,CONTINUE PRESENT HEADING,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.3,VECTORING INSTRUCTIONS,General ATS surveillance service phraseologies,,d,FLY HEADING (three digits),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.3,VECTORING INSTRUCTIONS,General ATS surveillance service phraseologies,,e,TURN LEFT (or RIGHT) HEADING (three digits) [reason],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.3,VECTORING INSTRUCTIONS,General ATS surveillance service phraseologies,,f,TURN LEFT (or RIGHT) (number of degrees) DEGREES [reason],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.3,VECTORING INSTRUCTIONS,General ATS surveillance service phraseologies,,g,STOP TURN HEADING (three digits),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.3,VECTORING INSTRUCTIONS,General ATS surveillance service phraseologies,,h,"FLY HEADING (three digits), WHEN ABLE PROCEED DIRECT (name) (significant point)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.3,VECTORING INSTRUCTIONS,General ATS surveillance service phraseologies,,i,HEADING IS GOOD,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.4,,General ATS surveillance service phraseologies,,,12.4.1.4 TERMINATION a) RESUME OWN NAVIGATION (position of aircraft) (specific OF VECTORING instructions),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.4,,General ATS surveillance service phraseologies,,b,RESUME OWN NAVIGATION [DIRECT] (significant point) [MAGNETIC TRACK (three digits) DISTANCE (number) KILOMETRES (or MILES)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.5,,General ATS surveillance service phraseologies,,,12.4.1.5 MANOEUVRES a) MAKE A THREE SIXTY TURN LEFT (or RIGHT) [reason],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.5,,General ATS surveillance service phraseologies,,b,"ORBIT LEFT (or RIGHT) [reason]; ... (in case of unreliable directional c) MAKE ALL TURNS RATE ONE (or RATE HALF, or instruments on board aircraft) (number) DEGREES PER SECOND) START AND STOP ALL TURNS ON THE COMMAND “NOW”",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.5,,General ATS surveillance service phraseologies,,,"reason for vectoring or for the above manoeuvres, the following phraseologies e) STOP TURN NOW. should be used:",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.5,,General ATS surveillance service phraseologies,,a,DUE TRAFFIC,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.5,,General ATS surveillance service phraseologies,,b,FOR SPACING,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.5,,General ATS surveillance service phraseologies,,c,FOR DELAY,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.5,,General ATS surveillance service phraseologies,,d,"FOR DOWNWIND (or BASE, or FINAL)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.6,,General ATS surveillance service phraseologies,,,12.4.1.6 SPEED a) REPORT SPEED; CONTROL,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.6,,General ATS surveillance service phraseologies,*,b,SPEED (number) KILOMETRES PER HOUR (or KNOTS),Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.6,,General ATS surveillance service phraseologies,,c,MAINTAIN (number) KILOMETRES PER HOUR (or KNOTS) [OR GREATER (or OR LESS)] [UNTIL (significant point)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.6,,General ATS surveillance service phraseologies,,d,DO NOT EXCEED (number) KILOMETRES PER HOUR (or KNOTS),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.6,,General ATS surveillance service phraseologies,,e,MAINTAIN PRESENT SPEED,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.6,,General ATS surveillance service phraseologies,,f,INCREASE (or REDUCE) SPEED TO (number) KILOMETRES PER HOUR (or KNOTS) [OR GREATER (or OR LESS)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.6,,General ATS surveillance service phraseologies,,g,INCREASE (or REDUCE) SPEED BY (number) KILOMETRES PER HOUR (or KNOTS),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.6,,General ATS surveillance service phraseologies,,h,RESUME NORMAL SPEED,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.6,,General ATS surveillance service phraseologies,,i,REDUCE TO MINIMUM APPROACH SPEED,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.6,,General ATS surveillance service phraseologies,,j,REDUCE TO MINIMUM CLEAN SPEED,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.6,,General ATS surveillance service phraseologies,,k,RESUME PUBLISHED SPEED,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.6,,General ATS surveillance service phraseologies,,l,NO [ATC] SPEED RESTRICTIONS. * Denotes pilot transmission,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.7,POSITION REPORTING,General ATS surveillance service phraseologies,,a,OMIT POSITION REPORTS [UNTIL (specify)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.7,POSITION REPORTING,General ATS surveillance service phraseologies,,b,NEXT REPORT AT (significant point),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.7,POSITION REPORTING,General ATS surveillance service phraseologies,,c,REPORTS REQUIRED ONLY AT (significant point(s)),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.7,POSITION REPORTING,General ATS surveillance service phraseologies,,d,RESUME POSITION REPORTING,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.8,TRAFFIC INFORMATION AND AVOIDING ACTION,General ATS surveillance service phraseologies,,a,TRAFFIC (number) O’CLOCK (distance) (direction of flight) [any other pertinent information]: 11) UNKNOWN; 12) SLOW MOVING; 13) FAST MOVING; 14) CLOSING; 15) OPPOSITE (or SAME) DIRECTION; 16) OVERTAKING; 17) CROSSING LEFT TO RIGHT (or RIGHT TO LEFT); 18) (aircraft type),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.8,TRAFFIC INFORMATION AND AVOIDING ACTION,General ATS surveillance service phraseologies,,,19) (level); 10) CLIMBING (or DESCENDING),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.8,TRAFFIC INFORMATION AND AVOIDING ACTION,General ATS surveillance service phraseologies,*,b,REQUEST VECTORS,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.8,TRAFFIC INFORMATION AND AVOIDING ACTION,General ATS surveillance service phraseologies,,c,DO YOU WANT VECTORS?,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.8,TRAFFIC INFORMATION AND AVOIDING ACTION,General ATS surveillance service phraseologies,,d,CLEAR OF TRAFFIC [appropriate instructions],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.8,TRAFFIC INFORMATION AND AVOIDING ACTION,General ATS surveillance service phraseologies,,e,TURN LEFT (or RIGHT) IMMEDIATELY HEADING (three digits) TO AVOID [UNIDENTIFIED] TRAFFIC (bearing by clock-reference and distance),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.8,TRAFFIC INFORMATION AND AVOIDING ACTION,General ATS surveillance service phraseologies,,f,TURN LEFT (or RIGHT) (number of degrees) DEGREES IMMEDIATELY TO AVOID [UNIDENTIFIED] TRAFFIC AT (bearing by clock-reference and distance). * Denotes pilot transmission,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.9,COMMUNICATIONS AND LOSS OF COMMUNICATIONS,General ATS surveillance service phraseologies,,a,[IF] RADIO CONTACT LOST (instructions),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.9,COMMUNICATIONS AND LOSS OF COMMUNICATIONS,General ATS surveillance service phraseologies,,b,IF NO TRANSMISSIONS RECEIVED FOR (number) MINUTES (or SECONDS) (instructions),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.9,COMMUNICATIONS AND LOSS OF COMMUNICATIONS,General ATS surveillance service phraseologies,,c,REPLY NOT RECEIVED (instructions),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.9,COMMUNICATIONS AND LOSS OF COMMUNICATIONS,General ATS surveillance service phraseologies,,d,IF YOU READ [manoeuvre instructions or SQUAWK (code or IDENT)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.9,COMMUNICATIONS AND LOSS OF COMMUNICATIONS,General ATS surveillance service phraseologies,,e,"(manoeuvre, SQUAWK or IDENT) OBSERVED. POSITION (position of aircraft). [(instructions)]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.10,TERMINATION AND/OR OF RADAR ADS-B SERVICE,General ATS surveillance service phraseologies,,a,RADAR SERVICE (or IDENTIFICATION) TERMINATED [DUE (reason)] (instructions),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.10,TERMINATION AND/OR OF RADAR ADS-B SERVICE,General ATS surveillance service phraseologies,,b,WILL SHORTLY LOSE IDENTIFICATION (appropriate instructions or information),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.10,TERMINATION AND/OR OF RADAR ADS-B SERVICE,General ATS surveillance service phraseologies,,c,IDENTIFICATION LOST [reasons] (instructions),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.11,RADAR AND/OR ADS-B EQUIPMENT DEGRADATION,General ATS surveillance service phraseologies,,a,SECONDARY RADAR OUT OF SERVICE (appropriate information as necessary),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.11,RADAR AND/OR ADS-B EQUIPMENT DEGRADATION,General ATS surveillance service phraseologies,,b,PRIMARY RADAR OUT OF SERVICE (appropriate information as necessary),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.1.11,RADAR AND/OR ADS-B EQUIPMENT DEGRADATION,General ATS surveillance service phraseologies,,c,ADS-B OUT OF SERVICE (appropriate information as necessary),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.1,VECTORING FOR APPROACH,Radar in approach control service,,a,VECTORING FOR (type of pilot-interpreted aid) APPROACH RUNWAY (number),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.1,VECTORING FOR APPROACH,Radar in approach control service,,b,VECTORING FOR VISUAL APPROACH RUNWAY (number) REPORT FIELD (or RUNWAY) IN SIGHT,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.1,VECTORING FOR APPROACH,Radar in approach control service,,c,VECTORING FOR (positioning in the circuit),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.1,VECTORING FOR APPROACH,Radar in approach control service,,d,VECTORING FOR SURVEILLANCE RADAR APPROACH RUNWAY (number),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.1,VECTORING FOR APPROACH,Radar in approach control service,,e,VECTORING FOR PRECISION APPROACH RUNWAY (number),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.1,VECTORING FOR APPROACH,Radar in approach control service,,f,(type) APPROACH NOT AVAILABLE DUE (reason) (alternative instructions),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.2,VECTORING ILS FOR AND OTHER PILOT-INTERPRETED AIDS,Radar in approach control service,,a,POSITION (number) KILOMETRES (or MILES) from (fix). TURN LEFT (or RIGHT) HEADING (three digits),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.2,VECTORING ILS FOR AND OTHER PILOT-INTERPRETED AIDS,Radar in approach control service,,b,YOU WILL INTERCEPT (radio aid or track) (distance) FROM (significant point or TOUCHDOWN),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.2,VECTORING ILS FOR AND OTHER PILOT-INTERPRETED AIDS,Radar in approach control service,*,c,REQUEST (distance) FINAL,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.2,VECTORING ILS FOR AND OTHER PILOT-INTERPRETED AIDS,Radar in approach control service,,d,CLEARED FOR (type of approach) APPROACH RUNWAY (number),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.2,VECTORING ILS FOR AND OTHER PILOT-INTERPRETED AIDS,Radar in approach control service,,e,REPORT ESTABLISHED ON [ILS] LOCALIZER (or ON GBAS/SBAS/MLS APPROACH COURSE),ATC,False,True
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.2,VECTORING ILS FOR AND OTHER PILOT-INTERPRETED AIDS,Radar in approach control service,,f,CLOSING FROM LEFT (or RIGHT) [REPORT ESTABLISHED],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.2,VECTORING ILS FOR AND OTHER PILOT-INTERPRETED AIDS,Radar in approach control service,,g,TURN LEFT (or RIGHT) HEADING (three digits) [TO INTERCEPT] or [REPORT ESTABLISHED],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.2,VECTORING ILS FOR AND OTHER PILOT-INTERPRETED AIDS,Radar in approach control service,,h,EXPECT VECTOR ACROSS (localizer course or radio aid) (reason),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.2,VECTORING ILS FOR AND OTHER PILOT-INTERPRETED AIDS,Radar in approach control service,,i,THIS TURN WILL TAKE YOU THROUGH (localizer course or radio aid) [reason],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.2,VECTORING ILS FOR AND OTHER PILOT-INTERPRETED AIDS,Radar in approach control service,,j,TAKING YOU THROUGH (localizer course or radio aid) [reason],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.2,VECTORING ILS FOR AND OTHER PILOT-INTERPRETED AIDS,Radar in approach control service,,k,MAINTAIN (altitude) UNTIL GLIDE PATH INTERCEPTION,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.2,VECTORING ILS FOR AND OTHER PILOT-INTERPRETED AIDS,Radar in approach control service,,l,REPORT ESTABLISHED ON GLIDE PATH,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.2,VECTORING ILS FOR AND OTHER PILOT-INTERPRETED AIDS,Radar in approach control service,,m,INTERCEPT (localizer course or radio aid) [REPORT ESTABLISHED],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.3,MANOEUVRE DURING AND DEPENDENT APPROACHES,Radar in approach control service,,a,CLEARED FOR (type of approach) APPROACH RUNWAY INDEPENDENT (number) LEFT (or RIGHT); PARALLEL,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.3,MANOEUVRE DURING AND DEPENDENT APPROACHES,Radar in approach control service,,b,YOU HAVE CROSSED THE LOCALIZER (or GBAS/SBAS/MLS FINAL APPROACH COURSE). TURN LEFT (or RIGHT) IMMEDIATELYAND RETURN TO THE LOCALIZER (or GBAS/SBAS/MLS FINAL APPROACH COURSE),ATC,False,True
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.3,MANOEUVRE DURING AND DEPENDENT APPROACHES,Radar in approach control service,,c,"ILS (or MLS) RUNWAY (number) LEFT (or RIGHT) LOCALIZER (or MLS) FREQUENCY IS (frequency); action when d) TURN LEFT (or RIGHT) (number) DEGREES (or aircraft is observed HEADING) (three digits) IMMEDIATELY TO AVOID penetrating the NTZ TRAFFIC [DEVIATING FROM ADJACENT APPROACH], CLIMB TO (altitude); action below e) CLIMB TO (altitude) IMMEDIATELY TO AVOID TRAFFIC",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.3,MANOEUVRE DURING AND DEPENDENT APPROACHES,Radar in approach control service,,ft,above the runway [DEVIATING FROM ADJACENT APPROACH] (further where parallel instructions). obstacle assessment criteria are being applied,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.4,SURVEILLANCE,Radar in approach control service,,,RADAR APPROACH,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.4,SURVEILLANCE,Radar in approach control service,,a,"THIS WILL BE A SURVEILLANCE RADAR APPROACH SERVICE RUNWAY (number) TERMINATING AT (distance) FROM TOUCHDOWN, OBSTACLE CLEARANCE ALTITUDE (or HEIGHT) (number) METRES (or FEET) CHECK YOUR MINIMA [IN CASE OF GO AROUND (instructions)]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.4,SURVEILLANCE,Radar in approach control service,,b,APPROACH INSTRUCTIONS WILL BE TERMINATED AT (distance) FROM TOUCHDOWN,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.4,SURVEILLANCE,Radar in approach control service,,a,COMMENCE DESCENT NOW [TO MAINTAIN A (number) DEGREE GLIDE PATH],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.4,SURVEILLANCE,Radar in approach control service,,b,(distance) FROM TOUCHDOWN ALTITUDE (or HEIGHT) SHOULD BE (numbers and units). (distance) FROM TOUCHDOWN,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.4,SURVEILLANCE,Radar in approach control service,,a,CHECK GEAR DOWN [AND LOCKED],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.4,SURVEILLANCE,Radar in approach control service,,b,OVER THRESHOLD,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.4,SURVEILLANCE,Radar in approach control service,,a,REPORT VISUAL,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.4,SURVEILLANCE,Radar in approach control service,,b,REPORT RUNWAY [LIGHTS] IN SIGHT,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.4,SURVEILLANCE,Radar in approach control service,,c,APPROACH COMPLETED [CONTACT (unit)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,a,THIS WILL BE A PRECISION RADAR APPROACH RUNWAY (number),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,b,PRECISION APPROACH NOT AVAILABLE DUE (reason) (alternative instructions),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,c,IN CASE OF GO AROUND (instructions),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,a,DO NOT ACKNOWLEDGE FURTHER TRANSMISSIONS,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,b,REPLY NOT RECEIVED. WILL CONTINUE INSTRUCTIONS,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,a,CLOSING [SLOWLY (or QUICKLY)] [FROM THE LEFT (or FROM THE RIGHT)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,b,HEADING IS GOOD,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,c,ON TRACK,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,d,"SLIGHTLY (or WELL, or GOING) LEFT (or RIGHT) OF TRACK",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,e,(number) METRES LEFT (or RIGHT) OF TRACK,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,a,APPROACHING GLIDE PATH,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,b,COMMENCE DESCENT NOW [AT (number) METRES PER SECOND OR (number) FEET PER MINUTE (or ESTABLISH A (number) DEGREE GLIDE PATH)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,c,RATE OF DESCENT IS GOOD,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,d,ON GLIDE PATH,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,e,"SLIGHTLY (or WELL, or GOING) ABOVE (or BELOW) GLIDE PATH",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,f,[STILL] (number) METRES (or FEET) TOO HIGH (or TOO LOW),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,g,ADJUST RATE OF DESCENT,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,h,COMING BACK [SLOWLY (or QUICKLY)] TO THE GLIDE PATH,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,i,RESUME NORMAL RATE OF DESCENT,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,j,ELEVATION ELEMENT UNSERVICEABLE (to be followed by appropriate instructions),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,k,(distance) FROM TOUCHDOWN. ALTITUDE (or HEIGHT) SHOULD BE (numbers and units),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,a,(distance) FROM TOUCHDOWN,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,b,OVER APPROACH LIGHTS,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,c,OVER THRESHOLD,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,a,CHECK GEAR DOWN AND LOCKED,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,b,CHECK DECISION ALTITUDE (or HEIGHT),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,a,REPORT VISUAL,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,b,REPORT RUNWAY [LIGHTS] IN SIGHT,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,c,APPROACH COMPLETED [CONTACT (unit)],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,a,CONTINUE VISUALLY OR GO AROUND [missed approach instructions],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,b,GO AROUND IMMEDIATELY [missed approach instructions] (reason),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,c,ARE YOU GOING AROUND?,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,,d,IF GOING AROUND (appropriate instructions),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.2.5,PAR APPROACH,Radar in approach control service,*,e,GOING AROUND,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3,Secondary surveillance radar (SSR) and,Secondary surveillance radar (SSR) and,,,ADS-B phraseologies,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.1,TO REQUEST THE CAPABILITY OF SSR THE EQUIPMENT,Secondary surveillance radar (SSR) and,,a,ADVISE TRANSPONDER CAPABILITY,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.1,TO REQUEST THE CAPABILITY OF SSR THE EQUIPMENT,Secondary surveillance radar (SSR) and,*,b,TRANSPONDER (as shown in the flight plan),Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.1,TO REQUEST THE CAPABILITY OF SSR THE EQUIPMENT,Secondary surveillance radar (SSR) and,*,c,NEGATIVE TRANSPONDER,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.2,TO REQUEST THE CAPABILITY OF ADS-B THE EQUIPMENT,Secondary surveillance radar (SSR) and,,a,ADVISE ADS-B CAPABILITY,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.2,TO REQUEST THE CAPABILITY OF ADS-B THE EQUIPMENT,Secondary surveillance radar (SSR) and,*,b,ADS-B TRANSMITTER (data link),Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.2,TO REQUEST THE CAPABILITY OF ADS-B THE EQUIPMENT,Secondary surveillance radar (SSR) and,*,c,ADS-B RECEIVER (data link),Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.2,TO REQUEST THE CAPABILITY OF ADS-B THE EQUIPMENT,Secondary surveillance radar (SSR) and,*,d,NEGATIVE ADS-B,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.3,TO INSTRUCT SETTING OF TRANSPONDER,Secondary surveillance radar (SSR) and,,a,FOR DEPARTURE SQUAWK (code),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.3,TO INSTRUCT SETTING OF TRANSPONDER,Secondary surveillance radar (SSR) and,,b,SQUAWK (code),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.4,TO REQUEST THE PILOT TO RESELECT THE ASSIGNED MODE AND CODE,Secondary surveillance radar (SSR) and,,a,RESET SQUAWK [(mode)] (code),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.4,TO REQUEST THE PILOT TO RESELECT THE ASSIGNED MODE AND CODE,Secondary surveillance radar (SSR) and,*,b,RESETTING (mode) (code),Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.5,TO REQUEST RESELECTION OF AIRCRAFT IDENTIFICATION,Secondary surveillance radar (SSR) and,,,RE-ENTER [ADS-B or MODE S] AIRCRAFT IDENTIFICATION,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.6,TO REQUEST THE PILOT TO CONFIRM THE CODE SELECTED ON THE AIRCRAFT’S TRANSPONDER,Secondary surveillance radar (SSR) and,,a,CONFIRM SQUAWK (code),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.6,TO REQUEST THE PILOT TO CONFIRM THE CODE SELECTED ON THE AIRCRAFT’S TRANSPONDER,Secondary surveillance radar (SSR) and,*,b,SQUAWKING (code),Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.7,TO REQUEST THE OPERATION OF THE IDENT FEATURE,Secondary surveillance radar (SSR) and,,a,SQUAWK [(code)] [AND] IDENT,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.7,TO REQUEST THE OPERATION OF THE IDENT FEATURE,Secondary surveillance radar (SSR) and,,b,SQUAWK LOW,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.7,TO REQUEST THE OPERATION OF THE IDENT FEATURE,Secondary surveillance radar (SSR) and,,c,SQUAWK NORMAL,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.7,TO REQUEST THE OPERATION OF THE IDENT FEATURE,Secondary surveillance radar (SSR) and,,d,TRANSMIT ADS-B IDENT,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.8,TO REQUEST TEMPORARY SUSPENSION OF TRANSPONDER OPERATION,Secondary surveillance radar (SSR) and,,,SQUAWK STANDBY,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.9,TO REQUEST EMERGENCY CODE,Secondary surveillance radar (SSR) and,,,SQUAWK MAYDAY [CODE SEVEN-SEVEN-ZERO-ZERO],ATC,True,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.10,TO REQUEST TERMINATION OF AND/OR ADS-B TRANSPONDER TRANSMITTER OPERATION,Secondary surveillance radar (SSR) and,,a,STOP SQUAWK [TRANSMIT ADS-B ONLY],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.10,TO REQUEST TERMINATION OF AND/OR ADS-B TRANSPONDER TRANSMITTER OPERATION,Secondary surveillance radar (SSR) and,,b,STOP ADS-B TRANSMISSION [SQUAWK (code) ONLY],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.11,TO REQUEST TRANSMISSION OF PRESSURE-ALTITUDE,Secondary surveillance radar (SSR) and,,a,SQUAWK CHARLIE,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.11,TO REQUEST TRANSMISSION OF PRESSURE-ALTITUDE,Secondary surveillance radar (SSR) and,,b,TRANSMIT ADS-B ALTITUDE,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.12,TO REQUEST PRESSURE SETTING CHECK AND CONFIRMATION OF LEVEL,Secondary surveillance radar (SSR) and,,,CHECK ALTIMETER SETTING AND CONFIRM (level),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.13,TO REQUEST TERMINATION OF PRESSURE-ALTITUDE TRANSMISSION BECAUSE OF FAULTY OPERATION,Secondary surveillance radar (SSR) and,,a,STOP SQUAWK CHARLIE WRONG INDICATION,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.13,TO REQUEST TERMINATION OF PRESSURE-ALTITUDE TRANSMISSION BECAUSE OF FAULTY OPERATION,Secondary surveillance radar (SSR) and,,b,"STOP ADS-B ALTITUDE TRANSMISSION [(WRONG INDICATION, or reason)]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.4.3.14,TO REQUEST LEVEL CHECK,Secondary surveillance radar (SSR) and,,,CONFIRM (level),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.5,AUTOMATIC DEPENDENT (ADS-C),AUTOMATIC DEPENDENT (ADS-C),,,SURVEILLANCE — CONTRACT PHRASEOLOGIES,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.5.1.1,ADS-C DEGRADATION,General ADS-C phraseologies,,,ADS-C (or ADS-CONTRACT) OUT OF SERVICE (appropriate information as necessary),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.6,ALERTING,ALERTING,,,PHRASEOLOGIES,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.6.1.1,LOW ALTITUDE WARNING,Alerting phraseologies,,,"(aircraft call sign) LOW ALTITUDE WARNING, CHECK YOUR ALTITUDE IMMEDIATELY, QNH IS (number) [(units)]. [THE MINIMUM FLIGHT ALTITUDE IS (altitude)]",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.6.1.2,TERRAIN ALERT,Alerting phraseologies,,,"(aircraft call sign) TERRAIN ALERT, (suggested pilot action, if possible)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7,GROUND CREW/FLIGHT,GROUND CREW/FLIGHT,,,CREW PHRASEOLOGIES,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.1.1,STARTING (GROUND PROCEDURES CREW/COCKPIT),Ground crew/flight crew phraseologies,,a,[ARE YOU] READY TO START UP?,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.1.1,STARTING (GROUND PROCEDURES CREW/COCKPIT),Ground crew/flight crew phraseologies,*,b,STARTING NUMBER (engine number(s)),Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.1.1,STARTING (GROUND PROCEDURES CREW/COCKPIT),Ground crew/flight crew phraseologies,,,either a reply on the intercom or a distinct visual signal to indicate that all is clear and that the start-up as indicated may proceed,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.1.1,STARTING (GROUND PROCEDURES CREW/COCKPIT),Ground crew/flight crew phraseologies,,,is essential in any communications between ground crew and pilots,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.1.2,PUSHBACK PROCEDURES,Ground crew/flight crew phraseologies,,a,ARE YOU READY FOR PUSHBACK?,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.1.2,PUSHBACK PROCEDURES,Ground crew/flight crew phraseologies,*,b,READY FOR PUSHBACK,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.1.2,PUSHBACK PROCEDURES,Ground crew/flight crew phraseologies,,c,CONFIRM BRAKES RELEASED,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.1.2,PUSHBACK PROCEDURES,Ground crew/flight crew phraseologies,*,d,BRAKES RELEASED,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.1.2,PUSHBACK PROCEDURES,Ground crew/flight crew phraseologies,,e,COMMENCING PUSHBACK,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.1.2,PUSHBACK PROCEDURES,Ground crew/flight crew phraseologies,,f,PUSHBACK COMPLETED,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.1.2,PUSHBACK PROCEDURES,Ground crew/flight crew phraseologies,*,g,STOP PUSHBACK,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.1.2,PUSHBACK PROCEDURES,Ground crew/flight crew phraseologies,,h,CONFIRM BRAKES SET,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.1.2,PUSHBACK PROCEDURES,Ground crew/flight crew phraseologies,*,i,BRAKES SET,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.1.2,PUSHBACK PROCEDURES,Ground crew/flight crew phraseologies,*,j,DISCONNECT,Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.1.2,PUSHBACK PROCEDURES,Ground crew/flight crew phraseologies,,k,DISCONNECTING STAND BY FOR VISUAL AT YOUR LEFT (or RIGHT),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.1.2,PUSHBACK PROCEDURES,Ground crew/flight crew phraseologies,,,pilot to indicate that disconnect is completed and all is clear for taxiing,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.2.1,PRIOR DE-ICING/ANTI-ICING TO (GROUND (ICEMAN),De/anti-icing operations,,a,STANDING BY TO DE-ICE. CONFIRM BRAKES SET AND TREATMENT REQUIRED,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.2.1,PRIOR DE-ICING/ANTI-ICING TO (GROUND (ICEMAN),De/anti-icing operations,*,b,"[AFFIRM] BRAKES SET, REQUEST (type of de/anti-icing treatment and areas to be treated)",Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.2.1,PRIOR DE-ICING/ANTI-ICING TO (GROUND (ICEMAN),De/anti-icing operations,,c,HOLD POSITION AND CONFIRM AIRCRAFT CONFIGURED,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.2.1,PRIOR DE-ICING/ANTI-ICING TO (GROUND (ICEMAN),De/anti-icing operations,*,d,"[AFFIRM] AIRCRAFT CONFIGURED, READY FOR DE-ICING",Pilot,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.2.1,PRIOR DE-ICING/ANTI-ICING TO (GROUND (ICEMAN),De/anti-icing operations,,e,DE-ICING STARTS NOW,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.2.2,UPON CONCLUDING DE-ICING/ANTI-ICING PROCEDURE,De/anti-icing operations,,a,DE-ICING ON (areas treated) COMPLETE. ADVISE WHEN READY FOR INFORMATION,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.2.2,UPON CONCLUDING DE-ICING/ANTI-ICING PROCEDURE,De/anti-icing operations,,b,TYPE OF FLUID (Type I or II or III or IV),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.2.2,UPON CONCLUDING DE-ICING/ANTI-ICING PROCEDURE,De/anti-icing operations,,c,HOLDOVER TIME STARTED AT (time),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.2.2,UPON CONCLUDING DE-ICING/ANTI-ICING PROCEDURE,De/anti-icing operations,,d,ANTI-ICING CODE (appropriate anti-icing code),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.2.2,UPON CONCLUDING DE-ICING/ANTI-ICING PROCEDURE,De/anti-icing operations,,,"A de-icing/anti-icing procedure whose last step is the use of a mixture of 75% of a Type II fluid and 25% water, commencing at 13:35 local time, is recorded as follows: TYPE II/75 13:35 (followed by complete name of anti-icing fluid)",ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.2.2,UPON CONCLUDING DE-ICING/ANTI-ICING PROCEDURE,De/anti-icing operations,,e,FINAL STEP STARTED AT (time),ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.2.2,UPON CONCLUDING DE-ICING/ANTI-ICING PROCEDURE,De/anti-icing operations,,f,POST DE-ICING CHECK COMPLETED,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.2.2,UPON CONCLUDING DE-ICING/ANTI-ICING PROCEDURE,De/anti-icing operations,,g,PERSONNEL AND EQUIPMENT CLEAR OF AIRCRAFT,ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.2.3,ABNORMAL OPERATIONS,De/anti-icing operations,,a,BE ADVISED NOZZLE PROXIMITY ACTIVATION ON (significant point on aircraft) [NO VISUAL DAMAGE or DAMAGE (description of damage) OBSERVED] [SAY INTENTIONS],ATC,False,False
+ICAO Doc 4444 (PANS-ATM) Ch. 12,12.7.2.3,ABNORMAL OPERATIONS,De/anti-icing operations,,b,EMERGENCY IN DE-ICING BAY (de-icing bay number) [SHUT DOWN ENGINES or STANDBY FOR FURTHER INSTRUCTIONS],ATC,True,False

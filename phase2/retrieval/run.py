@@ -86,7 +86,7 @@ def main():
         ym = rag._date_lookup.get(inc) or rag._date_lookup.get(str(pos.get(inc, -1)))
         return ym if ym else (None, None)
 
-    runs, lat, depth50 = [], [], []
+    runs, lat = [], []
     ce.predict([("warm up", "warm up")])
     rag.hybrid_search("warm up", k=HYBRID_FETCH_K)
     for n, r in enumerate(q.itertuples(), 1):

@@ -1,0 +1,678 @@
+source,page,chapter,section,speaker,phrase,is_emergency,is_gnss
+ICAO Doc 9432 (Manual of Radiotelephony),4,,,ATC,AMENDMENTS,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),4,,,ATC,RECORD OF AMENDMENTS AND CORRIGENDA,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),4,,,ATC,AMENDMENTS CORRIGENDA,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),5,,,ATC,FOREWORD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),7,,,ATC,TABLE OF CONTENTS,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),10,Chapter 1,,ATC,GLOSSARY,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),18,Chapter 2,1.3,ATC,GENERAL OPERATING PROCEDURES,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),19,Chapter 2,2.3,Pilot,SHAR LEE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),19,Chapter 2,2.3,Pilot,YOU NEE FORM or OO NEE FORM,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),20,Chapter 2,2.4,ATC,0 ZE-RO,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),20,Chapter 2,2.4,ATC,1 WUN,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),20,Chapter 2,2.4,ATC,2 TOO,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),20,Chapter 2,2.4,ATC,3 TREE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),20,Chapter 2,2.4,ATC,5 FIFE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),20,Chapter 2,2.4,ATC,6 SIX,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),20,Chapter 2,2.4,ATC,8 AIT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),22,Chapter 2,2.4,ATC,118.000 ONE ONE EIGHT DECIMAL ZERO,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),22,Chapter 2,2.4,ATC,118.005 ONE ONE EIGHT DECIMAL ZERO ZERO FIVE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),22,Chapter 2,2.4,ATC,118.010 ONE ONE EIGHT DECIMAL ZERO ONE ZERO,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),22,Chapter 2,2.4,ATC,118.025 ONE ONE EIGHT DECIMAL ZERO TWO FIVE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),22,Chapter 2,2.4,ATC,118.050 ONE ONE EIGHT DECIMAL ZERO FIVE ZERO,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),22,Chapter 2,2.4,ATC,118.100 ONE ONE EIGHT DECIMAL ONE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),22,Chapter 2,2.4,ATC,118.000 ONE ONE EIGHT DECIMAL ZERO 118.00 118.000,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),22,Chapter 2,2.4,ATC,118.025 ONE ONE EIGHT DECIMAL ZERO TWO 118.02 118.025,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),22,Chapter 2,2.4,ATC,118.050 ONE ONE EIGHT DECIMAL ZERO FIVE 118.05 118.050,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),22,Chapter 2,2.4,ATC,118.075 ONE ONE EIGHT DECIMAL ZERO SEVEN 118.07 118.075,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),22,Chapter 2,2.4,ATC,118.100 ONE ONE EIGHT DECIMAL ONE 118.10 118.100,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),23,Chapter 2,2.5,ATC,0920 (9:20 A.M.) TOO ZE-RO or ZE-RO NIN-er TOO ZE-RO,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),23,Chapter 2,2.5,ATC,FASTAIR 345 TIME 0611 FASTAIR 345 REQUEST TIME,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),23,Chapter 2,2.5,ATC,FASTAIR 345 TIME 0715 AND A HALF,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),24,Chapter 2,2.6,ATC,VFR”,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),27,Chapter 2,2.8,Pilot,STEPHENVILLE TOWER G-ABCD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),27,Chapter 2,2.8,ATC,G-ABCD STEPHENVILLE TOWER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),27,Chapter 2,2.8,ATC,"ALL STATIONS ALEXANDER CONTROL, FUEL DUMPING COMPLETED",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),27,Chapter 2,2.8,Pilot,ALL STATIONS G-CDAB WESTBOUND MARLO VOR TO STEPHENVILLE LEAVING FL 260 DESCENDING TO FL 150,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),28,Chapter 2,2.8,Pilot,GEORGETOWN GROUND 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),28,Chapter 2,2.8,ATC,STATION CALLING GEORGETOWN GROUND SAY AGAIN YOUR CALL SIGN,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),28,Chapter 2,2.8,ATC,GEORGETOWN GROUND FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),28,Chapter 2,2.8,Pilot,FASTAIR 345 WICKEN 47 FL 330 MARLO 07 CORRECTION MARLO 57,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),28,Chapter 2,2.8,ATC,FASTAIR 345 ROGER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),29,Chapter 2,2.8,Pilot,"GEORGETOWN, G-ABCD WALDEN 2 500 FEET, I SAY AGAIN 2 500 FEET, ENGINE LOSING POWER, ENGINE LOSING POWER",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),29,Chapter 2,2.8,ATC,FASTAIR 345 CONTACT ALEXANDER CONTROL 129.1 129.1 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),29,Chapter 2,2.8,ATC,FASTAIR 345 WHEN PASSING FL 80 CONTACT ALEXANDER CONTROL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),29,Chapter 2,2.8,Pilot,WHEN PASSING FL 80 129.1 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),29,Chapter 2,2.8,ATC,FASTAIR 345 STAND BY FOR STEPHENVILLE TOWER 118.9,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),29,Chapter 2,2.8,Pilot,118.9 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),29,Chapter 2,2.8,ATC,FASTAIR 345 MONITOR ATIS 123.250,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),29,Chapter 2,2.8,Pilot,MONITORING 123.250 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),30,Chapter 2,2.8,ATC,"FASTAIR 345 CLEARED TO KENNINGTON, VIA A1 FL 280 WICKEN 3 DELTA DEPARTURE, SQUAWK 5501",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),30,Chapter 2,2.8,Pilot,"CLEARED TO KENNINGTON, VIA A1 FL 280 WICKEN 3 DELTA DEPARTURE, SQUAWK 5501 FASTAIR 345",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),30,Chapter 2,2.8,ATC,"G-CD WHEN AIRBORNE TURN RIGHT, LEAVE CONTROL ZONE VIA ROUTE ECHO",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),30,Chapter 2,2.8,Pilot,RIGHT TURN VIA ROUTE ECHO G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),31,Chapter 2,2.8,ATC,G-ABCD CROSS A1 AT WICKEN FL 70,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),31,Chapter 2,2.8,Pilot,CROSS A1 AT WICKEN FL 70 G-ABCD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),31,Chapter 2,2.8,ATC,G-CD HOLD POSITION,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),31,Chapter 2,2.8,Pilot,HOLDING G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),31,Chapter 2,2.8,ATC,G-CD CONTACT GROUND 118.050,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),31,Chapter 2,2.8,Pilot,118.050 G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),31,Chapter 2,2.8,ATC,FASTAIR 345 SQUAWK 6402,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),31,Chapter 2,2.8,Pilot,6402 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),31,Chapter 2,2.8,ATC,G-CD QNH 1003,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),31,Chapter 2,2.8,Pilot,QNH 1013 G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),31,Chapter 2,2.8,ATC,"G-CD NEGATIVE I SAY AGAIN, QNH 1003",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),31,Chapter 2,2.8,Pilot,QNH 1003 G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),32,Chapter 2,2.8,ATC,"FASTAIR 345 GEORGETOWN DEPARTURE, CLEARED TO COLINTON FL 290, CROSS WICKEN FL 150 OR ABOVE, IF UNABLE, MAINTAIN FL 130",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),32,Chapter 2,2.8,Pilot,"GEORGETOWN DEPARTURE UNABLE TO CROSS WICKEN FL 150 DUE WEIGHT, MAINTAINING FL 130 FASTAIR 345",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),33,Chapter 2,2.8,Pilot,STEPHENVILLE TOWER G-ABCD RADIO CHECK 118.7,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),33,Chapter 2,2.8,ATC,STATION CALLING STEPHENVILLE TOWER YOU ARE UNREADABLE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),33,Chapter 2,2.8,ATC,"G-ABCD TOWER READING YOU THREE, LOUD BACKGROUND WHISTLE",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),33,Chapter 2,2.8,ATC,G-ABCD TOWER READING YOU FIVE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),34,Chapter 3,2.8,ATC,GENERAL PHRASEOLOGY,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),34,Chapter 3,3.2,ATC,PLAIN LANGUAGE IN RADIOTELEPHONY COMMUNICATIONS,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),35,Chapter 3,3.3,ATC,G-AB REPORT LEVEL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),35,Chapter 3,3.3,Pilot,G-AB MAINTAINING 3 000 FEET,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),35,Chapter 3,3.3,ATC,G-AB REPORT PASSING FL 80,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),35,Chapter 3,3.3,Pilot,G-AB WILCO . . . G-AB PASSING FL 80,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),36,Chapter 3,3.3,ATC,G-AB MAINTAIN 2 500 FEET,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),36,Chapter 3,3.3,Pilot,MAINTAINING 2 500 FEET G-AB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),36,Chapter 3,3.3,ATC,G-AB CLIMB TO FL 70,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),36,Chapter 3,3.3,Pilot,LEAVING 2 500 FEET CLIMBING TO FL 70 G-AB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),36,Chapter 3,3.3,Pilot,G-AB REQUEST DESCENT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),36,Chapter 3,3.3,ATC,G-AB DESCEND TO FL 60,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),36,Chapter 3,3.3,Pilot,LEAVING FL 90 DESCENDING TO FL 60 G-AB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),36,Chapter 3,3.3,ATC,FASTAIR 345 AFTER PASSING NORTH CROSS NDB DESCEND TO FL 80,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),36,Chapter 3,3.3,Pilot,AFTER NORTH CROSS NDB DESCEND TO FL 80 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),36,Chapter 3,3.3,ATC,FASTAIR 345 STOP DESCENT AT FL 150,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),36,Chapter 3,3.3,Pilot,STOPPING DESCENT AT FL 150 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),36,Chapter 3,3.3,ATC,FASTAIR 345 CONTINUE CLIMB TO FL 330,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),36,Chapter 3,3.3,Pilot,CLIMBING TO FL 330 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),36,Chapter 3,3.3,ATC,FASTAIR 345 RECLEARED FL 330,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),36,Chapter 3,3.3,Pilot,RECLEARED FL 330 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),36,Chapter 3,3.3,ATC,FASTAIR 345 EXPEDITE DESCENT TO FL 80,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),36,Chapter 3,3.3,Pilot,EXPEDITING DESCENT TO FL 80 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),37,Chapter 3,3.3,ATC,FASTAIR 345 CLIMB TO FL 240 EXPEDITE UNTIL PASSING FL 180,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),37,Chapter 3,3.3,Pilot,CLIMBING TO FL 240 EXPEDITING UNTIL PASSING FL 180 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),37,Chapter 3,3.3,Pilot,UNABLE TO EXPEDITE FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),37,Chapter 3,3.4,Pilot,FASTAIR 345 WICKEN 47 FL 330 MARLO 57 COLIN NEXT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),37,Chapter 3,3.4,ATC,FASTAIR 345 ROGER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),37,Chapter 3,3.4,ATC,FASTAIR 345 NEXT REPORT COLIN,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),37,Chapter 3,3.4,Pilot,FASTAIR 345 WILCO,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),37,Chapter 3,3.4,ATC,"FASTAIR 345 OMIT POSITION REPORTS UNTIL FIR BOUNDARY, NEXT REPORT COLIN",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),38,Chapter 3,3.4,Pilot,FASTAIR 345 WILCO,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),38,Chapter 3,3.4,ATC,FASTAIR 345 RESUME POSITION REPORTING,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),38,Chapter 3,3.4,Pilot,FASTAIR 345 WILCO,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),38,Chapter 3,3.5,Pilot,ALEXANDER INFORMATION G-CDAB REQUEST FILE FLIGHT PLAN,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),38,Chapter 3,3.5,ATC,G-CDAB ALEXANDER INFORMATION READY TO COPY,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),38,Chapter 3,3.5,Pilot,ALEXANDER CONTROL G-AB CANCELLING MY IFR FLIGHT. PROCEEDING VFR ESTIMATING STEPHENVILLE AT 1732,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),38,Chapter 3,3.5,ATC,G-AB IFR FLIGHT CANCELLED AT 47. CONTACT ALEXANDER INFORMATION,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),38,Chapter 3,3.5,ATC,G-AB INSTRUMENT METEOROLOGICAL CONDITIONS REPORTED IN THE VICINITY OF KENNINGTON,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),38,Chapter 3,3.5,Pilot,G-AB ROGER MAINTAINING IFR,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),39,Chapter 4,3.5,ATC,AERODROME CONTROL: AIRCRAFT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),39,Chapter 4,4.2,ATC,ENGINE STARTING PROCEDURES,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),39,Chapter 4,4.2,Pilot,"GEORGETOWN GROUND FASTAIR 345, IFR TO STEPHENVILLE, REQUEST DEPARTURE INFORMATION",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),39,Chapter 4,4.2,ATC,"FASTAIR 345 DEPARTURE RUNWAY 32, WIND 290 DEGREES 4 KNOTS, QNH 1022, TEMPERATURE MINUS 2, DEWPOINT MINUS 3, RVR 550 METRES TIME 27",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),39,Chapter 4,4.2,Pilot,"RUNWAY 32, QNH 1022, WILL CALL FOR START UP, FASTAIR 345",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),40,Chapter 4,4.2,Pilot,"GEORGETOWN GROUND FASTAIR 345, STAND 24 REQUEST START UP, INFORMATION BRAVO",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),40,Chapter 4,4.2,ATC,FASTAIR 345 START UP APPROVED QNH 1009,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),40,Chapter 4,4.2,ATC,FASTAIR 345 START UP AT 35 QNH 1009,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),40,Chapter 4,4.2,ATC,FASTAIR 345 EXPECT START UP AT 35 QNH 1009,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),40,Chapter 4,4.2,ATC,FASTAIR 345 EXPECT DEPARTURE 49 START UP AT OWN DISCRETION QNH 1009,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),40,Chapter 4,4.2,Pilot,READY TO START UP,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),40,Chapter 4,4.2,ATC,START NUMBER ONE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),40,Chapter 4,4.2,Pilot,STARTING NUMBER ONE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),40,Chapter 4,4.3,Pilot,APRON FASTAIR 345 STAND 27 REQUEST PUSH-BACK,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),40,Chapter 4,4.3,ATC,FASTAIR 345 PUSH-BACK APPROVED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),40,Chapter 4,4.3,ATC,FASTAIR 345 STAND BY. EXPECT ONE MINUTE DELAY DUE B747 TAXIING BEHIND,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),41,Chapter 4,4.3,Pilot,READY FOR PUSH-BACK,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),41,Chapter 4,4.3,ATC,CONFIRM BRAKES RELEASED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),41,Chapter 4,4.3,Pilot,BRAKES RELEASED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),41,Chapter 4,4.3,ATC,COMMENCING PUSH-BACK,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),41,Chapter 4,4.3,ATC,"PUSH-BACK COMPLETED, CONFIRM BRAKES SET",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),41,Chapter 4,4.3,Pilot,BRAKES SET: DISCONNECT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),41,Chapter 4,4.3,ATC,DISCONNECTING STAND BY FOR VISUAL AT YOUR LEFT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),41,Chapter 4,4.3,Pilot,ROGER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),41,Chapter 4,4.4,Pilot,STEPHENVILLE TOWER G-ABCD C172 AT THE SOUTH SIDE HANGARS REQUEST TAXI FOR LOCAL VFR FLIGHT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),41,Chapter 4,4.4,ATC,G-ABCD TAXI VIA TAXIWAY CHARLIE TO HOLDING POINT RUNWAY 24 WIND 250 DEGREES 8 KNOTS QNH 1010 TIME TWO THREE AND A HALF,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),41,Chapter 4,4.4,Pilot,G-ABCD QNH 1010 REQUEST RUNWAY 14,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),42,Chapter 4,4.4,ATC,"G-CD RECLEARED HOLDING POINT RUNWAY 14, TAXI BEHIND SENECA COMING FROM YOUR LEFT",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),42,Chapter 4,4.4,Pilot,G-CD HOLDING POINT RUNWAY 14 TRAFFIC IN SIGHT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),42,Chapter 4,4.4,Pilot,STEPHENVILLE TOWER G-ABCD C172 AT THE FUEL STATION VFR TO WALDEN REQUEST TAXI,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),42,Chapter 4,4.4,ATC,G-ABCD RUNWAY 06 WIND 080 DEGREES 10 KNOTS QNH 1012 VISIBILITY 8 KM TIME 04 TAXI TO HOLDING POINT RUNWAY 06 VIA TAXIWAY ALPHA,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),42,Chapter 4,4.4,Pilot,RUNWAY 06 QNH 1012 REQUEST TAXIWAY BRAVO AND BACKTRACK G-ABCD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),42,Chapter 4,4.4,ATC,"G-CD APPROVED, TAXI VIA BRAVO BACKTRACK AND LINE UP RUNWAY 06, HOLD SHORT OF RUNWAY 14",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),42,Chapter 4,4.4,Pilot,"BRAVO BACKTRACK AND LINE UP RUNWAY 06, HOLDING SHORT OF RUNWAY 14 G-CD",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),42,Chapter 4,4.4,Pilot,G-CD HOLDING SHORT OF RUNWAY 14,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),42,Chapter 4,4.4,ATC,"G-CD EXPEDITE TAXI TRAFFIC ON FINAL RUNWAY 24, REPORT RUNWAY 24 VACATED",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),42,Chapter 4,4.4,Pilot,G-CD EXPEDITING,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),42,Chapter 4,4.4,Pilot,G-CD RUNWAY VACATED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),42,Chapter 4,4.4,Pilot,STEPHENVILLE TOWER G-ABCD AT THE FUEL STATION REQUEST TAXI TO FLYING CLUB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),42,Chapter 4,4.4,ATC,G-ABCD TAXI TO HOLDING POINT RUNWAY 24 VIA TAXIWAY CHARLIE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),42,Chapter 4,4.4,Pilot,VIA CHARLIE HOLDING POINT RUNWAY 24 G-ABCD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),42,Chapter 4,4.4,Pilot,G-CD APPROACHING HOLDING POINT REQUEST CROSS RUNWAY 24,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),42,Chapter 4,4.4,ATC,G-CD HOLD SHORT RUNWAY 24,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),42,Chapter 4,4.4,Pilot,G-CD HOLDING SHORT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),43,Chapter 4,4.4,ATC,G-CD CROSS RUNWAY 24 REPORT VACATED CONTINUE TO FLYING CLUB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),43,Chapter 4,4.4,Pilot,"CROSSING, WILCO G-CD",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),43,Chapter 4,4.4,Pilot,G-CD RUNWAY VACATED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),43,Chapter 4,4.4,ATC,G-CD ROGER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),43,Chapter 4,4.4,Pilot,G-HELI REQUEST AIR-TAXIING FROM FUEL STATION TO APRON,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),43,Chapter 4,4.4,ATC,AVOID B747 TAXIING FROM STAND 27 TO HOLDING POINT RUNWAY 24,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),43,Chapter 4,4.4,Pilot,"AIR TAXI DIRECT FROM FUEL STATION TO APRON, TRAFFIC IN SIGHT, G-HELI",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),43,Chapter 4,4.4,Pilot,GEORGETOWN GROUND FASTAIR 345 HEAVY REQUEST TAXI INFORMATION CHARLIE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),43,Chapter 4,4.4,ATC,FASTAIR 345 TAXI TO HOLDING POINT RUNWAY 27 GIVE WAY TO B747 PASSING LEFT TO RIGHT QNH 1019,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),43,Chapter 4,4.4,Pilot,"HOLDING POINT RUNWAY 27 QNH 1019, GIVING WAY TO B747 FASTAIR 345",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),44,Chapter 4,4.5,ATC,G-CD REPORT WHEN READY FOR DEPARTURE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),44,Chapter 4,4.5,Pilot,G-CD WILCO,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),44,Chapter 4,4.5,Pilot,G-CD READY,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),44,Chapter 4,4.5,ATC,G-CD LINE UP AND WAIT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),44,Chapter 4,4.5,Pilot,LINING UP G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),44,Chapter 4,4.5,ATC,G-CD RUNWAY 06 CLEARED FOR TAKE-OFF,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),44,Chapter 4,4.5,Pilot,RUNWAY 06 CLEARED FOR TAKE-OFF G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),44,Chapter 4,4.5,ATC,G-CD ARE YOU READY FOR IMMEDIATE DEPARTURE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),44,Chapter 4,4.5,Pilot,G-CD AFFIRM,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),44,Chapter 4,4.5,ATC,G-CD LINE UP. BE READY FOR IMMEDIATE DEPARTURE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),44,Chapter 4,4.5,Pilot,LINING UP G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),44,Chapter 4,4.5,ATC,G-CD RUNWAY 06 CLEARED FOR TAKE-OFF,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),44,Chapter 4,4.5,Pilot,RUNWAY 06 CLEARED FOR TAKE-OFF G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),45,Chapter 4,4.5,ATC,FASTAIR 345 RUNWAY 24 CLEARED FOR TAKE-OFF REPORT AIRBORNE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),45,Chapter 4,4.5,Pilot,RUNWAY 24 CLEARED FOR TAKE-OFF WILCO FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),45,Chapter 4,4.5,Pilot,FASTAIR 345 AIRBORNE 57,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),45,Chapter 4,4.5,ATC,FASTAIR 345 CONTACT DEPARTURE 121.750,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),45,Chapter 4,4.5,Pilot,121.750 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),45,Chapter 4,4.5,ATC,FASTAIR 345 REPORT THE AIRBUS ON FINAL IN SIGHT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),45,Chapter 4,4.5,Pilot,FASTAIR 345 AIRBUS IN SIGHT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),45,Chapter 4,4.5,ATC,UP AND WAIT BEHIND,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),45,Chapter 4,4.5,Pilot,"BEHIND THE AIRBUS, LINING UP AND WAITING BEHIND, FASTAIR 345",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),46,Chapter 4,4.5,ATC,FASTAIR 345 RUNWAY 09 CLEARED FOR TAKE-OFF,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),46,Chapter 4,4.5,Pilot,CLEARED FOR TAKE-OFF RUNWAY 09 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),46,Chapter 4,4.5,ATC,"FASTAIR 345 CLIMB STRAIGHT AHEAD UNTIL 2 500 FEET BEFORE TURNING RIGHT, RUNWAY 24 CLEARED FOR TAKE-OFF",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),46,Chapter 4,4.5,Pilot,STRAIGHT AHEAD 2 500 FEET RIGHT TURN CLEARED FOR TAKE-OFF RUNWAY 24 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),46,Chapter 4,4.5,Pilot,G-CD REQUEST RIGHT TURN WHEN AIRBORNE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),46,Chapter 4,4.5,ATC,G-CD RIGHT TURN APPROVED RUNWAY 06 CLEARED FOR TAKE-OFF,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),46,Chapter 4,4.5,Pilot,RUNWAY 06 CLEARED FOR TAKE-OFF RIGHT TURN G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),46,Chapter 4,4.5,ATC,G-CD TAKE OFF IMMEDIATELY OR HOLD SHORT OF RUNWAY,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),46,Chapter 4,4.5,Pilot,HOLDING SHORT G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),47,Chapter 4,4.5,ATC,G-CD TAKE OFF IMMEDIATELY OR VACATE RUNWAY,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),47,Chapter 4,4.5,Pilot,TAKING OFF G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),47,Chapter 4,4.5,ATC,"G-CD HOLD POSITION, CANCEL TAKE-OFF I SAY AGAIN CANCEL TAKE-OFF VEHICLE ON RUNWAY",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),47,Chapter 4,4.5,Pilot,HOLDING G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),47,Chapter 4,4.5,ATC,FASTAIR 345 STOP IMMEDIATELY FASTAIR 345 STOP IMMEDIATELY,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),47,Chapter 4,4.5,Pilot,STOPPING FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),47,Chapter 4,4.5,Pilot,FASTAIR 345 STOPPING,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),47,Chapter 4,4.5,ATC,FASTAIR 345 ROGER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),47,Chapter 4,4.5,Pilot,FASTAIR 345 REQUEST RETURN TO RAMP,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),47,Chapter 4,4.5,ATC,FASTAIR 345 TAKE NEXT RIGHT RETURN TO RAMP CONTACT GROUND 118.350,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),47,Chapter 4,4.5,Pilot,NEXT RIGHT RETURN TO RAMP 118.350 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),48,Chapter 4,4.6,Pilot,FINAL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),48,Chapter 4,4.6,Pilot,BASE LEG,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),49,Chapter 4,4.6,Pilot,WALDEN TOWER G-ABCD C172 10 MILES SOUTH 2 500 FEET FOR LANDING,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),49,Chapter 4,4.6,ATC,"G-CD JOIN DOWNWIND RUNWAY 24 WIND 270 DEGREES 5 KNOTS, QNH 1012",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),49,Chapter 4,4.6,Pilot,JOIN DOWNWIND RUNWAY 24 QNH 1012 G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),49,Chapter 4,4.6,Pilot,"WALDEN TOWER G-ABCD C172 10 MILES NORTH 2 500 FEET INFORMATION BRAVO, FOR LANDING",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),49,Chapter 4,4.6,ATC,G-CD JOIN RIGHT HAND DOWNWIND RUNWAY 34 WIND 330 DEGREES 10 KNOTS QNH 1012,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),49,Chapter 4,4.6,Pilot,JOIN RIGHT HAND DOWNWIND RUNWAY 34 QNH 1012 G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),49,Chapter 4,4.6,ATC,G-CD TRAFFIC CHEROKEE TAKING OFF RUNWAY 34 AND A LEARJET DOWNWIND,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),49,Chapter 4,4.6,Pilot,TRAFFIC IN SIGHT G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),49,Chapter 4,4.6,Pilot,WALDEN TOWER G-ABCD C172 10 MILES NORTH 2 500 FEET FOR LANDING,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),49,Chapter 4,4.6,ATC,G-CD MAKE STRAIGHT-IN APPROACH RUNWAY 16 WIND 190 DEGREES 5 KNOTS QNH 1009,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),49,Chapter 4,4.6,Pilot,STRAIGHT-IN RUNWAY 16 QNH 1009 G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),50,Chapter 4,4.6,Pilot,G-CD DOWNWIND,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),50,Chapter 4,4.6,ATC,G-CD NUMBER 2 FOLLOW CHEROKEE ON BASE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),50,Chapter 4,4.6,Pilot,"NUMBER 2, TRAFFIC IN SIGHT G-CD",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),50,Chapter 4,4.6,Pilot,G-CD BASE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),50,Chapter 4,4.6,ATC,G-CD REPORT FINAL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),50,Chapter 4,4.6,Pilot,G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),50,Chapter 4,4.6,Pilot,G-CD FINAL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),50,Chapter 4,4.6,ATC,G-CD CONTINUE APPROACH WIND 270 DEGREES 7 KNOTS,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),50,Chapter 4,4.6,ATC,G-CD EXTEND DOWNWIND NUMBER 2 FOLLOW CHEROKEE ON 4 MILES FINAL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),50,Chapter 4,4.6,Pilot,EXTENDING DOWNWIND NUMBER 2 CHEROKEE IN SIGHT G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),50,Chapter 4,4.6,ATC,G-CD ORBIT RIGHT DUE TRAFFIC ON THE RUNWAY. REPORT AGAIN ON FINAL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),50,Chapter 4,4.6,Pilot,"ORBITING RIGHT, WILCO G-CD",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),50,Chapter 4,4.6,ATC,G-CD NUMBER 1 MAKE SHORT APPROACH CHEROKEE ON 6 MILES FINAL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),50,Chapter 4,4.6,Pilot,SHORT APPROACH G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),51,Chapter 4,4.7,Pilot,FASTAIR 345 LONG FINAL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),51,Chapter 4,4.7,ATC,FASTAIR 345 CONTINUE APPROACH WIND 260 DEGREES 18 KNOTS,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),51,Chapter 4,4.7,Pilot,FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),51,Chapter 4,4.7,Pilot,FASTAIR 345 FINAL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),51,Chapter 4,4.7,ATC,FASTAIR 345 RUNWAY 27 CLEARED TO LAND WIND 270 DEGREES 20 KNOTS,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),51,Chapter 4,4.7,Pilot,RUNWAY 27 CLEARED TO LAND FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),51,Chapter 4,4.7,Pilot,FASTAIR 345 REQUEST LOW PASS UNSAFE LEFT GEAR INDICATION,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),51,Chapter 4,4.7,ATC,FASTAIR 345 CLEARED LOW PASS RUNWAY 27 NOT BELOW 500 FEET REPORT FINAL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),51,Chapter 4,4.7,Pilot,RUNWAY 27 NOT BELOW 500 FEET WILCO FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),52,Chapter 4,4.7,Pilot,FASTAIR 345 REQUEST LOW APPROACH RUNWAY 09 FOR TRAINING,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),52,Chapter 4,4.7,ATC,FASTAIR 345 CLEARED LOW APPROACH RUNWAY 09 NOT BELOW 250 FEET REPORT FINAL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),52,Chapter 4,4.7,Pilot,RUNWAY 09 NOT BELOW 250 FEET WILCO FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),52,Chapter 4,4.7,Pilot,G-CD REQUEST TOUCH AND GO,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),52,Chapter 4,4.7,ATC,G-CD CLEARED TOUCH AND GO,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),52,Chapter 4,4.7,Pilot,CLEARED TOUCH AND GO G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),52,Chapter 4,4.7,ATC,G-CD UNABLE TO APPROVE DUE TRAFFIC CONGESTION MAKE FULL STOP RUNWAY 09 CLEARED TO LAND,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),52,Chapter 4,4.7,Pilot,RUNWAY 09 CLEARED TO LAND FOR FULL STOP G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),52,Chapter 4,4.7,ATC,G-CD MAKE ANOTHER CIRCUIT REPORT DOWNWIND,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),52,Chapter 4,4.7,Pilot,WILCO G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),53,Chapter 4,4.8,ATC,FASTAIR 345 GO AROUND AIRCRAFT ON THE RUNWAY,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),53,Chapter 4,4.8,Pilot,GOING AROUND FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),53,Chapter 4,4.8,Pilot,GOING AROUND G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),53,Chapter 4,4.8,ATC,G-CD ROGER REPORT DOWNWIND,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),53,Chapter 4,4.9,ATC,G-HELI AIR-TAXI TO HELICOPTER STAND,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),53,Chapter 4,4.9,Pilot,"AIR-TAXI TO HELICOPTER STAND, G-HELI",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),53,Chapter 4,4.9,ATC,FASTAIR 345 TAKE FIRST RIGHT WHEN VACATED CONTACT GROUND 118.350,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),53,Chapter 4,4.9,Pilot,"FIRST RIGHT, WILCO 118.350 FASTAIR 345",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),53,Chapter 4,4.9,Pilot,GEORGETOWN GROUND FASTAIR 345 RUNWAY VACATED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),53,Chapter 4,4.9,ATC,FASTAIR 345 TAXI TO STAND 27 VIA TAXIWAY ALPHA,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),53,Chapter 4,4.9,Pilot,STAND 27 VIA TAXIWAY ALPHA FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),54,Chapter 4,4.10,ATC,FASTAIR 345 CAUTION CONSTRUCTION WORK ADJACENT TO GATE 37,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),54,Chapter 4,4.10,Pilot,"ROGER, FASTAIR 345",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),54,Chapter 4,4.10,ATC,. . . WORK IN PROGRESS AHEAD NORTH SIDE OF TAXIWAY ALPHA,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),54,Chapter 4,4.10,ATC,. . . CENTRE LINE TAXIWAY LIGHTING UNSERVICEABLE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),54,Chapter 4,4.10,ATC,. . . VASIS RUNWAY 27 UNSERVICEABLE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),54,Chapter 4,4.10,ATC,. . . LARGE FLOCK OF BIRDS NORTH OF RUNWAY 27 NEAR CENTRAL TAXIWAY,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),54,Chapter 4,4.10,ATC,. . . ILS 09 UNSERVICEABLE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),54,Chapter 4,4.10,ATC,". . . RUNWAY CONDITIONS 09: AVAILABLE WIDTH 32 METRES, COVERED WITH THIN PATCHES OF ICE, BRAKING ACTION POOR SNOW UP TO 30 CM ALONG EDGES",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),55,Chapter 5,4.10,ATC,AERODROME CONTROL: VEHICLES,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),55,Chapter 5,5.2,Pilot,GROUND WORKER 21 GATE 27 REQUEST PROCEED TO WORK IN PROGRESS TAXIWAY HOTEL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),55,Chapter 5,5.2,ATC,WORKER 21 PROCEED TO TAXIWAY HOTEL VIA KILO AND ALPHA,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),55,Chapter 5,5.2,Pilot,"PROCEEDING TO TAXIWAY HOTEL VIA KILO AND ALPHA, WORKER 21",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),56,Chapter 5,5.2,Pilot,GROUND TRUCKER 5 EXIT KILO REQUEST PROCEED TO HANGAR 3,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),56,Chapter 5,5.2,ATC,"TRUCKER 5 PROCEED VIA KILO, ALPHA AND FOXTROT, CROSS RUNWAY 09. HOLD SHORT OF RUNWAY 14",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),56,Chapter 5,5.2,Pilot,VIA KILO ALPHA FOXTROT CROSSING RUNWAY 09 HOLDING SHORT OF RUNWAY 14 TRUCKER 5,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),56,Chapter 5,5.2,ATC,TRUCKER 5 CROSS RUNWAY 14 CONTINUE TO HANGAR 3,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),56,Chapter 5,5.2,Pilot,TRUCKER 5 CROSSING,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),56,Chapter 5,5.2,Pilot,TRUCKER 5 RUNWAY 14 VACATED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),56,Chapter 5,5.2,ATC,TRUCKER 5 ROGER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),56,Chapter 5,5.2,Pilot,APRON TRUCKER 5 GATE 21 REQUEST PROCEED TO GATE 26,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),56,Chapter 5,5.2,ATC,"TRUCKER 5 GIVE WAY TO FASTAIR B737 ON YOUR RIGHT THEN PROCEED TO GATE 26, CAUTION JET BLAST",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),56,Chapter 5,5.2,Pilot,"GIVING WAY TO B737, ROGER TRUCKER 5",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),57,Chapter 5,5.3,Pilot,GROUND WORKER 21 BY THE CONTROL TOWER REQUEST PROCEED TO MAINTENANCE BASE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),57,Chapter 5,5.3,ATC,WORKER 21 PROCEED VIA INDIA AND BRAVO. HOLD SHORT OF RUNWAY 27,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),57,Chapter 5,5.3,Pilot,VIA INDIA AND BRAVO HOLDING SHORT OF RUNWAY 27 WORKER 21,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),57,Chapter 5,5.3,Pilot,WORKER 21 HOLDING SHORT RUNWAY 27,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),57,Chapter 5,5.3,ATC,WORKER 21 STAND BY,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),57,Chapter 5,5.3,ATC,WORKER 21 CROSS RUNWAY 27 TO TAXIWAY MIKE REPORT RUNWAY VACATED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),57,Chapter 5,5.3,Pilot,WORKER 21 CROSSING RUNWAY 27,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),57,Chapter 5,5.3,Pilot,WORKER 21 RUNWAY VACATED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),57,Chapter 5,5.3,ATC,WORKER 21 CONTINUE ON MIKE TO MAINTENANCE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),57,Chapter 5,5.3,ATC,"WORKER 21 VACATE RUNWAY 27 TAKE NEXT RIGHT, REPORT VACATED",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),57,Chapter 5,5.3,Pilot,"VACATING RUNWAY 27 VIA NEXT RIGHT, WORKER 21",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),57,Chapter 5,5.3,Pilot,WORKER 21 RUNWAY VACATED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),57,Chapter 5,5.3,ATC,WORKER 21 ROGER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),58,Chapter 5,5.3,ATC,WORKER 21 STOP IMMEDIATELY,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),58,Chapter 5,5.3,Pilot,"STOPPING, WORKER 21",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),58,Chapter 5,5.4,Pilot,APRON TUG 9 REQUEST TOW FASTAIR B737 FROM GATE 20 TO GATE 25,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),58,Chapter 5,5.4,ATC,"TUG 9, TOW APPROVED FROM GATE 20 TO GATE 25 VIA TAXIWAY WEST",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),58,Chapter 5,5.4,Pilot,GROUND TUG 9 REQUEST TOW FASTAIR B737 FROM MAINTENANCE HANGAR 3 TO GATE 25,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),58,Chapter 5,5.4,ATC,"TUG 9 TOW APPROVED FROM MAINTENANCE HANGAR 3 TO GATE 25, PROCEED VIA FOXTROT, HOLD SHORT OF RUNWAY 32",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),58,Chapter 5,5.4,Pilot,TOW APPROVED VIA FOXTROT HOLDING SHORT OF RUNWAY 32 TUG 9,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),59,Chapter 6,5.4,ATC,GENERAL ATS SURVEILLANCE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),59,Chapter 6,5.4,ATC,SERVICE PHRASEOLOGY,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),59,Chapter 6,6.2,ATC,G-AB REPORT HEADING AND LEVEL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),59,Chapter 6,6.2,Pilot,G-AB HEADING 110 AT 2 500 FEET,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),59,Chapter 6,6.2,ATC,G-AB FOR IDENTIFICATION TURN LEFT HEADING 080,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),59,Chapter 6,6.2,Pilot,LEFT HEADING 080 G-AB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),59,Chapter 6,6.2,ATC,G-AB IDENTIFIED 20 MILES NORTH WEST OF KENNINGTON CONTINUE PRESENT HEADING,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),59,Chapter 6,6.2,Pilot,"ROGER, CONTINUING PRESENT HEADING, G-AB",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),59,Chapter 6,6.2,ATC,G-AB NOT IDENTIFIED. NOT YET WITHIN RADAR COVER. RESUME OWN NAVIGATION TO MARLO,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),59,Chapter 6,6.2,Pilot,"ROGER, RESUMING OWN NAVIGATION TO MARLO G-AB",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),60,Chapter 6,6.2,ATC,G-AB IDENTIFICATION LOST DUE RADAR FAILURE. CONTACT ALEXANDER CONTROL ON 128.750,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),60,Chapter 6,6.2,Pilot,"ROGER, 128.750 G-AB",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),60,Chapter 6,6.2,ATC,G-AB WILL SHORTLY LOSE IDENTIFICATION TEMPORARILY DUE FADE AREA. REMAIN THIS FREQUENCY,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),60,Chapter 6,6.2,Pilot,WILCO G-AB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),60,Chapter 6,6.3,ATC,FASTAIR 345 TURN LEFT HEADING 050 FOR SEPARATION,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),60,Chapter 6,6.3,Pilot,HEADING LEFT 050 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),60,Chapter 6,6.3,ATC,FASTAIR 345 FLY HEADING 050,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),60,Chapter 6,6.3,Pilot,HEADING 050 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),60,Chapter 6,6.3,ATC,FASTAIR 345 REPORT HEADING,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),60,Chapter 6,6.3,Pilot,FASTAIR 345 HEADING 050,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),60,Chapter 6,6.3,ATC,FASTAIR 345 ROGER CONTINUE HEADING 050,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),60,Chapter 6,6.3,Pilot,"WILCO, FASTAIR 345",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),61,Chapter 6,6.3,ATC,"FASTAIR 345 POSITION 5 MILES NORTH OF GEORGETOWN, RESUME OWN NAVIGATION DIRECT WICKEN VOR",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),61,Chapter 6,6.3,Pilot,DIRECT WICKEN VOR FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),61,Chapter 6,6.3,ATC,FASTAIR 345 RESUME OWN NAVIGATION DIRECT WICKEN VOR TRACK 070 DISTANCE 27 MILES,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),61,Chapter 6,6.3,Pilot,TRACK 070 27 MILES DIRECT WICKEN VOR FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),61,Chapter 6,6.3,ATC,G-CD RESUME OWN NAVIGATION POSITION 15 MILES SOUTH EAST KENNINGTON,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),61,Chapter 6,6.3,Pilot,G-CD WILCO,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),61,Chapter 6,6.3,ATC,FASTAIR 345 MAKE A THREE SIXTY TURN LEFT FOR SEQUENCING,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),61,Chapter 6,6.3,Pilot,THREE SIXTY TURN LEFT FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),61,Chapter 6,6.3,ATC,G-AB ORBIT LEFT FOR DELAY,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),61,Chapter 6,6.3,Pilot,ORBITING LEFT G-AB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),62,Chapter 6,6.4,ATC,FASTAIR 345 UNKNOWN TRAFFIC 1 O’CLOCK 3 MILES OPPOSITE DIRECTION FAST MOVING,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),62,Chapter 6,6.4,Pilot,LOOKING OUT FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),62,Chapter 6,6.4,Pilot,FASTAIR 345 TRAFFIC IN SIGHT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),62,Chapter 6,6.4,ATC,FASTAIR 345 UNKNOWN TRAFFIC 10 O’CLOCK 11 MILES CROSSING LEFT TO RIGHT FAST MOVING,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),62,Chapter 6,6.4,Pilot,"FASTAIR 345 NEGATIVE CONTACT, REQUEST VECTORS",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),62,Chapter 6,6.4,ATC,FASTAIR 345 TURN LEFT HEADING 050,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),62,Chapter 6,6.4,Pilot,LEFT HEADING 050 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),62,Chapter 6,6.4,ATC,"FASTAIR 345 CLEAR OF TRAFFIC, RESUME OWN NAVIGATION DIRECT WICKEN",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),62,Chapter 6,6.4,Pilot,DIRECT WICKEN VOR FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),63,Chapter 6,6.4,ATC,G-CD TRAFFIC 2 O’CLOCK 5 MILES NORTH BOUND CHEROKEE AT 2 000 FEET,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),63,Chapter 6,6.4,Pilot,LOOKING OUT G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),63,Chapter 6,6.4,ATC,G-CD DO YOU WANT VECTORS,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),63,Chapter 6,6.4,Pilot,"G-CD NEGATIVE VECTORS, TRAFFIC IN SIGHT",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),63,Chapter 6,6.4,ATC,G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),64,Chapter 6,6.5,ATC,FASTAIR 345 ADVISE TYPE OF TRANSPONDER CAPABILITY,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),64,Chapter 6,6.5,Pilot,FASTAIR 345 TRANSPONDER CHARLIE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),64,Chapter 6,6.5,ATC,FASTAIR 345 SQUAWK 6411,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),64,Chapter 6,6.5,Pilot,6411 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),64,Chapter 6,6.5,ATC,FASTAIR 345 CONFIRM SQUAWK,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),64,Chapter 6,6.5,Pilot,FASTAIR 345 SQUAWKING 6411,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),64,Chapter 6,6.5,ATC,FASTAIR 345 RESET SQUAWK 6411,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),64,Chapter 6,6.5,Pilot,RESETTING 6411 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),64,Chapter 6,6.5,ATC,FASTAIR 345 CHECK ALTIMETER SETTING AND CONFIRM LEVEL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),64,Chapter 6,6.5,Pilot,FASTAIR 345 ALTIMETER 1013 FLIGHT LEVEL 80,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),64,Chapter 6,6.5,ATC,FASTAIR 345 CONFIRM TRANSPONDER OPERATING,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),64,Chapter 6,6.5,Pilot,"FASTAIR 345 NEGATIVE, TRANSPONDER UNSERVICEABLE",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),64,Chapter 6,6.6,ATC,RADIOCOMMUNICATIONS FAILURE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),65,Chapter 6,6.6,ATC,G-DCAB REPLY NOT RECEIVED IF YOU READ ALEXANDER CONTROL TURN LEFT HEADING 040,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),65,Chapter 6,6.6,ATC,G-DCAB TURN OBSERVED POSITION 5 MILES SOUTH OF WICKEN VOR WILL CONTINUE RADAR CONTROL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),65,Chapter 6,6.6,ATC,FASTAIR 345 REPLY NOT RECEIVED IF YOU READ ALEXANDER CONTROL SQUAWK IDENT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),65,Chapter 6,6.6,ATC,FASTAIR 345 SQUAWK OBSERVED 5 MILES SOUTH OF WICKEN VOR WILL CONTINUE RADAR CONTROL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),65,Chapter 6,6.7,ATC,"FASTAIR 345 LOW ALTITUDE WARNING, CHECK YOUR ALTITUDE IMMEDIATELY, QNH IS 1006, THE MINIMUM FLIGHT ALTITUDE IS 1 450 FEET",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),65,Chapter 6,6.7,ATC,"FASTAIR 345 TERRAIN ALERT, CLIMB TO 2 000 FEET QNH 1006",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),66,Chapter 6,6.7,ATC,FASTAIR 345 TURN RIGHT IMMEDIATELY HEADING 110 TO AVOID TRAFFIC 12 O’CLOCK 4 MILES,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),66,Chapter 6,6.7,Pilot,RIGHT HEADING 110 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),66,Chapter 6,6.7,ATC,FASTAIR 345 CLEAR OF TRAFFIC RESUME OWN NAVIGATION DIRECT WICKEN VOR,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),66,Chapter 6,6.7,Pilot,DIRECT WICKEN VOR FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),67,Chapter 7,6.7,ATC,APPROACH CONTROL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),67,Chapter 7,7.1,Pilot,GEORGETOWN DEPARTURE FASTAIR 345 HEAVY,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),67,Chapter 7,7.1,ATC,FASTAIR 345 TURN RIGHT HEADING 040 UNTIL PASSING FL 70 THEN DIRECT WICKEN VOR,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),67,Chapter 7,7.1,Pilot,RIGHT HEADING 040 UNTIL PASSING FL 70 THEN DIRECT WICKEN VOR FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),67,Chapter 7,7.1,ATC,FASTAIR 345 REPORT PASSING FL 70,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),67,Chapter 7,7.1,Pilot,FASTAIR 345 WILCO,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),67,Chapter 7,7.1,Pilot,FASTAIR 345 PASSING FL 70 WICKEN VOR AT 1537,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),67,Chapter 7,7.1,ATC,FASTAIR 345 CONTACT ALEXANDER CONTROL 129.1,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),67,Chapter 7,7.1,Pilot,129.1 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),68,Chapter 7,7.2,Pilot,APPROACH G-CD PASSING THE CONTROL ZONE BOUNDARY,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),68,Chapter 7,7.2,ATC,G-CD CONTACT ALEXANDER INFORMATION 125.750,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),68,Chapter 7,7.2,Pilot,125.750 G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),68,Chapter 7,7.2,ATC,"G-CD LEAVE CONTROL ZONE SPECIAL VFR VIA ROUTE WHISKEY, 3 000 FEET OR BELOW, REPORT WHISKEY ONE",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),68,Chapter 7,7.2,Pilot,"CLEARED TO LEAVE CONTROL ZONE SPECIAL VFR, VIA ROUTE WHISKEY 3 000 FEET OR BELOW, WILL REPORT WHISKEY ONE G-CD",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),68,Chapter 7,7.2,ATC,G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),68,Chapter 7,7.3,Pilot,GEORGETOWN APPROACH FASTAIR 345 HEAVY FL 80 ESTIMATING NORTH CROSS 46 INFORMATION DELTA,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),68,Chapter 7,7.3,ATC,FASTAIR 345 DESCEND TO 4 000 FEET QNH 1005 TRANSITION LEVEL 50 EXPECT ILS APPROACH RUNWAY 24,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),68,Chapter 7,7.3,Pilot,DESCENDING TO 4 000 FEET QNH 1005 TRANSITION LEVEL 50 EXPECTING ILS APPROACH RUNWAY 24 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),69,Chapter 7,7.3,ATC,FASTAIR 345 EXPECT ILS APPROACH RUNWAY 24 QNH 1014,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),69,Chapter 7,7.3,Pilot,RUNWAY 24 QNH 1014 REQUESTING STRAIGHT-IN ILS APPROACH FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),69,Chapter 7,7.3,ATC,FASTAIR 345 CLEARED STRAIGHT-IN ILS APPROACH RUNWAY 24 REPORT ESTABLISHED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),69,Chapter 7,7.3,Pilot,"CLEARED STRAIGHT-IN ILS APPROACH RUNWAY 24, WILCO FASTAIR 345",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),69,Chapter 7,7.3,Pilot,FASTAIR 345 ESTABLISHED RUNWAY IN SIGHT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),69,Chapter 7,7.3,ATC,FASTAIR 345 CONTACT TOWER 118.7,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),69,Chapter 7,7.3,Pilot,118.7 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),69,Chapter 7,7.3,Pilot,STEPHENVILLE TOWER FASTAIR 345 HEAVY,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),69,Chapter 7,7.3,ATC,FASTAIR 345 REPORT OUTER MARKER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),69,Chapter 7,7.3,Pilot,WILCO FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),69,Chapter 7,7.3,Pilot,FASTAIR 345 OUTER MARKER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),69,Chapter 7,7.3,ATC,FASTAIR 345 RUNWAY 24 CLEARED TO LAND WIND 280 DEGREES 8 KNOTS,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),69,Chapter 7,7.3,Pilot,RUNWAY 24 CLEARED TO LAND FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),69,Chapter 7,7.3,Pilot,STEPHENVILLE APPROACH G-DCAB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),69,Chapter 7,7.3,ATC,G-DCAB STEPHENVILLE APPROACH,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),69,Chapter 7,7.3,Pilot,G-DCAB PA 31 FROM KENNINGTON IFR FL 100 STEPHENVILLE 47 INFORMATION DELTA,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),69,Chapter 7,7.3,ATC,"G-AB CLEARED DIRECT STEPHENVILLE NDB, FL 70. ENTER CONTROLLED AIRSPACE FL 100 OR BELOW. HOLD STEPHENVILLE NDB FL 70, RIGHT HAND PATTERN, EXPECTED APPROACH TIME 52",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),69,Chapter 7,7.3,Pilot,"CLEARED DIRECT TO STEPHENVILLE NDB FL 70. ENTERING CONTROLLED AIRSPACE FL 100 OR BELOW. HOLDING STEPHENVILLE NDB FL 70 RIGHT HAND PATTERN EXPECTING APPROACH TIME 52, G-AB",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,ATC,G-AB EXPECT ILS APPROACH RUNWAY 24,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,Pilot,EXPECTING ILS APPROACH RUNWAY 24 G-AB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,ATC,G-AB REVISED EXPECTED APPROACH TIME 48,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,Pilot,REVISED EXPECTED APPROACH TIME 48 G-AB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,ATC,"G-AB DESCEND TO 3 500 FEET QNH 1015, TRANSITION LEVEL 50",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,Pilot,LEAVING FL 70 DESCENDING TO 3 500 FEET QNH 1015 TRANSITION LEVEL 50 G-AB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,ATC,G-AB ROGER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,ATC,G-AB CLEARED ILS APPROACH RUNWAY 24 REPORT CROSSING STEPHENVILLE NDB OUTBOUND,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,Pilot,ILS RUNWAY 24 G-AB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,Pilot,G-AB STEPHENVILLE OUTBOUND,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,ATC,G-AB REPORT ESTABLISHED ON THE LOCALIZER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,Pilot,WILCO G-AB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,Pilot,G-AB ESTABLISHED LOCALIZER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,ATC,G-AB REPORT OUTER MARKER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,Pilot,WILCO G-AB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,Pilot,G-AB OUTER MARKER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,ATC,G-AB CONTACT TOWER 118.7,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,Pilot,118.7 G-AB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,Pilot,STEPHENVILLE TOWER G-DCAB OUTER MARKER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,ATC,G-AB CLEARED TO LAND RUNWAY 24 WIND 260 DEGREES 22 KNOTS,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),70,Chapter 7,7.3,Pilot,RUNWAY 24 CLEARED TO LAND G-AB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),71,Chapter 7,7.3,Pilot,STEPHENVILLE APPROACH G-DCAB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),71,Chapter 7,7.3,ATC,G-DCAB STEPHENVILLE APPROACH,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),71,Chapter 7,7.3,Pilot,G-DCAB ESTIMATING STEPHENVILLE NDB AT 18 FL 70,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),71,Chapter 7,7.3,ATC,G-AB CLEARED NDB APPROACH RUNWAY 24,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),71,Chapter 7,7.3,ATC,NO DELAY EXPECTED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),71,Chapter 7,7.3,Pilot,"CLEARED NDB APPROACH RUNWAY 24 LEAVING FL 70 DESCENDING TO 3 000 FEET QNH 1011 TRANSITION LEVEL 50, G-AB",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),71,Chapter 7,7.3,Pilot,"G-AB OVER STEPHENVILLE NDB 3 000 FEET FIELD IN SIGHT, REQUEST VISUAL APPROACH",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),71,Chapter 7,7.3,ATC,CONTACT TOWER 118.7,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),71,Chapter 7,7.3,Pilot,"CLEARED VISUAL APPROACH RUNWAY 24, 118.7 G-AB",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),71,Chapter 7,7.3,ATC,FASTAIR 345 HOLD AT NORTH CROSS FL 100,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),71,Chapter 7,7.3,Pilot,FASTAIR 345 REQUEST HOLDING INSTRUCTIONS,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),71,Chapter 7,7.3,ATC,FASTAIR 345 HOLD AT NORTH CROSS NDB FL 100 INBOUND TRACK 250 DEGREES LEFT HAND PATTERN OUTBOUND TIME 1 MINUTE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),71,Chapter 7,7.3,Pilot,FASTAIR 345 REQUEST HOLDING PROCEDURE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),71,Chapter 7,7.3,ATC,FASTAIR 345 HOLD ON THE 265 RADIAL OF MARLO VOR BETWEEN 25 MILES AND 30 MILES DME FL 100 INBOUND TRACK 085 RIGHT HAND PATTERN EXPECTED APPROACH TIME 1032,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),72,Chapter 7,7.4,Pilot,STEPHENVILLE APPROACH G-ABCD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),72,Chapter 7,7.4,ATC,G-ABCD STEPHENVILLE APPROACH,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),72,Chapter 7,7.4,Pilot,G-ABCD C172 VFR FROM WALDEN TO STEPHENVILLE 2 500 FEET CONTROL ZONE BOUNDARY 52 STEPHENVILLE 02 INFORMATION GOLF,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),72,Chapter 7,7.4,ATC,G-CD CLEARED TO STEPHENVILLE VFR QNH 1012 TRAFFIC SOUTHBOUND CHEROKEE 2 000 FEET VFR ESTIMATING CONTROL ZONE BOUNDARY 53,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),72,Chapter 7,7.4,Pilot,CLEARED TO STEPHENVILLE VFR QNH 1012 TRAFFIC IN SIGHT G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),72,Chapter 7,7.4,ATC,G-CD REPORT AERODROME IN SIGHT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),72,Chapter 7,7.4,Pilot,WILCO G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),72,Chapter 7,7.4,Pilot,G-CD AERODROME IN SIGHT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),72,Chapter 7,7.4,ATC,G-CD CONTACT TOWER 118.7,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),72,Chapter 7,7.4,Pilot,118.7 G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),73,Chapter 7,7.5,Pilot,GEORGETOWN ARRIVAL FASTAIR 345 HEAVY FL 60 APPROACHING NORTH CROSS INFORMATION GOLF,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),73,Chapter 7,7.5,ATC,FASTAIR 345 RADAR CONTACT VECTORING FOR ILS APPROACH RUNWAY 27 QNH 1008,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),73,Chapter 7,7.5,Pilot,ILS APPROACH RUNWAY 27 QNH 1008 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),73,Chapter 7,7.5,ATC,FASTAIR 345 LEAVE NORTH CROSS NDB HEADING 110,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),73,Chapter 7,7.5,Pilot,LEAVING NORTH CROSS NDB HEADING 110 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),73,Chapter 7,7.5,ATC,FASTAIR 345 REPORT SPEED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),73,Chapter 7,7.5,Pilot,FASTAIR 345 SPEED 250 KNOTS,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),73,Chapter 7,7.5,ATC,FASTAIR 345 REDUCE TO MINIMUM CLEAN SPEED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),73,Chapter 7,7.5,Pilot,REDUCING TO 210 KNOTS FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),73,Chapter 7,7.5,ATC,"FASTAIR 345 DESCEND TO 2 500 FEET QNH 1008, TRANSITION LEVEL 50 NUMBER 4 IN TRAFFIC",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),73,Chapter 7,7.5,Pilot,"LEAVING FL 60 DESCENDING TO 2 500 FEET QNH 1008, TRANSITION LEVEL 50 FASTAIR 345",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),73,Chapter 7,7.5,ATC,FASTAIR 345 POSITION 10 MILES NORTH EAST OF GEORGETOWN,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),73,Chapter 7,7.5,Pilot,ROGER FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),73,Chapter 7,7.5,ATC,FASTAIR 345 TURN RIGHT HEADING 180 FOR BASE LEG,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),73,Chapter 7,7.5,Pilot,RIGHT HEADING 180 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),74,Chapter 7,7.5,ATC,"FASTAIR 345 12 MILES FROM TOUCHDOWN REDUCE TO MINIMUM APPROACH SPEED, TURN RIGHT HEADING 230 CLEARED FOR ILS APPROACH RUNWAY 27 REPORT ESTABLISHED",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),74,Chapter 7,7.5,Pilot,REDUCING TO MINIMUM APPROACH SPEED RIGHT HEADING 230 CLEARED FOR ILS APPROACH RUNWAY 27 WILCO FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),74,Chapter 7,7.5,Pilot,FASTAIR 345 ESTABLISHED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),74,Chapter 7,7.5,ATC,"FASTAIR 345 NO ATC SPEED RESTRICTIONS, CONTACT TOWER 118.9",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),74,Chapter 7,7.5,Pilot,118.9 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),74,Chapter 7,7.5,ATC,FASTAIR 345 MAKE A THREE SIXTY TURN LEFT FOR DELAY,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),74,Chapter 7,7.5,Pilot,THREE SIXTY TURN LEFT FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),74,Chapter 7,7.5,ATC,FASTAIR 345 CONTINUE PRESENT HEADING TAKING YOU THROUGH THE LOCALIZER FOR SPACING,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),74,Chapter 7,7.5,Pilot,CONTINUING PRESENT HEADING FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),75,Chapter 7,7.6,Pilot,WICKEN APPROACH FASTAIR 345 HEAVY,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),75,Chapter 7,7.6,ATC,FASTAIR 345 WICKEN APPROACH THIS WILL BE A SURVEILLANCE RADAR APPROACH RUNWAY 27 TERMINATING AT 1 MILE FROM TOUCHDOWN OBSTACLE CLEARANCE ALTITUDE 600 FEET MAINTAIN 2 200 FEET CHECK YOUR MINIMA,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),75,Chapter 7,7.6,Pilot,MAINTAINING 2 200 FEET RUNWAY 27 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),75,Chapter 7,7.6,ATC,FASTAIR 345 TURN RIGHT HEADING 275 FOR FINAL REPORT RUNWAY IN SIGHT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),75,Chapter 7,7.6,Pilot,RIGHT HEADING 275 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),75,Chapter 7,7.6,ATC,FASTAIR 345 6 MILES FROM TOUCHDOWN COMMENCE DESCENT NOW TO MAINTAIN A 3 DEGREE GLIDE PATH,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),75,Chapter 7,7.6,Pilot,FASTAIR 345 DESCENDING,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),75,Chapter 7,7.6,ATC,FASTAIR 345 CHECK GEAR DOWN AND LOCKED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),75,Chapter 7,7.6,Pilot,FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),75,Chapter 7,7.6,ATC,FASTAIR 345 5½ MILES FROM TOUCHDOWN ALTITUDE SHOULD BE 2 000 FEET,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),75,Chapter 7,7.6,Pilot,FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),75,Chapter 7,7.6,ATC,FASTAIR 345 GOING RIGHT OF TRACK TURN LEFT FIVE DEGREES HEADING 270,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),75,Chapter 7,7.6,Pilot,HEADING 270 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),75,Chapter 7,7.6,ATC,FASTAIR 345 5 MILES FROM TOUCHDOWN ALTITUDE SHOULD BE 1 900 FEET,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),75,Chapter 7,7.6,Pilot,FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),75,Chapter 7,7.6,ATC,FASTAIR 345 CLOSING SLOWLY FROM THE RIGHT 4½ MILES FROM TOUCHDOWN ALTITUDE SHOULD BE 1 700 FEET,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),75,Chapter 7,7.6,Pilot,FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),76,Chapter 7,7.6,ATC,FASTAIR 345 RUNWAY 27 CLEARED TO LAND WIND CALM,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),76,Chapter 7,7.6,Pilot,RUNWAY 27 CLEARED TO LAND FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),76,Chapter 7,7.6,ATC,FASTAIR 345 4 MILES FROM TOUCHDOWN ALTITUDE SHOULD BE 1 600 FEET DO NOT ACKNOWLEDGE FURTHER TRANSMISSIONS,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),76,Chapter 7,7.6,ATC,FASTAIR 345 3½ MILES FROM TOUCHDOWN ALTITUDE SHOULD BE 1 400 FEET,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),76,Chapter 7,7.6,ATC,FASTAIR 345 ON TRACK TURN RIGHT THREE DEGREES HEADING 272 3 MILES FROM TOUCHDOWN ALTITUDE SHOULD BE 1 300 FEET,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),76,Chapter 7,7.6,ATC,FASTAIR 345 2½ MILES FROM TOUCHDOWN ALTITUDE SHOULD BE 1 100 FEET,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),76,Chapter 7,7.6,ATC,FASTAIR 345 2 MILES FROM TOUCHDOWN ALTITUDE SHOULD BE 900 FEET,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),76,Chapter 7,7.6,ATC,FASTAIR 345 ON TRACK HEADING IS GOOD 1½ MILES FROM TOUCHDOWN ALTITUDE SHOULD BE 800 FEET,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),76,Chapter 7,7.6,Pilot,FASTAIR 345 RUNWAY IN SIGHT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),76,Chapter 7,7.6,ATC,"FASTAIR 345 ON TRACK 1 MILE FROM TOUCHDOWN, APPROACH COMPLETED AFTER LANDING CONTACT TOWER ON 118.7",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),77,Chapter 7,7.6,Pilot,FH (QN Q,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),77,Chapter 7,7.6,Pilot,TOUCHDOWN LEVEL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),77,Chapter 7,7.6,Pilot,MEAN SEA LEVEL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),77,Chapter 7,7.6,Pilot,DISTANCE FROM TOUCHDOWN IN NAUTICAL MILES,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),78,Chapter 7,7.7,ATC,FASTAIR 345 GEORGETOWN PRECISION REPORT HEADING AND ALTITUDE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),78,Chapter 7,7.7,Pilot,HEADING 240 AT 3 000 FEET FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),78,Chapter 7,7.7,ATC,"FASTAIR 345 THIS WILL BE A PRECISION RADAR APPROACH RUNWAY 27, OBSTACLE CLEARANCE ALTITUDE 400 FEET POSITION 6 MILES EAST OF GEORGETOWN TURN RIGHT HEADING 260 DESCEND TO 2 500 FEET QNH 1014",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),78,Chapter 7,7.7,Pilot,"PRECISION APPROACH RUNWAY 27, HEADING 260 DESCENDING TO 2 500 FEET QNH 1014 FASTAIR 345",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),78,Chapter 7,7.7,ATC,FASTAIR 345 CLOSING FROM THE RIGHT TURN RIGHT HEADING 270,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),78,Chapter 7,7.7,Pilot,RIGHT HEADING 270 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),78,Chapter 7,7.7,ATC,FASTAIR 345 ON TRACK APPROACHING GLIDE PATH HEADING IS GOOD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),78,Chapter 7,7.7,Pilot,FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),78,Chapter 7,7.7,ATC,FASTAIR 345 REPORT RUNWAY IN SIGHT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),78,Chapter 7,7.7,Pilot,FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),78,Chapter 7,7.7,ATC,"FASTAIR 345 DO NOT ACKNOWLEDGE FURTHER TRANSMISSIONS, ON TRACK APPROACHING GLIDE PATH . . . CHECK YOUR MINIMA . . . COMMENCE DESCENT NOW AT 500 FEET PER MINUTE . . . I SAY AGAIN 500 FEET PER MINUTE . . . CHECK GEAR DOWN AND LOCKED . . . ON GLIDE PATH 5 MILES FROM TOUCHDOWN . . . SLIGHTLY LEFT OF TRACK, TURN RIGHT 5 DEGREES NEW HEADING 275 I SAY AGAIN 275 . .",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),79,Chapter 7,7.7,ATC,"4 MILES FROM TOUCHDOWN SLIGHTLY BELOW GLIDE PATH . . . 100 FEET TOO LOW ADJUST RATE OF DESCENT . . . STILL 50 FEET TOO LOW, TURN LEFT 3 DEGREES HEADING 272 ON TRACK 3 MILES FROM TOUCHDOWN . . . COMING BACK TO THE GLIDE PATH . . . ON GLIDE PATH 2½ MILES FROM TOUCHDOWN RESUME NORMAL RATE OF DESCENT . . . FASTAIR 345 CLEARED TO LAND . . . ON GLIDE PATH . . . HEADING 272 IS GOOD SLIGHTLY ABOVE GLIDE PATH . . . 2 MILES FROM TOUCHDOWN . . . COMING BACK TO THE GLIDE PATH . . . ON GLIDE PATH 1¾ MILES FROM TOUCHDOWN . . . TURN LEFT 2 DEGREES NEW HEADING 270 . . . 1½ MILES FROM TOUCHDOWN . . . ON GLIDE PATH 1¼ MILES FROM TOUCHDOWN RATE OF DESCENT IS GOOD ON GLIDE PATH 1 MILE FROM FASTAIR 345 RUNWAY IN SIGHT TOUCHDOWN . . . ¾ OF A MILE FROM TOUCHDOWN ON GLIDE PATH . . . ½ MILE FROM TOUCHDOWN ON GLIDE PATH . .",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),79,Chapter 7,7.7,ATC,¼ MILE FROM TOUCHDOWN APPROACH COMPLETED AFTER LANDING CONTACT TOWER ON 118.7,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),79,Chapter 7,7.7,ATC,. . . SLIGHTLY ABOVE GLIDE PATH 3 MILES FROM TOUCHDOWN . . . STILL ABOVE GLIDE PATH 2½ MILES FROM TOUCHDOWN — GOING FURTHER ABOVE GLIDE PATH 2 MILES FROM TOUCHDOWN ARE YOU GOING AROUND,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),80,Chapter 8,7.7,ATC,AREA CONTROL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),80,Chapter 8,8.1,Pilot,FASTAIR 345 REQUEST DESCENT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),80,Chapter 8,8.1,ATC,FASTAIR 345 MAINTAIN FL 350 EXPECT DESCENT AFTER BITOR,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),80,Chapter 8,8.1,Pilot,MAINTAINING FL 350 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),80,Chapter 8,8.1,ATC,FASTAIR 345 MAINTAIN FL 350 UNTIL ADVISED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),80,Chapter 8,8.1,Pilot,MAINTAINING FL 350 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),80,Chapter 8,8.1,ATC,FASTAIR 345 DESCEND TO FL 130 CROSS WICKEN VOR FL 170 OR ABOVE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),80,Chapter 8,8.1,Pilot,LEAVING FL 350 DESCENDING TO FL 130 CROSS WICKEN VOR FL 170 OR ABOVE FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),81,Chapter 8,8.1,ATC,FASTAIR 345 ADVISE IF ABLE TO CROSS WICKEN VOR AT 52,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),81,Chapter 8,8.1,Pilot,FASTAIR 345 AFFIRM,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),81,Chapter 8,8.1,ATC,FASTAIR 345 CROSS WICKEN VOR AT 52 OR LATER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),81,Chapter 8,8.1,Pilot,CROSS WICKEN VOR AT 52 OR LATER FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),81,Chapter 8,8.1,ATC,FASTAIR 345 LANDING DELAYS AT GEORGETOWN ADVISE IF ABLE TO LOSE TIME EN ROUTE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),81,Chapter 8,8.1,Pilot,FASTAIR 345 AFFIRM,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),81,Chapter 8,8.1,ATC,FASTAIR 345 ADVISE IF ABLE TO PROCEED PARALLEL OFFSET,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),81,Chapter 8,8.1,Pilot,FASTAIR 345 AFFIRM,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),81,Chapter 8,8.1,ATC,FASTAIR 345 PROCEED OFFSET 5 MILES RIGHT OF ALPHA 1 UNTIL ABEAM WICKEN VOR,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),81,Chapter 8,8.1,Pilot,PROCEEDING OFFSET 5 MILES RIGHT OF ALPHA 1 UNTIL ABEAM WICKEN VOR FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),81,Chapter 8,8.1,ATC,FASTAIR 345 REPORT REVISED ESTIMATE FOR NORTH CROSS NDB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),81,Chapter 8,8.1,Pilot,FASTAIR 345 ESTIMATE NORTH CROSS NDB 1246,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),81,Chapter 8,8.2,ATC,FASTAIR 345 REPORT WICKEN VOR,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),81,Chapter 8,8.2,Pilot,WILCO FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),81,Chapter 8,8.2,Pilot,FASTAIR 345 WICKEN VOR 47 FL 350 MARLO VOR 55,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),81,Chapter 8,8.2,ATC,FASTAIR 345 ROGER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),82,Chapter 8,8.2,ATC,FASTAIR 345 REPORT 25 MILES FROM WICKEN DME,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),82,Chapter 8,8.2,Pilot,FASTAIR 345 WILCO,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),82,Chapter 8,8.2,ATC,FASTAIR 345 REPORT DISTANCE FROM STEPHENVILLE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),82,Chapter 8,8.2,Pilot,FASTAIR 345 37 MILES,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),82,Chapter 8,8.2,ATC,FASTAIR 345 REPORT PASSING 270 RADIAL WICKEN VOR,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),82,Chapter 8,8.2,Pilot,FASTAIR 345 WILCO,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),82,Chapter 8,8.2,ATC,FASTAIR 345 REPORT 25 MILES DME RADIAL 270 WICKEN VOR,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),82,Chapter 8,8.2,Pilot,FASTAIR 345 WILCO,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),82,Chapter 8,8.3,ATC,FASTAIR 345 WHEN READY DESCEND TO FL 180,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),82,Chapter 8,8.3,Pilot,DESCENDING TO FL 180 WILL REPORT LEAVING FL 350 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),82,Chapter 8,8.3,ATC,FASTAIR 345 CLIMB TO FL 220 REPORT PASSING FL 100,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),82,Chapter 8,8.3,Pilot,CLIMBING TO FL 220 WILL REPORT PASSING FL 100 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),83,Chapter 8,8.3,ATC,FASTAIR 345 DESCEND IMMEDIATELY TO FL 200 DUE TRAFFIC,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),83,Chapter 8,8.3,Pilot,LEAVING FL 220 FOR FL 200 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),83,Chapter 8,8.3,Pilot,FASTAIR 345 REQUEST TO LEAVE CONTROLLED AIRSPACE BY DESCENT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),83,Chapter 8,8.3,ATC,FASTAIR 345 CLEARED FOR DESCENT REPORT PASSING 5 500 FEET QNH 1014,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),83,Chapter 8,8.3,Pilot,LEAVING 7 000 FEET WILL REPORT PASSING 5 500 FEET QNH 1014 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),83,Chapter 8,8.3,Pilot,FASTAIR 345 REQUEST VMC DESCENT TO FL 60,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),83,Chapter 8,8.3,ATC,"FASTAIR 345 DESCEND TO FL 60, MAINTAIN OWN SEPARATION AND VMC FROM FL 90 TO FL 70, TRAFFIC WESTBOUND FRIENDSHIP FL 80 ESTIMATING WICKEN VOR AT 07",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),83,Chapter 8,8.3,Pilot,LEAVING FL 100 DESCENDING TO FL 60 MAINTAINING VMC FL 90 TO FL 70 TRAFFIC AT FL 80 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),84,Chapter 8,8.4,Pilot,ALEXANDER CONTROL FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),84,Chapter 8,8.4,ATC,FASTAIR 345 ALEXANDER CONTROL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),84,Chapter 8,8.4,Pilot,FASTAIR 345 REQUESTING CLEARANCE TO JOIN A1 AT MARLO,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),84,Chapter 8,8.4,ATC,FASTAIR 345 CLEARED TO GEORGETOWN FLIGHT PLANNED ROUTE FL 240. JOIN A1 AT MARLO AT FL 240,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),84,Chapter 8,8.4,Pilot,CLEARED TO GEORGETOWN VIA MARLO FLIGHT PLANNED ROUTE FL 240. TO ENTER CONTROLLED AIRSPACE FL 240 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),84,Chapter 8,8.4,ATC,FASTAIR 345 CORRECT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),84,Chapter 8,8.4,ATC,FASTAIR 345 REMAIN OUTSIDE CONTROLLED AIRSPACE EXPECT CLEARANCE AT 55,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),84,Chapter 8,8.4,Pilot,REMAINING OUTSIDE FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),84,Chapter 8,8.4,Pilot,FASTAIR 345 REQUEST FL 240,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),84,Chapter 8,8.4,ATC,FASTAIR 345 FL 240 NOT AVAILABLE DUE TRAFFIC. ALTERNATIVES ARE FL 220 OR FL 260. ADVISE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),84,Chapter 8,8.4,Pilot,FASTAIR 345 ACCEPT FL 220,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),85,Chapter 8,8.5,ATC,FASTAIR 345 CLEARED TO LEAVE A1 VIA MARLO VOR. MAINTAIN FL 230 WHILE IN CONTROLLED AIRSPACE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),85,Chapter 8,8.5,Pilot,CLEARED TO LEAVE A1 VIA MARLO VOR. MAINTAINING FL 230 WHILE IN CONTROLLED AIRSPACE FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),85,Chapter 8,8.6,Pilot,ALEXANDER CONTROL G-DCAB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),85,Chapter 8,8.6,ATC,G-DCAB ALEXANDER CONTROL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),85,Chapter 8,8.6,Pilot,G-DCAB PA31 20 MILES NORTH OF WICKEN VOR FL 80 WICKEN VOR AT 33 REQUEST CLEARANCE TO CROSS AIRWAY A1 AT WICKEN VOR,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),85,Chapter 8,8.6,ATC,G-AB IS CLEARED TO CROSS A1 AT WICKEN VOR FL 80,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),85,Chapter 8,8.6,Pilot,CLEARED TO CROSS A1 AT WICKEN VOR FL 80 G-AB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),85,Chapter 8,8.6,ATC,G-AB REPORT WICKEN VOR,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),85,Chapter 8,8.6,Pilot,G-AB,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),86,Chapter 8,8.7,ATC,"FASTAIR 345 HOLD AT WICKEN VOR FL 220, EXPECT FURTHER CLEARANCE AT 02, LANDING DELAYS AT GEORGETOWN 20 MINUTES",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),86,Chapter 8,8.7,Pilot,HOLDING AT WICKEN VOR FL 220 FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),86,Chapter 8,8.7,ATC,FASTAIR 345 HOLD AT NORTH CROSS NDB FL 100,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),86,Chapter 8,8.7,Pilot,"HOLDING AT NORTH CROSS NDB FL 100. WHAT IS THE DELAY, FASTAIR 345",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),86,Chapter 8,8.7,ATC,FASTAIR 345 EXPECTED DELAY 10 MINUTES,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),86,Chapter 8,8.7,Pilot,FASTAIR 345 ROGER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),86,Chapter 8,8.7,Pilot,FASTAIR 345 REQUEST EXTENDED HOLDING,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),86,Chapter 8,8.7,ATC,FASTAIR 345 HOLD BETWEEN KENNINGTON AND MARLO VOR FL 100 TURNS RIGHT EXPECT FURTHER CLEARANCE AT 1105,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),86,Chapter 8,8.7,Pilot,HOLDING BETWEEN KENNINGTON AND MARLO VOR FL 100 RIGHT TURNS FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),87,Chapter 8,8.8,ATC,FASTAIR 345 UNDER RADAR CONTROL,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),87,Chapter 8,8.8,Pilot,ROGER FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),87,Chapter 8,8.8,ATC,FASTAIR 345 RADAR CONTROL TERMINATED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),87,Chapter 8,8.8,Pilot,ROGER FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),87,Chapter 8,8.9,ATC,FASTAIR 345 AUTOMATIC DEPENDENT SURVEILLANCE OUT OF SERVICE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),87,Chapter 8,8.9,Pilot,FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),88,Chapter 9,8.10,ATC,DISTRESS AND URGENCY PROCEDURES,True,False
+ICAO Doc 9432 (Manual of Radiotelephony),88,Chapter 9,8.10,ATC,AND COMMUNICATIONS FAILURE PROCEDURES,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),89,Chapter 9,9.2,Pilot,MAYDAY MAYDAY MAYDAY WALDEN TOWER G-ABCD ENGINE ON FIRE MAKING FORCED LANDING 20 MILES SOUTH OF WALDEN. PASSING 3 000 FEET HEADING 360,True,False
+ICAO Doc 9432 (Manual of Radiotelephony),89,Chapter 9,9.2,ATC,"G-ABCD WALDEN TOWER ROGER MAYDAY WIND AT WALDEN 350 DEGREES 10 KNOTS, QNH 1008",True,False
+ICAO Doc 9432 (Manual of Radiotelephony),89,Chapter 9,9.2,Pilot,"MAYDAY MAYDAY MAYDAY WALDEN TOWER G-ABCD ENGINE FAILED. WILL ATTEMPT TO LAND YOUR FIELD, 5 MILES SOUTH, 4 000 FEET HEADING 360",True,False
+ICAO Doc 9432 (Manual of Radiotelephony),90,Chapter 9,9.2,ATC,"G-ABCD WALDEN TOWER ROGER MAYDAY CLEARED STRAIGHT-IN APPROACH RUNWAY 35 WIND 360 DEGREES 10 KNOTS QNH 1008, YOU ARE NUMBER ONE",True,False
+ICAO Doc 9432 (Manual of Radiotelephony),90,Chapter 9,9.2,Pilot,CLEARED STRAIGHT-IN APPROACH RUNWAY 35 QNH 1008 G-ABCD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),90,Chapter 9,9.2,ATC,ALL STATIONS WALDEN TOWER STOP TRANSMITTING. MAYDAY,True,False
+ICAO Doc 9432 (Manual of Radiotelephony),90,Chapter 9,9.2,ATC,"FASTAIR 345 STOP TRANSMITTING, MAYDAY",True,False
+ICAO Doc 9432 (Manual of Radiotelephony),91,Chapter 9,9.2,Pilot,"WALDEN TOWER G-CD CANCEL DISTRESS. ENGINE SERVICEABLE, RUNWAY IN SIGHT. REQUEST LANDING",True,False
+ICAO Doc 9432 (Manual of Radiotelephony),91,Chapter 9,9.2,ATC,"G-CD WIND 350 DEGREES 8 KNOTS, RUNWAY 35 CLEARED TO LAND",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),91,Chapter 9,9.2,Pilot,RUNWAY 35 CLEARED TO LAND G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),91,Chapter 9,9.2,ATC,ALL STATIONS WALDEN TOWER DISTRESS TRAFFIC ENDED,True,False
+ICAO Doc 9432 (Manual of Radiotelephony),91,Chapter 9,9.3,Pilot,"PAN PAN, PAN PAN, PAN PAN WALDEN TOWER G-ABCD C172 2 000 FEET HEADING 190 ABOVE CLOUD UNSURE OF MY POSITION REQUEST HEADING TO WALDEN",True,False
+ICAO Doc 9432 (Manual of Radiotelephony),91,Chapter 9,9.3,ATC,G-ABCD WALDEN TOWER FLY HEADING 160,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),91,Chapter 9,9.3,Pilot,HEADING 160 G-ABCD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),91,Chapter 9,9.3,Pilot,"PAN PAN, PAN PAN, PAN PAN WALDEN TOWER G-ABCD 10 MILES NORTH AT 2 000 FEET. PASSENGER WITH SUSPECTED HEART ATTACK REQUEST PRIORITY LANDING",True,False
+ICAO Doc 9432 (Manual of Radiotelephony),91,Chapter 9,9.3,ATC,G-CD WALDEN TOWER NUMBER 1 CLEARED STRAIGHT-IN APPROACH RUNWAY 17 WIND 180 DEGREES 10 KNOTS QNH 1008 AMBULANCE ALERTED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),91,Chapter 9,9.3,Pilot,CLEARED STRAIGHT-IN APPROACH RUNWAY 17 QNH 1008 G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),92,Chapter 9,9.3,Pilot,"PAN PAN, PAN PAN, PAN PAN WALDEN TOWER G-BBCC INTERCEPTED URGENCY CALL FROM G-ABCD PASSENGER WITH SUSPECTED HEART ATTACK REQUESTING PRIORITY LANDING WALDEN. HIS POSITION 10 MILES NORTH AT 2 000 FEET",True,False
+ICAO Doc 9432 (Manual of Radiotelephony),92,Chapter 9,9.3,ATC,G-BBCC ROGER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),92,Chapter 9,9.3,ATC,G-ABCD WALDEN TOWER RUNWAY 35 WIND 340 DEGREES 10 KNOTS QNH 1008 NO TRAFFIC,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),92,Chapter 9,9.4,Pilot,FASTAIR 345 POSITION NORTH CROSS NDB EMERGENCY DESCENT TO FL 100 DUE TO DECOMPRESSION,True,False
+ICAO Doc 9432 (Manual of Radiotelephony),92,Chapter 9,9.4,ATC,"ATTENTION ALL AIRCRAFT IN THE VICINITY OF NORTH CROSS NDB, EMERGENCY DESCENT IN PROGRESS FROM FL 350 TO FL 100, LEAVE A1 TO THE NORTH IMMEDIATELY",True,False
+ICAO Doc 9432 (Manual of Radiotelephony),94,Chapter 10,9.5,ATC,TRANSMISSION OF METEOROLOGICAL AND,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),94,Chapter 10,9.5,ATC,OTHER AERODROME INFORMATION,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),94,Chapter 10,10.1,ATC,G-CD WALDEN TOWER PRESENT WEATHER WIND 360 DEGREES 5 KNOTS VISIBILITY 20 KILOMETRES FEW CLOUDS 2 500 FEET QNH 1008,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),94,Chapter 10,10.1,Pilot,QNH 1008 G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),94,Chapter 10,10.1,ATC,FASTAIR 345 STEPHENVILLE WIND 360 DEGREES 25 KNOTS VISIBILITY 1 000 METRES CONTINUOUS MODERATE RAIN OVERCAST 600 FEET QNH 1001,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),94,Chapter 10,10.1,Pilot,FASTAIR 345 QNH 1001 REQUEST TEMPERATURE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),94,Chapter 10,10.1,ATC,FASTAIR 345 TEMPERATURE 7,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),94,Chapter 10,10.1,Pilot,FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),95,Chapter 10,10.2,ATC,FASTAIR 345 RVR RUNWAY 27 TOUCHDOWN 650 METRES MIDPOINT 700 METRES STOP END 600 METRES,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),95,Chapter 10,10.2,Pilot,ROGER FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),95,Chapter 10,10.2,ATC,FASTAIR 345 RVR RUNWAY 27 650 METRES 700 METRES AND 600 METRES,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),95,Chapter 10,10.2,Pilot,ROGER FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),96,Chapter 10,10.3,ATC,G-CD WALDEN TOWER GRASS MOWING IN PROGRESS NEAR CENTRE OF AERODROME,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),96,Chapter 10,10.3,Pilot,G-CD MOWERS IN SIGHT,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),96,Chapter 10,10.3,ATC,FASTAIR 345 THRESHOLD RUNWAY 27 DISPLACED 500 FEET DUE BROKEN SURFACE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),96,Chapter 10,10.3,Pilot,ROGER FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),96,Chapter 10,10.3,ATC,FASTAIR 345 TAXIWAY GOLF CLOSED DUE MAINTENANCE USE ALPHA TO VACATE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),96,Chapter 10,10.3,Pilot,"VACATING VIA ALPHA, FASTAIR 345",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),97,Chapter 11,10.3,ATC,MISCELLANEOUS FLIGHT HANDLING,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),97,Chapter 11,11.1,Pilot,ALEXANDER RADIO FASTAIR 345 SELCAL AHCK,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),97,Chapter 11,11.1,ATC,FASTAIR 345 ALEXANDER RADIO SELCAL AHCK,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),97,Chapter 11,11.1,Pilot,ALEXANDER RADIO FASTAIR 345 REQUEST SELCAL CHECK,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),97,Chapter 11,11.1,ATC,FASTAIR 345 ALEXANDER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),97,Chapter 11,11.1,Pilot,FASTAIR 345 SELCAL OK,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),97,Chapter 11,11.1,Pilot,"FASTAIR 345 NEGATIVE SELCAL, TRY AGAIN",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),98,Chapter 11,11.2,ATC,"ALL STATIONS ALEXANDER CONTROL B777 DUMPING FUEL FL 90 BEGINNING 10 MILES SOUTH OF KENNINGTON ON TRACK 180 FOR 50 MILES. AVOID FLIGHT BETWEEN FL 60 AND FL 100 WITHIN 50 MILES BEHIND, 10 MILES AHEAD OF THE AIRCRAFT AND WITHIN 10 NM TO THE SIDES OF FUEL DUMPING TRACK",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),98,Chapter 11,11.2,ATC,ALL STATIONS ALEXANDER CONTROL FUEL DUMPING COMPLETED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),98,Chapter 11,11.3,ATC,G-CD EXTEND DOWNWIND DUE WAKE TURBULENCE B757 LANDING AHEAD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),98,Chapter 11,11.3,Pilot,"EXTENDING DOWNWIND, G-CD",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),98,Chapter 11,11.3,ATC,G-CD HOLD POSITION DUE WAKE TURBULENCE AIRBUS DEPARTING AHEAD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),98,Chapter 11,11.3,Pilot,HOLDING G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),99,Chapter 11,11.4,ATC,FASTAIR 345 CAUTION MEDIUM WIND SHEAR REPORTED AT 800 FEET 3 MILES FINAL RUNWAY 27,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),99,Chapter 11,11.4,Pilot,ROGER FASTAIR 345,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),99,Chapter 11,11.5,Pilot,STEPHENVILLE TOWER G-ABCD REQUEST HEADING TO STEPHENVILLE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),99,Chapter 11,11.5,ATC,G-CD STEPHENVILLE TOWER HEADING TO STEPHENVILLE 090 DEGREES CLASS A,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),99,Chapter 11,11.5,Pilot,CLASS A 090 G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),99,Chapter 11,11.5,Pilot,STEPHENVILLE TOWER G-ABCD REQUEST QDM,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),99,Chapter 11,11.5,ATC,G-CD STEPHENVILLE TOWER QDM 090 DEGREES CLASS A,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),99,Chapter 11,11.5,Pilot,CLASS A 090 G-CD,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),100,Chapter 11,11.6,Pilot,FASTAIR 345 TCAS RA,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),100,Chapter 11,11.6,ATC,FASTAIR 345 ROGER REPORT RETURNING TO CLEARANCE,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),100,Chapter 11,11.6,Pilot,"FASTAIR 345 CLEAR OF CONFLICT RETURNING TO CLEARANCE, NOW MAINTAINING FL 350",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),100,Chapter 11,11.6,ATC,ALEXANDER CONTROL ROGER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),100,Chapter 11,11.6,ATC,FASTAIR 345 CLIMB TO FL 350,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),100,Chapter 11,11.6,Pilot,"FASTAIR 345 UNABLE, TCAS RA",False,False
+ICAO Doc 9432 (Manual of Radiotelephony),100,Chapter 11,11.6,ATC,FASTAIR 345 ALEXANDER CONTROL ROGER REPORT MAINTAINING FL 310,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),100,Chapter 11,11.6,Pilot,FASTAIR 345 CLEAR OF CONFLICT FL 310 RESUMED,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),100,Chapter 11,11.6,ATC,ALEXANDER CONTROL ROGER,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),100,Chapter 11,11.6,ATC,— END —,False,False
+ICAO Doc 9432 (Manual of Radiotelephony),101,Chapter 11,11.6,ATC,ICAO TECHNICAL PUBLICATIONS,False,False

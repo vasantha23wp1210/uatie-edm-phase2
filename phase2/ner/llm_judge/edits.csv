@@ -1,0 +1,127 @@
+sent_id,old,new
+S001,[b767](AIRCRAFT_TYPE)-400,[b767-400](AIRCRAFT_TYPE)
+S001,to lax.,to [lax](AIRPORT).
+S003,l39 pilot,[l39](AIRCRAFT_TYPE) pilot
+S005,teb [runway 24],[teb](AIRPORT) [runway 24]
+S006,departing ogg,departing [ogg](AIRPORT)
+S009,to pdx,to [pdx](AIRPORT)
+S013,at rjaa,at [rjaa](AIRPORT)
+S016,at phl.,at [phl](AIRPORT).
+S017,cessna 172 instructor,[cessna 172](AIRCRAFT_TYPE) instructor
+S017,[500 feet](ALTITUDE) agl,[500 feet agl](ALTITUDE)
+S020,[1;000 ft](ALTITUDE),1;000 ft
+S022,ce-550b flight,[ce-550b](AIRCRAFT_TYPE) flight
+S023,to m21,to [m21](AIRPORT)
+S024,departed hou,departed [hou](AIRPORT)
+S025,at hwd.,at [hwd](AIRPORT).
+S029,for las [runway,for [las](AIRPORT) [runway
+S032,[b787](AIRCRAFT_TYPE)-9,[b787-9](AIRCRAFT_TYPE)
+S035,a lr45 on,a [lr45](AIRCRAFT_TYPE) on
+S047,be5 pax,[be5](AIRCRAFT_TYPE) pax
+S049,lfpg/[cdg,[lfpg](AIRPORT)/[cdg
+S052,boeing 737,[boeing 737](AIRCRAFT_TYPE)
+S053,the phx snobl,the [phx](AIRPORT) snobl
+S054,to mdw [runway,to [mdw](AIRPORT) [runway
+S055,to dfw.,to [dfw](AIRPORT).
+S057,far [121.563](FREQUENCY),far 121.563
+S059,far [121.639](FREQUENCY),far 121.639
+S062,ce560 first,[ce560](AIRCRAFT_TYPE) first
+S062,arriving rsw,arriving [rsw](AIRPORT)
+S062,instead of 328 degrees,instead of [328](HEADING) degrees
+S063,fms rsw [runway,fms [rsw](AIRPORT) [runway
+S066,[b767](AIRCRAFT_TYPE)-400,[b767-400](AIRCRAFT_TYPE)
+S067,[vfr arpt](AIRPORT),vfr arpt
+S068,[b757](AIRCRAFT_TYPE)-200,[b757-200](AIRCRAFT_TYPE)
+S069,the kpam afb,the [kpam](AIRPORT) afb
+S078,of den [runway,of [den](AIRPORT) [runway
+S083,[b737](AIRCRAFT_TYPE)-700,[b737-700](AIRCRAFT_TYPE)
+S084,from lax [runway,from [lax](AIRPORT) [runway
+S086,a det [runway,a [det](AIRPORT) [runway
+S091,at mmmx,at [mmmx](AIRPORT)
+S096,pc-24 captain,[pc-24](AIRCRAFT_TYPE) captain
+S100,at xna;,at [xna](AIRPORT);
+S103,on dwh taxiway,on [dwh](AIRPORT) taxiway
+S105,the mynn runway,the [mynn](AIRPORT) runway
+S107,[pa32](AIRCRAFT_TYPE)t,[pa32t](AIRCRAFT_TYPE)
+S108,emb-190 pilot,[emb-190](AIRCRAFT_TYPE) pilot
+S109,the sfo loc,the [sfo](AIRPORT) loc
+S110,embraer-545 fractional,[embraer-545](AIRCRAFT_TYPE) fractional
+S112,to sjc [runway,to [sjc](AIRPORT) [runway
+S114,[b737](AIRCRAFT_TYPE)-ng,[b737-ng](AIRCRAFT_TYPE)
+S114,overflying dfw,overflying [dfw](AIRPORT)
+S117,far [121.647](FREQUENCY),far 121.647
+S119,at boi [rwy,at [boi](AIRPORT) [rwy
+S120,dfw ils,[dfw](AIRPORT) ils
+S122,inbound to hum,inbound to [hum](AIRPORT)
+S123,at las missed,at [las](AIRPORT) missed
+S126,departing den [runway,departing [den](AIRPORT) [runway
+S126,2;000 to [3;000 feet](ALTITUDE),2;000 to 3;000 feet
+S128,emb-145 first,[emb-145](AIRCRAFT_TYPE) first
+S129,a g200 captain,a [g200](AIRCRAFT_TYPE) captain
+S131,[b737](AIRCRAFT_TYPE)-700,[b737-700](AIRCRAFT_TYPE)
+S132,a grumman a65 instructor,a [grumman a65](AIRCRAFT_TYPE) instructor
+S132,for pne [runway,for [pne](AIRPORT) [runway
+S135,[b747](AIRCRAFT_TYPE)-400,[b747-400](AIRCRAFT_TYPE)
+S135,far [121.485](FREQUENCY),far 121.485
+S136,[b737](AIRCRAFT_TYPE)-800's,[b737-800](AIRCRAFT_TYPE)'s
+S138,at bzn without,at [bzn](AIRPORT) without
+S139,a citabria suffered,a [citabria](AIRCRAFT_TYPE) suffered
+S140,at las the,at [las](AIRPORT) the
+S141,[b737](AIRCRAFT_TYPE)-800,[b737-800](AIRCRAFT_TYPE)
+S145,departing mke [runway,departing [mke](AIRPORT) [runway
+S147,emb-190 pilot,[emb-190](AIRCRAFT_TYPE) pilot
+S151,b-787 flight,[b-787](AIRCRAFT_TYPE) flight
+S154,far [121.473](FREQUENCY),far 121.473
+S158,at kyu allowed,at [kyu](AIRPORT) allowed
+S162,cleared to 170 but,cleared to [170](FLIGHT_LEVEL) but
+S163,departing lga [rwy,departing [lga](AIRPORT) [rwy
+S167,at dca;,at [dca](AIRPORT);
+S168,a fa900 captain,a [fa900](AIRCRAFT_TYPE) captain
+S168,the teb [runway 24],the [teb](AIRPORT) [runway 24]
+S171,emb 170 flight,[emb 170](AIRCRAFT_TYPE) flight
+S172,a b737ng was,a [b737ng](AIRCRAFT_TYPE) was
+S172,at fll after,at [fll](AIRPORT) after
+S173,an e-145 had,an [e-145](AIRCRAFT_TYPE) had
+S174,[b737](AIRCRAFT_TYPE)-900,[b737-900](AIRCRAFT_TYPE)
+S179,to lax [runway,to [lax](AIRPORT) [runway
+S185,to sea [runway,to [sea](AIRPORT) [runway
+S186,to okc [runway,to [okc](AIRPORT) [runway
+S187,[b737](AIRCRAFT_TYPE)-700,[b737-700](AIRCRAFT_TYPE)
+S189,to ord;,to [ord](AIRPORT);
+S191,approached uuu and,approached [uuu](AIRPORT) and
+S192,[b747](AIRCRAFT_TYPE)-200,[b747-200](AIRCRAFT_TYPE)
+S193,eurocopter as-350's,[eurocopter as-350](AIRCRAFT_TYPE)'s
+S197,into bos in,into [bos](AIRPORT) in
+S199,at ome;,at [ome](AIRPORT);
+S201,q400 captain,[q400](AIRCRAFT_TYPE) captain
+S204,for roa.,for [roa](AIRPORT).
+S206,on mkc [rwy 1](RUNWAY)-19,on [mkc](AIRPORT) [rwy 1-19](RUNWAY)
+S208,[dep arpt](AIRPORT),dep arpt
+S211,[b757](AIRCRAFT_TYPE)-200,[b757-200](AIRCRAFT_TYPE)
+S212,at las but,at [las](AIRPORT) but
+S214,to hpn misunderstood,to [hpn](AIRPORT) misunderstood
+S214,turned to 170 vs 270,turned to [170](HEADING) vs [270](HEADING)
+S216,an e145 flight,an [e145](AIRCRAFT_TYPE) flight
+S216,from atl was,from [atl](AIRPORT) was
+S217,[b737](AIRCRAFT_TYPE)-800,[b737-800](AIRCRAFT_TYPE)
+S220,a mooney m20 experienced,a [mooney m20](AIRCRAFT_TYPE) experienced
+S221,[b737](AIRCRAFT_TYPE)-300,[b737-300](AIRCRAFT_TYPE)
+S230,a ce-560xl report,a [ce-560xl](AIRCRAFT_TYPE) report
+S233,[b757](AIRCRAFT_TYPE)-200,[b757-200](AIRCRAFT_TYPE)
+S235,to sfo [rwy,to [sfo](AIRPORT) [rwy
+S238,of a b737ng mistakenly,of a [b737ng](AIRCRAFT_TYPE) mistakenly
+S238,the cleared 27;000 to 29;500,the cleared [27;000](ALTITUDE) to [29;500](ALTITUDE)
+S239,to den;,to [den](AIRPORT);
+S243,b737ng captain,[b737ng](AIRCRAFT_TYPE) captain
+S243,into ord 11,into [ord](AIRPORT) 11
+S249,at rjv and vdi airports,at [rjv](AIRPORT) and [vdi](AIRPORT) airports
+S250,an ac90 on,an [ac90](AIRCRAFT_TYPE) on
+S250,btwn 700-[1000 ft](ALTITUDE),btwn [700-1000 ft](ALTITUDE)
+S250,[dep arpt](AIRPORT),dep arpt
+S252,experienced slc class,experienced [slc](AIRPORT) class
+S253,emb-145 flight,[emb-145](AIRCRAFT_TYPE) flight
+S254,near atl and,near [atl](AIRPORT) and
+S257,emb-145 crew,[emb-145](AIRCRAFT_TYPE) crew
+S257,at iah (,at [iah](AIRPORT) (
+S259,a 280 degree heading,a [280 degree](HEADING) heading
+S260,[b767](AIRCRAFT_TYPE)-300,[b767-300](AIRCRAFT_TYPE)

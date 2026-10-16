@@ -1,0 +1,22 @@
+Loading cross-map data...
+  Loaded 514 records
+
+Building RDF ontology graph...
+  Populating individuals from cross-map rows...
+  RDF graph triples : 7883
+  Saved TTL         : /home/ubuntu/uatie-edm-phase2/phase2/phraseology/out/ontology/phase1_repro/phraseology_ontology.ttl
+  Saved triples CSV : /home/ubuntu/uatie-edm-phase2/phase2/phraseology/out/ontology/phase1_repro/phraseology_triples.csv
+
+=======================================================
+  ONTOLOGY TRIPLE SUMMARY
+=======================================================
+  Total RDF triples       : 7883
+  Flat triples (CSV rows) : 4880
+  CAA phrase individuals  : 514
+  ICAO phrase individuals : 196
+  Circumstance nodes      : 94
+  ATC Service nodes       : 13
+  Speaker nodes           : 3
+=======================================================
+
+Step complete. Load phraseology_ontology.ttl into Protege or WebProtege.
