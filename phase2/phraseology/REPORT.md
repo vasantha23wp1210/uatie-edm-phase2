@@ -14,8 +14,12 @@ Sources: only the three PDFs in `data/phraseology_sources/` (SHA-256 in results.
 |---|---:|---|---:|---:|
 | Doc 4444 Ch. 12 | 580 | {'ATC': 487, 'Pilot': 91, 'Aircraft/tow vehicle': 2} | 4 | 17 |
 | Doc 9432 | 677 | {'ATC': 345, 'Pilot': 332} | 14 | 0 |
+| Doc 4444 Ch. 6 SID/STAR lists + Ch. 15 quoted phrases | 14 | {'ATC': 12, 'Pilot': 2} | 1 | 0 |
+| Doc 4444 Appendix 5 CPDLC (data link, not in crossmap corpus) | 231 | {'ATC (uplink)': 160, 'Pilot (downlink)': 71} | 7 | 0 |
 
-ICAO matching corpus after de-duplication: 1180 phrases {'ICAO Doc 9432 (Manual of Radiotelephony)': 627, 'ICAO Doc 4444 (PANS-ATM) Ch. 12': 553}.
+Outside Chapter 12, Doc 4444 prints radiotelephony phraseology only in the Chapter 6 SID/STAR clearance lists (6.3.2.4, 6.5.2.4) and as quoted phrases in Chapter 15; other chapters refer back to Chapter 12. Appendix 5 is the CPDLC message set: data-link message formats, not spoken phraseology, so it is extracted and counted but not matched against CAA phrases. Doc 9613 (PBN Manual, 5th ed. 2023, 398 pages, `data/phraseology_sources/ICAO-Doc-9613.pdf`) was scanned page by page: it has no phraseology tables, defers R/T phraseology to Doc 4444 and Doc 9432 (pp. 134, 236), and its only quoted upper-case strings are navigation specification names and cockpit alerts ("UNABLE RNP"). It adds 0 phrases.
+
+ICAO matching corpus after de-duplication: 1194 phrases {'ICAO Doc 9432 (Manual of Radiotelephony)': 627, 'ICAO Doc 4444 (PANS-ATM) Ch. 12': 553, 'ICAO Doc 4444 (PANS-ATM) Ch. 6': 12, 'ICAO Doc 4444 (PANS-ATM) Ch. 15': 2}.
 
 ## CAA tiers (514 CAA phrases)
 
@@ -28,8 +32,10 @@ ICAO matching corpus after de-duplication: 1180 phrases {'ICAO Doc 9432 (Manual 
 
 CAA-unique (No Match) %: before 50.58, after TF-IDF 4.86, after embedding 0.0.
 
-Emergency: 3 CAA rows match the emergency regex, 3 of them now match ICAO above 0.30; ICAO emergency rows {'ICAO Doc 9432 (Manual of Radiotelephony)': 14, 'ICAO Doc 4444 (PANS-ATM) Ch. 12': 4}.
+Emergency: 3 CAA rows match the emergency regex, 3 of them now match ICAO above 0.30; ICAO emergency rows {'ICAO Doc 9432 (Manual of Radiotelephony)': 14, 'ICAO Doc 4444 (PANS-ATM) Ch. 12': 4, 'ICAO Doc 4444 (PANS-ATM) Ch. 15': 1}.
 GNSS/RNAV: 21 CAA rows, 16 matched above 0.30; ICAO GNSS rows {'ICAO Doc 4444 (PANS-ATM) Ch. 12': 17}.
+
+Plan targets (ICAO radiotelephony phrases in the crossmap corpus): emergency >= 25: 19 (MISSED); GNSS >= 15: 17 (met). Appendix 5 CPDLC adds 7 emergency and 0 GNSS data-link elements, not counted above. Counts use the emergency/GNSS regexes in `extract.py`, before deduplication.
 
 ## Ontology
 
@@ -51,7 +57,23 @@ The Phase 1 rerun is isomorphic to the committed TTL: True.
 - Embedding scores use the TF-IDF bins, which were not calibrated for embeddings; every phrase scores above 0.30, so the embedding tiers are not comparable to TF-IDF.
 - Doc 9432 has no GNSS/RNAV dialogue (one RNAV mention, in the abbreviations list).
 - Extraction is heuristic: Doc 4444 sub-items can merge when the layout differs; Doc 9432 utterances split across page breaks may be cut. Not hand-checked line by line.
-- Verification sample `verify/matches_to_verify.csv` (20 rows, 5 per tier, seed 42): 0 reviewed; pending user review.
+- Verification sample `verify/matches_to_verify.csv` (20 rows, 5 per tier, seed 42): 20 reviewed; reviewed.
+
+## Verification of 20 sampled matches
+
+Verdicts: human (user); notes refined with Claude (`verify/matches_verified.csv`, scored by `score_verification.py`). A verdict says whether the assigned TF-IDF tier is right, so `correct` on a No Match row means the two phrases are not equivalent.
+
+| Tier | Rows | Tier correct |
+|---|---:|---:|
+| No Match | 5 | 4 |
+| Partial Match | 5 | 2 |
+| Close Match | 5 | 5 |
+| Exact/Near-Exact | 5 | 5 |
+| All | 20 | 16 |
+
+- Tier wrong: M15, M16, M19, M20; the reviewer's notes put each in a higher tier. The notes attribute this to merged or truncated ICAO strings from PDF extraction and to filled-in values compared against template slots.
+- Verdict changed during the Claude review of the notes: M18, M20. Excluding them: 15 of 18 tier correct.
+- 5 rows per tier is too few for per-tier precision; read the counts as error examples, not rates.
 
 ## Reproduce
 
@@ -59,5 +81,6 @@ The Phase 1 rerun is isomorphic to the committed TTL: True.
 python phase2/phraseology/extract.py
 python phase2/phraseology/crossmap.py --phase1 ../uatie-edm-phase1
 python phase2/phraseology/ontology.py --phase1 ../uatie-edm-phase1
+python phase2/phraseology/score_verification.py
 python phase2/phraseology/report.py
 ```

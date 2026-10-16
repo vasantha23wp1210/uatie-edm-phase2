@@ -1,0 +1,27 @@
+{
+  "model": "llama3.2:3b",
+  "ollama_options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 350
+  },
+  "retrieval_system": "faiss",
+  "top_k": 5,
+  "insufficient_evidence_threshold": 0.6164,
+  "threshold_rule": "max balanced accuracy on dev",
+  "queries": 100,
+  "status_counts": {
+    "insufficient_evidence": 41,
+    "ok": 37,
+    "ok_after_filtering": 22
+  },
+  "citations_raw": 285,
+  "citations_rejected": 0,
+  "citation_validity": 1.0,
+  "phraseology_raw": 132,
+  "phraseology_rejected": 33,
+  "llm_latency_ms_p50": 12115.3,
+  "llm_latency_ms_p95": 19548.6,
+  "answers_sha256": "1fcd955ffa0592ee58288c2854d923df471a5a02d0f1bd015524b120f7f4be31"
+}

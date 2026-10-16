@@ -14,10 +14,10 @@ Each item says what was checked and why it cannot be fully verified.
 
 ## Phase 2 (provisional until user review)
 
-8. **All Phase 2 metrics that depend on labels** (retrieval qrels for new pairs, the 400 intent labels, the 260 NER corrections) are `LLM-judged (Devin), pending user review`. They are not human gold.
+8. **All Phase 2 metrics that depend on labels** (retrieval qrels for new pairs, the 400 intent labels, the 260 NER corrections) are `LLM-judged (Claude), pending user review` (method and agreement with Devin's superseded provisional labels: `phase2/labels/`). They are not human gold.
 9. **gold_eval_rebuild test labels** are LLM-judged (Claude). The spot-check against the user's manual labels gave κ 0.34.
 10. **CALLSIGN NER performance.** It cannot be evaluated: 0 test entities, because ASRS de-identifies callsigns.
 11. **Generation hallucination rate.** It is estimated by an LLM judge, by default the same 3B model as the generator. It is not a human judgement.
-12. **Answer quality ratings.** `phase2/generation/rate/answers_to_rate.csv` is pending user rating; no quality score is reported until it is returned.
-13. **Phraseology match correctness.** The 20 sampled matches in `phase2/phraseology/verify/matches_to_verify.csv` are pending user verification.
+12. **Answer quality ratings.** The user rated 30 answers (`phase2/generation/rate/answers_rated_run_prev.csv`; notes refined with Claude). They rate the earlier generation run (`out/run_prev/`); only 6 of the 30 answers are identical in the current run, so the current run's answers are not human-rated.
+13. **Phraseology match correctness.** The user verified the 20 sampled matches (`phase2/phraseology/verify/matches_verified.csv`; notes refined with Claude, and the verdicts on M18 and M20 changed during that review). 20 rows, 5 per tier, are error examples, not a precision estimate for the 514-phrase crossmap.
 14. **Latency.** All timings are from this CPU-only VM, often with other jobs running. They do not transfer to other hardware.

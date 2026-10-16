@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Task 4, step 1: extract structured phraseology from the PDFs in data/phraseology_sources/ (no downloads).
 
-Writes out/sources/doc4444_ch12.csv (ICAO Doc 4444 Chapter 12, sections 12.3-12.7) with
+Writes out/sources/doc4444_ch12.csv (ICAO Doc 4444 Chapter 12, sections 12.3-12.7),
+doc4444_other.csv (Ch. 6 SID/STAR lists, Ch. 15 quoted phrases), doc4444_cpdlc.csv (Appendix 5 CPDLC, data link)
+and doc9432_dialogues.csv. Ch. 12 columns:
 source, section, section_title, category, speaker, marker, phrase, is_emergency, is_gnss.
 Speaker: Doc 4444 marks pilot transmissions with '*'; everything else is recorded as ATC, and the raw
 marker is kept so other legend symbols can be checked.
@@ -176,6 +178,73 @@ def doc9432(path):
     return df
 
 
+def doc4444_other(path):
+    """Phraseology printed outside Chapter 12: Chapter 6 SID/STAR clearance lists (6.3.2.4, 6.5.2.4) and
+    quoted multi-word phrases in Chapter 15 (radiotelephony, so they join the crossmap corpus)."""
+    r = PdfReader(str(path))
+    rows = []
+    for pno in (128, 132):
+        L = (r.pages[pno - 1].extract_text() or "").splitlines()
+        j = 0
+        while j < len(L):
+            m = re.match(r"^\s*([a-f])\)\s+((?:CLIMB|DESCEND)\b.*)$", L[j])
+            if m:
+                ph = m.group(2).strip()
+                while not ph.endswith(":") and j + 1 < len(L) and upper_ratio(L[j + 1]) >= 0.8:
+                    j += 1
+                    ph += " " + L[j].strip()
+                rows.append(dict(source="ICAO Doc 4444 (PANS-ATM) Ch. 6", page=pno, section="6.3.2.4" if pno == 128
+                                 else "6.5.2.4", item=m.group(1), speaker="ATC", phrase=ph.rstrip(":").strip()))
+            j += 1
+    for pno in range(319, 348):
+        t = r.pages[pno - 1].extract_text() or ""
+        if re.search(r"(?m)^\s*Appendix \d", t):
+            break
+        for q in re.findall(r"[\u201c\"]([A-Z][A-Z0-9 ,()\-/]{3,})[\u201d\"]", t):
+            if len(q.split()) >= 2:
+                rows.append(dict(source="ICAO Doc 4444 (PANS-ATM) Ch. 15", page=pno, section="15", item="",
+                                 speaker="Pilot", phrase=q.strip()))
+    df = pd.DataFrame(rows)
+    df["phrase"] = df.phrase.map(clean)
+    df["is_emergency"] = df.phrase.str.contains(EMERGENCY)
+    df["is_gnss"] = df.phrase.str.contains(GNSS)
+    return df
+
+
+def doc4444_cpdlc(path):
+    """Appendix 5 CPDLC message set. Data link, not radiotelephony: kept out of the crossmap corpus and
+    counted separately. Columns by x0: identifier < 125, display format 290-435."""
+    import pdfplumber
+    IDW = re.compile(r"^[A-Z]{3}[UD]-\d+$")
+    rows, cur = [], None
+    with pdfplumber.open(path) as pdf:
+        for pno in range(438, 468):
+            lines = {}
+            for w in pdf.pages[pno - 1].extract_words():
+                lines.setdefault(round(w["top"]), []).append(w)
+            for top in sorted(lines):
+                ws = lines[top]
+                text = " ".join(w["text"] for w in ws)
+                if IDW.match(ws[0]["text"]) and ws[0]["x0"] < 125:
+                    if cur: rows.append(cur)
+                    cur = dict(source="ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC", page=pno, element=ws[0]["text"],
+                               speaker="ATC (uplink)" if ws[0]["text"][3] == "U" else "Pilot (downlink)", phrase="")
+                elif re.match(r"^(Table|Message|Format|element|identifier|\d+\.\s|Appendix)", text):
+                    if cur: rows.append(cur)
+                    cur = None
+                    continue
+                if cur:
+                    fmt = [w["text"] for w in ws if 290 <= w["x0"] < 435]
+                    cur["phrase"] = (cur["phrase"] + " " + " ".join(fmt)).strip()
+            if cur: rows.append(cur)
+            cur = None
+    df = pd.DataFrame(rows)
+    df = df[df.phrase.str.len() > 0].drop_duplicates("element")
+    df["is_emergency"] = df.element.str.startswith("EMG") | df.phrase.str.contains(EMERGENCY)
+    df["is_gnss"] = df.phrase.str.contains(GNSS)
+    return df
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     d = doc4444(SRC / "doc_4444_pans_atm.pdf")
@@ -183,6 +252,14 @@ def main():
     print("doc4444 rows", len(d), "sections", d.section.nunique(), d.speaker.value_counts().to_dict(),
           "markers", d.marker.value_counts().to_dict(), "emergency", int(d.is_emergency.sum()), "gnss", int(d.is_gnss.sum()))
     print(d.groupby(d.section.str[:6]).size().to_dict())
+    o = doc4444_other(SRC / "doc_4444_pans_atm.pdf")
+    o.to_csv(OUT / "doc4444_other.csv", index=False)
+    print("doc4444 other rows", len(o), o.source.value_counts().to_dict(), "emergency", int(o.is_emergency.sum()),
+          "gnss", int(o.is_gnss.sum()))
+    c = doc4444_cpdlc(SRC / "doc_4444_pans_atm.pdf")
+    c.to_csv(OUT / "doc4444_cpdlc.csv", index=False)
+    print("doc4444 cpdlc rows", len(c), c.speaker.value_counts().to_dict(), "emergency", int(c.is_emergency.sum()),
+          "gnss", int(c.is_gnss.sum()))
     e = doc9432(SRC / "ICAO-Doc-9432.pdf")
     e.to_csv(OUT / "doc9432_dialogues.csv", index=False)
     print("doc9432 rows", len(e), e.speaker.value_counts().to_dict(), "emergency", int(e.is_emergency.sum()),

@@ -1,0 +1,232 @@
+source,page,element,speaker,phrase,is_emergency,is_gnss
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,439,RTEU-1,ATC (uplink),(departure clearance),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,439,RTEU-2,ATC (uplink),PROCEED DIRECT TO (position),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,439,RTEU-3,ATC (uplink),AT TIME (time) PROCEED DIRECT TO (position),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,439,RTEU-4,ATC (uplink),AT (Position) PROCEED DIRECT TO (position),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,439,RTEU-5,ATC (uplink),AT (level single) PROCEED DIRECT TO (position),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,439,RTEU-6,ATC (uplink),CLEARED TO (position) VIA (departure data[O]) (en-route data),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,439,RTEU-7,ATC (uplink),CLEARED (departure data[O]) (en-route data) (arrival approach data),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,439,RTEU-8,ATC (uplink),CLEARED (procedure name),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,439,RTEU-9,ATC (uplink),AT (position) CLEARED (en-route data) (arrival approach data),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,439,RTEU-10,ATC (uplink),AT (position) CLEARED (procedure name),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,440,RTEU-11,ATC (uplink),AT (position) HOLD INBOUND TRACK (degrees) (direction) TURNS (leg type) LEGS,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,440,RTEU-12,ATC (uplink),AT (position) HOLD AS PUBLISHED,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,440,RTEU-13,ATC (uplink),EXPECT FURTHER CLEARANCE AT TIME (time),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,440,RTEU-14,ATC (uplink),EXPECT (named instruction),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,440,RTEU-15,ATC (uplink),CONFIRM ASSIGNED ROUTE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,440,RTEU-16,ATC (uplink),REQUEST POSITION REPORT,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,440,RTEU-17,ATC (uplink),ADVISE ETA (position),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,441,RTED-1,Pilot (downlink),REQUEST DIRECT TO (position),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,441,RTED-2,Pilot (downlink),REQUEST (named instruction),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,441,RTED-3,Pilot (downlink),REQUEST CLEARANCE (departure data[O]) (en-route data) (arrival approach data[O]),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,441,RTED-4,Pilot (downlink),REQUEST (clearance type) CLEARANCE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,441,RTED-5,Pilot (downlink),POSITION REPORT (position report),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,441,RTED-6,Pilot (downlink),REQUEST HEADING (degrees),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,441,RTED-7,Pilot (downlink),REQUEST GROUND TRACK (degrees),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,441,RTED-8,Pilot (downlink),WHEN CAN WE EXPECT BACK ON ROUTE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,441,RTED-9,Pilot (downlink),ASSIGNED ROUTE (departure data[O]) (en-route data) (arrival approach data[O]),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,441,RTED-10,Pilot (downlink),ETA (position) TIME (time),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,442,LATU-1,ATC (uplink),OFFSET (specified distance) (direction) OF ROUTE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,442,LATU-2,ATC (uplink),AT (position) OFFSET (specified distance) (direction) OF ROUTE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,442,LATU-3,ATC (uplink),AT TIME (time) OFFSET (specified distance) (direction) OF ROUTE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,442,LATU-4,ATC (uplink),REJOIN ROUTE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,442,LATU-5,ATC (uplink),REJOIN ROUTE BEFORE PASSING (position),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,442,LATU-6,ATC (uplink),REJOIN ROUTE BEFORE TIME (time),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,442,LATU-7,ATC (uplink),EXPECT BACK ON ROUTE BEFORE PASSING (position),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,442,LATU-8,ATC (uplink),EXPECT BACK ON ROUTE BEFORE TIME (time),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,442,LATU-9,ATC (uplink),RESUME OWN NAVIGATION,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,443,LATU-10,ATC (uplink),CLEARED TO DEVIATE UP TO (lateral deviation) OF ROUTE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,443,LATU-11,ATC (uplink),TURN (direction) HEADING (degrees),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,443,LATU-12,ATC (uplink),TURN (direction) GROUND TRACK (degrees),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,443,LATU-13,ATC (uplink),TURN (direction) (number of degrees) DEGREES,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,443,LATU-14,ATC (uplink),CONTINUE PRESENT HEADING,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,443,LATU-15,ATC (uplink),AT (position) FLY HEADING (degrees),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,443,LATU-16,ATC (uplink),FLY HEADING (degrees),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,443,LATU-17,ATC (uplink),REPORT CLEAR OF WEATHER,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,443,LATU-18,ATC (uplink),REPORT BACK ON ROUTE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,443,LATU-19,ATC (uplink),REPORT PASSING (position),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,443,LATD-1,Pilot (downlink),REQUEST OFFSET (specified distance) (direction) OF ROUTE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,443,LATD-2,Pilot (downlink),REQUEST WEATHER DEVIATION UP TO (lateral deviation) OF ROUTE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,443,LATD-3,Pilot (downlink),CLEAR OF WEATHER,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,444,LATD-4,Pilot (downlink),BACK ON ROUTE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,444,LATD-5,Pilot (downlink),DIVERTING TO (position) VIA (en-route data) (arrival approach data[O]),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,444,LATD-6,Pilot (downlink),OFFSETTING (specified distance) (direction) OF ROUTE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,444,LATD-7,Pilot (downlink),DEVIATING (specified deviation) (direction) OF ROUTE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,444,LATD-8,Pilot (downlink),PASSING (position),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,444,LVLU-1,ATC (uplink),EXPECT HIGHER AT TIME (time),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,444,LVLU-2,ATC (uplink),EXPECT HIGHER AT (position),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,444,LVLU-3,ATC (uplink),EXPECT LOWER AT TIME (time),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,445,LVLU-4,ATC (uplink),EXPECT LOWER AT (position),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,445,LVLU-5,ATC (uplink),MAINTAIN (level),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,445,LVLU-6,ATC (uplink),CLIMB TO (level),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,445,LVLU-7,ATC (uplink),AT TIME (time) CLIMB TO (level),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,445,LVLU-8,ATC (uplink),AT (position) CLIMB TO (level),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,445,LVLU-9,ATC (uplink),DESCEND TO (level),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,445,LVLU-10,ATC (uplink),AT TIME (time) DESCEND TO (level),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,445,LVLU-11,ATC (uplink),AT (position) DESCEND TO (level),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,445,LVLU-12,ATC (uplink),CLIMB TO REACH (level single) BEFORE TIME (time),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,445,LVLU-13,ATC (uplink),CLIMB TO REACH (level single) BEFORE PASSING (position),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,445,LVLU-14,ATC (uplink),DESCEND TO REACH (level single) BEFORE TIME (time),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,446,LVLU-15,ATC (uplink),DESCEND TO REACH (level single) BEFORE PASSING (position),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,446,LVLU-16,ATC (uplink),STOP CLIMB AT (level single),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,446,LVLU-17,ATC (uplink),STOP DESCENT AT (level single),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,446,LVLU-18,ATC (uplink),CLIMB AT (vertical rate) OR GREATER,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,446,LVLU-19,ATC (uplink),CLIMB AT (vertical rate) OR LESS,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,446,LVLU-20,ATC (uplink),DESCEND AT (vertical rate) OR GREATER,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,446,LVLU-21,ATC (uplink),DESCEND AT (vertical rate) OR LESS,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,446,LVLU-22,ATC (uplink),EXPECT (level single) (number of minutes) AFTER DEPARTURE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,446,LVLU-23,ATC (uplink),REPORT LEAVING (level single),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,446,LVLU-24,ATC (uplink),REPORT MAINTAINING (level single),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,446,LVLU-25,ATC (uplink),REPORT PRESENT LEVEL,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,446,LVLU-26,ATC (uplink),REPORT REACHING BLOCK (level single) TO (level single),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,447,LVLU-27,ATC (uplink),CONFIRM ASSIGNED LEVEL,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,447,LVLU-28,ATC (uplink),ADVISE PREFERRED LEVEL,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,447,LVLU-29,ATC (uplink),ADVISE TOP OF DESCENT,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,447,LVLU-30,ATC (uplink),WHEN CAN YOU ACCEPT (level single),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,447,LVLU-31,ATC (uplink),CAN YOU ACCEPT (level single) AT (position),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,447,LVLU-32,ATC (uplink),CAN YOU ACCEPT (level single) AT TIME (time),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,447,LVLD-1,Pilot (downlink),REQUEST (level),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,447,LVLD-2,Pilot (downlink),REQUEST CLIMB TO (level),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,447,LVLD-3,Pilot (downlink),REQUEST DESCENT TO (level),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,447,LVLD-4,Pilot (downlink),AT (position) REQUEST (level),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,447,LVLD-5,Pilot (downlink),AT TIME (time) REQUEST (level),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,447,LVLD-6,Pilot (downlink),WHEN CAN WE EXPECT LOWER LEVEL,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,448,LVLD-7,Pilot (downlink),WHEN CAN WE EXPECT HIGHER LEVEL,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,448,LVLD-8,Pilot (downlink),LEAVING (level single),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,448,LVLD-9,Pilot (downlink),MAINTAINING (level single),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,448,LVLD-10,Pilot (downlink),REACHING BLOCK (level single) TO (level single),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,448,LVLD-11,Pilot (downlink),ASSIGNED LEVEL (level),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,448,LVLD-12,Pilot (downlink),PREFERRED LEVEL (level single),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,448,LVLD-13,Pilot (downlink),CLIMBING TO (level single),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,448,LVLD-14,Pilot (downlink),DESCENDING TO (level single),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,448,LVLD-15,Pilot (downlink),WE CAN ACCEPT (level single) AT TIME (time),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,448,LVLD-16,Pilot (downlink),WE CAN ACCEPT (level single) AT (position),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,448,LVLD-17,Pilot (downlink),WE CANNOT ACCEPT (level single),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,448,LVLD-18,Pilot (downlink),TOP OF DESCENT (position) TIME (time),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,449,CSTU-1,ATC (uplink),CROSS (position) AT (level),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,449,CSTU-2,ATC (uplink),CROSS (position) AT OR ABOVE (level single),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,449,CSTU-3,ATC (uplink),CROSS (position) AT OR BELOW (level single),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,449,CSTU-4,ATC (uplink),CROSS (position) AT TIME (time),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,449,CSTU-5,ATC (uplink),CROSS (position) BEFORE TIME (time),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,449,CSTU-6,ATC (uplink),CROSS (position) AFTER TIME (time),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,449,CSTU-7,ATC (uplink),CROSS (position) BETWEEN TIME (time) AND TIME (time),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,449,CSTU-8,ATC (uplink),CROSS (position) AT (speed),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,449,CSTU-9,ATC (uplink),CROSS (position) AT (speed) OR LESS,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,449,CSTU-10,ATC (uplink),CROSS (position) AT (speed) OR GREATER,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,449,CSTU-11,ATC (uplink),CROSS (position) AT TIME (time) AT (level),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,450,CSTU-12,ATC (uplink),CROSS (position) BEFORE TIME(time) AT (level),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,450,CSTU-13,ATC (uplink),CROSS (position) AFTER TIME(time) AT (level),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,450,CSTU-14,ATC (uplink),CROSS (position) AT (level) AT (speed),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,450,CSTU-15,ATC (uplink),CROSS (position) AT TIME (time) AT (level) AT (speed),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,450,SPDU-1,ATC (uplink),EXPECT SPEED CHANGE AT TIME (time),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,450,SPDU-2,ATC (uplink),EXPECT SPEED CHANGE AT (position),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,450,SPDU-3,ATC (uplink),EXPECT SPEED CHANGE AT (level single),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,450,SPDU-4,ATC (uplink),MAINTAIN (speed),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,450,SPDU-5,ATC (uplink),MAINTAIN PRESENT SPEED,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,451,SPDU-6,ATC (uplink),MAINTAIN (speed) OR GREATER,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,451,SPDU-7,ATC (uplink),MAINTAIN (speed) OR LESS,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,451,SPDU-8,ATC (uplink),MAINTAIN (speed) TO (speed),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,451,SPDU-9,ATC (uplink),INCREASE SPEED TO (speed),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,451,SPDU-10,ATC (uplink),INCREASE SPEED TO (speed) OR GREATER,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,451,SPDU-11,ATC (uplink),REDUCE SPEED TO (speed),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,451,SPDU-12,ATC (uplink),REDUCE SPEED TO (speed) OR LESS,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,451,SPDU-13,ATC (uplink),RESUME NORMAL SPEED,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,451,SPDU-14,ATC (uplink),NO SPEED RESTRICTION,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,451,SPDU-15,ATC (uplink),REPORT (speed types) SPEED,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,451,SPDU-16,ATC (uplink),CONFIRM ASSIGNED SPEED,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,451,SPDU-17,ATC (uplink),WHEN CAN YOU ACCEPT (speed),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,452,SPDD-1,Pilot (downlink),REQUEST (speed),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,452,SPDD-2,Pilot (downlink),WHEN CAN WE EXPECT (speed),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,452,SPDD-3,Pilot (downlink),(speed types) SPEED (speed),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,452,SPDD-4,Pilot (downlink),ASSIGNED SPEED (speed),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,452,SPDD-5,Pilot (downlink),WE CAN ACCEPT (speed) AT TIME (time),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,452,SPDD-6,Pilot (downlink),WE CANNOT ACCEPT (speed),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,452,ADVU-1,ATC (uplink),(facility Designation) ALTIMETER (altimeter setting),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,452,ADVU-2,ATC (uplink),SURVEILLANCE SERVICE TERMINATED,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,452,ADVU-3,ATC (uplink),IDENTIFIED (position[O]),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,452,ADVU-4,ATC (uplink),IDENTIFICATION LOST,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,452,ADVU-5,ATC (uplink),ATIS (ATIS code),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,452,ADVU-6,ATC (uplink),REQUEST AGAIN WITH NEXT ATC UNIT,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,453,ADVU-7,ATC (uplink),TRAFFIC IS (traffic description),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,453,ADVU-8,ATC (uplink),REPORT SIGHTING AND PASSING OPPOSITE DIRECTION (aircraft type[O]) (traffic location) (ETP time[O]),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,453,ADVU-9,ATC (uplink),SQUAWK (SSR code),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,453,ADVU-10,ATC (uplink),STOP SQUAWK,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,453,ADVU-11,ATC (uplink),STOP ADS-B TRANSMISSION,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,453,ADVU-12,ATC (uplink),SQUAWK MODE C,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,453,ADVU-13,ATC (uplink),STOP SQUAWK MODE C,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,453,ADVU-14,ATC (uplink),CONFIRM SQUAWK CODE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,453,ADVU-15,ATC (uplink),SQUAWK IDENT,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,453,ADVU-16,ATC (uplink),ACTIVATE ADS-C,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,453,ADVU-17,ATC (uplink),ADS-C OUT OF SERVICE REVERT TO VOICE POSITION REPORTS,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,453,ADVU-18,ATC (uplink),RELAY TO (aircraft identification) (unit name) (relay text) (frequency[O]),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,453,ADVU-19,ATC (uplink),(deviation type) DEVIATION DETECTED. VERIFY AND ADVISE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,454,ADVD-1,Pilot (downlink),SQUAWKING (SSR code),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,454,ADVD-2,Pilot (downlink),TRAFFIC (aircraft type[O]) (traffic location) (traffic visibility),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,454,COMU-1,ATC (uplink),CONTACT (unit name) (frequency),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,454,COMU-2,ATC (uplink),AT (position) CONTACT (unit name) (frequency),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,454,COMU-3,ATC (uplink),AT TIME (time) CONTACT (unit name) (frequency),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,454,COMU-4,ATC (uplink),SECONDARY FREQUENCY (frequency),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,454,COMU-5,ATC (uplink),MONITOR (unit name) (frequency),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,454,COMU-6,ATC (uplink),AT (position) MONITOR (unit name) (frequency),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,455,COMU-7,ATC (uplink),AT TIME (time) MONITOR (unit name) (frequency),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,455,COMU-8,ATC (uplink),CHECK STUCK MICROPHONE (frequency),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,455,COMU-9,ATC (uplink),CURRENT ATC UNIT (unit name),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,455,COMD-1,Pilot (downlink),REQUEST VOICE CONTACT (frequency),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,455,COMD-2,Pilot (downlink),RELAY FROM (aircraft identification) (relayed text response),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,455,SPCU-1,ATC (uplink),ITP BEHIND (aircraft identification),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,456,SPCU-2,ATC (uplink),ITP AHEAD OF (aircraft identification),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,456,SPCU-3,ATC (uplink),ITP BEHIND (aircraft identification) AND BEHIND (aircraft identification),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,456,SPCU-4,ATC (uplink),ITP AHEAD OF (aircraft identification) AND AHEAD OF (aircraft identification),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,456,SPCU-5,ATC (uplink),ITP BEHIND (aircraft identification) AND AHEAD OF (aircraft identification),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,456,SPCD-1,Pilot (downlink),ITP (specified distance) BEHIND (aircraft identification),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,457,SPCD-2,Pilot (downlink),ITP (specified distance) AHEAD OF (aircraft identification),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,457,SPCD-3,Pilot (downlink),ITP (specified distance) BEHIND (aircraft identification) AND (specified distance) BEHIND (aircraft identification),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,457,SPCD-4,Pilot (downlink),ITP (specified distance) AHEAD OF (aircraft identification) AND (specified distance) AHEAD OF (aircraft identification),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,457,SPCD-5,Pilot (downlink),ITP (specified distance) BEHIND (aircraft identification) AND (specified distance) AHEAD OF (aircraft identification),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,458,EMGU-1,ATC (uplink),REPORT ENDURANCE AND PERSONS ON BOARD,True,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,458,EMGU-2,ATC (uplink),IMMEDIATELY,True,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,458,EMGU-3,ATC (uplink),CONFIRM ADS-C EMERGENCY,True,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,458,EMGD-1,Pilot (downlink),PAN PAN PAN,True,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,458,EMGD-2,Pilot (downlink),MAYDAY MAYDAY MAYDAY,True,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,458,EMGD-3,Pilot (downlink),(remaining fuel) ENDURANCE AND (persons on board) PERSONS ON BOARD,True,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,458,EMGD-4,Pilot (downlink),CANCEL EMERGENCY,True,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,458,RSPU-1,ATC (uplink),UNABLE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,458,RSPU-2,ATC (uplink),STANDBY,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,459,RSPU-3,ATC (uplink),REQUEST DEFERRED,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,459,RSPU-4,ATC (uplink),ROGER,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,459,RSPU-5,ATC (uplink),AFFIRM,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,459,RSPU-6,ATC (uplink),NEGATIVE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,459,RSPU-7,ATC (uplink),REQUEST FORWARDED,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,459,RSPU-8,ATC (uplink),CONFIRM REQUEST,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,459,RSPD-1,Pilot (downlink),WILCO,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,459,RSPD-2,Pilot (downlink),UNABLE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,459,RSPD-3,Pilot (downlink),STANDBY,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,459,RSPD-4,Pilot (downlink),ROGER,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,459,RSPD-5,Pilot (downlink),AFFIRM,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,459,RSPD-6,Pilot (downlink),NEGATIVE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,460,SUPU-1,ATC (uplink),WHEN READY,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,460,SUPU-2,ATC (uplink),DUE TO (specified reason uplink),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,460,SUPU-3,ATC (uplink),EXPEDITE,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,460,SUPU-4,ATC (uplink),REVISED (revision reason[O]),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,460,SUPD-1,Pilot (downlink),DUE TO (specified reason downlink),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,461,TXTU-1,ATC (uplink),(free text),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,461,TXTU-2,ATC (uplink),(free text),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,461,TXTU-3,ATC (uplink),(free text),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,461,TXTU-4,ATC (uplink),(free text),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,461,TXTU-5,ATC (uplink),(free text),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,461,TXTD-1,Pilot (downlink),(free text),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,461,TXTD-2,Pilot (downlink),(free text),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,461,SYSU-1,ATC (uplink),ERROR (error information),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,461,SYSU-2,ATC (uplink),NEXT DATA AUTHORITY (facility designation[O]),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,461,SYSU-3,ATC (uplink),MESSAGE NOT SUPPORTED BY THIS ATC UNIT,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,462,SYSU-4,ATC (uplink),LOGICAL ACKNOWLEDGEMENT,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,462,SYSU-5,ATC (uplink),USE OF LOGICAL ACKNOWLEDGEMENT PROHIBITED,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,462,SYSU-6,ATC (uplink),LATENCY TIME VALUE (latency value),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,462,SYSU-7,ATC (uplink),"MESSAGE RECEIVED TOO LATE, RESEND MESSAGE OR CONTACT BY VOICE",False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,462,SYSD-1,Pilot (downlink),ERROR (error information),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,462,SYSD-2,Pilot (downlink),LOGICAL ACKNOWLEDGEMENT,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,462,SYSD-3,Pilot (downlink),NOT CURRENT DATA AUTHORITY,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,462,SYSD-4,Pilot (downlink),CURRENT DATA AUTHORITY,False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,462,SYSD-5,Pilot (downlink),NOT AUTHORIZED NEXT DATA AUTHORITY (facility designation) (facility designation[O]),False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,462,SYSD-6,Pilot (downlink),"MESSAGE RECEIVED TOO LATE, RESEND MESSAGE OR CONTACT BY VOICE",False,False
+ICAO Doc 4444 (PANS-ATM) Appendix 5 CPDLC,463,SYSD-7,Pilot (downlink),AIRCRAFT CPDLC INHIBITED,False,False

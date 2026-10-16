@@ -1,0 +1,90 @@
+{
+  "provenance": "human (user); notes refined with Claude",
+  "rated_file": "answers_rated_run_prev.csv",
+  "rated_run": "run_prev",
+  "rows": 30,
+  "distribution": {
+    "1": 1,
+    "2": 9,
+    "3": 18,
+    "4": 2,
+    "5": 0
+  },
+  "mean": 2.7,
+  "median": 3.0,
+  "sd": 0.65,
+  "rated_ge4": 2,
+  "rated_le2": 10,
+  "by_split": {
+    "dev": {
+      "n": 9,
+      "mean": 2.67
+    },
+    "test": {
+      "n": 21,
+      "mean": 2.71
+    }
+  },
+  "by_status": {
+    "ok": {
+      "n": 15,
+      "mean": 2.67
+    },
+    "ok_after_filtering": {
+      "n": 15,
+      "mean": 2.73
+    }
+  },
+  "by_risk": {
+    "CRITICAL": {
+      "n": 17,
+      "mean": 2.82
+    },
+    "HIGH": {
+      "n": 8,
+      "mean": 2.62
+    },
+    "MEDIUM": {
+      "n": 5,
+      "mean": 2.4
+    }
+  },
+  "spearman_rating_vs_llm_judge_unsupported": {
+    "rho": -0.192,
+    "p": 0.31,
+    "n": 30
+  },
+  "same_answer_in_current_run": [],
+  "ratings": {
+    "R01": 3,
+    "R02": 3,
+    "R03": 3,
+    "R04": 3,
+    "R05": 2,
+    "R06": 3,
+    "R07": 3,
+    "R08": 2,
+    "R09": 2,
+    "R10": 3,
+    "R11": 2,
+    "R12": 2,
+    "R13": 2,
+    "R14": 3,
+    "R15": 3,
+    "R16": 3,
+    "R17": 3,
+    "R18": 3,
+    "R19": 3,
+    "R20": 2,
+    "R21": 3,
+    "R22": 2,
+    "R23": 3,
+    "R24": 1,
+    "R25": 4,
+    "R26": 3,
+    "R27": 3,
+    "R28": 3,
+    "R29": 4,
+    "R30": 2
+  }
+}

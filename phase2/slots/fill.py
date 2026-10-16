@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Task 6: fill bracketed slots in matched CAA phraseology from NER entities. Never guesses.
+"""Task 6: fill bracketed slots in matched CAA phraseology from NER entities and fixed regexes. Never guesses.
 
 For each of the 100 queries: pick the CAA phrase (TF-IDF, query vs Phraseology + Circumstances + Section_Title),
-run the Task 2 spaCy NER model on the query text plus the top-1 incident summary from the dev-selected retrieval
-system, and fill a slot only when its type is mapped AND exactly one distinct entity value of that type was found.
+run the Task 2 spaCy NER model on the query text plus the top-1 incident summary from the primary
+Task 3 retrieval system, and fill a slot only when its type is mapped AND exactly one distinct entity value of that type was found.
 Otherwise the slot stays bracketed and is flagged (unmapped / no_entity / ambiguous).
 Run:  python phase2/slots/fill.py [--phase1 PATH]
 """
@@ -29,6 +29,12 @@ SLOT_TYPES = {"level": ["FLIGHT_LEVEL", "ALTITUDE"], "altitude": ["ALTITUDE"], "
               "aircraft call sign": ["CALLSIGN"], "aircraft type": ["AIRCRAFT_TYPE"],
               "aerodrome": ["AIRPORT"], "name of aerodrome": ["AIRPORT"], "airport": ["AIRPORT"]}
 CONTEXT_TYPES = {("number", "RUNWAY"): ["RUNWAY"], ("three digits", "HEADING"): ["HEADING"]}
+REGEX_SLOTS = {"time": r"\b(?:[01]\d|2[0-3])[0-5]\d ?(?:z|zulu|utc)\b",
+               "distance": r"\b\d{1,3}(?:\.\d)? ?(?:nm|nautical miles?|dme)\b",
+               "speed": r"\b\d{2,3} ?(?:kts?|knots)\b",
+               "code": r"(?<=squawk )[0-7]{4}\b|(?<=code )[0-7]{4}\b",
+               "ssr code": r"(?<=squawk )[0-7]{4}\b|(?<=code )[0-7]{4}\b",
+               "direction": r"(?<=turn )(?:left|right)\b|(?<=turned )(?:left|right)\b"}
 
 
 def is_slot(name):
@@ -39,10 +45,15 @@ def is_slot(name):
 
 def slot_type(name, prev):
     name, prev = name.strip().lower(), (prev or "").strip().strip("[(").upper()
-    return CONTEXT_TYPES.get((name, prev)) or SLOT_TYPES.get(name)
+    return (CONTEXT_TYPES.get((name, prev)) or SLOT_TYPES.get(name)
+            or ([f"REGEX:{name}"] if name in REGEX_SLOTS else None))
 
 
-def fill(phrase, ents):
+def regex_values(name, text):
+    return sorted({m.group(0).upper() for m in re.finditer(REGEX_SLOTS[name], text.lower())})
+
+
+def fill(phrase, ents, text=""):
     slots, out, last = [], [], 0
     for m in SLOT.finditer(phrase):
         name = m.group(2)
@@ -52,7 +63,8 @@ def fill(phrase, ents):
         status, value = "unmapped", None
         if types:
             for t in types:
-                vals = sorted({v for v, lab in ents if lab == t})
+                vals = (regex_values(t[6:], text) if t.startswith("REGEX:")
+                        else sorted({v for v, lab in ents if lab == t}))
                 if len(vals) == 1:
                     status, value = "filled", vals[0]
                     break
@@ -73,8 +85,8 @@ def main():
     import spacy
     p1 = phase1_root()
     best = json.loads((P2 / "retrieval" / "eval" / "results.json").read_text())
-    system = best.get("best_system_chosen_on_dev_ndcg10")
-    assert system, "retrieval/eval/results.json has no dev-selected system"
+    system = best.get("primary_system")
+    assert system, "retrieval/eval/results.json has no primary system"
     q = pd.concat([pd.read_csv(P2 / "gold_eval_rebuild" / "splits" / f"{s}_queries.csv").assign(split=s)
                    for s in ["dev", "test"]], ignore_index=True)
     runs = pd.read_csv(P2 / "retrieval" / "runs" / "runs_top10.csv")
@@ -96,7 +108,7 @@ def main():
         phrase = str(cm.Phraseology.iloc[j])
         text = r.query_text + "\n" + summ.get(top1.get(r.query_id, ""), "")
         ents = [(e.text, e.label_) for e in nlp(text).ents]
-        filled, slots = fill(phrase, ents)
+        filled, slots = fill(phrase, ents, text)
         st = Counter(s["status"].split(" ")[0] for s in slots)
         status = "no_slots" if not slots else ("complete" if st["filled"] == len(slots) else "incomplete")
         rows.append({"query_id": r.query_id, "split": r.split, "query_text": r.query_text,
@@ -114,10 +126,13 @@ def main():
     for s in d.slots:
         for x in json.loads(s):
             per[(x["type"] or "unmapped", x["status"].split(" ")[0])] += 1
+    in_query = sum(str(x["value"]).lower() in r.query_text.lower()
+                   for r in d.itertuples() for x in json.loads(r.slots) if x["status"] == "filled")
     R = {"retrieval_system": system, "queries": len(d), "status_counts": d.status.value_counts().to_dict(),
          "complete_pct_of_queries_with_slots": round(100 * (d.status == "complete").sum() /
                                                      max(1, (d.status != "no_slots").sum()), 2),
          "slot_occurrences_in_selected_phrases": int(d.n_slots.sum()), "slots_filled": int(d.n_filled.sum()),
+         "slots_filled_value_in_query_text": int(in_query),
          "slot_outcomes_by_type": {f"{t}:{s}": n for (t, s), n in sorted(per.items())},
          "crossmap_slot_occurrences": len(all_slots),
          "crossmap_slot_occurrences_with_mapped_type": sum(1 for _, t in all_slots if t),
@@ -133,23 +148,27 @@ def main():
          "- Phrase per query: TF-IDF (1-2 grams) over CAA Phraseology + Circumstances + Section_Title of "
          "`phase2/phraseology/out/CAA_ICAO_crossmap_v2.csv`; top-1 phrase.",
          f"- Entities: Task 2 spaCy model (`phase2/ner/out/model`) on the query text plus the top-1 incident summary "
-         f"from `{system}`, the retrieval system chosen on dev in Task 3.",
+         f"from `{system}`, the primary Task 3 retrieval system (fixed by the Phase 2 plan).",
          "- A slot is filled only if its type is mapped and exactly one distinct value of that type was found. "
          "Unmapped, missing and ambiguous slots stay bracketed and are flagged in `out/slot_fills.csv`.",
          "- Parentheses holding alternatives (`(or LEFT)`) or a plural suffix (`(S)`) are wording, not slots.",
          "- Slot-type map: " + "; ".join(f"`({k})` -> {'/'.join(v)}" for k, v in SLOT_TYPES.items()) +
-         "; `RUNWAY (number)` -> RUNWAY; `HEADING (three digits)` -> HEADING. Every other slot name is unmapped.",
+         "; `RUNWAY (number)` -> RUNWAY; `HEADING (three digits)` -> HEADING.",
+         "- Slots with no NER label, filled by fixed regular expressions over the same text (exactly one distinct "
+         "match required): " + ", ".join(f"`({k})`" for k in REGEX_SLOTS) + ". Every other slot name is unmapped.",
          "", "## Numbers", "", "| Status | Queries |", "|---|---:|"]
     L += [f"| {k} | {v} |" for k, v in R["status_counts"].items()]
     L += ["", f"Complete among queries whose phrase has slots: {R['complete_pct_of_queries_with_slots']}%. "
-          f"Slots filled: {R['slots_filled']} of {R['slot_occurrences_in_selected_phrases']}.",
+          f"Slots filled: {R['slots_filled']} of {R['slot_occurrences_in_selected_phrases']}; "
+          f"{R['slots_filled_value_in_query_text']} of the {R['slots_filled']} filled values occur in the query text, "
+          "the rest come from the top-1 incident summary.",
           "", f"Across the whole crossmap, {R['crossmap_slot_occurrences_with_mapped_type']} of "
           f"{R['crossmap_slot_occurrences']} slot occurrences ({R['crossmap_distinct_slot_names']} distinct names) "
-          "have a mapped entity type; the rest (time, significant point, distance, reason, ...) have no NER label.",
+          "have a mapped type (NER entity or fixed regex); the rest (significant point, reason, ...) are unmapped and stay bracketed.",
           "", "| Slot type : outcome | Count |", "|---|---:|"]
     L += [f"| {k} | {v} |" for k, v in R["slot_outcomes_by_type"].items()]
     L += ["", "## Failures and limits", "",
-          "- NER labels are provisional (LLM-judged (Devin), pending user review); so are these fills.",
+          "- NER labels are provisional (LLM-judged (Claude), pending user review); so are these fills.",
           "- CALLSIGN slots can never fill from ASRS text: ASRS de-identifies callsigns (Task 2).",
           "- Phrase choice is a lexical TF-IDF match, not judged for correctness here.",
           "- Entities from the top-1 incident describe that incident, not necessarily the user's situation.",

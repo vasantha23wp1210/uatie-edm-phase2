@@ -54,8 +54,16 @@ def latency(phase1):
     sys.path.insert(0, str(repo / "src"))
     rag = load_module("rag_query_engine", repo / "src" / "rag" / "rag_query_engine.py")
     rag.initialize_resources(verbose=False)
+    bm25_mod = load_module("bm25_baseline", repo / "src" / "rag" / "bm25_baseline.py")
     os.chdir(cwd)
-    meta = pd.read_csv(repo / "data" / "processed" / "asrs_faiss_meta.csv", usecols=["summary"])
+    t3 = load_module("p2_retrieval_run", P2 / "retrieval" / "run.py")
+    t3.set_seeds()
+    from sentence_transformers import CrossEncoder
+    ce = CrossEncoder(t3.CE_MODEL, device="cpu", revision=t3.CE_REVISION)
+    meta = pd.read_csv(repo / "data" / "processed" / "asrs_faiss_meta.csv", usecols=["incident_id", "summary"])
+    meta["incident_id"] = meta.incident_id.astype(str)
+    text_of = meta.set_index("incident_id")["summary"].astype(str)
+    bm25, _ = bm25_mod.build_bm25(meta, "summary")
     cm = pd.read_csv(P2 / "phraseology" / "out" / "CAA_ICAO_crossmap_v2.csv")
     doc = cm.Phraseology.astype(str) + " " + cm.Circumstances.fillna("").astype(str)
     vec = TfidfVectorizer(ngram_range=(1, 2), min_df=1).fit(doc)
@@ -70,10 +78,16 @@ def latency(phase1):
     rows = []
     for r in q.itertuples():
         t0 = time.perf_counter()
-        _, idx = rag.index.search(rag.embed_query(r.query_text), 5)
-        ents = [(e.text, e.label_) for e in nlp(r.query_text + "\n" + str(meta.summary.iat[idx[0][0]])).ents]
-        j = int((X @ vec.transform([r.query_text]).T).toarray().ravel().argmax())
-        fill(str(cm.Phraseology.iat[j]), ents)
+        qt = str(r.query_text)
+        b = [str(x["incident_id"]) for x in bm25_mod.bm25_retrieve(bm25, qt, meta, "incident_id", t3.DEPTH)]
+        _, idx = rag.index.search(rag.embed_query(qt), t3.DEPTH)
+        union = list(dict.fromkeys(b + [meta.incident_id.iat[i] for i in idx[0] if i >= 0]))
+        logits = ce.predict([(qt, text_of[i]) for i in union], batch_size=32, show_progress_bar=False)
+        top = union[int(np.argmax(logits))]
+        text = qt + "\n" + text_of[top]
+        ents = [(e.text, e.label_) for e in nlp(text).ents]
+        j = int((X @ vec.transform([qt]).T).toarray().ravel().argmax())
+        fill(str(cm.Phraseology.iat[j]), ents, text)
         ms = (time.perf_counter() - t0) * 1000
         rows.append({"query_id": r.query_id, "pipeline_ms": round(ms, 1), "llm_ms": llm.get(r.query_id),
                      "end_to_end_ms": round(ms + llm[r.query_id], 1) if r.query_id in llm else None})
@@ -107,14 +121,15 @@ def main():
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
     md = ["# Phase 1 vs Phase 2", "", "Every number below is read from a task's `results.json`. Labels marked "
-          "provisional are LLM-judged (Devin), pending user review.", ""]
+          "provisional are LLM-judged (Claude), pending user review.", ""]
     if ret:
         m = ret["metrics"]["test_rel_ge1"]
         t = pd.DataFrame([[s] + [f"{m[s][k]:.3f}" for k in MET] for s in SYS], columns=["System"] + MET)
         (OUT / "tables" / "retrieval_test.tex").write_text(tex(t, "Retrieval, test Q021--Q100, rel $\\geq$ 1 "
                                                              "(provisional labels)", "tab:retrieval"))
         md += ["## Retrieval (test, rel >= 1, provisional)", "", t.to_markdown(index=False), "",
-               f"Dev-selected system: `{ret['best_system_chosen_on_dev_ndcg10']}`. Phase 1 = `hybrid`.", ""]
+               f"Primary system (fixed in advance by the Phase 2 plan): `{ret['primary_system']}`; dev-selected system: "
+               f"`{ret['best_system_chosen_on_dev_ndcg10']}`. Phase 1 = `hybrid`.", ""]
         fig, ax = plt.subplots(figsize=(7, 3.5))
         w = 0.12
         for i, s in enumerate(SYS):
@@ -154,6 +169,12 @@ def main():
         md += ["## Phraseology crossmap", "", t.to_markdown(index=False), "",
                f"CAA-unique %: Phase 1 {c['caa_unique_pct']['before_phase1']}, Phase 2 TF-IDF {c['caa_unique_pct']['after_tfidf']}, embedding {c['caa_unique_pct']['after_embedding']}. Ontology RDF triples: Phase 1 {o['phase1_repro']['triples']}, "
                f"Phase 2 {o['phase2']['triples']}.", ""]
+        vr = ph.get("verification_sample", {}).get("results")
+        if vr:
+            md += [f"Verification of 20 sampled matches ({vr['provenance']}): assigned tier correct for "
+                   f"{vr['tier_correct']} of {vr['rows']} (" + ", ".join(f"{k} {v['tier_correct']}/{v['rows']}"
+                   for k, v in vr["per_tier"].items()) + f"); verdicts changed during the Claude review: "
+                   f"{', '.join(vr['verdict_changed_during_claude_review'])}.", ""]
         fig, ax = plt.subplots(figsize=(6, 3.2))
         x = np.arange(4)
         for i, (k, lab) in enumerate([("before_phase1_tfidf", "Phase 1"), ("after_tfidf", "Phase 2 TF-IDF"),
@@ -185,15 +206,22 @@ def main():
     if gen:
         g = gen["generation"]
         md += ["## Generation", "", f"Model `{g['model']}`; status {g['status_counts']}; citation validity "
-               f"{g['citation_validity']}; hallucination rate (LLM judge) {gen['hallucination_rate_claims']}.", ""]
+               f"{g['citation_validity']}; hallucination rate (LLM judge) {gen['hallucination_rate_claims']} after the "
+               f"grounding filter, {gen.get('hallucination_raw_before_grounding_filter', {}).get('rate')} before it "
+               "(same judge; not independent evidence).", ""]
+        rt = gen.get("user_ratings_run_prev")
+        if rt:
+            md += [f"User ratings ({rt['provenance']}) of {rt['rows']} answers from the earlier run "
+                   f"(`generation/out/{rt['rated_run']}/`): mean {rt['mean']}, median {rt['median']}, distribution "
+                   f"{rt['distribution']}; {len(rt['same_answer_in_current_run'])} of {rt['rows']} rated answers are "
+                   "identical in the current CE-context run, so the current answers have no user ratings.", ""]
     if R["latency"]:
         md += ["## Latency (this VM, CPU)", "", "```", json.dumps(R["latency"], indent=1), "```", "",
-               "- `pipeline_ms`: query embedding + FAISS top-5, spaCy NER on query + top-1 summary, TF-IDF phrase match and "
-               "slot filling, measured here (cross-encoder and intent lookup not included).",
+               "- `pipeline_ms`: BM25 top-50 + FAISS top-50, cross-encoder re-ranking of the union, spaCy NER on query + top-1 "
+               "summary, TF-IDF phrase match and slot filling, measured here (intent lookup not included).",
                "- `llm_ms`: per-query LLM time recorded by `generation/generate.py`; it is 0 for "
                f"{gen['generation']['status_counts'].get('insufficient_evidence', 0)} insufficient-evidence queries "
-               "(no LLM call), and its tail includes queries run while other CPU jobs shared this VM "
-               "(see `generation/REPORT.md`).", ""]
+               "(no LLM call); run conditions and run-to-run variation are in `generation/REPORT.md`.", ""]
     (TASK / "phase1_vs_phase2.md").write_text("\n".join(md), encoding="utf-8")
     (TASK / "results.json").write_text(json.dumps(R, indent=2) + "\n", encoding="utf-8")
     print("written:", sorted(p.name for p in (OUT / "tables").iterdir()), sorted(p.name for p in (OUT / "figures").iterdir()))

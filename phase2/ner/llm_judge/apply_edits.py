@@ -1,4 +1,4 @@
-"""Build judgements/ner_corrected.csv from llm_judge/edits.csv (sent_id, old, new substring replacements on
+"""Build judgements/ner_corrected_devin.csv (Devin's superseded provisional set) from llm_judge/edits.csv (sent_id, old, new substring replacements on
 pre_annotated). Rows without edits keep the pre-annotation. Fails if any edit does not match exactly once or the
 markup-stripped text differs from the original sentence."""
 import re
@@ -20,5 +20,5 @@ for r in d.itertuples():
     out.append(s)
 d["corrected"] = out
 d["notes"] = "LLM-judged (Devin), pending user review"
-d.to_csv(T / "judgements" / "ner_corrected.csv", index=False)
+d.to_csv(T / "judgements" / "ner_corrected_devin.csv", index=False)
 print(len(d), "rows;", e.sent_id.nunique(), "sentences edited;", len(e), "edits")

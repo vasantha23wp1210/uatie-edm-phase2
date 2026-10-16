@@ -18,10 +18,11 @@ P2 = ROOT / "phase2"
 for p in [ROOT, P2 / "generation", P2 / "slots"]:
     sys.path.insert(0, str(p))
 from phase1 import phase1_root  # noqa: E402
-from generate import INSUFFICIENT, OPTIONS, PROMPT, load_module  # noqa: E402
+from generate import INSUFFICIENT, OPTIONS, PROMPT, ground, load_module  # noqa: E402
 from fill import fill  # noqa: E402
 
 TOPK = 5
+CE_DEPTH = 50
 st.set_page_config(page_title="UATIE-EDM Phase 1 / Phase 2", layout="wide")
 
 
@@ -33,12 +34,14 @@ def backend():
     sys.path.insert(0, str(repo / "src"))
     rag = load_module("rag_query_engine", repo / "src" / "rag" / "rag_query_engine.py")
     rag.initialize_resources(verbose=False)
+    bm25_mod = load_module("bm25_baseline", repo / "src" / "rag" / "bm25_baseline.py")
     os.chdir(cwd)
     import spacy
     from sentence_transformers import CrossEncoder
     from sklearn.feature_extraction.text import TfidfVectorizer
     meta = pd.read_csv(repo / "data" / "processed" / "asrs_faiss_meta.csv", low_memory=False)
     meta["incident_id"] = meta.incident_id.astype(str)
+    bm25, _ = bm25_mod.build_bm25(meta, "summary")
     iv2 = pd.read_csv(P2 / "intent_classifier" / "out" / "intent_v2.csv").set_index("faiss_idx")
     cm = pd.read_csv(P2 / "phraseology" / "out" / "CAA_ICAO_crossmap_v2.csv")
     doc = (cm.Phraseology.astype(str) + " " + cm.Circumstances.fillna("").astype(str) + " " +
@@ -47,26 +50,33 @@ def backend():
     ce = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2", device="cpu",
                       revision="233902d25c440f23af6f7d6e94d2946bac0bee0a")
     G = json.loads((P2 / "generation" / "results_generation.json").read_text())
-    return {"rag": rag, "meta": meta, "iv2": iv2, "cm": cm, "vec": vec, "X": vec.transform(doc), "ce": ce,
+    G_faiss = json.loads((P2 / "generation" / "out" / "run_faiss_claude" / "results_generation.json").read_text())
+    G["threshold_by_system"] = {"ce": G["insufficient_evidence_threshold"],
+                                "faiss": G_faiss["insufficient_evidence_threshold"]}
+    return {"rag": rag, "bm25_mod": bm25_mod, "bm25": bm25, "meta": meta, "iv2": iv2, "cm": cm, "vec": vec, "X": vec.transform(doc), "ce": ce,
             "nlp": spacy.load(P2 / "ner" / "out" / "model"), "G": G}
 
 
 def phase2_retrieve(B, q, system):
     rag, meta = B["rag"], B["meta"]
-    sims, idx = rag.index.search(rag.embed_query(q), 50 if system == "ce" else TOPK)
-    pos, sc = list(idx[0]), [float(s) for s in sims[0]]
-    if system == "ce":
-        logits = B["ce"].predict([(q, str(meta.summary.iat[p])) for p in pos], show_progress_bar=False)
-        order = np.argsort(-logits, kind="stable")[:TOPK]
-        pos, sc = [pos[j] for j in order], [float(logits[j]) for j in order]
-    return pos[:TOPK], sc[:TOPK], sims[0][0]
+    sims, idx = rag.index.search(rag.embed_query(q), CE_DEPTH if system == "ce" else TOPK)
+    pos, sc = [int(i) for i in idx[0] if i >= 0], [float(s) for s in sims[0]]
+    if system != "ce":
+        return pos[:TOPK], sc[:TOPK], sims[0][0]
+    row = {i: n for n, i in enumerate(meta.incident_id)}
+    b = [row[str(x["incident_id"])] for x in B["bm25_mod"].bm25_retrieve(B["bm25"], q, meta, "incident_id", CE_DEPTH)]
+    pos = list(dict.fromkeys(b + pos))
+    logits = B["ce"].predict([(q, str(meta.summary.iat[p])) for p in pos], batch_size=32, show_progress_bar=False)
+    order = np.argsort(-logits, kind="stable")[:TOPK]
+    pos, sc = [pos[j] for j in order], [float(logits[j]) for j in order]
+    return pos, sc, 1 / (1 + np.exp(-sc[0]))
 
 
 def answer(B, q, pos, top1, risk, phrases, model):
     from langchain_ollama import ChatOllama
     meta, G = B["meta"], B["G"]
     ids = [meta.incident_id.iat[p] for p in pos]
-    if top1 < G["insufficient_evidence_threshold"]:
+    if top1 < G["threshold_by_system"][system]:
         return {"summary": INSUFFICIENT, "key_hazards": [], "recommended_phraseology": [], "citations": []}, []
     llm = ChatOllama(model=model, base_url=os.environ.get("OLLAMA_HOST", "http://localhost:11434"),
                      format="json", keep_alive="2h", **OPTIONS)
@@ -78,18 +88,19 @@ def answer(B, q, pos, top1, risk, phrases, model):
     out = {"summary": str(a.get("summary", "")), "key_hazards": [str(h) for h in a.get("key_hazards", []) or []],
            "recommended_phraseology": [p for p in a.get("recommended_phraseology", []) or [] if p in allowed],
            "citations": [c for c in cites if c in ids]}
+    out, _, _ = ground(out, ids, {i: str(meta.summary.iat[p]) for i, p in zip(ids, pos)})
     return out, [c for c in cites if c not in ids]
 
 
 B = backend()
 st.sidebar.header("Mode")
 phase = st.sidebar.radio("Pipeline", ["Phase 1", "Phase 2"], index=1)
-system = st.sidebar.selectbox("Phase 2 retrieval", ["faiss", "ce"], index=0,
-                              help="faiss = system chosen on dev in Task 3; ce = cross-encoder rerank of FAISS top-50 "
-                                   "(best on test, not dev-selected)") if phase == "Phase 2" else None
+system = st.sidebar.selectbox("Phase 2 retrieval", ["ce", "faiss"], index=0,
+                              help="ce = primary system fixed by the Phase 2 plan: BM25 top-50 + FAISS top-50 re-ranked "
+                                   "by the cross-encoder; faiss = system chosen on dev in Task 3 (comparison)") if phase == "Phase 2" else None
 model = st.sidebar.text_input("Ollama model", os.environ.get("UATIE_LLM", "llama3.2:3b"))
 gen = st.sidebar.checkbox("Generate answer (Ollama)", value=True) if phase == "Phase 2" else False
-st.sidebar.caption("Phase 2 labels and metrics are provisional: LLM-judged (Devin), pending user review.")
+st.sidebar.caption("Phase 2 labels and metrics are provisional: LLM-judged (Claude), pending user review.")
 
 st.title(f"UATIE-EDM: {phase}")
 q = st.text_input("Query", "pilot did not read back runway assignment correctly")

@@ -246,12 +246,17 @@ def write_report(R):
     for c, v in R["models"][best]["test"]["per_class"].items():
         L.append(f"| {c} | {v['precision']:.4f} | {v['recall']:.4f} | {v['f1']:.4f} | {v['support']} |")
     t = R["models"][best]["test_on_rule_unclassified_records"]
+    rules_acc = R["models"]["keyword_rules_phase1"]["test"]["accuracy"]
+    devc, silc = R["gold_label_counts"]["dev"], R["silver_class_counts"]
+    gap_cls = max((c for c in devc if c != UNK),
+                  key=lambda c: (devc[c] / R["gold"]["dev"]) / (silc.get(c, 0.5) / R["silver_train_records"]))
+    silver_n, dev_n = silc.get(gap_cls, 0), devc[gap_cls]
     L += ["", f"On test records the rules left Unclassified (n = {t['n']}): accuracy {t['accuracy']:.4f}, "
           f"macro-F1 {t['macro_f1']:.4f}.", "",
           "Confusion matrices (rows gold, columns predicted, label order as in `LABELS`) are in `results.json`.", "",
           "## Known limitations", "",
-          "- Silver training labels come from the keyword rules, so the models partly learn the rules' errors. The provisional gold labels differ from the rules a lot (rules test accuracy 0.3333), and gold-frequent classes are rare in silver (Procedural_Non_Compliance: 513 of 68,928 silver records vs 43 of 199 dev labels).",
-          '- The confidence threshold chosen on dev maps low-confidence predictions to Unclassified, which keeps the Unclassified rate high (DistilBERT threshold 0.85).',
+          f"- Silver training labels come from the keyword rules, so the models partly learn the rules' errors. The provisional gold labels differ from the rules a lot (rules test accuracy {rules_acc:.4f}), and gold-frequent classes are rare in silver ({gap_cls}: {silver_n:,} of {R['silver_train_records']:,} silver records vs {dev_n} of {R['gold']['dev']} dev labels).",
+          f"- The confidence threshold chosen on dev maps low-confidence predictions to Unclassified (`{best}` threshold {R['models'][best].get('threshold_chosen_on_dev')}; {R['models'][best]['test']['unclassified_pred_pct']}% of test predictions are Unclassified).",
           "- Gold classes are imbalanced; classes with support < 10 on test give unstable per-class scores.",
           "- DistilBERT is trained on a class-capped subsample on CPU (see `results.json` for size and time)."]
     (TASK / "REPORT.md").write_text("\n".join(L) + "\n", encoding="utf-8")

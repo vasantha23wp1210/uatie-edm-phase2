@@ -27,11 +27,11 @@
   Total loop triples       : 983,098
 
 [4/5] Serialising incident ontology...
-  Saved : /home/ubuntu/uatie-edm-phase2/phase2/intent_classifier/out/ontology/phase1_repro/asrs_incidents.ttl
+  Saved : /home/ubuntu/deliver/p2git/phase2/intent_classifier/out/ontology/phase1_repro/asrs_incidents.ttl
   Size  : 58.50 MB
 
 [5/5] Merging with phraseology ontology...
-  Saved : /home/ubuntu/uatie-edm-phase2/phase2/intent_classifier/out/ontology/phase1_repro/uatie_edm_merged.ttl
+  Saved : /home/ubuntu/deliver/p2git/phase2/intent_classifier/out/ontology/phase1_repro/uatie_edm_merged.ttl
   Total merged triples : 989,421
   Size  : 59.04 MB
 
@@ -50,8 +50,8 @@
   Total triples (merged TTL)  : 989,421
 
   Output files:
-    /home/ubuntu/uatie-edm-phase2/phase2/intent_classifier/out/ontology/phase1_repro/asrs_incidents.ttl
-    /home/ubuntu/uatie-edm-phase2/phase2/intent_classifier/out/ontology/phase1_repro/uatie_edm_merged.ttl  ← import this into WebProtege
+    /home/ubuntu/deliver/p2git/phase2/intent_classifier/out/ontology/phase1_repro/asrs_incidents.ttl
+    /home/ubuntu/deliver/p2git/phase2/intent_classifier/out/ontology/phase1_repro/uatie_edm_merged.ttl  ← import this into WebProtege
 
 Next → step6c_rag_query_engine.py
 =================================================================

@@ -27,6 +27,8 @@ GOLD = ROOT / "phase2" / "gold_eval_rebuild"
 OUT = TASK / "eval"
 SEED, K, N_PERM = 42, 10, 10000
 SYSTEMS = ["bm25", "faiss", "hybrid", "rrf", "ce", "ce_recency"]
+PRIMARY = "ce"  # fixed in advance by the Phase 2 plan ("BM25 + cross-encoder re-ranking"), not chosen on dev or test
+PLAN_TARGETS = {"p5": 0.80, "map10": 0.80}
 BASELINE = "hybrid"
 METRICS = ["p1", "p3", "p5", "p10", "mrr", "map10", "recall10", "ndcg5", "ndcg10"]
 ID_COLS = ["pair_id", "query_id", "query_text", "information_need", "incident_id", "narrative"]
@@ -141,6 +143,11 @@ def main():
     pq_all.round(4).to_csv(OUT / "per_query.csv", index=False)
     best = max(SYSTEMS, key=lambda s: R["metrics"]["dev_rel_ge1"][s]["ndcg10"])
     R["best_system_chosen_on_dev_ndcg10"] = best
+    R["primary_system"] = PRIMARY
+    R["primary_system_rule"] = ("fixed in advance by the Phase 2 plan (BM25 + cross-encoder re-ranking); "
+                                "the dev-selected system is reported alongside")
+    tp = R["metrics"]["test_rel_ge1"][PRIMARY]
+    R["target_primary_plan"] = {m: {"value": tp[m], "target": t, "met": tp[m] >= t} for m, t in PLAN_TARGETS.items()}
 
     t1 = pq_all[(pq_all.split == "test") & (pq_all.thr == 1)]
     for thr in (1, 2):
@@ -186,7 +193,7 @@ def main():
         OUT / "per_query.csv", OUT / "error_analysis.csv", OUT / "qrels_dev.csv", OUT / "qrels_test.csv"]}
     (OUT / "results.json").write_text(json.dumps(R, indent=2) + "\n", encoding="utf-8")
     write_report(R)
-    print(json.dumps({k: R[k] for k in ["best_system_chosen_on_dev_ndcg10", "target_best_ge_baseline_p5_map_ndcg10",
+    print(json.dumps({k: R[k] for k in ["primary_system", "target_primary_plan", "best_system_chosen_on_dev_ndcg10", "target_best_ge_baseline_p5_map_ndcg10",
                                          "label_provenance"]}, indent=2))
 
 
@@ -218,6 +225,17 @@ def write_report(R):
                        ("test_rel_ge2", "Test, relevant = rel 2"),
                        ("dev_rel_ge1", "Dev (Q001-Q020), relevant = rel >= 1"), ("dev_rel_ge2", "Dev, relevant = rel 2")]:
         L += [f"## {title}", ""] + table(R["metrics"][key]) + [""]
+    pr = R["primary_system"]
+    L += ["## Primary Phase 2 system and plan targets (test, rel >= 1)", "",
+          f"Primary system: `{pr}`, {R['primary_system_rule']}. `ce` re-ranks the union of BM25 top-{50} and FAISS top-{50}, "
+          "so its candidate pool includes BM25. MAP is MAP@10.", "",
+          "| Metric | value | target | met |", "|---|---|---|---|"]
+    for m, v in R["target_primary_plan"].items():
+        L.append(f"| {NAMES[m]} | {v['value']:.4f} | >= {v['target']:.2f} | {'yes' if v['met'] else 'NO'} |")
+    dv = R["metrics"]["dev_rel_ge1"]
+    L += ["", f"On dev, `{pr}` scores P@5 {dv[pr]['p5']:.4f} / MAP@10 {dv[pr]['map10']:.4f}, below `faiss` "
+          f"({dv['faiss']['p5']:.4f} / {dv['faiss']['map10']:.4f}). Most dev labels are Phase 1 manual judgements of "
+          "Phase 1 hybrid/FAISS output, which favours those systems; this is why the dev rule picks a different system.", ""]
     best = R["best_system_chosen_on_dev_ndcg10"]
     L += ["## Target: best Phase 2 system >= Phase 1 baseline (test, rel >= 1)", "",
           f"Best system chosen on **dev** nDCG@10: `{best}`. Baseline: `{R['baseline_system']}` (Phase 1 hybrid engine).", "",

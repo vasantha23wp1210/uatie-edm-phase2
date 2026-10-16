@@ -5,7 +5,8 @@ TF-IDF matching repeats Phase 1 src/phraseology/caa_icao_crossmap.py exactly (cl
 ngram (1, 2), min_df 1, cosine, bins -0.01/0.30/0.60/0.85/1.01). Embedding matching (all-MiniLM-L6-v2) is
 reported separately; it reuses the TF-IDF bins, which were not calibrated for embeddings.
 Inputs:  Phase 1 data/processed/CAA_ATC_section8_enriched.csv and CAA_ICAO_crossmap.csv (the "before" table);
-         out/sources/doc4444_ch12.csv and doc9432_dialogues.csv from extract.py
+         out/sources/doc4444_ch12.csv, doc4444_other.csv and doc9432_dialogues.csv from extract.py (radiotelephony);
+         doc4444_cpdlc.csv (data link) is counted for emergency/GNSS coverage only, not matched
 Writes:  out/CAA_ICAO_crossmap_v2.csv, out/phase1_compat/CAA_ICAO_crossmap.csv, verify/matches_to_verify.csv,
          results_crossmap.json
 Run:  python phase2/phraseology/crossmap.py [--phase1 PATH]
@@ -29,6 +30,7 @@ from extract import EMERGENCY, GNSS  # noqa: E402
 
 SEED = 42
 BINS = [-0.01, 0.30, 0.60, 0.85, 1.01]
+RT_SOURCES = ["doc4444_ch12.csv", "doc4444_other.csv", "doc9432_dialogues.csv"]
 TIERS = ["No Match", "Partial Match", "Close Match", "Exact/Near-Exact"]
 EMB_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 P1_COLS = ["Section_Number", "Section_Title", "ATC_Service", "Circumstances", "Phraseology", "Speaker",
@@ -44,10 +46,12 @@ def clean_phrase(text):
 def icao_corpus():
     a = pd.read_csv(TASK / "out" / "sources" / "doc4444_ch12.csv", dtype=str, keep_default_na=False)
     b = pd.read_csv(TASK / "out" / "sources" / "doc9432_dialogues.csv", dtype=str, keep_default_na=False)
+    o = pd.read_csv(TASK / "out" / "sources" / "doc4444_other.csv", dtype=str, keep_default_na=False)
     a = a.assign(category=a.section_title)
+    o = o.assign(category=o.section)
     b = b.assign(category=b.chapter)
     cols = ["source", "section", "category", "speaker", "phrase"]
-    c = pd.concat([a[cols], b[cols]], ignore_index=True).rename(columns={"phrase": "phraseology"})
+    c = pd.concat([a[cols], o[cols], b[cols]], ignore_index=True).rename(columns={"phrase": "phraseology"})
     c["phraseology_clean"] = c.phraseology.map(clean_phrase)
     c = c[c.phraseology_clean.str.len() > 0].drop_duplicates(["source", "phraseology_clean"]).reset_index(drop=True)
     return c
@@ -109,7 +113,8 @@ def main():
 
     n = len(caa)
     icao_flags = pd.concat([pd.read_csv(TASK / "out" / "sources" / f, usecols=["source", "is_emergency", "is_gnss"])
-                            for f in ["doc4444_ch12.csv", "doc9432_dialogues.csv"]])
+                            for f in RT_SOURCES])
+    cpdlc = pd.read_csv(TASK / "out" / "sources" / "doc4444_cpdlc.csv")
     R = {"caa_rows": n, "icao_corpus_rows": len(icao),
          "icao_corpus_by_source": icao.source.value_counts().to_dict(),
          "before_phase1_tfidf": counts(before.Match_Type),
@@ -119,10 +124,14 @@ def main():
                             "after_embedding": round(100 * (caa.Emb_Match_Type == "No Match").mean(), 2)},
          "emergency": {"caa_rows": int(caa.CAA_is_emergency.sum()),
                        "caa_rows_matched_tfidf_gt_0.30": int((caa.CAA_is_emergency & (caa.Match_Score > 0.30)).sum()),
-                       "icao_rows_by_source": icao_flags[icao_flags.is_emergency].source.value_counts().to_dict()},
+                       "icao_rows_by_source": icao_flags[icao_flags.is_emergency].source.value_counts().to_dict(),
+                       "icao_rt_rows": int(icao_flags.is_emergency.sum()),
+                       "cpdlc_data_link_elements_not_in_corpus": int(cpdlc.is_emergency.sum())},
          "gnss": {"caa_rows": int(caa.CAA_is_gnss.sum()),
                   "caa_rows_matched_tfidf_gt_0.30": int((caa.CAA_is_gnss & (caa.Match_Score > 0.30)).sum()),
-                  "icao_rows_by_source": icao_flags[icao_flags.is_gnss].source.value_counts().to_dict()},
+                  "icao_rows_by_source": icao_flags[icao_flags.is_gnss].source.value_counts().to_dict(),
+                  "icao_rt_rows": int(icao_flags.is_gnss.sum()),
+                  "cpdlc_data_link_elements_not_in_corpus": int(cpdlc.is_gnss.sum())},
          "tier_agreement_tfidf_vs_embedding": round(float((caa.Match_Type == caa.Emb_Match_Type).mean()), 4),
          "embedding_model": EMB_MODEL,
          "inputs_sha256": {**{f"phase1:data/processed/{f}": sha256(proc / f) for f in

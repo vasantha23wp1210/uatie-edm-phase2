@@ -1,0 +1,27 @@
+{
+  "seed": 43,
+  "records": 2000,
+  "batches": 4,
+  "excluded_gold": 400,
+  "per_stratum": {
+    "ATC_Operational_Error": 91,
+    "Emergency_Event": 91,
+    "Runway_Incursion": 91,
+    "Ground_Incident": 91,
+    "Communication_Failure": 91,
+    "Airspace_Violation": 91,
+    "IMC_Spatial_Disorientation": 91,
+    "Weather_Deviation": 91,
+    "Crew_Resource_Management": 91,
+    "Maintenance_Error": 91,
+    "Procedural_Non_Compliance": 90,
+    "Unclassified": 1000
+  },
+  "output_sha256": {
+    "phase2/intent_classifier/scaled/to_label_batch1.csv": "44131ef8a87ff677d1f0f423ad0069233dcd8b51b314540454cf7ddf2f5fc259",
+    "phase2/intent_classifier/scaled/to_label_batch2.csv": "df3af4ea48121edb585550c30aecf2fc82002ee1aaa765ecc66f9458a39c12b9",
+    "phase2/intent_classifier/scaled/to_label_batch3.csv": "9d8828b9502cf87256369207e6bf0f5c9db6be019beddb2eccec33b58e4080a8",
+    "phase2/intent_classifier/scaled/to_label_batch4.csv": "bdb6b71288b450a240faad17529ea3b4dd8246d41316e05a8c0b864503001100",
+    "phase2/intent_classifier/scaled/train_key.csv": "a89997f87e318f71d659417817a7b52a883d829b72f30d3df4600662170f82fb"
+  }
+}
