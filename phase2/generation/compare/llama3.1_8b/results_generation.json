@@ -1,0 +1,37 @@
+{
+  "model": "llama3.1:8b",
+  "ollama_options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 300
+  },
+  "retrieval_system": "ce",
+  "top_k": 5,
+  "insufficient_evidence_threshold": 0.9837,
+  "threshold_rule": "max balanced accuracy on dev",
+  "queries": 20,
+  "status_counts": {
+    "ok": 10,
+    "ok_after_filtering": 8,
+    "no_grounded_sentence": 1,
+    "insufficient_evidence": 1
+  },
+  "citations_raw": 89,
+  "citations_rejected": 0,
+  "citation_validity": 1.0,
+  "phraseology_raw": 52,
+  "phraseology_rejected": 6,
+  "llm_latency_ms_p50": 43441.2,
+  "llm_latency_ms_p95": 62963.3,
+  "grounding_rule": "keep a summary sentence only if >= 50% of its content words occur in the validly cited reports (all five if none cited); keep a hazard if >= 50% occur in the retrieved reports",
+  "grounding_dropped_sentences": 5,
+  "grounding_dropped_hazards": 2,
+  "ttft_ms_p50": 8957.4,
+  "retrieval_ms_p50": 958.8,
+  "retrieval_ms_p95": 1240.7,
+  "answers_sha256": "5997dae4c0d3908efcb926171fa6001aceb73f782d71db229da48fe43f2409d8",
+  "splits": [
+    "dev"
+  ]
+}

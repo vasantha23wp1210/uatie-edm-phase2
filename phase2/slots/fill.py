@@ -2,8 +2,8 @@
 """Task 6: fill bracketed slots in matched CAA phraseology from NER entities and fixed regexes. Never guesses.
 
 For each of the 100 queries: pick the CAA phrase (TF-IDF, query vs Phraseology + Circumstances + Section_Title),
-run the Task 2 spaCy NER model on the query text plus the top-1 incident summary from the primary
-Task 3 retrieval system, and fill a slot only when its type is mapped AND exactly one distinct entity value of that type was found.
+run the Task 2 spaCy NER model on the query text only (retrieved incidents describe other events),
+and fill a slot only when its type is mapped AND exactly one distinct entity value of that type was found.
 Otherwise the slot stays bracketed and is flagged (unmapped / no_entity / ambiguous).
 Run:  python phase2/slots/fill.py [--phase1 PATH]
 """
@@ -106,7 +106,7 @@ def main():
     for i, r in q.iterrows():
         j = int(sim[i].argmax())
         phrase = str(cm.Phraseology.iloc[j])
-        text = r.query_text + "\n" + summ.get(top1.get(r.query_id, ""), "")
+        text = r.query_text
         ents = [(e.text, e.label_) for e in nlp(text).ents]
         filled, slots = fill(phrase, ents, text)
         st = Counter(s["status"].split(" ")[0] for s in slots)
@@ -147,8 +147,8 @@ def main():
     L = ["# Task 6: slot filling", "", "## Method", "",
          "- Phrase per query: TF-IDF (1-2 grams) over CAA Phraseology + Circumstances + Section_Title of "
          "`phase2/phraseology/out/CAA_ICAO_crossmap_v2.csv`; top-1 phrase.",
-         f"- Entities: Task 2 spaCy model (`phase2/ner/out/model`) on the query text plus the top-1 incident summary "
-         f"from `{system}`, the primary Task 3 retrieval system (fixed by the Phase 2 plan).",
+         f"- Entities: Task 2 spaCy model (`phase2/ner/out/model`) on the query text only. The top-1 incident from "
+         f"`{system}` (primary Task 3 system) is recorded but not used for values: it describes a different event.",
          "- A slot is filled only if its type is mapped and exactly one distinct value of that type was found. "
          "Unmapped, missing and ambiguous slots stay bracketed and are flagged in `out/slot_fills.csv`.",
          "- Parentheses holding alternatives (`(or LEFT)`) or a plural suffix (`(S)`) are wording, not slots.",
@@ -159,9 +159,15 @@ def main():
          "", "## Numbers", "", "| Status | Queries |", "|---|---:|"]
     L += [f"| {k} | {v} |" for k, v in R["status_counts"].items()]
     L += ["", f"Complete among queries whose phrase has slots: {R['complete_pct_of_queries_with_slots']}%. "
-          f"Slots filled: {R['slots_filled']} of {R['slot_occurrences_in_selected_phrases']}; "
+          f"Slots filled: {R['slots_filled']} of {R['slot_occurrences_in_selected_phrases']}, so "
+          f"{R['slots_filled'] - R['slots_filled_value_in_query_text']} wrong fills. The rest stay bracketed: "
+          f"{sum(v for k, v in R['slot_outcomes_by_type'].items() if k.endswith(':no_entity'))} have a mapped type but the "
+          "query states no value of that type, and "
+          f"{sum(v for k, v in R['slot_outcomes_by_type'].items() if k.endswith(':unmapped'))} have no mapped type. "
+          "These gold queries carry almost no slot values, so they test only that nothing is invented; filling is "
+          "measured on the slot test set (testset/REPORT.md). "
           f"{R['slots_filled_value_in_query_text']} of the {R['slots_filled']} filled values occur in the query text, "
-          "the rest come from the top-1 incident summary.",
+          "(slots are filled from the query text only).",
           "", f"Across the whole crossmap, {R['crossmap_slot_occurrences_with_mapped_type']} of "
           f"{R['crossmap_slot_occurrences']} slot occurrences ({R['crossmap_distinct_slot_names']} distinct names) "
           "have a mapped type (NER entity or fixed regex); the rest (significant point, reason, ...) are unmapped and stay bracketed.",
@@ -171,7 +177,8 @@ def main():
           "- NER labels are provisional (LLM-judged (Claude), pending user review); so are these fills.",
           "- CALLSIGN slots can never fill from ASRS text: ASRS de-identifies callsigns (Task 2).",
           "- Phrase choice is a lexical TF-IDF match, not judged for correctness here.",
-          "- Entities from the top-1 incident describe that incident, not necessarily the user's situation.",
+          "- Values are taken from the query text only, never from retrieved incidents (whose values describe a "
+          "different event); short gold queries rarely state levels, frequencies or times, so most slots stay bracketed.",
           "", f"## {len(ex)} examples (seed {SEED})", "",
           "| Query | Phrase | Filled | Status |", "|---|---|---|---|"]
     L += [f"| {r.query_id} {r.query_text} | {r.phraseology} | {r.filled} | {r.status} |".replace("\n", " ")

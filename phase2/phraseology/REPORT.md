@@ -37,6 +37,8 @@ GNSS/RNAV: 21 CAA rows, 16 matched above 0.30; ICAO GNSS rows {'ICAO Doc 4444 (P
 
 Plan targets (ICAO radiotelephony phrases in the crossmap corpus): emergency >= 25: 19 (MISSED); GNSS >= 15: 17 (met). Appendix 5 CPDLC adds 7 emergency and 0 GNSS data-link elements, not counted above. Counts use the emergency/GNSS regexes in `extract.py`, before deduplication.
 
+UK CAA CAP 413 Ch. 8 (`cap413.py`, `REPORT_cap413.md`, counted separately, not in the ICAO matching corpus): 13 distinct emergency transmissions; ICAO + CAP 413 = 32. The target as written (ICAO sources) stays MISSED.
+
 ## Ontology
 
 | | Phase 1 committed TTL | Phase 1 rerun | Phase 2 |

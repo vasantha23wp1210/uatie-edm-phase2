@@ -1,0 +1,13 @@
+{
+  "frozen_before_fresh_test_set": true,
+  "note": "rules written from dev items (items.csv dev + dev_multi.csv) only",
+  "sha256": {
+    "phase2/slots/fill.py": "7a4e0909d849ad91b939a1c3fafb18a2e69f34664671f4c07971294fdc2399c2",
+    "phase2/slots/testset/rules.py": "148392d8a80626b22a571170cd5f8bbdfd835e40151975a97c45f31d0166ce08",
+    "phase2/slots/testset/roles.py": "e06b09585aed4a1b3968a40a6b54607fa71877a16cc8d8d1be3a27b35b7a048a",
+    "phase2/slots/testset/fresh_eval.py": "7451aa9703c7ac2353004e9fb4d69ee8237c32e912d2a59d7099c0d8b83fb347",
+    "phase2/slots/testset/evaluate.py": "d9c90f59b5d3c7c82801be458bdbb38cef417154a49a378e9a6e0969cf2019ac",
+    "phase2/slots/testset/dev_multi.csv": "f80c4d6b1208f8d2e1694fcf97b909db1132c307faf851701f8ca6be43f41220"
+  },
+  "refreeze_note": "fill.py re-hashed once after the freeze: the only change is the REPORT.md wording of the 0-of-91 gold-query line (no filling logic changed); no fresh test item had been seen"
+}

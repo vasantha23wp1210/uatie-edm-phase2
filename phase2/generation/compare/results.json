@@ -1,0 +1,90 @@
+{
+  "split": "dev",
+  "judge_model": "llama3.2:3b",
+  "models": {
+    "llama3.2:1b": {
+      "dev_queries": 20,
+      "status_counts": {
+        "ok_after_filtering": 12,
+        "ok": 6,
+        "no_valid_citation": 1,
+        "insufficient_evidence": 1
+      },
+      "insufficient_evidence_threshold": 0.9837,
+      "answers_judged": 19,
+      "claims": 110,
+      "unsupported": 15,
+      "hallucination_filtered": 0.1364,
+      "hallucination_raw": 0.2043,
+      "claims_raw": 93,
+      "unsupported_raw": 19,
+      "judge_invalid_json": 1,
+      "citation_validity": 1.0,
+      "phraseology_rejected": 20,
+      "phraseology_raw": 50,
+      "llm_latency_ms_p50": 8287.7,
+      "llm_latency_ms_p95": 10807.5,
+      "ttft_ms_p50": 1960.0,
+      "retrieval_ms_p50": 592.8
+    },
+    "llama3.2:3b": {
+      "dev_queries": 20,
+      "status_counts": {
+        "ok_after_filtering": 8,
+        "ok": 7,
+        "no_grounded_sentence": 4,
+        "insufficient_evidence": 1
+      },
+      "insufficient_evidence_threshold": 0.9837,
+      "answers_judged": 15,
+      "claims": 81,
+      "unsupported": 5,
+      "hallucination_filtered": 0.0617,
+      "hallucination_raw": 0.0485,
+      "claims_raw": 103,
+      "unsupported_raw": 5,
+      "judge_invalid_json": 1,
+      "citation_validity": 1.0,
+      "phraseology_rejected": 8,
+      "phraseology_raw": 46,
+      "llm_latency_ms_p50": 16217.1,
+      "llm_latency_ms_p95": 21206.2,
+      "ttft_ms_p50": 3373.1,
+      "retrieval_ms_p50": 690.3
+    },
+    "llama3.1:8b": {
+      "dev_queries": 20,
+      "status_counts": {
+        "ok": 10,
+        "ok_after_filtering": 8,
+        "no_grounded_sentence": 1,
+        "insufficient_evidence": 1
+      },
+      "insufficient_evidence_threshold": 0.9837,
+      "answers_judged": 18,
+      "claims": 104,
+      "unsupported": 4,
+      "hallucination_filtered": 0.0385,
+      "hallucination_raw": 0.0521,
+      "claims_raw": 96,
+      "unsupported_raw": 5,
+      "judge_invalid_json": 0,
+      "citation_validity": 1.0,
+      "phraseology_rejected": 6,
+      "phraseology_raw": 52,
+      "llm_latency_ms_p50": 43441.2,
+      "llm_latency_ms_p95": 62963.3,
+      "ttft_ms_p50": 8957.4,
+      "retrieval_ms_p50": 958.8
+    }
+  },
+  "rule": "lowest filtered hallucination on dev; models within 1 percentage point(s) of the lowest tie, and the lowest LLM p50 latency among them wins",
+  "within_margin": [
+    "llama3.1:8b"
+  ],
+  "chosen": "llama3.1:8b",
+  "env": {
+    "python": "3.11.15",
+    "cpu_count": 8
+  }
+}

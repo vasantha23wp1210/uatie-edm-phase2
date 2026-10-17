@@ -1,0 +1,33 @@
+source,page,section,heading,speaker_column,phrase,kept,is_emergency,is_gnss
+UK CAA CAP 413 Ed. 24 Ch. 8,230,,,first,"MAYDAY MAYDAY MAYDAY Milthorpe Tower, G-ABCD, Slingsby engine fire losing height intend an immediate forced landing 20 miles south of Milthorpe. Passing 3000 feet heading 360 degrees PPL no instrument qualification 1 POB",True,True,False
+UK CAA CAP 413 Ed. 24 Ch. 8,230,,,reply,"G-ABCD, Milthorpe Tower, Roger MAYDAY ..... (any pertinent information)",True,True,False
+UK CAA CAP 413 Ed. 24 Ch. 8,231,,,first,"MAYDAY MAYDAY MAYDAY Milthorpe Tower, G-ABCD, C172 engine failed. Will attempt to land Milthorpe, 10 miles south, 4000 feet heading 360 degrees, Student pilot",True,True,False
+UK CAA CAP 413 Ed. 24 Ch. 8,231,,,reply,"G-ABCD, Milthorpe Tower, Roger MAYDAY make straight in approach runway 35 wind 260 10 knots QFE 1008 you are number one",True,True,False
+UK CAA CAP 413 Ed. 24 Ch. 8,231,8.15,Ejection from Aircraft,first,"(Callsign), Ejecting",True,False,False
+UK CAA CAP 413 Ed. 24 Ch. 8,232,8.21,Radio Procedures – Practice Emergencies,first,"PRACTICE PAN, PRACTICE PAN, PRACTICE PAN, London Centre, G-ABCD",True,False,False
+UK CAA CAP 413 Ed. 24 Ch. 8,232,8.21,Radio Procedures – Practice Emergencies,reply,"G-ABCD, London Centre, PRACTICE PAN acknowledged, pass details when ready",True,False,False
+UK CAA CAP 413 Ed. 24 Ch. 8,233,8.23,Training Fix,reply,"G-ABCD, London Centre, your position indicates 7 miles south of Pitlochry",True,False,False
+UK CAA CAP 413 Ed. 24 Ch. 8,233,8.23,Training Fix,first,"Training Fix, Training Fix, Training Fix, G-ABCD",True,False,False
+UK CAA CAP 413 Ed. 24 Ch. 8,233,8.24,Relayed Emergency Message,first,"MAYDAY MAYDAY MAYDAY Milthorpe Tower, G-ABCD, have intercepted MAYDAY from G-BJRD, I say again G-BJRD Cessna 172 engine failure forced landing 10 miles west of Wicken VOR, 1000 feet descending, heading 120, IMC rating, over",True,True,False
+UK CAA CAP 413 Ed. 24 Ch. 8,233,8.24,Relayed Emergency Message,reply,"G-ABCD, Milthorpe Tower, Roger your relayed MAYDAY from G- BJRD",True,True,False
+UK CAA CAP 413 Ed. 24 Ch. 8,234,8.26,,first,"All stations, Milthorpe Tower, stop transmitting. MAYDAY",True,True,False
+UK CAA CAP 413 Ed. 24 Ch. 8,234,8.26,,first,"G-ABCD, stop transmitting. MAYDAY",True,True,False
+UK CAA CAP 413 Ed. 24 Ch. 8,234,8.27,,first,"MAYDAY, G-BJRD, remain this frequency, Break, Break, all other aircraft contact Milthorpe Tower 123.825, out.",True,True,False
+UK CAA CAP 413 Ed. 24 Ch. 8,234,8.28,Emergency Descent,first,"Attention all aircraft in the vicinity of Wicken, emergency descent in progress from FL310 passing FL230, standby for instructions",True,True,False
+UK CAA CAP 413 Ed. 24 Ch. 8,234,8.28,Emergency Descent,first,"BIGJET 347, route direct Marlow",True,False,False
+UK CAA CAP 413 Ed. 24 Ch. 8,234,8.28,Emergency Descent,reply,"Route direct Marlow, BIGJET 347",True,False,False
+UK CAA CAP 413 Ed. 24 Ch. 8,235,8.29,Fuel Shortage,first,"BIGJET 347, MINIMUM FUEL",True,False,False
+UK CAA CAP 413 Ed. 24 Ch. 8,235,8.32,Fuel Shortage,first,MAYDAY MAYDAY MAYDAY FUEL (name of station addressed where appropriate and time permits) BIGJET 347,True,True,False
+UK CAA CAP 413 Ed. 24 Ch. 8,235,8.33,Termination of Distress Communications and of RTF Silence,first,"Milthorpe Tower, G-BJRD, cancel MAYDAY, engine restarted, runway in sight. Request landing",True,True,False
+UK CAA CAP 413 Ed. 24 Ch. 8,235,8.33,Termination of Distress Communications and of RTF Silence,reply,"G-RD, runway 35, cleared to land, surface wind 320 6",True,False,False
+UK CAA CAP 413 Ed. 24 Ch. 8,236,,,reply,"Runway 35 cleared to land, G-RD",True,False,False
+UK CAA CAP 413 Ed. 24 Ch. 8,236,8.34,,first,"All stations, Milthorpe Tower, distress traffic ended",True,True,False
+UK CAA CAP 413 Ed. 24 Ch. 8,230,,,first,"distress message. However, this whenever possible in UK emergency controller to plan a course of action",False,,
+UK CAA CAP 413 Ed. 24 Ch. 8,230,,,reply,information should be included messages as it may help the best suited to the pilot’s ability.,False,,
+UK CAA CAP 413 Ed. 24 Ch. 8,230,,,first,"‘STUDENT’, e.g. ‘MAYDAY, MAYDAY, ABCD … ‘ to indicate their lack of",False,,
+UK CAA CAP 413 Ed. 24 Ch. 8,230,,,reply,MAYDAY STUDENT G- experience.,False,,
+UK CAA CAP 413 Ed. 24 Ch. 8,230,,,first,shall also be used in other circumstances holder of a valid licence is returning significant absence and is undergoing solo flight conducted as a student instructor.,False,,
+UK CAA CAP 413 Ed. 24 Ch. 8,230,,,reply,"where, for example, the to flying practice after a renewal training involving under the supervision of a flight",False,,
+UK CAA CAP 413 Ed. 24 Ch. 8,230,,,first,detailed in Military Aviation Authority,False,,
+UK CAA CAP 413 Ed. 24 Ch. 8,230,,,reply,Regulatory Publications.,False,,
+UK CAA CAP 413 Ed. 24 Ch. 8,232,,,first,Ballistic recovery system deployed,False,,

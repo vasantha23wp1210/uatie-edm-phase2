@@ -1,0 +1,18 @@
+{
+  "pdf": "CAP413_edition24.pdf",
+  "pdf_sha256": "576b1c98b7f8be567f50f66341e2a0f74eec8799c55f54b69fdf20928b031f0f",
+  "chapter_pages": [
+    227,
+    236
+  ],
+  "blocks_dropped_no_callsign_or_station": 9,
+  "transmissions": 23,
+  "distinct_transmissions": 23,
+  "emergency_regex_rows": 13,
+  "emergency_regex_distinct": 13,
+  "all_ch8_distinct": 23,
+  "gnss_rows": 0,
+  "icao_emergency_rows_unchanged": 19,
+  "icao_plus_cap413_emergency_rows": 32,
+  "target_ge_25_as_defined_icao_only": false
+}

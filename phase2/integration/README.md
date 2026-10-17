@@ -14,5 +14,7 @@ Demo screenshots (`out/screenshots/`, Streamlit app on this VM, `llama3.2:3b`, c
 | `03_phase2_ner_slots.png` | Phase 2, `ce` (primary) | B737 cleared to descend to FL240 then told to contact approach on 124.5 and expect runway 27L at KSFO |
 | `04_phase2_faiss_comparison.png` | Phase 2, `faiss` (dev-selected comparison) | aircraft entered runway without clearance during taxi |
 | `05_phase1_mode.png` | Phase 1 | aircraft entered runway without clearance during taxi |
+| `06_phase2_cockpit_profile.png` | Phase 2, `ce`, Cockpit profile (CPU only, no LLM: extractive answer, per-stage latency) | pilot did not read back runway assignment correctly |
+| `07_phase2_ground_profile.png` | Phase 2, `ce`, Ground profile (`llama3.2:3b` answer, CPU here; GPU recommended) | pilot did not read back runway assignment correctly |
 
-In `03`, spaCy NER does not tag `FL240` in the query, so the `(level)` slot is filled with `fl050` from the top-1 incident summary. That value describes the retrieved incident, not the user's situation; see `slots/REPORT.md` (Failures and limits).
+In `03`, slots are filled from the query text only. spaCy NER tags `B737`, `124.5` and `KSFO` but not `FL240` or `27L`, so both `(level)` slots stay bracketed (`no_entity`); nothing is taken from the retrieved incidents. The end-to-end time shown in a screenshot is a single interactive run, not the measured p50/p95 in `phase1_vs_phase2.md`.

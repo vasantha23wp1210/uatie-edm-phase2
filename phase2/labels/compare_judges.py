@@ -99,7 +99,7 @@ def main():
          f"Confusion (rows Devin, columns Claude, 0/1/2): {t['confusion_rows_devin_cols_claude_0_1_2']}.",
          "- Intent, largest disagreements (Devin → Claude): " + "; ".join(
              f"{x['devin']} → {x['claude']} ({x['rows']})" for x in i["top_disagreements_devin_to_claude"]) + ".",
-         f"- Intent: Claude left notes on {i['claude_ambiguity_notes']} ambiguous rows "
+         f"- Intent: Claude marked {i['claude_ambiguity_notes']} rows borderline in its section 5 relabel "
          "(`phase2/intent_classifier/judgements/intent_ambiguity_notes.csv`).",
          f"- NER, entity-level agreement F1 (exact span and label): all {n['all']['sentences']} sentences "
          f"{n['all']['entity_agreement_f1']} ({n['all']['entities_claude']} Claude vs {n['all']['entities_devin']} Devin "

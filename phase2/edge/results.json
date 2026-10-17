@@ -1,0 +1,238 @@
+{
+  "cockpit": {
+    "generation": {
+      "model": "none (extractive)",
+      "queries": 100,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "insufficient_evidence_threshold": 0.9837,
+      "threshold_rule": "generate.py pick_threshold on dev (exact value, not the rounded one)",
+      "status_counts": {
+        "ok": 84,
+        "insufficient_evidence": 16
+      },
+      "sentences_per_answer": 3,
+      "citation_validity": 1.0,
+      "citations_rejected": 0,
+      "citations_raw": 252,
+      "phraseology_raw": 0,
+      "phraseology_rejected": 0,
+      "llm_latency_ms_p50": null,
+      "llm_latency_ms_p95": null,
+      "ttft_ms_p50": null,
+      "end_to_end_ms_p50": 616.8,
+      "end_to_end_ms_p95": 956.9,
+      "end_to_end_ms_max": 1334.6,
+      "retrieval_ms_p50": 604.9,
+      "retrieval_ms_p95": 944.4,
+      "answers_sha256": "ef24259ce5e754717f0fe5f2b89d98c1ca97f2a6c1fcc4cbe3b00b664384978e"
+    },
+    "judge_model": "llama3.2:3b",
+    "judge_invalid_json": 0,
+    "hallucination": {
+      "answers": 84,
+      "claims": 505,
+      "unsupported": 62,
+      "rate": 0.1228
+    },
+    "verbatim_check": {
+      "summary_sentences": 252,
+      "verbatim_in_cited_report": 252
+    },
+    "control_judge_llama3.1_8b": {
+      "hallucination": {
+        "answers": 84,
+        "claims": 723,
+        "unsupported": 91,
+        "rate": 0.1259
+      },
+      "judge_invalid_json": 2
+    }
+  },
+  "onnx_int8": {
+    "split": "dev",
+    "queries": 20,
+    "cpu_count": 8,
+    "onnxruntime": "1.31.0",
+    "model_mb": {
+      "encoder": {
+        "fp32": 86.2,
+        "int8": 21.8
+      },
+      "cross_encoder": {
+        "fp32": 86.8,
+        "int8": 22.0
+      }
+    },
+    "faiss_top50_overlap_mean": 0.708,
+    "ce_top5_overlap_mean": 0.53,
+    "dev_p5_torch_fp32": 0.66,
+    "dev_p5_onnx_int8": 0.65,
+    "enc_ms_torch_p50": 14.8,
+    "enc_ms_int8_p50": 2.7,
+    "ce_ms_torch_p50": 1671.6,
+    "ce_ms_int8_p50": 519.8,
+    "npu": "not measured: no NPU/DPU on this machine; ONNX Runtime QNN / OpenVINO execution providers load the same files"
+  },
+  "ground_generator_comparison_dev": {
+    "split": "dev",
+    "judge_model": "llama3.2:3b",
+    "models": {
+      "llama3.2:1b": {
+        "dev_queries": 20,
+        "status_counts": {
+          "ok_after_filtering": 12,
+          "ok": 6,
+          "no_valid_citation": 1,
+          "insufficient_evidence": 1
+        },
+        "insufficient_evidence_threshold": 0.9837,
+        "answers_judged": 19,
+        "claims": 110,
+        "unsupported": 15,
+        "hallucination_filtered": 0.1364,
+        "hallucination_raw": 0.2043,
+        "claims_raw": 93,
+        "unsupported_raw": 19,
+        "judge_invalid_json": 1,
+        "citation_validity": 1.0,
+        "phraseology_rejected": 20,
+        "phraseology_raw": 50,
+        "llm_latency_ms_p50": 8287.7,
+        "llm_latency_ms_p95": 10807.5,
+        "ttft_ms_p50": 1960.0,
+        "retrieval_ms_p50": 592.8
+      },
+      "llama3.2:3b": {
+        "dev_queries": 20,
+        "status_counts": {
+          "ok_after_filtering": 8,
+          "ok": 7,
+          "no_grounded_sentence": 4,
+          "insufficient_evidence": 1
+        },
+        "insufficient_evidence_threshold": 0.9837,
+        "answers_judged": 15,
+        "claims": 81,
+        "unsupported": 5,
+        "hallucination_filtered": 0.0617,
+        "hallucination_raw": 0.0485,
+        "claims_raw": 103,
+        "unsupported_raw": 5,
+        "judge_invalid_json": 1,
+        "citation_validity": 1.0,
+        "phraseology_rejected": 8,
+        "phraseology_raw": 46,
+        "llm_latency_ms_p50": 16217.1,
+        "llm_latency_ms_p95": 21206.2,
+        "ttft_ms_p50": 3373.1,
+        "retrieval_ms_p50": 690.3
+      },
+      "llama3.1:8b": {
+        "dev_queries": 20,
+        "status_counts": {
+          "ok": 10,
+          "ok_after_filtering": 8,
+          "no_grounded_sentence": 1,
+          "insufficient_evidence": 1
+        },
+        "insufficient_evidence_threshold": 0.9837,
+        "answers_judged": 18,
+        "claims": 104,
+        "unsupported": 4,
+        "hallucination_filtered": 0.0385,
+        "hallucination_raw": 0.0521,
+        "claims_raw": 96,
+        "unsupported_raw": 5,
+        "judge_invalid_json": 0,
+        "citation_validity": 1.0,
+        "phraseology_rejected": 6,
+        "phraseology_raw": 52,
+        "llm_latency_ms_p50": 43441.2,
+        "llm_latency_ms_p95": 62963.3,
+        "ttft_ms_p50": 8957.4,
+        "retrieval_ms_p50": 958.8
+      }
+    },
+    "rule": "lowest filtered hallucination on dev; models within 1 percentage point(s) of the lowest tie, and the lowest LLM p50 latency among them wins",
+    "within_margin": [
+      "llama3.1:8b"
+    ],
+    "chosen": "llama3.1:8b",
+    "env": {
+      "python": "3.11.15",
+      "cpu_count": 8
+    }
+  },
+  "ground_chosen_test": {
+    "model": "llama3.1:8b",
+    "generation": {
+      "model": "llama3.1:8b",
+      "ollama_options": {
+        "temperature": 0,
+        "seed": 42,
+        "num_ctx": 4096,
+        "num_predict": 300
+      },
+      "retrieval_system": "ce",
+      "top_k": 5,
+      "insufficient_evidence_threshold": 0.9837,
+      "threshold_rule": "max balanced accuracy on dev",
+      "queries": 80,
+      "status_counts": {
+        "ok": 36,
+        "ok_after_filtering": 22,
+        "insufficient_evidence": 15,
+        "no_grounded_sentence": 7
+      },
+      "citations_raw": 302,
+      "citations_rejected": 0,
+      "citation_validity": 1.0,
+      "phraseology_raw": 144,
+      "phraseology_rejected": 9,
+      "llm_latency_ms_p50": 41283.3,
+      "llm_latency_ms_p95": 64152.0,
+      "grounding_rule": "keep a summary sentence only if >= 50% of its content words occur in the validly cited reports (all five if none cited); keep a hazard if >= 50% occur in the retrieved reports",
+      "grounding_dropped_sentences": 23,
+      "grounding_dropped_hazards": 5,
+      "ttft_ms_p50": 7544.7,
+      "retrieval_ms_p50": 710.4,
+      "retrieval_ms_p95": 1546.4,
+      "answers_sha256": "1239c8ec63ca8d5b244a450de7ddf4dc0a3ba85df75e8dfb486078c3cea309a2",
+      "splits": [
+        "test"
+      ]
+    },
+    "judge_model": "llama3.2:3b",
+    "hallucination": {
+      "answers": 58,
+      "claims": 347,
+      "unsupported": 39,
+      "rate": 0.1124
+    },
+    "judge_invalid_json": 0
+  },
+  "ground_baseline_test_same_queries": {
+    "model": "llama3.2:3b",
+    "split": "test",
+    "filtered": {
+      "claims": 384,
+      "unsupported": 42,
+      "rate": 0.1094
+    },
+    "raw": {
+      "claims": 424,
+      "unsupported": 48,
+      "rate": 0.1132
+    },
+    "llm_calls": 65,
+    "llm_latency_ms_p50": 11613.9,
+    "llm_latency_ms_p95": 24377.5
+  },
+  "targets": {
+    "cockpit_hallucination_le_0.05": false,
+    "cockpit_latency_p95_le_5000ms": true
+  }
+}

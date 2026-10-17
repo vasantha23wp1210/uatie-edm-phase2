@@ -33,23 +33,23 @@
   },
   "intent": {
     "rows": 400,
-    "exact_agreement": 0.755,
-    "cohen_kappa": 0.7222,
+    "exact_agreement": 0.7225,
+    "cohen_kappa": 0.6862,
     "dev": {
       "rows": 199,
-      "exact_agreement": 0.7437,
-      "cohen_kappa": 0.7081
+      "exact_agreement": 0.7035,
+      "cohen_kappa": 0.6623
     },
     "test": {
       "rows": 201,
-      "exact_agreement": 0.7662,
-      "cohen_kappa": 0.7358
+      "exact_agreement": 0.7413,
+      "cohen_kappa": 0.7092
     },
     "top_disagreements_devin_to_claude": [
       {
         "devin": "Maintenance_Error",
         "claude": "Emergency_Event",
-        "rows": 27
+        "rows": 29
       },
       {
         "devin": "Unclassified",
@@ -73,20 +73,20 @@
       }
     ],
     "claude_label_counts": {
-      "Procedural_Non_Compliance": 71,
-      "Maintenance_Error": 68,
-      "Emergency_Event": 57,
+      "Maintenance_Error": 66,
+      "Procedural_Non_Compliance": 65,
+      "Emergency_Event": 61,
+      "Unclassified": 34,
       "Airspace_Violation": 32,
-      "Unclassified": 30,
-      "Ground_Incident": 29,
-      "Weather_Deviation": 25,
-      "Crew_Resource_Management": 25,
-      "ATC_Operational_Error": 22,
-      "Communication_Failure": 17,
-      "Runway_Incursion": 16,
-      "IMC_Spatial_Disorientation": 8
+      "Crew_Resource_Management": 29,
+      "Ground_Incident": 28,
+      "Weather_Deviation": 23,
+      "ATC_Operational_Error": 21,
+      "Communication_Failure": 18,
+      "Runway_Incursion": 17,
+      "IMC_Spatial_Disorientation": 6
     },
-    "claude_ambiguity_notes": 33
+    "claude_ambiguity_notes": 91
   },
   "ner": {
     "all": {

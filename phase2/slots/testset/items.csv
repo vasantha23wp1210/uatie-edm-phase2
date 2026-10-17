@@ -1,0 +1,61 @@
+item_id,query_text,phrase_row,phraseology,slots,gold,split
+S001,Speedbird 214 told to climb via the SID to FL120 but levelled at FL100,2,CLIMB VIA SID TO (level),"[""level""]","[""FL120""]",test
+S002,after departure we were cleared to climb via SID to 6000 feet,2,CLIMB VIA SID TO (level),"[""level""]","[""6000""]",test
+S003,climb via SID clearance was misunderstood by the crew,2,CLIMB VIA SID TO (level),"[""level""]",[null],test
+S004,UAL881 was cleared from FL240 to FL280 on the SID and stopped at FL260,2,CLIMB VIA SID TO (level),"[""level""]","[""FL280""]",dev
+S005,ATC told us to maintain FL330 until 1415Z because of crossing traffic,111,MAINTAIN (level) UNTIL (time),"[""level"", ""time""]","[""FL330"", ""1415""]",dev
+S006,instructed to maintain 5000 ft until 0930 zulu then expect descent,111,MAINTAIN (level) UNTIL (time),"[""level"", ""time""]","[""5000"", ""0930""]",test
+S007,"maintain flight level 90 until advised, no time given",111,MAINTAIN (level) UNTIL (time),"[""level"", ""time""]","[""FL90"", null]",test
+S008,crew requested change to 128.725 to talk to company,46,REQUEST CHANGE TO (frequency),"[""frequency""]","[""128.725""]",test
+S009,pilot asked to change frequency but the controller was busy,46,REQUEST CHANGE TO (frequency),"[""frequency""]",[null],test
+S010,after landing runway 28R contact ground 121.8,303,CONTACT GROUND (frequency),"[""frequency""]","[""121.8""]",dev
+S011,told to contact ground on 121.65 but we dialled 121.56,303,CONTACT GROUND (frequency),"[""frequency""]","[""121.65""]",test
+S012,we were never told to contact ground,303,CONTACT GROUND (frequency),"[""frequency""]",[null],dev
+S013,we were monitoring 121.5 when the call came,49,MONITORING (frequency),"[""frequency""]","[""121.5""]",test
+S014,aircraft reported monitoring guard 121.5 and tower 118.3,49,MONITORING (frequency),"[""frequency""]",[null],test
+S015,cleared visual approach runway 27L but lined up on 27R,153,CLEARED VISUAL APPROACH RUNWAY (number),"[""number""]","[""27L""]",test
+S016,N4521T cleared visual approach rwy 16 at night,153,CLEARED VISUAL APPROACH RUNWAY (number),"[""number""]","[""16""]",test
+S017,the visual approach clearance was issued late,153,CLEARED VISUAL APPROACH RUNWAY (number),"[""number""]",[null],dev
+S018,cleared ILS approach runway 09 at KBOS in heavy rain,146,CLEARED APPROACH [RUNWAY (number)],"[""number""]","[""09""]",test
+S019,"Ryanair 45KP cleared approach runway 24, descending through 3000 ft",146,CLEARED APPROACH [RUNWAY (number)],"[""number""]","[""24""]",test
+S020,approach clearance given without a runway assignment,146,CLEARED APPROACH [RUNWAY (number)],"[""number""]",[null],dev
+S021,RVR runway 33 not reported during the low visibility approach,65,RUNWAY VISUAL RANGE (or RVR) RUNWAY (number) NOT AVAILABLE (or NOT REPORTED),"[""number""]","[""33""]",dev
+S022,ILS runway 04 left localiser frequency is 110.3 according to the ATIS,418,ILS RUNWAY (number) LEFT (or RIGHT) LOCALISER FREQUENCY IS (frequency),"[""number"", ""frequency""]","[""04"", ""110.3""]",dev
+S023,the localiser frequency for runway 22 was wrong on the chart,418,ILS RUNWAY (number) LEFT (or RIGHT) LOCALISER FREQUENCY IS (frequency),"[""number"", ""frequency""]","[""22"", null]",test
+S024,Speedbird 123 cleared to London Heathrow via the filed route,97,(aircraft call sign) CLEARED TO,"[""aircraft call sign""]","[""SPEEDBIRD 123""]",dev
+S025,"DAL1182 cleared to KATL, flight planned route, climb FL330",97,(aircraft call sign) CLEARED TO,"[""aircraft call sign""]","[""DAL1182""]",test
+S026,the clearance was read back by the wrong aircraft,97,(aircraft call sign) CLEARED TO,"[""aircraft call sign""]",[null],test
+S027,tower requested release of N123AB for departure runway 30,317,REQUEST RELEASE OF (aircraft call sign),"[""aircraft call sign""]","[""N123AB""]",test
+S028,request release of Easy 52LH from the other unit,317,REQUEST RELEASE OF (aircraft call sign),"[""aircraft call sign""]","[""EASY 52LH""]",test
+S029,we asked if American 2231 was released for climb,319,IS (aircraft call sign) RELEASED [FOR CLIMB (or DESCENT)],"[""aircraft call sign""]","[""AMERICAN 2231""]",test
+S030,Lufthansa 400 released at 1520Z with a climb restriction,318,(aircraft call sign) RELEASED [AT (time)] [conditions/restrictions],"[""aircraft call sign"", ""time""]","[""LUFTHANSA 400"", ""1520""]",test
+S031,"SWA2290 released, no release time given",318,(aircraft call sign) RELEASED [AT (time)] [conditions/restrictions],"[""aircraft call sign"", ""time""]","[""SWA2290"", null]",dev
+S032,for identification turn left heading 270 was issued twice,339,FOR IDENTIFICATION TURN LEFT (or RIGHT) HEADING (three digits),"[""three digits""]","[""270""]",dev
+S033,radar asked us to turn right heading 045 for identification,339,FOR IDENTIFICATION TURN LEFT (or RIGHT) HEADING (three digits),"[""three digits""]","[""045""]",test
+S034,continue heading 090 after passing the VOR,346,CONTINUE HEADING (three digits),"[""three digits""]","[""090""]",dev
+S035,pilot continued the assigned heading but drifted north,346,CONTINUE HEADING (three digits),"[""three digits""]",[null],test
+S036,ATC said fly heading 180 vectors ILS runway 36,348,FLY HEADING (three digits),"[""three digits""]","[""180""]",test
+S037,we were told to fly hdg 310 then descend to 4000 feet,348,FLY HEADING (three digits),"[""three digits""]","[""310""]",dev
+S038,VFR traffic requested 5 nm final for runway 26,405,REQUEST (distance) FINAL,"[""distance""]","[""5""]",test
+S039,pilot requested a long final for training,405,REQUEST (distance) FINAL,"[""distance""]",[null],dev
+S040,go-around initiated at 2 nm from touchdown after unstable approach,425,(distance) FROM TOUCHDOWN,"[""distance""]","[""2""]",test
+S041,the aircraft was 4.5 nautical miles from touchdown when the gear warning sounded,425,(distance) FROM TOUCHDOWN,"[""distance""]","[""4.5""]",test
+S042,approach instructions will be terminated at 3 nm from touchdown on the PAR,422,APPROACH INSTRUCTIONS WILL BE TERMINATED AT (distance) FROM TOUCHDOWN,"[""distance""]","[""3""]",test
+S043,"maintain 3000 feet until glide path interception, ILS 27",413,MAINTAIN (altitude) UNTIL GLIDE PATH INTERCEPTION,"[""altitude""]","[""3000""]",test
+S044,we descended below 2500 ft before intercepting the glide path although told to maintain it,413,MAINTAIN (altitude) UNTIL GLIDE PATH INTERCEPTION,"[""altitude""]","[""2500""]",test
+S045,"glide path intercepted late, no altitude restriction was given",413,MAINTAIN (altitude) UNTIL GLIDE PATH INTERCEPTION,"[""altitude""]",[null],test
+S046,squawk 7700 selected after the engine fire warning,470,SQUAWK (code),"[""code""]","[""7700""]",dev
+S047,ATC asked us to squawk 4521 but we set 4512,470,SQUAWK (code),"[""code""]","[""4521""]",test
+S048,transponder code was not set before departure,470,SQUAWK (code),"[""code""]",[null],test
+S049,for departure squawk 6213 was in the PDC,469,FOR DEPARTURE SQUAWK (code),"[""code""]","[""6213""]",test
+S050,reset squawk 2000 after the transponder failure,471,RESET SQUAWK [(mode)] (code),"[""code""]","[""2000""]",dev
+S051,crew requested descent at 1245z to avoid turbulence,27,REQUEST DESCENT AT (time),"[""time""]","[""1245""]",dev
+S052,we requested descent early because of a medical issue,27,REQUEST DESCENT AT (time),"[""time""]",[null],test
+S053,cleared to commence approach at 0815 utc after holding,147,COMMENCE APPROACH AT (time),"[""time""]","[""0815""]",test
+S054,expect clearance at 1700Z due to flow control,122,EXPECT CLEARANCE (or type of clearance) AT (time),"[""time""]","[""1700""]",test
+S055,contact London Control 132.6 now,42,CONTACT (unit call sign) (frequency) [NOW],"[""unit call sign"", ""frequency""]","[null, ""132.6""]",dev
+S056,told to contact Boston Center on 133.45 but no answer,42,CONTACT (unit call sign) (frequency) [NOW],"[""unit call sign"", ""frequency""]","[null, ""133.45""]",dev
+S057,contact departure was given without a frequency,42,CONTACT (unit call sign) (frequency) [NOW],"[""unit call sign"", ""frequency""]","[null, null]",test
+S058,climb via SID to FL070 then FL150 after the restriction was cancelled,2,CLIMB VIA SID TO (level),"[""level""]",[null],test
+S059,"fly heading 250, then turn right heading 280 to intercept",348,FLY HEADING (three digits),"[""three digits""]",[null],dev
+S060,squawk 7600 for radio failure then squawk 7700,470,SQUAWK (code),"[""code""]",[null],test

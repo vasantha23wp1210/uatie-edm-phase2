@@ -13,25 +13,25 @@
     "threshold_rule": "max balanced accuracy on dev",
     "queries": 100,
     "status_counts": {
-      "ok_after_filtering": 38,
-      "ok": 36,
+      "ok": 38,
+      "ok_after_filtering": 35,
       "insufficient_evidence": 16,
-      "no_grounded_sentence": 10
+      "no_grounded_sentence": 11
     },
     "citations_raw": 392,
     "citations_rejected": 0,
     "citation_validity": 1.0,
-    "phraseology_raw": 212,
-    "phraseology_rejected": 60,
-    "llm_latency_ms_p50": 9988.3,
-    "llm_latency_ms_p95": 13283.1,
+    "phraseology_raw": 210,
+    "phraseology_rejected": 56,
+    "llm_latency_ms_p50": 11750.5,
+    "llm_latency_ms_p95": 22712.0,
     "grounding_rule": "keep a summary sentence only if >= 50% of its content words occur in the validly cited reports (all five if none cited); keep a hazard if >= 50% occur in the retrieved reports",
-    "grounding_dropped_sentences": 15,
+    "grounding_dropped_sentences": 16,
     "grounding_dropped_hazards": 7,
-    "ttft_ms_p50": 2367.7,
-    "retrieval_ms_p50": 459.1,
-    "retrieval_ms_p95": 571.7,
-    "answers_sha256": "c42d047488b1a48ee4354e5cb474dec430523df1ab0c1d51af191da8390b73d7"
+    "ttft_ms_p50": 2672.9,
+    "retrieval_ms_p50": 518.4,
+    "retrieval_ms_p95": 678.6,
+    "answers_sha256": "ab39db544a896a96d392935627861d7be69a1f0a7c7e82722d2826efa1b4be5b"
   },
   "judge_model": "llama3.2:3b",
   "judge_options": {
@@ -41,12 +41,12 @@
     "num_predict": 500
   },
   "judge_is_generator": true,
-  "answers_judged": 74,
+  "answers_judged": 73,
   "judge_invalid_json": 1,
-  "claims": 468,
-  "claims_unsupported": 41,
-  "hallucination_rate_claims": 0.0876,
-  "hallucination_rate_mean_per_answer": 0.0919,
+  "claims": 471,
+  "claims_unsupported": 46,
+  "hallucination_rate_claims": 0.0977,
+  "hallucination_rate_mean_per_answer": 0.1005,
   "rating_export": {
     "rows": 30,
     "status": "pending user rating"
@@ -141,12 +141,12 @@
       "R30": 2
     }
   },
-  "judgements_sha256": "d3946a402ab1f7025cf2bdca5f562392a1583e6d976e3bc633ab00b406e6e4f2",
+  "judgements_sha256": "99d949a031f9e465fd0c5a1f4e3e711e97abc5c18d596ccb165db87d54c85fac",
   "hallucination_raw_before_grounding_filter": {
     "answers": 84,
-    "claims": 519,
-    "unsupported": 48,
-    "rate": 0.0925
+    "claims": 525,
+    "unsupported": 53,
+    "rate": 0.101
   },
-  "judgements_raw_sha256": "5bcc8c73030d4ddd3161fda0f243f7b2d6db1b281b67132070d41d9f0061bcba"
+  "judgements_raw_sha256": "9730feba914562c1c72c663b9b67f6c4698df4f322658e38816d566562625088"
 }

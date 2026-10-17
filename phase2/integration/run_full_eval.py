@@ -83,8 +83,8 @@ def latency(phase1):
         _, idx = rag.index.search(rag.embed_query(qt), t3.DEPTH)
         union = list(dict.fromkeys(b + [meta.incident_id.iat[i] for i in idx[0] if i >= 0]))
         logits = ce.predict([(qt, text_of[i]) for i in union], batch_size=32, show_progress_bar=False)
-        top = union[int(np.argmax(logits))]
-        text = qt + "\n" + text_of[top]
+        union[int(np.argmax(logits))]  # top-1 retrieval output (not used for slot values)
+        text = qt
         ents = [(e.text, e.label_) for e in nlp(text).ents]
         j = int((X @ vec.transform([qt]).T).toarray().ravel().argmax())
         fill(str(cm.Phraseology.iat[j]), ents, text)
@@ -202,7 +202,9 @@ def main():
         md += ["## Intent (agreement with provisional labels)", "", t.to_markdown(index=False), ""]
     if sl:
         md += ["## Slot filling", "", f"Status over {sl['queries']} queries: {sl['status_counts']}; "
-               f"slots filled {sl['slots_filled']} of {sl['slot_occurrences_in_selected_phrases']}.", ""]
+               f"slots filled {sl['slots_filled']} of {sl['slot_occurrences_in_selected_phrases']}, i.e. "
+               f"{sl['slots_filled'] - sl['slots_filled_value_in_query_text']} wrong fills; the queries state almost no "
+               "slot values, so the rest correctly stay bracketed (filling is measured on slots/testset).", ""]
     if gen:
         g = gen["generation"]
         md += ["## Generation", "", f"Model `{g['model']}`; status {g['status_counts']}; citation validity "
@@ -217,8 +219,8 @@ def main():
                    "identical in the current CE-context run, so the current answers have no user ratings.", ""]
     if R["latency"]:
         md += ["## Latency (this VM, CPU)", "", "```", json.dumps(R["latency"], indent=1), "```", "",
-               "- `pipeline_ms`: BM25 top-50 + FAISS top-50, cross-encoder re-ranking of the union, spaCy NER on query + top-1 "
-               "summary, TF-IDF phrase match and slot filling, measured here (intent lookup not included).",
+               "- `pipeline_ms`: BM25 top-50 + FAISS top-50, cross-encoder re-ranking of the union, spaCy NER on the query "
+               "text, TF-IDF phrase match and slot filling, measured here (intent lookup not included).",
                "- `llm_ms`: per-query LLM time recorded by `generation/generate.py`; it is 0 for "
                f"{gen['generation']['status_counts'].get('insufficient_evidence', 0)} insufficient-evidence queries "
                "(no LLM call); run conditions and run-to-run variation are in `generation/REPORT.md`.", ""]

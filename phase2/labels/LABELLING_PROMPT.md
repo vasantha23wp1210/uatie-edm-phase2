@@ -1,8 +1,13 @@
 # Labelling method — LLM-judged (Claude)
 
-All three files were labelled by Claude (Claude Opus 5.5, claude.ai, 12–13 Oct 2026).
-Every row is marked `LLM-judged (Claude)` in its notes column. No rows have been
-human-reviewed yet; change a row's marker to `human` when you check or correct it.
+This document covers five tasks, run with Claude (Claude Opus 5.5, claude.ai) from 12 to 16 Oct 2026.
+Sections 1, 2, 3 and 5 are dataset labels made by Claude: every row's notes column starts with the
+marker `LLM-judged (Claude)`, sometimes followed by a longer note. The 400 intent rows of section 2
+were relabelled on 16 Oct under the section 5 rules (marker `LLM-judged (Claude), section 5 relabel`;
+the first pass is kept as `intent_labelled_claude_v1.csv`). No dataset row has been human-reviewed
+yet; change a row's marker to `human` when you check or correct it.
+Section 4 is different: it rates generated answers, not dataset rows. The ratings are the user's;
+Claude reviewed them and rewrote the notes.
 
 Each row was read and judged individually. No keyword rules, embeddings or retriever
 scores were used to assign labels. Scripts were used only to write the files and to
@@ -101,3 +106,65 @@ Conventions applied:
   (S062 `328 degrees`, S214 `170`, `270`, S259 `280 degree heading`).
 - **RUNWAY** added for bare designators (`28l`, `19l`, `28r`, `17l/35r`); spans
   extended to cover the full designator (`runways 28l and r`, `rwy 1-19`).
+
+## 4. answers_to_rate.csv → answers_rated.csv (30 generated answers)
+
+Instruction given: read `query_text`, then the `summary`, `key_hazards` and
+`recommended_phraseology` columns, and rate the answer with a whole number:
+
+- **5** — accurate and useful for the query.
+- **4** — accurate, but there are small gaps.
+- **3** — partly useful, or vague.
+- **2** — mostly unhelpful, or has a factual error.
+- **1** — wrong or misleading.
+
+`notes` (optional): note any claim judged wrong.
+
+Only those three columns were scored. Risk level and citations were not; where
+they matter, notes mention them as "not scored". A recommended phrase that does
+not apply to the query was treated as reducing usefulness (usually 3); a phrase
+that would actively mislead (e.g. ROGER for an ambiguous clearance, CLEARED TO
+LAND for a vehicle on the runway) was treated as misleading (2). Every note starts
+with `LLM-judged (Claude).` and ends with the citation counts, marked not scored.
+
+Citations were checked against `asrs_for_fusion.csv`. The `ASRS_XXXXXXX` IDs are
+not `event_id` values or plain row numbers; they map to rows by a drifting offset
+(about +1,993). Claude rebuilt the mapping from the 1,292 IDs whose text was already
+known from the other files (leave-one-out check: 1,291 / 1,292 correct) and used it
+to resolve all 144 citations, each to a single report. Each cited report was graded
+2 (on-topic), 1 (partial) or 0 (off-topic) for its query; see
+`answers_citations_checked.csv`.
+
+Result: 1 × 1, 9 × 2, 18 × 3, 2 × 4, none at 5 (mean 2.7).
+Citations: 57 on-topic, 48 partial, 39 off-topic.
+
+## 5. to_label_batch1–4.csv → labeled_batch1–4.csv (2,000 rows, T0001–T2000)
+
+Same task, label set and conventions as section 2 (`intent_to_label.csv`). Each
+summary was read and given one label from `allowed_labels.txt`; `notes` holds only
+the marker `LLM-judged (Claude)`. No separate ambiguity file was produced for these
+batches. None of the 2,000 record IDs overlap the earlier 400.
+
+Applied consistently with section 2 where the summary leaves room for doubt:
+
+- A failure followed by a declared emergency, diversion, return or engine shutdown →
+  Emergency_Event; the same failure with the flight continuing normally →
+  Maintenance_Error.
+- Loss of control on landing or taxi (ground loops, excursions) with no weather cause
+  → Ground_Incident; with gusts or crosswind → Weather_Deviation.
+- A cause stated as distraction, fatigue, workload or crew coordination →
+  Crew_Resource_Management, even when the outcome was an altitude or track deviation.
+- Hazmat / dangerous-goods paperwork and loading errors, MEL and checklist lapses →
+  Procedural_Non_Compliance.
+- UAS flown into controlled airspace or a TFR → Airspace_Violation; other UAS-only
+  events, GPS jamming, chart/database errors, COVID / mask issues, lasers and
+  accident-database records with no clear fit → Unclassified.
+
+Distribution: Maintenance_Error 347, Emergency_Event 309, Procedural_Non_Compliance
+308, Unclassified 213, Ground_Incident 158, Airspace_Violation 149,
+Crew_Resource_Management 121, Communication_Failure 102, Weather_Deviation 100,
+ATC_Operational_Error 99, Runway_Incursion 78, IMC_Spatial_Disorientation 16.
+
+Checks: every row present in original order; `label_id`, `record_id`, `source` and
+`summary` unchanged; every label in the allowed set; random spot-checks confirmed
+labels are aligned with their rows.

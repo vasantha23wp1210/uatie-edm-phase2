@@ -1,0 +1,52 @@
+{
+  "generation": {
+    "model": "none (extractive)",
+    "queries": 100,
+    "splits": [
+      "dev",
+      "test"
+    ],
+    "insufficient_evidence_threshold": 0.9837,
+    "threshold_rule": "generate.py pick_threshold on dev (exact value, not the rounded one)",
+    "status_counts": {
+      "ok": 84,
+      "insufficient_evidence": 16
+    },
+    "sentences_per_answer": 3,
+    "citation_validity": 1.0,
+    "citations_rejected": 0,
+    "citations_raw": 252,
+    "phraseology_raw": 0,
+    "phraseology_rejected": 0,
+    "llm_latency_ms_p50": null,
+    "llm_latency_ms_p95": null,
+    "ttft_ms_p50": null,
+    "end_to_end_ms_p50": 616.8,
+    "end_to_end_ms_p95": 956.9,
+    "end_to_end_ms_max": 1334.6,
+    "retrieval_ms_p50": 604.9,
+    "retrieval_ms_p95": 944.4,
+    "answers_sha256": "ef24259ce5e754717f0fe5f2b89d98c1ca97f2a6c1fcc4cbe3b00b664384978e"
+  },
+  "judge_model": "llama3.2:3b",
+  "judge_options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 500
+  },
+  "judge_invalid_json": 0,
+  "hallucination_filtered": {
+    "answers": 84,
+    "claims": 505,
+    "unsupported": 62,
+    "rate": 0.1228
+  },
+  "hallucination_raw_before_grounding_filter": {
+    "answers": 0,
+    "claims": 0,
+    "unsupported": 0,
+    "rate": null
+  },
+  "judgements_sha256": "5cfe7fbe9b126066445f14e375c46fac0b3ea40ee246a3e153fb6d894cfe1bb6"
+}

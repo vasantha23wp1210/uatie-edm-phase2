@@ -11,6 +11,7 @@ is kept only if >= 50% of its content words occur in the validly cited reports (
 kept only if >= 50% of its content words occur in the retrieved reports. The unfiltered answer is kept as raw_answer.
 Writes out/answers.jsonl (resumable), results_generation.json.
 Run:  python phase2/generation/generate.py [--phase1 PATH] [--model llama3.2:3b] [--base-url http://localhost:11434]
+      [--splits dev,test] [--out-dir DIR]   (--out-dir: answers.jsonl and results_generation.json go to DIR)
 """
 import argparse
 import importlib.util
@@ -56,6 +57,24 @@ Return JSON with keys:
 "key_hazards": a list of at most 3 short hazard strings, each stated in a report,
 "recommended_phraseology": list of phrases copied exactly from the allowed list,
 "citations": list of incident IDs (from the reports above) that support the summary."""
+SPLIT = re.compile(r"(?<=[.!?])\s+")
+PROMPT_ANCHORED = """You are an aviation safety analyst. Answer ONLY from the numbered report sentences below.
+Use no outside knowledge. Every claim must restate one numbered sentence; do not combine, generalise or add
+numbers, places, causes or outcomes.
+Query: {query}
+Risk level (from the top incident): {risk}
+
+Report sentences (R = report, S = sentence):
+{docs}
+
+Allowed ATC phraseology (copy exactly, or use none):
+{phrases}
+
+Return JSON with keys:
+"claims": at most 2 objects {{"text": one short sentence answering the query, "anchor": the sentence ID it restates, e.g. "R1.S2"}},
+"key_hazards": at most 3 objects {{"text": a short hazard string, "anchor": the sentence ID that states it}},
+"recommended_phraseology": list of phrases copied exactly from the allowed list.
+"text" is your own words, never a sentence ID. Example: {{"text": "The crew missed the approach after a late runway change.", "anchor": "R1.S1"}}."""
 
 
 def load_module(name, path):
@@ -92,6 +111,39 @@ def ground(a, ids, text_of):
     return dict(a, summary=" ".join(keep), key_hazards=hz), len(sents) - len(keep), len(a["key_hazards"]) - len(hz)
 
 
+def anchor(a, sent):
+    """Turn anchored claims into the free-answer shape. A claim is kept only if its anchor is a real sentence ID
+    and >= SUPPORT_MIN of its content words occur in that one sentence; citations are the anchored reports."""
+    def items(key):
+        v = a.get(key, []) or []
+        return [x for x in (v if isinstance(v, list) else [v]) if isinstance(x, dict)]
+    log, keep, allt = {"claims": 0, "hazards": 0, "bad_anchor": 0, "text_was_id": 0, "unsupported_by_anchor": 0}, {}, {}
+    for key, n in [("claims", "claims"), ("key_hazards", "hazards")]:
+        keep[key], allt[key] = [], []
+        for x in items(key):
+            log[n] += 1
+            t, an = str(x.get("text", "")).strip(), str(x.get("anchor", "")).strip().strip("[]")
+            if t.strip("[]") in sent and (not an or an == t.strip("[]")):
+                an = t.strip("[]")
+                t = sent[an][1]
+                log["text_was_id"] += 1
+            allt[key].append((t, sent[an][0] if an in sent else None))
+            if an not in sent:
+                log["bad_anchor"] += 1
+            elif not supported(t, sent[an][1]):
+                log["unsupported_by_anchor"] += 1
+            else:
+                keep[key].append((t if t.endswith((".", "!", "?")) or key == "key_hazards" else t + ".", sent[an][0]))
+    out = {"summary": " ".join(t for t, _ in keep["claims"]), "key_hazards": [t for t, _ in keep["key_hazards"]],
+           "recommended_phraseology": a.get("recommended_phraseology", []),
+           "citations": list(dict.fromkeys(i for t, i in keep["claims"] + keep["key_hazards"]))}
+    raw = {"summary": " ".join(t if t.endswith((".", "!", "?")) else t + "." for t, _ in allt["claims"] if t),
+           "key_hazards": [t for t, _ in allt["key_hazards"] if t],
+           "recommended_phraseology": out["recommended_phraseology"],
+           "citations": list(dict.fromkeys(i for _, i in allt["claims"] + allt["key_hazards"] if i))}
+    return out, log, raw
+
+
 def pick_threshold(scores, positive):
     """Threshold on the top-1 score maximising balanced accuracy of 'top-5 has a relevant result' (dev only)."""
     s, y = np.asarray(scores), np.asarray(positive, bool)
@@ -106,7 +158,12 @@ def main():
     ap.add_argument("--phase1")
     ap.add_argument("--model", default=os.environ.get("UATIE_LLM", "llama3.2:3b"))
     ap.add_argument("--base-url", default=os.environ.get("OLLAMA_HOST", "http://localhost:11434"))
+    ap.add_argument("--splits", default="dev,test")
+    ap.add_argument("--out-dir")
+    ap.add_argument("--prompt", choices=["free", "anchored"], default="free",
+                    help="anchored: every claim must cite a sentence ID; unanchored or unsupported claims are dropped")
     args = ap.parse_args()
+    splits = set(args.splits.split(","))
     repo = phase1_root()
     cwd = Path.cwd()
     os.chdir(repo)
@@ -161,12 +218,12 @@ def main():
 
     from langchain_ollama import ChatOllama
     llm = ChatOllama(model=args.model, base_url=args.base_url, format="json", keep_alive="2h", **OPTIONS)
-    out = TASK / "out"
-    out.mkdir(exist_ok=True)
+    out = Path(args.out_dir).resolve() if args.out_dir else TASK / "out"
+    out.mkdir(parents=True, exist_ok=True)
     f = out / "answers.jsonl"
     done = {json.loads(line)["query_id"] for line in f.read_text().splitlines()} if f.exists() else set()
     for n, r in enumerate(q.itertuples(), 1):
-        if r.query_id in done:
+        if r.query_id in done or r.split not in splits:
             continue
         ids, scores, pos = ret[r.query_id]
         top = meta.iloc[pos[0]]
@@ -183,8 +240,18 @@ def main():
                                                                "recommended_phraseology": [], "citations": []})
         else:
             docs = "\n".join(f"[{i}] {meta.summary.iat[p]}" for i, p in zip(ids, pos))
+            sent = {}
+            if args.prompt == "anchored":
+                lines = []
+                for k, i in enumerate(ids, 1):
+                    lines.append(f"R{k} = {i}")
+                    for j, x in enumerate([x.strip() for x in SPLIT.split(text_of[i]) if x.strip()], 1):
+                        sent[f"R{k}.S{j}"] = (i, x)
+                        lines.append(f"  R{k}.S{j}: {x}")
+                docs = "\n".join(lines)
             parts, ttft = [], None
-            for ch in llm.stream(PROMPT.format(query=r.query_text, risk=risk, docs=docs,
+            for ch in llm.stream((PROMPT_ANCHORED if args.prompt == "anchored" else PROMPT).format(
+                                  query=r.query_text, risk=risk, docs=docs,
                                                phrases="\n".join(f"- {c}" for c in cand))):
                 if ttft is None:
                     ttft = round((time.perf_counter() - t0) * 1000, 1)
@@ -194,13 +261,15 @@ def main():
             rec["raw"] = raw
             try:
                 a = json.loads(raw)
+                if args.prompt == "anchored":
+                    a, rec["anchors"], raw_all = anchor(a, sent)
                 cites = [str(c) for c in a.get("citations", []) or []]
                 phr = [str(p) for p in a.get("recommended_phraseology", []) or []]
                 hz = a.get("key_hazards", []) or []
                 a = {"summary": str(a.get("summary", "")), "key_hazards": [str(h) for h in hz] if isinstance(hz, list) else [str(hz)],
                      "recommended_phraseology": [p for p in phr if p in allowed],
                      "citations": [c for c in cites if c in ids]}
-                rec["raw_answer"] = a
+                rec["raw_answer"] = raw_all if args.prompt == "anchored" else a
                 a, ds, dh = ground(a, ids, text_of)
                 rec.update(grounding_dropped_sentences=ds, grounding_dropped_hazards=dh)
                 rec.update(answer=a, citations_raw=cites, citations_rejected=[c for c in cites if c not in ids],
@@ -239,7 +308,13 @@ def main():
          "retrieval_ms_p50": round(float(np.percentile([a["retrieval_ms"] for a in A], 50)), 1),
          "retrieval_ms_p95": round(float(np.percentile([a["retrieval_ms"] for a in A], 95)), 1),
          "answers_sha256": sha256(f)}
-    (TASK / "results_generation.json").write_text(json.dumps(R, indent=2) + "\n", encoding="utf-8")
+    R["splits"] = sorted(splits)
+    R["prompt"] = args.prompt
+    if args.prompt == "anchored":
+        R["anchors"] = {k: sum(a.get("anchors", {}).get(k, 0) for a in called)
+                        for k in ["claims", "hazards", "bad_anchor", "text_was_id", "unsupported_by_anchor"]}
+    (out / "results_generation.json" if args.out_dir else TASK / "results_generation.json").write_text(
+        json.dumps(R, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(R, indent=1))
 
 

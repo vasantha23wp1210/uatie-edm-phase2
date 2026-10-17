@@ -4,7 +4,7 @@
 
 - LangChain `ChatOllama`, model `llama3.2:3b`, options {'temperature': 0, 'seed': 42, 'num_ctx': 4096, 'num_predict': 300}, JSON output.
 - Context: ce top-5 (the primary Task 3 system: BM25 + FAISS candidates re-ranked by the cross-encoder), Phase 1 risk level of the top-1 incident, candidate phraseology (Task 6 filled phrase + top-3 crossmap phrases).
-- Grounding filter: keep a summary sentence only if >= 50% of its content words occur in the validly cited reports (all five if none cited); keep a hazard if >= 50% occur in the retrieved reports. Dropped 15 summary sentences and 7 hazards. The unfiltered answer is judged too (below).
+- Grounding filter: keep a summary sentence only if >= 50% of its content words occur in the validly cited reports (all five if none cited); keep a hazard if >= 50% occur in the retrieved reports. Dropped 16 summary sentences and 7 hazards. The unfiltered answer is judged too (below).
 - Insufficient evidence when the top-1 sigmoid(cross-encoder logit) < 0.9837 (max balanced accuracy on dev; dev queries only).
 - Validation: citations outside the retrieved IDs and phrases not verbatim in the crossmap (or its Task 6 filled form) are removed and counted; an answer left with no valid citation is `no_valid_citation`.
 - Judge: `llama3.2:3b` splits each answer into claims and marks each supported / unsupported by the retrieved summaries.
@@ -13,16 +13,16 @@
 
 | Status | Answers |
 |---|---:|
-| ok_after_filtering | 38 |
-| ok | 36 |
+| ok | 38 |
+| ok_after_filtering | 35 |
 | insufficient_evidence | 16 |
-| no_grounded_sentence | 10 |
+| no_grounded_sentence | 11 |
 
 - Citation validity: 1.0 (0 of 392 citations rejected).
-- Phraseology rejected as not verbatim: 60 of 212.
-- Before the grounding filter (raw answers, same judge): 0.0925 (48 of 519 claims). The filter is lexical and fixed in advance; the judge is the same 3B model, so the before/after drop is not independent evidence.
-- Hallucination rate: 0.0876 of claims (41 of 468); mean per answer 0.0919. Judge invalid JSON: 1.
-- LLM latency on this VM (CPU): p50 9988.3 ms, p95 13283.1 ms (num_predict 300). Streaming: time to first token p50 2367.7 ms; the JSON answer is only usable once complete, so streaming does not shorten time to a validated answer. Retrieval incl. cross-encoder: p50 459.1 ms, p95 571.7 ms. Target <= 5 s end to end: MISSED on CPU; meeting it needs a GPU (or a smaller model, untested here).
+- Phraseology rejected as not verbatim: 56 of 210.
+- Before the grounding filter (raw answers, same judge): 0.101 (53 of 525 claims). The filter is lexical and fixed in advance; the judge is the same 3B model, so the before/after drop is not independent evidence.
+- Hallucination rate: 0.0977 of claims (46 of 471); mean per answer 0.1005. Judge invalid JSON: 1.
+- LLM latency on this VM (CPU): p50 11750.5 ms, p95 22712.0 ms (num_predict 300). Streaming: time to first token p50 2672.9 ms; the JSON answer is only usable once complete, so streaming does not shorten time to a validated answer. Retrieval incl. cross-encoder: p50 518.4 ms, p95 678.6 ms. Target <= 5 s end to end: MISSED on CPU; meeting it needs a GPU (or a smaller model, untested here).
 - 0 of 84 answered queries took > 60 s.
 
 ## Run-to-run variation

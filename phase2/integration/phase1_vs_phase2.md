@@ -44,19 +44,23 @@ Verification of 20 sampled matches (human (user); notes refined with Claude): as
 
 ## Intent (agreement with provisional labels)
 
-| Model                |   Test accuracy |   Test macro-F1 |
-|:---------------------|----------------:|----------------:|
-| keyword_rules_phase1 |           0.383 |           0.452 |
-| logreg_minilm        |           0.478 |           0.462 |
-| distilbert           |           0.393 |           0.445 |
+| Model                       |   Test accuracy |   Test macro-F1 |
+|:----------------------------|----------------:|----------------:|
+| keyword_rules_phase1        |           0.393 |           0.462 |
+| logreg_minilm               |           0.403 |           0.445 |
+| logreg_minilm_scaled        |           0.587 |           0.587 |
+| logreg_minilm_silver_scaled |           0.483 |           0.496 |
+| distilbert                  |           0.393 |           0.45  |
+| distilbert_scaled           |           0.682 |           0.601 |
+| distilbert_silver_scaled    |           0.637 |           0.607 |
 
 ## Slot filling
 
-Status over 100 queries: {'incomplete': 61, 'no_slots': 37, 'complete': 2}; slots filled 5 of 91.
+Status over 100 queries: {'incomplete': 63, 'no_slots': 37}; slots filled 0 of 91.
 
 ## Generation
 
-Model `llama3.2:3b`; status {'ok_after_filtering': 38, 'ok': 36, 'insufficient_evidence': 16, 'no_grounded_sentence': 10}; citation validity 1.0; hallucination rate (LLM judge) 0.0876 after the grounding filter, 0.0925 before it (same judge; not independent evidence).
+Model `llama3.2:3b`; status {'ok': 38, 'ok_after_filtering': 35, 'insufficient_evidence': 16, 'no_grounded_sentence': 11}; citation validity 1.0; hallucination rate (LLM judge) 0.0977 after the grounding filter, 0.101 before it (same judge; not independent evidence).
 
 User ratings (human (user); notes refined with Claude) of 30 answers from the earlier run (`generation/out/run_prev/`): mean 2.7, median 3.0, distribution {'1': 1, '2': 9, '3': 18, '4': 2, '5': 0}; 0 of 30 rated answers are identical in the current CE-context run, so the current answers have no user ratings.
 
@@ -65,22 +69,22 @@ User ratings (human (user); notes refined with Claude) of 30 answers from the ea
 ```
 {
  "pipeline_ms": {
-  "p50": 474.9,
-  "p95": 610.3,
+  "p50": 541.5,
+  "p95": 739.0,
   "n": 100
  },
  "llm_ms": {
-  "p50": 9650.7,
-  "p95": 13240.8,
+  "p50": 11242.0,
+  "p95": 21172.8,
   "n": 100
  },
  "end_to_end_ms": {
-  "p50": 10110.6,
-  "p95": 13663.7,
+  "p50": 11780.1,
+  "p95": 21836.7,
   "n": 100
  }
 }
 ```
 
-- `pipeline_ms`: BM25 top-50 + FAISS top-50, cross-encoder re-ranking of the union, spaCy NER on query + top-1 summary, TF-IDF phrase match and slot filling, measured here (intent lookup not included).
+- `pipeline_ms`: BM25 top-50 + FAISS top-50, cross-encoder re-ranking of the union, spaCy NER on the query text, TF-IDF phrase match and slot filling, measured here (intent lookup not included).
 - `llm_ms`: per-query LLM time recorded by `generation/generate.py`; it is 0 for 16 insufficient-evidence queries (no LLM call); run conditions and run-to-run variation are in `generation/REPORT.md`.

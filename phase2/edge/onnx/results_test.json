@@ -1,0 +1,25 @@
+{
+  "split": "test",
+  "queries": 80,
+  "cpu_count": 8,
+  "onnxruntime": "1.31.0",
+  "model_mb": {
+    "encoder": {
+      "fp32": 86.2,
+      "int8": 21.8
+    },
+    "cross_encoder": {
+      "fp32": 86.8,
+      "int8": 22.0
+    }
+  },
+  "faiss_top50_overlap_mean": 0.8178,
+  "ce_top5_overlap_mean": 0.8925,
+  "test_p5_torch_fp32": 0.8975,
+  "test_p5_onnx_int8": 0.905,
+  "enc_ms_torch_p50": 551.6,
+  "enc_ms_int8_p50": 2.4,
+  "ce_ms_torch_p50": 890.2,
+  "ce_ms_int8_p50": 223.5,
+  "npu": "not measured: no NPU/DPU on this machine; ONNX Runtime QNN / OpenVINO execution providers load the same files"
+}

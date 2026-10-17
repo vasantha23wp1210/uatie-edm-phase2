@@ -1,0 +1,152 @@
+{
+  "generation": {
+    "model": "llama3.2:3b",
+    "ollama_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 300
+    },
+    "retrieval_system": "ce",
+    "top_k": 5,
+    "insufficient_evidence_threshold": 0.9837,
+    "threshold_rule": "max balanced accuracy on dev",
+    "queries": 100,
+    "status_counts": {
+      "ok_after_filtering": 38,
+      "ok": 36,
+      "insufficient_evidence": 16,
+      "no_grounded_sentence": 10
+    },
+    "citations_raw": 392,
+    "citations_rejected": 0,
+    "citation_validity": 1.0,
+    "phraseology_raw": 212,
+    "phraseology_rejected": 60,
+    "llm_latency_ms_p50": 9988.3,
+    "llm_latency_ms_p95": 13283.1,
+    "grounding_rule": "keep a summary sentence only if >= 50% of its content words occur in the validly cited reports (all five if none cited); keep a hazard if >= 50% occur in the retrieved reports",
+    "grounding_dropped_sentences": 15,
+    "grounding_dropped_hazards": 7,
+    "ttft_ms_p50": 2367.7,
+    "retrieval_ms_p50": 459.1,
+    "retrieval_ms_p95": 571.7,
+    "answers_sha256": "c42d047488b1a48ee4354e5cb474dec430523df1ab0c1d51af191da8390b73d7"
+  },
+  "judge_model": "llama3.2:3b",
+  "judge_options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 500
+  },
+  "judge_is_generator": true,
+  "answers_judged": 74,
+  "judge_invalid_json": 1,
+  "claims": 468,
+  "claims_unsupported": 41,
+  "hallucination_rate_claims": 0.0876,
+  "hallucination_rate_mean_per_answer": 0.0919,
+  "rating_export": {
+    "rows": 30,
+    "status": "pending user rating"
+  },
+  "user_ratings_run_prev": {
+    "provenance": "human (user); notes refined with Claude",
+    "rated_file": "answers_rated_run_prev.csv",
+    "rated_run": "run_prev",
+    "rows": 30,
+    "distribution": {
+      "1": 1,
+      "2": 9,
+      "3": 18,
+      "4": 2,
+      "5": 0
+    },
+    "mean": 2.7,
+    "median": 3.0,
+    "sd": 0.65,
+    "rated_ge4": 2,
+    "rated_le2": 10,
+    "by_split": {
+      "dev": {
+        "n": 9,
+        "mean": 2.67
+      },
+      "test": {
+        "n": 21,
+        "mean": 2.71
+      }
+    },
+    "by_status": {
+      "ok": {
+        "n": 15,
+        "mean": 2.67
+      },
+      "ok_after_filtering": {
+        "n": 15,
+        "mean": 2.73
+      }
+    },
+    "by_risk": {
+      "CRITICAL": {
+        "n": 17,
+        "mean": 2.82
+      },
+      "HIGH": {
+        "n": 8,
+        "mean": 2.62
+      },
+      "MEDIUM": {
+        "n": 5,
+        "mean": 2.4
+      }
+    },
+    "spearman_rating_vs_llm_judge_unsupported": {
+      "rho": -0.192,
+      "p": 0.31,
+      "n": 30
+    },
+    "same_answer_in_current_run": [],
+    "ratings": {
+      "R01": 3,
+      "R02": 3,
+      "R03": 3,
+      "R04": 3,
+      "R05": 2,
+      "R06": 3,
+      "R07": 3,
+      "R08": 2,
+      "R09": 2,
+      "R10": 3,
+      "R11": 2,
+      "R12": 2,
+      "R13": 2,
+      "R14": 3,
+      "R15": 3,
+      "R16": 3,
+      "R17": 3,
+      "R18": 3,
+      "R19": 3,
+      "R20": 2,
+      "R21": 3,
+      "R22": 2,
+      "R23": 3,
+      "R24": 1,
+      "R25": 4,
+      "R26": 3,
+      "R27": 3,
+      "R28": 3,
+      "R29": 4,
+      "R30": 2
+    }
+  },
+  "judgements_sha256": "d3946a402ab1f7025cf2bdca5f562392a1583e6d976e3bc633ab00b406e6e4f2",
+  "hallucination_raw_before_grounding_filter": {
+    "answers": 84,
+    "claims": 519,
+    "unsupported": 48,
+    "rate": 0.0925
+  },
+  "judgements_raw_sha256": "5bcc8c73030d4ddd3161fda0f243f7b2d6db1b281b67132070d41d9f0061bcba"
+}

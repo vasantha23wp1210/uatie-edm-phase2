@@ -7,7 +7,8 @@ The default judge is the generator model (llama3.2:3b), which can favour its own
 use another. Exports 30 answers (seed 42) to rate/answers_to_rate.csv for the user, and adds the user's ratings
 from results_ratings.json (score_ratings.py) when present. Writes out/judgements.jsonl (resumable), results.json,
 REPORT.md.
-Run:  python phase2/generation/judge.py [--phase1 PATH] [--judge-model llama3.2:3b] [--base-url URL]
+Run:  python phase2/generation/judge.py [--phase1 PATH] [--judge-model llama3.2:3b] [--base-url URL] [--answers-dir DIR]
+      (--answers-dir: judge DIR/answers.jsonl, write DIR/judgements*.jsonl and DIR/results.json only; no export/report)
 """
 import argparse
 import json
@@ -68,20 +69,29 @@ def main():
     ap.add_argument("--phase1")
     ap.add_argument("--judge-model", default=os.environ.get("UATIE_JUDGE_LLM", "llama3.2:3b"))
     ap.add_argument("--base-url", default=os.environ.get("OLLAMA_HOST", "http://localhost:11434"))
+    ap.add_argument("--answers-dir")
     args = ap.parse_args()
+    d = Path(args.answers_dir).resolve() if args.answers_dir else TASK / "out"
     repo = phase1_root()
     meta = pd.read_csv(repo / "data" / "processed" / "asrs_faiss_meta.csv", usecols=["incident_id", "summary"])
     summ = meta.astype(str).set_index("incident_id").summary
-    A = [json.loads(x) for x in (TASK / "out" / "answers.jsonl").read_text().splitlines()]
-    G = json.loads((TASK / "results_generation.json").read_text())
+    A = [json.loads(x) for x in (d / "answers.jsonl").read_text().splitlines()]
+    G = json.loads((d / "results_generation.json" if args.answers_dir else TASK / "results_generation.json").read_text())
     assert len(A) == G["queries"], "answers.jsonl incomplete: rerun generate.py"
 
     from langchain_ollama import ChatOllama
     llm = ChatOllama(model=args.judge_model, base_url=args.base_url, format="json", keep_alive="2h", **OPTIONS)
-    f = TASK / "out" / "judgements.jsonl"
-    fr = TASK / "out" / "judgements_raw.jsonl"
+    f = d / "judgements.jsonl"
+    fr = d / "judgements_raw.jsonl"
     for field, path in [("answer", f), ("raw_answer", fr)]:
         judge_all(llm, A, summ, field, path)
+    if args.answers_dir:
+        inv = sum(json.loads(x)["status"] != "ok" for x in f.read_text().splitlines()) if f.exists() else 0
+        R = {"generation": G, "judge_model": args.judge_model, "judge_options": OPTIONS, "judge_invalid_json": inv,
+             "hallucination_filtered": raw_rate(f), "hallucination_raw_before_grounding_filter": raw_rate(fr),
+             "judgements_sha256": sha256(f) if f.exists() else None}
+        (d / "results.json").write_text(json.dumps(R, indent=2) + "\n", encoding="utf-8")
+        return
 
     J = [json.loads(x) for x in f.read_text().splitlines()] if f.exists() else []
     claims = [c for j in J for c in j["claims"]]

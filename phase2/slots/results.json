@@ -2,27 +2,23 @@
   "retrieval_system": "ce",
   "queries": 100,
   "status_counts": {
-    "incomplete": 61,
-    "no_slots": 37,
-    "complete": 2
+    "incomplete": 63,
+    "no_slots": 37
   },
-  "complete_pct_of_queries_with_slots": 3.17,
+  "complete_pct_of_queries_with_slots": 0.0,
   "slot_occurrences_in_selected_phrases": 91,
-  "slots_filled": 5,
+  "slots_filled": 0,
   "slots_filled_value_in_query_text": 0,
   "slot_outcomes_by_type": {
-    "AIRCRAFT_TYPE:filled": 1,
-    "AIRCRAFT_TYPE:no_entity": 1,
+    "AIRCRAFT_TYPE:no_entity": 2,
     "ALTITUDE:no_entity": 1,
     "CALLSIGN:no_entity": 3,
-    "FLIGHT_LEVEL|ALTITUDE:filled": 1,
-    "FLIGHT_LEVEL|ALTITUDE:no_entity": 3,
+    "FLIGHT_LEVEL|ALTITUDE:no_entity": 4,
     "FREQUENCY:no_entity": 6,
     "REGEX:code:no_entity": 2,
     "REGEX:distance:no_entity": 3,
     "REGEX:speed:no_entity": 1,
-    "RUNWAY:filled": 3,
-    "RUNWAY:no_entity": 12,
+    "RUNWAY:no_entity": 15,
     "unmapped:unmapped": 54
   },
   "crossmap_slot_occurrences": 625,
@@ -32,5 +28,5 @@
     "phase2/phraseology/out/CAA_ICAO_crossmap_v2.csv": "1e9d77ffa5bd6ac93c87253593efb393b89dfdce726d885a7294840db031019b",
     "phase2/retrieval/runs/runs_top10.csv": "4ab1275eb86a933572598a36414e7d9484bdb1b213af6999ec3f6c78f05494fb"
   },
-  "output_sha256": "ba01a8edab10d9b4003fc074b8a27dd882acdf8bf53b888a594896a21aee40f8"
+  "output_sha256": "8be54c59aac5475f1bbfc0a21bf26e1ddaf8fcba8771a32bd1389eba1fe141bd"
 }

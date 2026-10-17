@@ -9,6 +9,17 @@ TASK = Path(__file__).resolve().parent
 TIERS = ["No Match", "Partial Match", "Close Match", "Exact/Near-Exact"]
 
 
+def cap413_lines():
+    f = TASK / "results_cap413.json"
+    if not f.exists():
+        return []
+    k = json.loads(f.read_text())
+    return [f"UK CAA CAP 413 Ch. 8 (`cap413.py`, `REPORT_cap413.md`, counted separately, not in the ICAO matching "
+            f"corpus): {k['emergency_regex_distinct']} distinct emergency transmissions; ICAO + CAP 413 = "
+            f"{k['icao_plus_cap413_emergency_rows']}. The target as written (ICAO sources) stays "
+            f"{'met' if k['target_ge_25_as_defined_icao_only'] else 'MISSED'}.", ""]
+
+
 def main():
     c = json.loads((TASK / "results_crossmap.json").read_text())
     o = json.loads((TASK / "results_ontology.json").read_text())
@@ -84,6 +95,7 @@ def main():
           f"Appendix 5 CPDLC adds {c['emergency']['cpdlc_data_link_elements_not_in_corpus']} emergency and "
           f"{c['gnss']['cpdlc_data_link_elements_not_in_corpus']} GNSS data-link elements, not counted above. "
           "Counts use the emergency/GNSS regexes in `extract.py`, before deduplication.", "",
+          *cap413_lines(),
           "## Ontology", "", "| | Phase 1 committed TTL | Phase 1 rerun | Phase 2 |", "|---|---:|---:|---:|",
           f"| RDF triples | {p1['triples']} | {rep['triples']} | {p2['triples']} |",
           f"| Flat triples (CSV rows) | | {flat['phase1_repro']} | {flat['phase2']} |",

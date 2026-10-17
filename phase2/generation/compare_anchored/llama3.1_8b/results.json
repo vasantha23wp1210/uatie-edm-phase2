@@ -1,0 +1,67 @@
+{
+  "generation": {
+    "model": "llama3.1:8b",
+    "ollama_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 300
+    },
+    "retrieval_system": "ce",
+    "top_k": 5,
+    "insufficient_evidence_threshold": 0.9837,
+    "threshold_rule": "max balanced accuracy on dev",
+    "queries": 20,
+    "status_counts": {
+      "ok": 13,
+      "ok_after_filtering": 6,
+      "insufficient_evidence": 1
+    },
+    "citations_raw": 59,
+    "citations_rejected": 0,
+    "citation_validity": 1.0,
+    "phraseology_raw": 53,
+    "phraseology_rejected": 8,
+    "llm_latency_ms_p50": 25113.6,
+    "llm_latency_ms_p95": 39352.3,
+    "grounding_rule": "keep a summary sentence only if >= 50% of its content words occur in the validly cited reports (all five if none cited); keep a hazard if >= 50% occur in the retrieved reports",
+    "grounding_dropped_sentences": 0,
+    "grounding_dropped_hazards": 0,
+    "ttft_ms_p50": 5891.8,
+    "retrieval_ms_p50": 368.1,
+    "retrieval_ms_p95": 467.5,
+    "answers_sha256": "3efef7eccea94dae95707a389e382be12f6debd17a61128b83fcf25cc13811ec",
+    "splits": [
+      "dev"
+    ],
+    "prompt": "anchored",
+    "anchors": {
+      "claims": 38,
+      "hazards": 57,
+      "bad_anchor": 0,
+      "text_was_id": 0,
+      "unsupported_by_anchor": 6
+    }
+  },
+  "judge_model": "llama3.2:3b",
+  "judge_options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 500
+  },
+  "judge_invalid_json": 1,
+  "hallucination_filtered": {
+    "answers": 19,
+    "claims": 103,
+    "unsupported": 19,
+    "rate": 0.1845
+  },
+  "hallucination_raw_before_grounding_filter": {
+    "answers": 19,
+    "claims": 106,
+    "unsupported": 20,
+    "rate": 0.1887
+  },
+  "judgements_sha256": "0d61d74cf5edfc42309af0b7c42124701fa1a1694f7dc4876b35a85e7fd95ec8"
+}
