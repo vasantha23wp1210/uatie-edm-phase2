@@ -1,0 +1,96 @@
+{
+  "provenance": "human (user) ratings; to confirm whether the notes were refined with an LLM",
+  "seed": 42,
+  "bootstrap": 10000,
+  "target_mean": 4.0,
+  "sets": {
+    "cockpit": {
+      "n": 20,
+      "mean": 3.4,
+      "sd": 1.0463,
+      "median": 4.0,
+      "mean_ci95_bootstrap": [
+        2.95,
+        3.85
+      ],
+      "distribution": {
+        "1": 1,
+        "2": 3,
+        "3": 5,
+        "4": 9,
+        "5": 2
+      },
+      "share_ge_4": 0.55,
+      "target_mean_ge_4_met": false,
+      "notes_theme_counts": {
+        "phraseology irrelevant or off topic": 7,
+        "generic restatement of the query": 0,
+        "retrieved reports do not match the query": 5
+      },
+      "lowest_rated": [
+        {
+          "query_id": "Q004",
+          "query_text": "new runway assigned close to touchdown",
+          "rating": 1,
+          "note": "No report involves a runway reassignment near touchdown; keyword matches only (touchdown, new runway construction, wake)"
+        },
+        {
+          "query_id": "Q019",
+          "query_text": "runway change to shorter runway on approach",
+          "rating": 2,
+          "note": "Only the LAS late runway change fits, and shorter runway isn't stated; others are traffic conflicts; frequency phraseology irrelevant"
+        },
+        {
+          "query_id": "Q015",
+          "query_text": "runway change issued while vectoring to final",
+          "rating": 2,
+          "note": "Only APA (runway change on short final) is close; other two are vectoring errors without a runway change"
+        }
+      ]
+    },
+    "ground": {
+      "n": 30,
+      "mean": 3.6667,
+      "sd": 0.7112,
+      "median": 4.0,
+      "mean_ci95_bootstrap": [
+        3.4,
+        3.9
+      ],
+      "distribution": {
+        "1": 0,
+        "2": 2,
+        "3": 8,
+        "4": 18,
+        "5": 2
+      },
+      "share_ge_4": 0.6667,
+      "target_mean_ge_4_met": false,
+      "notes_theme_counts": {
+        "phraseology irrelevant or off topic": 7,
+        "generic restatement of the query": 7,
+        "retrieved reports do not match the query": 1
+      },
+      "lowest_rated": [
+        {
+          "query_id": "Q023",
+          "query_text": "ATC phraseology ambiguity during approach clearance",
+          "rating": 2,
+          "note": "Generic restatement only; TCAS RA / ROGER phraseology has nothing to do with approach clearance ambiguity"
+        },
+        {
+          "query_id": "Q046",
+          "query_text": "tailwind landing causing unstable approach",
+          "rating": 2,
+          "note": "Answer is a dangling fragment that never explains tailwind causing an unstable approach; phraseology off"
+        },
+        {
+          "query_id": "Q074",
+          "query_text": "icing encounter on approach requiring go around",
+          "rating": 3,
+          "note": "First sentence restates the query generically; high winds / crew errors and flap drive failure are off topic"
+        }
+      ]
+    }
+  }
+}

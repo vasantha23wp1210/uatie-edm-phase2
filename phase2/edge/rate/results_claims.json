@@ -1,0 +1,98 @@
+{
+  "provenance": "human (user), blind to the judge key",
+  "claims_exported": 50,
+  "excluded_dupe_only": 11,
+  "rated": 39,
+  "human_levels": {
+    "supported": 19,
+    "partial": 18,
+    "unsupported": 2
+  },
+  "pool": {
+    "test_claims": 384,
+    "judge_unsupported": 42
+  },
+  "rates": {
+    "unsupported": {
+      "in_rated_sample": [
+        2,
+        39
+      ],
+      "among_judge_supported": [
+        0,
+        19
+      ],
+      "among_judge_unsupported": [
+        2,
+        20
+      ],
+      "pool_estimate": 0.0109,
+      "pool_estimate_ci95_bootstrap": [
+        0.0,
+        0.0273
+      ]
+    },
+    "not_fully_supported": {
+      "in_rated_sample": [
+        20,
+        39
+      ],
+      "among_judge_supported": [
+        8,
+        19
+      ],
+      "among_judge_unsupported": [
+        12,
+        20
+      ],
+      "pool_estimate": 0.4406,
+      "pool_estimate_ci95_bootstrap": [
+        0.2477,
+        0.6336
+      ]
+    }
+  },
+  "judges": {
+    "llm_3b": {
+      "unsupported": {
+        "tp": 2,
+        "fp": 18,
+        "fn": 0,
+        "tn": 19,
+        "sensitivity": 1.0,
+        "specificity": 0.5135,
+        "agreement": 0.5385
+      },
+      "not_fully_supported": {
+        "tp": 12,
+        "fp": 8,
+        "fn": 8,
+        "tn": 11,
+        "sensitivity": 0.6,
+        "specificity": 0.5789,
+        "agreement": 0.5897
+      }
+    },
+    "nli": {
+      "unsupported": {
+        "tp": 0,
+        "fp": 10,
+        "fn": 2,
+        "tn": 27,
+        "sensitivity": 0.0,
+        "specificity": 0.7297,
+        "agreement": 0.6923
+      },
+      "not_fully_supported": {
+        "tp": 3,
+        "fp": 7,
+        "fn": 17,
+        "tn": 12,
+        "sensitivity": 0.15,
+        "specificity": 0.6316,
+        "agreement": 0.3846
+      }
+    }
+  },
+  "note": "LLM-judge sensitivity/specificity here are on a sample balanced by the judge's own verdict; they describe this sample."
+}
