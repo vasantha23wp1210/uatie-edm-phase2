@@ -1,0 +1,92 @@
+label_id,record_id,your_intent,ambiguity_note
+I008,ASRS_0010197,Procedural_Non_Compliance,"a discussion of a company procedure, not a specific event"
+I017,ASRS_0094217,Emergency_Event,door noise led to priority handling; cabin communication difficulty is secondary
+I019,ASRS_0062048,Procedural_Non_Compliance,dispatch weight error; dead performance-computer battery also contributed (Maintenance_Error plausible)
+I033,ASRS_0056009,Procedural_Non_Compliance,"the non-compliance was by other aircraft, not the reporter"
+I034,ASRS_0093465,Procedural_Non_Compliance,hazmat container problem found before departure; handled as a hazmat procedure issue
+I035,ASRS_0079926,Unclassified,concern about hazmat cargo delays; no event or lapse
+I037,ASRS_0000348,Procedural_Non_Compliance,chart misread led to early descent; chart-error (Unclassified) also plausible
+I039,ASRS_0077916,Unclassified,external magnetic anomaly caused the heading error; not an equipment failure
+I044,ASRS_0044559,Communication_Failure,taxi-instruction confusion; Ground_Incident also plausible
+I048,ASRS_0007328,ATC_Operational_Error,late clearance change by ATC; outcome not stated
+I052,ASRS_0092943,Maintenance_Error,"serious malfunction but no emergency, diversion or return stated"
+I062,ASRS_0008217,Emergency_Event,return after cowling loss; likely maintenance cause (Maintenance_Error plausible)
+I072,NTSB_000629,Emergency_Event,accident-database record: engine stoppage plus a handling error
+I073,ASRS_0090781,Unclassified,stall buffet on short final; cause not stated
+I075,ASRS_0047749,Crew_Resource_Management,wake turbulence distracted the crew into an altitude deviation; Weather_Deviation also plausible
+I081,ASRS_0028366,Runway_Incursion,trouble finding the hold-short point; no incursion stated (Ground_Incident plausible)
+I083,ASRS_0097133,Crew_Resource_Management,loss of situational awareness at night in terrain; IMC_Spatial_Disorientation also plausible
+I084,NTSB_001448,Weather_Deviation,accident record: flew into forecast low visibility; IMC_Spatial_Disorientation also plausible
+I095,ASRS_0057914,Ground_Incident,armed slide door opened at the gate after a crew door-procedure error (Procedural_Non_Compliance plausible)
+I097,ASRS_0075977,Emergency_Event,odor event cleared by turning off a pack; no diversion
+I104,ASRS_0084064,Crew_Resource_Management,hazmat violation; stated cause is staffing and workload (Procedural_Non_Compliance plausible)
+I109,ASRS_0015362,Procedural_Non_Compliance,forgot to engage LNAV after a runway change; workload (Crew_Resource_Management) plausible
+I110,ASRS_0026613,Crew_Resource_Management,crew states a rapid climb was a distraction that contributed to the SID deviation
+I112,ASRS_0011129,Ground_Incident,FOD ingested while taxiing in gusty winds; Weather_Deviation plausible
+I118,ASRS_0055852,Maintenance_Error,spurious EGPWS warning; equipment anomaly reported on other aircraft too
+I121,ASRS_0091823,Maintenance_Error,malfunction handled with checklists; no emergency or diversion stated
+I123,ASRS_0047494,Emergency_Event,fire warning with no fire; dispute over the required diversion
+I126,ASRS_0086925,Ground_Incident,runway excursion with no weather cause; tracking fault may be mechanical (Maintenance_Error plausible)
+I131,ASRS_0010004,Crew_Resource_Management,FMC database scramble after runway change led to landing without clearance; workload stated
+I136,ASRS_0021597,Maintenance_Error,fuel-quantity indication error found after landing; no emergency action
+I137,ASRS_0023009,Runway_Incursion,failed to hold short (LAHSO) because the brakes locked; Maintenance_Error plausible
+I143,ASRS_0035026,Emergency_Event,vacuum failure in IMC followed by diversion; IMC_Spatial_Disorientation plausible
+I146,ASRS_0093612,Weather_Deviation,ice re-freezing in engine inlets during de-icing; Maintenance_Error plausible
+I152,NTSB_000512,Weather_Deviation,accident record: low-visibility go-around struck a tractor
+I156,ASRS_0078355,Crew_Resource_Management,flight attendant pressured to fly while unfit; Unclassified plausible
+I158,ASRS_0095718,Unclassified,high-altitude upset with stick shaker; cause not stated
+I166,ASRS_0061017,ATC_Operational_Error,erroneous altitude delivered by PDC; unclear whether ATC or system error
+I167,ASRS_0044049,Procedural_Non_Compliance,controller report: helicopter did not follow departure instructions
+I168,ASRS_0049385,Unclassified,QRH design flaw disables cabin communication; Procedural_Non_Compliance plausible
+I169,ASRS_0057283,ATC_Operational_Error,"controller overloaded by helicopter traffic, sent two aircraft around"
+I172,ASRS_0043489,Airspace_Violation,controller-described IFR/VFR conflict; ATC_Operational_Error plausible
+I174,ASRS_0065024,Emergency_Event,return caused by a pitot cover left on (Procedural_Non_Compliance plausible)
+I191,ASRS_0045300,Maintenance_Error,maintenance-facility concern about grounding points; no event (Unclassified plausible)
+I196,ASRS_0099264,Airspace_Violation,aircraft did not respond to an instruction; Communication_Failure plausible
+I197,ASRS_0087283,ATC_Operational_Error,ATC-assigned high speed led to a low-altitude alert; Procedural_Non_Compliance plausible
+I202,ASRS_0014115,Weather_Deviation,wake turbulence led to an inadvertent CWS bump and missed turn; Procedural_Non_Compliance plausible
+I204,ASRS_0053454,Runway_Incursion,hold bars crossed inadvertently; controllers hard to understand (Communication_Failure plausible)
+I206,ASRS_0103842,Crew_Resource_Management,crew miscommunication about the parking brake caused uncommanded ground movement; Ground_Incident plausible
+I209,ASRS_0108521,Ground_Incident,"missed hold short at a taxiway intersection, not a runway; no chart note or ATC instruction"
+I210,ASRS_0007684,Maintenance_Error,"gear collapse on landing, cause not stated; Ground_Incident plausible"
+I216,ASRS_0013724,Weather_Deviation,refused to operate in freezing rain; no event
+I223,ASRS_0090632,Crew_Resource_Management,distracted by a balloon on the glideslope; Airspace_Violation (balloon conflict) plausible
+I224,ASRS_0081414,Procedural_Non_Compliance,speed deviation with lack of recent flying cited; Crew_Resource_Management plausible
+I225,ASRS_0005841,Ground_Incident,concern about contract pushback crews' procedures and training; Procedural_Non_Compliance plausible
+I227,ASRS_0014048,Crew_Resource_Management,workload from a bleed fault led to a route deviation; Procedural_Non_Compliance plausible
+I228,ASRS_0066974,Unclassified,landing data system gave inaccurate runway data; data error rather than aircraft fault
+I232,ASRS_0029519,Communication_Failure,poor radio procedures led to an NMAC; Airspace_Violation plausible
+I234,ASRS_0013335,Emergency_Event,uncommanded roll then proceeded to the alternate; Maintenance_Error plausible
+I235,NTSB_000718,Procedural_Non_Compliance,accident record: continued below MDA; Crew_Resource_Management plausible
+I237,ASRS_0015258,Procedural_Non_Compliance,out-of-date arrival in the filed flight plan from dispatch software; Unclassified plausible
+I240,ASRS_0055571,Crew_Resource_Management,fatigue cited; confusing clearance (Communication_Failure plausible)
+I244,ASRS_0021269,Unclassified,crew had a newer STAR version than ATC; chart/database mismatch
+I246,ASRS_0063704,Emergency_Event,landed after oil pressure loss; no emergency declared (Maintenance_Error plausible)
+I250,ASRS_0066085,Crew_Resource_Management,crew switch error caused an engine auto-shutdown; Procedural_Non_Compliance plausible
+I255,ASRS_0077198,Airspace_Violation,controller reports RAs despite standard separation; ATC_Operational_Error plausible
+I257,ASRS_0082012,Maintenance_Error,in-flight hydraulic failure; outcome not stated (Emergency_Event plausible)
+I264,ASRS_0077334,Weather_Deviation,sun glare and blowing dust hid power lines
+I279,ASRS_0013210,Unclassified,"concern about an ATC speed assignment, no event; ATC_Operational_Error plausible"
+I282,ASRS_0062656,Runway_Incursion,vehicles parked on the runway end were observed; no conflict occurred
+I284,ASRS_0083187,Procedural_Non_Compliance,unstabilized approach with the FO's lack of recent flying cited; Crew_Resource_Management plausible
+I299,ASRS_0036171,Communication_Failure,descent below MVA with non-standard phraseology cited; ATC_Operational_Error plausible
+I305,ASRS_0027764,Crew_Resource_Management,fatigue with an unreliable ILS and misleading ATC communications; Communication_Failure plausible
+I306,ASRS_0103848,ATC_Operational_Error,ATC-directed go-around for crossing-runway traffic; Airspace_Violation plausible
+I309,ASRS_0078762,Maintenance_Error,"pressurization problem; continued to destination at low altitude, no emergency stated"
+I314,ASRS_0087598,Emergency_Event,fumes event in descent; no diversion stated
+I325,ASRS_0095055,Maintenance_Error,flap disagree after takeoff; outcome cut off in summary (Emergency_Event plausible)
+I330,ASRS_0048524,Maintenance_Error,gear warning on approach resolved by re-seating the handle; crew disagreement also mentioned
+I331,ASRS_0026245,Maintenance_Error,autopilot pitch-down after takeoff; outcome cut off in summary (Emergency_Event plausible)
+I337,ASRS_0107774,Ground_Incident,tire failed under hard braking after landing; Maintenance_Error plausible
+I342,ASRS_0011051,Unclassified,"loss of control just after liftoff in training, cause not stated; not a landing or taxi event"
+I345,ASRS_0109104,Unclassified,ATC steered the aircraft away from terrain on the published departure; no crew error stated
+I347,ASRS_0028761,Maintenance_Error,electrical interruptions with systems restored; outcome cut off in summary
+I351,ASRS_0049330,Procedural_Non_Compliance,botched hold from a late clearance and an FMC entry error; ATC_Operational_Error plausible
+I355,ASRS_0025422,ATC_Operational_Error,"pilot believes approach control descends aircraft too low; a concern, not a confirmed event"
+I363,ASRS_0000929,Emergency_Event,partial power failure then landed on the wrong runway; Runway_Incursion plausible
+I372,ASRS_0058039,Emergency_Event,bleed switches left off by the crew caused the pressurization loss and return; Procedural_Non_Compliance plausible
+I376,ASRS_0083450,Crew_Resource_Management,pre-flight walkaround forgotten with distraction cited; Procedural_Non_Compliance plausible
+I378,ASRS_0065898,Airspace_Violation,"UAVs sighted on approach, no evasive action; Unclassified plausible"
+I380,ASRS_0085134,Unclassified,chart and navigation-database linking caused the track deviation; Procedural_Non_Compliance plausible
+I391,ASRS_0051724,Procedural_Non_Compliance,late runway change contributed to the overshoot and early descent; Crew_Resource_Management plausible
+I400,ASRS_0055495,Weather_Deviation,turbulence injury led to a return; Emergency_Event plausible

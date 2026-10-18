@@ -1,0 +1,38 @@
+{
+  "provenance": "human (user); notes refined with Claude",
+  "verdict_meaning": "assigned TF-IDF tier is right for the pair",
+  "rows": 20,
+  "tier_correct": 16,
+  "per_tier": {
+    "No Match": {
+      "rows": 5,
+      "tier_correct": 4
+    },
+    "Partial Match": {
+      "rows": 5,
+      "tier_correct": 2
+    },
+    "Close Match": {
+      "rows": 5,
+      "tier_correct": 5
+    },
+    "Exact/Near-Exact": {
+      "rows": 5,
+      "tier_correct": 5
+    }
+  },
+  "incorrect": [
+    "M15",
+    "M16",
+    "M19",
+    "M20"
+  ],
+  "verdict_changed_during_claude_review": [
+    "M18",
+    "M20"
+  ],
+  "tier_correct_excluding_changed": {
+    "rows": 18,
+    "tier_correct": 15
+  }
+}

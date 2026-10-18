@@ -1,0 +1,57 @@
+=================================================================
+  UATIE-EDM : Ontology Population  (Step 6b)
+=================================================================
+
+[1/5] Loading annotated corpus...
+  Total records      : 113,468
+  Classified         : 102,792
+  Unclassified       : 10,676
+  Intent classes     : 12
+  Columns            : ['source', 'location', 'operator', 'summary', 'intent', 'hazard_tags', 'phase_final']
+
+[2/5] Loading phraseology ontology...
+  Phraseology triples loaded    : 8,579
+  Existing phraseme individuals : 1,545
+
+[3/5] Building incident OWL graph...
+  Populating 113,468 IncidentReport individuals...
+
+  ── Triple Breakdown ──────────────────────────────
+  Rows processed           : 113,468
+  Core/literal triples     : 340,404
+  Intent triples           : 113,468
+  Hazard triples           : 178,527
+  Phase triples            : 113,468
+  Strong phraseme triples  : 600
+  Weak phraseme triples    : 10,646
+  Total loop triples       : 984,049
+
+[4/5] Serialising incident ontology...
+  Saved : /home/ubuntu/deliver/p2git/phase2/intent_classifier/out/ontology/phase2/asrs_incidents.ttl
+  Size  : 58.79 MB
+
+[5/5] Merging with phraseology ontology...
+  Saved : /home/ubuntu/deliver/p2git/phase2/intent_classifier/out/ontology/phase2/uatie_edm_merged.ttl
+  Total merged triples : 991,066
+  Size  : 59.41 MB
+
+=================================================================
+  COMPLETE
+=================================================================
+  IncidentReport individuals  : 113,468
+  Intent individuals          : 12
+  HazardType individuals      : 10
+  FlightPhase individuals     : 9
+  Comm_Failure records        : 4,495
+  ATC_Error records           : 10,775
+  hasDirectPhrasemeError      : 600  triples (strong links)
+  hasCommunicationContext     : 10,646  triples (weak links)
+  Total triples (incident g)  : 984,049
+  Total triples (merged TTL)  : 991,066
+
+  Output files:
+    /home/ubuntu/deliver/p2git/phase2/intent_classifier/out/ontology/phase2/asrs_incidents.ttl
+    /home/ubuntu/deliver/p2git/phase2/intent_classifier/out/ontology/phase2/uatie_edm_merged.ttl  ← import this into WebProtege
+
+Next → step6c_rag_query_engine.py
+=================================================================

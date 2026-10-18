@@ -1,0 +1,27 @@
+{
+  "queries": 100,
+  "threshold_prev": [
+    0.6164
+  ],
+  "threshold_cur": [
+    0.6164
+  ],
+  "same_retrieved_lists": 100,
+  "same_candidate_phraseology": 100,
+  "insufficient_prev": 41,
+  "insufficient_cur": 41,
+  "insufficient_sets_equal": true,
+  "generated": 59,
+  "identical_raw_output": 13,
+  "status_changed": 3,
+  "hallucination_prev": {
+    "claims": 409,
+    "unsupported": 29,
+    "rate": 0.0709
+  },
+  "hallucination_cur": {
+    "claims": 419,
+    "unsupported": 43,
+    "rate": 0.1026
+  }
+}

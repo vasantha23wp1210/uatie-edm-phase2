@@ -1,0 +1,34 @@
+label_id,record_id,your_intent,ambiguity_note
+I012,ASRS_0089024,Unclassified,5G/radio-altimeter interference; no closer label
+I031,ASRS_0075997,Weather_Deviation,Wind-caused excursion
+I035,ASRS_0079926,Unclassified,Hazmat cargo delay concern
+I038,ASRS_0020099,Unclassified,Chart discrepancy
+I039,ASRS_0077916,Procedural_Non_Compliance,Magnetic anomaly caused heading error
+I043,ASRS_0079852,Airspace_Violation,RA; ATC gave no traffic advisory
+I048,ASRS_0007328,ATC_Operational_Error,Late ATC clearance change; ambiguous
+I058,ASRS_0109310,Unclassified,Chart discrepancy
+I062,ASRS_0008217,Maintenance_Error,Cowling departed; likely installation fault
+I070,ASRS_0057801,Runway_Incursion,ATC missed the incursion; event type prioritised
+I073,ASRS_0090781,Unclassified,Stall/short landing; no clear category fit
+I126,ASRS_0086925,Ground_Incident,Runway excursion
+I140,ASRS_0038991,Communication_Failure,Clearance misinterpretation
+I143,ASRS_0035026,IMC_Spatial_Disorientation,Instrument failure in IMC led to excursion
+I158,ASRS_0095718,Unclassified,High-altitude upset; cause unstated
+I162,ASRS_0102839,Unclassified,GPS jamming (nav interference)
+I175,ASRS_0012435,Maintenance_Error,Brake failure -> excursion
+I220,ASRS_0014240,Unclassified,Outdated nav database
+I231,ASRS_0045742,Crew_Resource_Management,"Fatigue, MEL, similar callsigns"
+I235,NTSB_000718,Procedural_Non_Compliance,CFIT below MDA; CRM also plausible
+I244,ASRS_0021269,Unclassified,Outdated STAR mismatch
+I248,ASRS_0057589,Unclassified,GPS signal loss
+I249,ASRS_0088919,Unclassified,5G interference
+I255,ASRS_0077198,Airspace_Violation,Controller report; separation per standards
+I278,ASRS_0088921,Unclassified,5G interference
+I305,ASRS_0027764,Crew_Resource_Management,Fatigue + unreliable ILS + ATC comms
+I306,ASRS_0103848,ATC_Operational_Error,Could also be Airspace_Violation
+I335,ASRS_0025132,Weather_Deviation,Wet runway/crosswind excursion
+I341,NTSB_001679,Emergency_Event,Hijacking
+I342,ASRS_0011051,Unclassified,Training loss of control; no clear category fit
+I345,ASRS_0109104,Unclassified,ATC terrain save; no clear category fit
+I366,ASRS_0032559,Unclassified,Chart anomaly
+I391,ASRS_0051724,Procedural_Non_Compliance,Late ATC runway change contributed

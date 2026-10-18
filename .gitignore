@@ -1,3 +1,6 @@
 .venv/
 __pycache__/
 *.pyc
+phase2/intent_classifier/out/ontology/*/asrs_nlp_annotated.csv
+phase2/intent_classifier/out/ontology/*/*.ttl
+data/phraseology_sources/*.pdf

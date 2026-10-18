@@ -1,0 +1,422 @@
+{
+  "model_chosen_on_dev": "distilbert_scaled",
+  "borderline_rows": {
+    "dev": 43,
+    "test": 48
+  },
+  "accuracy": {
+    "logreg_minilm": {
+      "dev": {
+        "all": {
+          "n": 199,
+          "correct": 70,
+          "accuracy": 0.3518,
+          "ci95": [
+            0.2888,
+            0.4203
+          ]
+        },
+        "non_borderline": {
+          "n": 156,
+          "correct": 60,
+          "accuracy": 0.3846,
+          "ci95": [
+            0.3119,
+            0.4629
+          ]
+        },
+        "borderline": {
+          "n": 43,
+          "correct": 10,
+          "accuracy": 0.2326,
+          "ci95": [
+            0.1315,
+            0.3774
+          ]
+        }
+      },
+      "test": {
+        "all": {
+          "n": 201,
+          "correct": 81,
+          "accuracy": 0.403,
+          "ci95": [
+            0.3376,
+            0.472
+          ]
+        },
+        "non_borderline": {
+          "n": 153,
+          "correct": 63,
+          "accuracy": 0.4118,
+          "ci95": [
+            0.3369,
+            0.491
+          ]
+        },
+        "borderline": {
+          "n": 48,
+          "correct": 18,
+          "accuracy": 0.375,
+          "ci95": [
+            0.2522,
+            0.5164
+          ]
+        }
+      }
+    },
+    "logreg_minilm_scaled": {
+      "dev": {
+        "all": {
+          "n": 199,
+          "correct": 120,
+          "accuracy": 0.603,
+          "ci95": [
+            0.5337,
+            0.6684
+          ]
+        },
+        "non_borderline": {
+          "n": 156,
+          "correct": 106,
+          "accuracy": 0.6795,
+          "ci95": [
+            0.6027,
+            0.7476
+          ]
+        },
+        "borderline": {
+          "n": 43,
+          "correct": 14,
+          "accuracy": 0.3256,
+          "ci95": [
+            0.2049,
+            0.4748
+          ]
+        }
+      },
+      "test": {
+        "all": {
+          "n": 201,
+          "correct": 118,
+          "accuracy": 0.5871,
+          "ci95": [
+            0.518,
+            0.6529
+          ]
+        },
+        "non_borderline": {
+          "n": 153,
+          "correct": 102,
+          "accuracy": 0.6667,
+          "ci95": [
+            0.5887,
+            0.7365
+          ]
+        },
+        "borderline": {
+          "n": 48,
+          "correct": 16,
+          "accuracy": 0.3333,
+          "ci95": [
+            0.2168,
+            0.4746
+          ]
+        }
+      }
+    },
+    "logreg_minilm_silver_scaled": {
+      "dev": {
+        "all": {
+          "n": 199,
+          "correct": 80,
+          "accuracy": 0.402,
+          "ci95": [
+            0.3364,
+            0.4714
+          ]
+        },
+        "non_borderline": {
+          "n": 156,
+          "correct": 68,
+          "accuracy": 0.4359,
+          "ci95": [
+            0.3605,
+            0.5143
+          ]
+        },
+        "borderline": {
+          "n": 43,
+          "correct": 12,
+          "accuracy": 0.2791,
+          "ci95": [
+            0.1675,
+            0.4269
+          ]
+        }
+      },
+      "test": {
+        "all": {
+          "n": 201,
+          "correct": 97,
+          "accuracy": 0.4826,
+          "ci95": [
+            0.4145,
+            0.5513
+          ]
+        },
+        "non_borderline": {
+          "n": 153,
+          "correct": 79,
+          "accuracy": 0.5163,
+          "ci95": [
+            0.4377,
+            0.5942
+          ]
+        },
+        "borderline": {
+          "n": 48,
+          "correct": 18,
+          "accuracy": 0.375,
+          "ci95": [
+            0.2522,
+            0.5164
+          ]
+        }
+      }
+    },
+    "distilbert": {
+      "dev": {
+        "all": {
+          "n": 199,
+          "correct": 77,
+          "accuracy": 0.3869,
+          "ci95": [
+            0.322,
+            0.4561
+          ]
+        },
+        "non_borderline": {
+          "n": 156,
+          "correct": 60,
+          "accuracy": 0.3846,
+          "ci95": [
+            0.3119,
+            0.4629
+          ]
+        },
+        "borderline": {
+          "n": 43,
+          "correct": 17,
+          "accuracy": 0.3953,
+          "ci95": [
+            0.2637,
+            0.5442
+          ]
+        }
+      },
+      "test": {
+        "all": {
+          "n": 201,
+          "correct": 79,
+          "accuracy": 0.393,
+          "ci95": [
+            0.3281,
+            0.462
+          ]
+        },
+        "non_borderline": {
+          "n": 153,
+          "correct": 64,
+          "accuracy": 0.4183,
+          "ci95": [
+            0.3431,
+            0.4975
+          ]
+        },
+        "borderline": {
+          "n": 48,
+          "correct": 15,
+          "accuracy": 0.3125,
+          "ci95": [
+            0.1995,
+            0.4533
+          ]
+        }
+      }
+    },
+    "distilbert_scaled": {
+      "dev": {
+        "all": {
+          "n": 199,
+          "correct": 131,
+          "accuracy": 0.6583,
+          "ci95": [
+            0.59,
+            0.7206
+          ]
+        },
+        "non_borderline": {
+          "n": 156,
+          "correct": 107,
+          "accuracy": 0.6859,
+          "ci95": [
+            0.6093,
+            0.7535
+          ]
+        },
+        "borderline": {
+          "n": 43,
+          "correct": 24,
+          "accuracy": 0.5581,
+          "ci95": [
+            0.4111,
+            0.6957
+          ]
+        }
+      },
+      "test": {
+        "all": {
+          "n": 201,
+          "correct": 137,
+          "accuracy": 0.6816,
+          "ci95": [
+            0.6143,
+            0.7421
+          ]
+        },
+        "non_borderline": {
+          "n": 153,
+          "correct": 110,
+          "accuracy": 0.719,
+          "ci95": [
+            0.643,
+            0.7841
+          ]
+        },
+        "borderline": {
+          "n": 48,
+          "correct": 27,
+          "accuracy": 0.5625,
+          "ci95": [
+            0.4227,
+            0.693
+          ]
+        }
+      }
+    },
+    "distilbert_silver_scaled": {
+      "dev": {
+        "all": {
+          "n": 199,
+          "correct": 119,
+          "accuracy": 0.598,
+          "ci95": [
+            0.5286,
+            0.6636
+          ]
+        },
+        "non_borderline": {
+          "n": 156,
+          "correct": 99,
+          "accuracy": 0.6346,
+          "ci95": [
+            0.5567,
+            0.7061
+          ]
+        },
+        "borderline": {
+          "n": 43,
+          "correct": 20,
+          "accuracy": 0.4651,
+          "ci95": [
+            0.3251,
+            0.6108
+          ]
+        }
+      },
+      "test": {
+        "all": {
+          "n": 201,
+          "correct": 128,
+          "accuracy": 0.6368,
+          "ci95": [
+            0.5683,
+            0.7002
+          ]
+        },
+        "non_borderline": {
+          "n": 153,
+          "correct": 103,
+          "accuracy": 0.6732,
+          "ci95": [
+            0.5954,
+            0.7425
+          ]
+        },
+        "borderline": {
+          "n": 48,
+          "correct": 25,
+          "accuracy": 0.5208,
+          "ci95": [
+            0.3833,
+            0.6553
+          ]
+        }
+      }
+    }
+  },
+  "test_confusions_chosen_model": [
+    {
+      "gold": "Procedural_Non_Compliance",
+      "pred": "Unclassified",
+      "rows": 10
+    },
+    {
+      "gold": "Emergency_Event",
+      "pred": "Maintenance_Error",
+      "rows": 6
+    },
+    {
+      "gold": "ATC_Operational_Error",
+      "pred": "Procedural_Non_Compliance",
+      "rows": 4
+    },
+    {
+      "gold": "Weather_Deviation",
+      "pred": "Unclassified",
+      "rows": 4
+    },
+    {
+      "gold": "Runway_Incursion",
+      "pred": "Ground_Incident",
+      "rows": 3
+    },
+    {
+      "gold": "Emergency_Event",
+      "pred": "Unclassified",
+      "rows": 2
+    },
+    {
+      "gold": "Airspace_Violation",
+      "pred": "Communication_Failure",
+      "rows": 2
+    },
+    {
+      "gold": "Unclassified",
+      "pred": "Maintenance_Error",
+      "rows": 2
+    },
+    {
+      "gold": "Unclassified",
+      "pred": "Ground_Incident",
+      "rows": 2
+    },
+    {
+      "gold": "Procedural_Non_Compliance",
+      "pred": "Maintenance_Error",
+      "rows": 2
+    }
+  ],
+  "test_errors_chosen_model_predicted_unclassified": 26
+}

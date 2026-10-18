@@ -1,0 +1,48 @@
+{
+  "generation": {
+    "model": "llama3.2:3b",
+    "ollama_options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_ctx": 4096,
+      "num_predict": 350
+    },
+    "retrieval_system": "faiss",
+    "top_k": 5,
+    "insufficient_evidence_threshold": 0.6164,
+    "threshold_rule": "max balanced accuracy on dev",
+    "queries": 100,
+    "status_counts": {
+      "insufficient_evidence": 41,
+      "ok": 36,
+      "ok_after_filtering": 23
+    },
+    "citations_raw": 285,
+    "citations_rejected": 0,
+    "citation_validity": 1.0,
+    "phraseology_raw": 129,
+    "phraseology_rejected": 33,
+    "llm_latency_ms_p50": 12146.2,
+    "llm_latency_ms_p95": 268515.1,
+    "answers_sha256": "a4075c2d897a8108b01f3db65b64638a64cf62b9870e523b17fb7906658f051f"
+  },
+  "judge_model": "llama3.2:3b",
+  "judge_options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 500
+  },
+  "judge_is_generator": true,
+  "answers_judged": 59,
+  "judge_invalid_json": 0,
+  "claims": 409,
+  "claims_unsupported": 29,
+  "hallucination_rate_claims": 0.0709,
+  "hallucination_rate_mean_per_answer": 0.0782,
+  "rating_export": {
+    "rows": 30,
+    "status": "pending user rating"
+  },
+  "judgements_sha256": "9768d799b87523a65dd19c9a3d90dd2cffedcc49aede1e77b2726cb5e1ec7997"
+}

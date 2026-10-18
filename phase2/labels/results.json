@@ -1,0 +1,107 @@
+{
+  "note": "Both label sets are LLM-generated and pending user review; agreement is not accuracy.",
+  "retrieval": {
+    "pairs": 975,
+    "exact_agreement": 0.8913,
+    "cohen_kappa": 0.8359,
+    "linear_weighted_kappa": 0.8818,
+    "binary_rel_ge1_kappa": 0.8846,
+    "binary_rel2_kappa": 0.879,
+    "disagreements_by_2_points": 0,
+    "confusion_rows_devin_cols_claude_0_1_2": [
+      [
+        313,
+        30,
+        0
+      ],
+      [
+        21,
+        223,
+        26
+      ],
+      [
+        0,
+        29,
+        333
+      ]
+    ],
+    "claude_label_counts": {
+      "0": 334,
+      "1": 282,
+      "2": 359
+    }
+  },
+  "intent": {
+    "rows": 400,
+    "exact_agreement": 0.7225,
+    "cohen_kappa": 0.6862,
+    "dev": {
+      "rows": 199,
+      "exact_agreement": 0.7035,
+      "cohen_kappa": 0.6623
+    },
+    "test": {
+      "rows": 201,
+      "exact_agreement": 0.7413,
+      "cohen_kappa": 0.7092
+    },
+    "top_disagreements_devin_to_claude": [
+      {
+        "devin": "Maintenance_Error",
+        "claude": "Emergency_Event",
+        "rows": 29
+      },
+      {
+        "devin": "Unclassified",
+        "claude": "Airspace_Violation",
+        "rows": 20
+      },
+      {
+        "devin": "Procedural_Non_Compliance",
+        "claude": "Crew_Resource_Management",
+        "rows": 10
+      },
+      {
+        "devin": "Unclassified",
+        "claude": "Weather_Deviation",
+        "rows": 6
+      },
+      {
+        "devin": "ATC_Operational_Error",
+        "claude": "Airspace_Violation",
+        "rows": 5
+      }
+    ],
+    "claude_label_counts": {
+      "Maintenance_Error": 66,
+      "Procedural_Non_Compliance": 65,
+      "Emergency_Event": 61,
+      "Unclassified": 34,
+      "Airspace_Violation": 32,
+      "Crew_Resource_Management": 29,
+      "Ground_Incident": 28,
+      "Weather_Deviation": 23,
+      "ATC_Operational_Error": 21,
+      "Communication_Failure": 18,
+      "Runway_Incursion": 17,
+      "IMC_Spatial_Disorientation": 6
+    },
+    "claude_ambiguity_notes": 91
+  },
+  "ner": {
+    "all": {
+      "sentences": 260,
+      "entities_claude": 419,
+      "entities_devin": 418,
+      "sentences_with_different_markup": 11,
+      "entity_agreement_f1": 0.9821
+    },
+    "test": {
+      "sentences": 60,
+      "entities_claude": 91,
+      "entities_devin": 90,
+      "sentences_with_different_markup": 2,
+      "entity_agreement_f1": 0.9834
+    }
+  }
+}

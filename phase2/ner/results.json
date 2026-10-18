@@ -1,0 +1,210 @@
+{
+  "task": "ner",
+  "seed": 42,
+  "epochs": 30,
+  "dropout": 0.2,
+  "spacy": "3.8.7",
+  "label_provenance": {
+    "LLM-judged (Claude), pending user review": 260
+  },
+  "sentences": {
+    "train": 200,
+    "test": 60
+  },
+  "train_entity_counts": {
+    "RUNWAY": 44,
+    "FLIGHT_LEVEL": 39,
+    "ALTITUDE": 44,
+    "HEADING": 14,
+    "FREQUENCY": 22,
+    "CALLSIGN": 0,
+    "AIRCRAFT_TYPE": 95,
+    "AIRPORT": 70
+  },
+  "test_entity_counts": {
+    "RUNWAY": 14,
+    "FLIGHT_LEVEL": 5,
+    "ALTITUDE": 10,
+    "HEADING": 6,
+    "FREQUENCY": 6,
+    "CALLSIGN": 0,
+    "AIRCRAFT_TYPE": 30,
+    "AIRPORT": 20
+  },
+  "train_spans_not_token_aligned": 0,
+  "epoch_loss": [
+    1856.285,
+    463.718,
+    322.448,
+    219.842,
+    127.311,
+    66.346,
+    54.131,
+    35.362,
+    44.762,
+    31.573,
+    23.073,
+    15.743,
+    14.957,
+    42.217,
+    30.826,
+    8.059,
+    2.094,
+    17.269,
+    10.516,
+    28.292,
+    1.269,
+    11.093,
+    6.634,
+    3.475,
+    3.109,
+    1.1,
+    1.692,
+    2.043,
+    1.005,
+    8.174
+  ],
+  "rules_baseline": {
+    "RUNWAY": {
+      "precision": 1.0,
+      "recall": 0.9286,
+      "f1": 0.963,
+      "support": 14,
+      "predicted": 13
+    },
+    "FLIGHT_LEVEL": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 5,
+      "predicted": 5
+    },
+    "ALTITUDE": {
+      "precision": 0.875,
+      "recall": 0.7,
+      "f1": 0.7778,
+      "support": 10,
+      "predicted": 8
+    },
+    "HEADING": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 6,
+      "predicted": 6
+    },
+    "FREQUENCY": {
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1": 0.8571,
+      "support": 6,
+      "predicted": 8
+    },
+    "CALLSIGN": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0,
+      "predicted": 0
+    },
+    "AIRCRAFT_TYPE": {
+      "precision": 0.8261,
+      "recall": 0.6333,
+      "f1": 0.717,
+      "support": 30,
+      "predicted": 23
+    },
+    "AIRPORT": {
+      "precision": 0.8333,
+      "recall": 0.25,
+      "f1": 0.3846,
+      "support": 20,
+      "predicted": 6
+    },
+    "ALL": {
+      "precision": 0.8841,
+      "recall": 0.6703,
+      "f1": 0.7625,
+      "support": 91,
+      "predicted": 69
+    }
+  },
+  "spacy_ner": {
+    "RUNWAY": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 14,
+      "predicted": 14
+    },
+    "FLIGHT_LEVEL": {
+      "precision": 0.8333,
+      "recall": 1.0,
+      "f1": 0.9091,
+      "support": 5,
+      "predicted": 6
+    },
+    "ALTITUDE": {
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1": 0.6667,
+      "support": 10,
+      "predicted": 8
+    },
+    "HEADING": {
+      "precision": 0.8571,
+      "recall": 1.0,
+      "f1": 0.9231,
+      "support": 6,
+      "predicted": 7
+    },
+    "FREQUENCY": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 6,
+      "predicted": 6
+    },
+    "CALLSIGN": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0,
+      "predicted": 0
+    },
+    "AIRCRAFT_TYPE": {
+      "precision": 0.8966,
+      "recall": 0.8667,
+      "f1": 0.8814,
+      "support": 30,
+      "predicted": 29
+    },
+    "AIRPORT": {
+      "precision": 0.8667,
+      "recall": 0.65,
+      "f1": 0.7429,
+      "support": 20,
+      "predicted": 15
+    },
+    "ALL": {
+      "precision": 0.8941,
+      "recall": 0.8352,
+      "f1": 0.8636,
+      "support": 91,
+      "predicted": 85
+    }
+  },
+  "too_rare_to_evaluate_test_support_lt_5": [
+    "CALLSIGN"
+  ],
+  "env": {
+    "python": "3.11.15"
+  },
+  "inputs_sha256": {
+    "phase2/ner/judgements/ner_corrected.csv": "17961b910d5c8b3434687f859d8c6e75b14b4d05e326957e1913eb94363ba17c",
+    "phase2/ner/splits/ner_split.csv": "319fbd174ea225df8d705b2ec26aa763f4cbf2a067921c8720cd7f708f9fca06"
+  },
+  "output_sha256": {
+    "phase2/ner/out/test_predictions.csv": "fcc1b334a818a2d6296f6eac53d2dcbf34d377bba764c7d0b203545a19a5105b"
+  }
+}

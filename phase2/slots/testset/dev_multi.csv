@@ -1,0 +1,13 @@
+item_id,query_text,phrase_row,phraseology,slots,gold,split
+D01,BAW77 was told to climb via the SID to FL150 but stopped at FL130,,CLIMB VIA SID TO (level),"[""level""]","[""FL150""]",dev
+D02,cleared to maintain 4000 feet until 1420z but the crew descended to 3000 feet,,MAINTAIN (level) UNTIL (time),"[""level"", ""time""]","[""4000"", ""1420Z""]",dev
+D03,told to contact ground on 121.9 but the pilot selected 121.7,,CONTACT GROUND (frequency),"[""frequency""]","[""121.9""]",dev
+D04,cleared visual approach runway 09R and the crew aligned with 09L,,CLEARED VISUAL APPROACH RUNWAY (number),"[""number""]","[""09R""]",dev
+D05,ATC cleared the approach to runway 24 but the aircraft lined up on runway 25,,CLEARED APPROACH [RUNWAY (number)],"[""number""]","[""24""]",dev
+D06,fly heading 270 was issued but the aircraft turned onto heading 290,,FLY HEADING (three digits),"[""three digits""]","[""270""]",dev
+D07,EZY45 asked for a change to 132.475 for company ops,,REQUEST CHANGE TO (frequency),"[""frequency""]","[""132.475""]",dev
+D08,pilot was monitoring 118.105 on box two,,MONITORING (frequency),"[""frequency""]","[""118.105""]",dev
+D09,climb via SID from 6000 feet to 8000 feet but the aircraft levelled at 7000 feet,,CLIMB VIA SID TO (level),"[""level""]","[""8000""]",dev
+D10,localiser frequency 110.35 for ILS runway 27 left was read back as 110.53,,ILS RUNWAY (number) LEFT (or RIGHT) LOCALISER FREQUENCY IS (frequency),"[""number"", ""frequency""]","[""27"", ""110.35""]",dev
+D11,after the go-around we were cleared visual approach runway 33 instead of runway 15,,CLEARED VISUAL APPROACH RUNWAY (number),"[""number""]","[""33""]",dev
+D12,late frequency change to ground caused a missed call,,CONTACT GROUND (frequency),"[""frequency""]",[null],dev

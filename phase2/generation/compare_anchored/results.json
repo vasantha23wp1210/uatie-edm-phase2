@@ -1,0 +1,98 @@
+{
+  "split": "dev",
+  "judge_model": "llama3.2:3b",
+  "candidates": {
+    "free llama3.2:3b": {
+      "status_counts": {
+        "ok_after_filtering": 8,
+        "ok": 7,
+        "no_grounded_sentence": 4,
+        "insufficient_evidence": 1
+      },
+      "answers_judged": 15,
+      "claims": 81,
+      "unsupported": 5,
+      "hallucination_filtered": 0.0617,
+      "claims_raw": 103,
+      "unsupported_raw": 5,
+      "hallucination_raw": 0.0485,
+      "judge_invalid_json": 1,
+      "anchors": null,
+      "llm_latency_ms_p50": 16217.1,
+      "llm_latency_ms_p95": 21206.2
+    },
+    "anchored llama3.2:3b": {
+      "status_counts": {
+        "ok": 9,
+        "ok_after_filtering": 8,
+        "no_grounded_sentence": 2,
+        "insufficient_evidence": 1
+      },
+      "answers_judged": 17,
+      "claims": 75,
+      "unsupported": 18,
+      "hallucination_filtered": 0.24,
+      "claims_raw": 109,
+      "unsupported_raw": 34,
+      "hallucination_raw": 0.3119,
+      "judge_invalid_json": 2,
+      "anchors": {
+        "claims": 41,
+        "hazards": 56,
+        "bad_anchor": 0,
+        "text_was_id": 0,
+        "unsupported_by_anchor": 23
+      },
+      "llm_latency_ms_p50": 11604.9,
+      "llm_latency_ms_p95": 13858.1
+    },
+    "free llama3.1:8b": {
+      "status_counts": {
+        "ok": 10,
+        "ok_after_filtering": 8,
+        "no_grounded_sentence": 1,
+        "insufficient_evidence": 1
+      },
+      "answers_judged": 18,
+      "claims": 104,
+      "unsupported": 4,
+      "hallucination_filtered": 0.0385,
+      "claims_raw": 96,
+      "unsupported_raw": 5,
+      "hallucination_raw": 0.0521,
+      "judge_invalid_json": 0,
+      "anchors": null,
+      "llm_latency_ms_p50": 43441.2,
+      "llm_latency_ms_p95": 62963.3
+    },
+    "anchored llama3.1:8b": {
+      "status_counts": {
+        "ok": 13,
+        "ok_after_filtering": 6,
+        "insufficient_evidence": 1
+      },
+      "answers_judged": 19,
+      "claims": 103,
+      "unsupported": 19,
+      "hallucination_filtered": 0.1845,
+      "claims_raw": 106,
+      "unsupported_raw": 20,
+      "hallucination_raw": 0.1887,
+      "judge_invalid_json": 1,
+      "anchors": {
+        "claims": 38,
+        "hazards": 57,
+        "bad_anchor": 0,
+        "text_was_id": 0,
+        "unsupported_by_anchor": 6
+      },
+      "llm_latency_ms_p50": 25113.6,
+      "llm_latency_ms_p95": 39352.3
+    }
+  },
+  "within_margin": [
+    "free llama3.1:8b"
+  ],
+  "chosen": "free llama3.1:8b",
+  "rule": "lowest filtered hallucination on dev; within 1 point(s) of the lowest tie, lowest LLM p50 wins"
+}

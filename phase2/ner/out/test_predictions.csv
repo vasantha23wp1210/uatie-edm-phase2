@@ -1,0 +1,61 @@
+sent_id,text,gold,rules,model
+S007,acr captain reports damage to b737 while parked; by the ground crew towing an air cart into position for start.,b737|AIRCRAFT_TYPE,b737|AIRCRAFT_TYPE,b737|AIRCRAFT_TYPE
+S013,b777 flight crew landing runway 16l at rjaa is instructed to contact tower on frequency 118.2 and is cleared to land.,b777|AIRCRAFT_TYPE; runway 16l|RUNWAY; rjaa|AIRPORT; 118.2|FREQUENCY,b777|AIRCRAFT_TYPE; runway 16l|RUNWAY; 118.2|FREQUENCY,b777|AIRCRAFT_TYPE; runway 16l|RUNWAY; 118.2|FREQUENCY
+S017,cessna 172 instructor pilot reported inadvertently descending below 500 feet agl while conducting engine failure training.,cessna 172|AIRCRAFT_TYPE; 500 feet|ALTITUDE,500 feet|ALTITUDE,500 feet|ALTITUDE
+S018,first officer reported multiple systems failures and an inoperative primary flight display caused a diversion and subsequent cancellation of flight due to crew fatigue.,,,
+S024,an aircraft departed hou and turned right heading 300 degrees.,hou|AIRPORT; heading 300|HEADING,heading 300|HEADING,heading 300|HEADING
+S026,despite the frequency change on the published charts to 122.8; pilots wishing to control runway lighting must use the previous frequency of 122.3.,122.8|FREQUENCY; 122.3|FREQUENCY,122.8|FREQUENCY; 122.3|FREQUENCY,122.8|FREQUENCY; 122.3|FREQUENCY
+S041,a md11 with pratt and whitney engines developed a fadec fault.,md11|AIRCRAFT_TYPE,md11|AIRCRAFT_TYPE,md11|AIRCRAFT_TYPE
+S044,b737 first officer reported rejecting takeoff due to ground conflict with departing aircraft.,b737|AIRCRAFT_TYPE,b737|AIRCRAFT_TYPE,b737|AIRCRAFT_TYPE
+S045,a safe ground gate return was executed.,,,
+S046,atc intended that the crew maintain heading 020 and ignore the sweep 1.,heading 020|HEADING,heading 020|HEADING,heading 020|HEADING
+S047,be5 pax door opened at 4000 ft in imc.,be5|AIRCRAFT_TYPE; 4000 ft|ALTITUDE,4000 ft|ALTITUDE,4000 ft|ALTITUDE
+S050,after changing freqs to final apch control; this ctlr insists they were given rwy 24r and gave the flt crew a vector to intercept rwy 24r loc.,rwy 24r|RUNWAY; rwy 24r|RUNWAY,rwy 24r|RUNWAY; rwy 24r|RUNWAY,rwy 24r|RUNWAY; rwy 24r|RUNWAY
+S051,ga pilot reported being unable to contact atc due to possible controller under staffing resulting in a class c airspace violation.,,,
+S055,md80 flt crew has an unstabilized apch to dfw.,md80|AIRCRAFT_TYPE; dfw|AIRPORT,md80|AIRCRAFT_TYPE,md80|AIRCRAFT_TYPE; dfw|AIRPORT
+S061,air carrier captain reported being unable to find guidance in company flight manuals for hazmat lithium ion powered wheelchair transporting procedures.,,,
+S064,reporter noted the condition had been written up five times in the previous seven days.,,,
+S069,reporter notes that the newly commissioned hll vor; five miles south of pfn and just south of the approach/departure paths of the kpam afb northwest/southeast runways utilizes the same frequency (114.3) as did pfn before it was decomissioned.,kpam|AIRPORT; 114.3|FREQUENCY,114.3|FREQUENCY,114.3|FREQUENCY
+S096,pc-24 captain reported encountering wake turbulence climbing through fl320 from a nearby b757 in ztl artcc airspace.,pc-24|AIRCRAFT_TYPE; fl320|FLIGHT_LEVEL; b757|AIRCRAFT_TYPE,fl320|FLIGHT_LEVEL; b757|AIRCRAFT_TYPE,pc-24|AIRCRAFT_TYPE; fl320|FLIGHT_LEVEL; b757|AIRCRAFT_TYPE
+S101,p31 ctlr described nmac at 3000 ft between mil heli and unknown tfc citing p31/eglin afb airspace/operational proc as causal factor.,3000 ft|ALTITUDE,3000 ft|ALTITUDE,p31|AIRCRAFT_TYPE; 3000 ft|ALTITUDE; p31|AIRPORT
+S103,small aircraft instructor pilot reported his student landed on dwh taxiway foxtrot after being cleared to land on runway 35r.,dwh|AIRPORT; runway 35r|RUNWAY,runway 35r|RUNWAY,runway 35r|RUNWAY
+S107,pa32t pilot reported partial power loss at 200 feet after takeoff.,pa32t|AIRCRAFT_TYPE; 200 feet|ALTITUDE,pa32|AIRCRAFT_TYPE; 200 feet|ALTITUDE,pa32|AIRCRAFT_TYPE; 200 feet|ALTITUDE
+S116,corporate jet captain reported being cleared to taxi via the northern route to runway 24l; but did not hold short of taxiway d as required by the standard taxi route description.,runway 24l|RUNWAY,runway 24l|RUNWAY,runway 24l|RUNWAY
+S118,b737 flight crew experiences a gpws obstacle warning during the vor runway 8 approach after descending below mda prior to having the runway clearly in sight.,b737|AIRCRAFT_TYPE; runway 8|RUNWAY,b737|AIRCRAFT_TYPE; runway 8|RUNWAY,b737|AIRCRAFT_TYPE; runway 8|RUNWAY
+S130,after complying with a tcas ra the flight crew obtained a new clearance to a safe landing.,,,
+S131,a b737-700 had a nose lndg gear steering sleeve and collar change order accomplished.,b737-700|AIRCRAFT_TYPE,b737|AIRCRAFT_TYPE,b737-700|AIRCRAFT_TYPE
+S135,a b747-400 plt believes his acr may be violating far 121.485 crew rest requirements.,b747-400|AIRCRAFT_TYPE,b747|AIRCRAFT_TYPE; 121.485|FREQUENCY,b747-400|AIRCRAFT_TYPE
+S138,with little recent experience at the airport; a light aircraft pilot crossed runway 30 at bzn without a clearance.,runway 30|RUNWAY; bzn|AIRPORT,runway 30|RUNWAY,the airport|AIRPORT; runway 30|RUNWAY; bzn|AIRPORT
+S140,when asked if they were able the 'rnav visual approach runway 19l' at las the flight crew assumed the controller meant could they fly the visual to 19l backed up by the rnav.,runway 19l|RUNWAY; las|AIRPORT; 19l|RUNWAY,runway 19l|RUNWAY,runway 19l|RUNWAY; las|AIRPORT; 19l|RUNWAY
+S142,the pilot declared an emergency; made a 180 degree turn and landed safely on the runway he had just departed.,,,180 degree turn|HEADING
+S145,a b737 crew questioned mu value methodology and validity after departing mke runway 1l with a 'wet good' report; when poor controllability during takeoff indicated 'fair to poor' conditions.,b737|AIRCRAFT_TYPE; mke|AIRPORT; runway 1l|RUNWAY,b737|AIRCRAFT_TYPE; runway 1l|RUNWAY,b737|AIRCRAFT_TYPE; mke|AIRPORT; runway 1l|RUNWAY
+S154,a b777 crew reports that an intl flt exceeds 12 hours more than 50% of the time but his acr will only schedule 3 plts; violating far 121.473.,b777|AIRCRAFT_TYPE,b777|AIRCRAFT_TYPE; 121.473|FREQUENCY,b777|AIRCRAFT_TYPE
+S156,pa-28 instructor pilot reported an nmac with another aircraft in the vicinity  of cma airport.,pa-28|AIRCRAFT_TYPE; cma airport|AIRPORT,pa-28|AIRCRAFT_TYPE; cma airport|AIRPORT,pa-28|AIRCRAFT_TYPE; cma airport|AIRPORT
+S161,ga pilot reported possibly flying too close to obstacles during a flight.,,,
+S163,an md88 crew departing lga rwy 31 turned to hdg 360° instead of hdg 340° because of a distraction with the acft's unusual tkof configuration.,md88|AIRCRAFT_TYPE; lga|AIRPORT; rwy 31|RUNWAY; hdg 360|HEADING; hdg 340|HEADING,md88|AIRCRAFT_TYPE; rwy 31|RUNWAY; hdg 360|HEADING; hdg 340|HEADING,md88|AIRCRAFT_TYPE; lga|AIRPORT; rwy 31|RUNWAY; hdg 360|HEADING; °|AIRCRAFT_TYPE; hdg 340|HEADING
+S164,the controller wanted the aircraft to turn left heading 300 degrees.,heading 300|HEADING,heading 300|HEADING,heading 300|HEADING
+S167,a319 flight crew reports being accused of not clearing runway 1 at dca; after landing; in a timely manner causing a go around.,a319|AIRCRAFT_TYPE; runway 1|RUNWAY; dca|AIRPORT,a319|AIRCRAFT_TYPE; runway 1|RUNWAY,a319|AIRCRAFT_TYPE; runway 1|RUNWAY; dca|AIRPORT
+S169,flight crew reported receiving a 'caution terrain' aural warning message due to an antenna near the faf to orf airport.,orf airport|AIRPORT,orf airport|AIRPORT,orf airport|AIRPORT
+S170,ga pilot reported a near miss with another aircraft while both were conducting traffic pattern work at stc airport.,stc airport|AIRPORT,stc airport|AIRPORT,stc airport|AIRPORT
+S177,air carrier captain reported monterrey center was unreachable and unusable from south of the mty vor area up to the us border.,,,
+S178,a fatigued air carrier captain expressed displeasure at the company's notification for--as well as the content of--computer based training on amalgamated regular and emergency procedures for the company's newly merged flight crews.,,,
+S180,the engine is shut down and the flight returns to the departure airport.,,,
+S186,the crew started a turn towards tik while cleared for a visual approach to okc runway 17l.,okc|AIRPORT; runway 17l|RUNWAY,runway 17l|RUNWAY,okc|AIRPORT; runway 17l|RUNWAY
+S189,the captain; while enroute to ord; discovered that he had departed without a required alternate airport.,ord|AIRPORT,,ord|AIRPORT
+S191,a pilot approached uuu and discovered communication of ctaf frequency 122.8 was so dense that timely reporting of traffic position and intentions was not possible.,uuu|AIRPORT; 122.8|FREQUENCY,122.8|FREQUENCY,122.8|FREQUENCY
+S193,a chief inspector for a helicopter repair and conract service provider; reports their director of maintenance (dom) had generated a logbook entry and posted an airworthiness directive in the eurocopter as-350's records as completed; without a review by quality control.,eurocopter as-350|AIRCRAFT_TYPE,,
+S195,zkc ctlr experienced operror at approx fl380 when issuing dscnt clrnc with acft in close prox.,fl380|FLIGHT_LEVEL,fl380|FLIGHT_LEVEL,fl380|FLIGHT_LEVEL
+S197,air carrier captain reported encountering wake turbulence descending into bos in trail of a heavy b767; and expressed concern about an apparent recent change to atc procedures allowing reduced separation to heavy b767 aircraft.,bos|AIRPORT; b767|AIRCRAFT_TYPE; b767|AIRCRAFT_TYPE,b767|AIRCRAFT_TYPE; b767|AIRCRAFT_TYPE,b767|AIRCRAFT_TYPE; b767|AIRCRAFT_TYPE
+S199,air carrier captain reported being issued holding instructions to hold at peeko on the back course to runway 10 at ome; right turns with the first officer flying.,runway 10|RUNWAY; ome|AIRPORT,runway 10|RUNWAY,runway 10|RUNWAY; ome|AIRPORT
+S200,b727 flt crew has #2 eng fire warning after tkof from zzz.,b727|AIRCRAFT_TYPE; zzz|AIRPORT,b727|AIRCRAFT_TYPE; zzz|AIRPORT,b727|AIRCRAFT_TYPE
+S210,b737 captain reports a severe turbulence encounter at fl320 resulting in a 600 foot altitude loss.,b737|AIRCRAFT_TYPE; fl320|FLIGHT_LEVEL; 600 foot|ALTITUDE,b737|AIRCRAFT_TYPE; fl320|FLIGHT_LEVEL; 600 foot|ALTITUDE,b737|AIRCRAFT_TYPE; fl320|FLIGHT_LEVEL; 600 foot|ALTITUDE
+S211,a b757-200 at fl340 on start of dscnt has the rudder trim stuck at 2 units l. the trim was still stuck on taxi in and started to work at the gate.,b757-200|AIRCRAFT_TYPE; fl340|FLIGHT_LEVEL,b757|AIRCRAFT_TYPE; fl340|FLIGHT_LEVEL,b757-200|AIRCRAFT_TYPE; fl340|FLIGHT_LEVEL
+S223,during a pushback using hand signals; a b737 captain persisted in requiring a visual check of the nose bypass pin which had; in fact; been left in.,b737|AIRCRAFT_TYPE,b737|AIRCRAFT_TYPE,b737|AIRCRAFT_TYPE
+S231,c182 pilot attempts takeoff on short taxiway thinking he is on the runway when takeoff clearance is received.,c182|AIRCRAFT_TYPE,c182|AIRCRAFT_TYPE,c182|AIRCRAFT_TYPE
+S232,ga pilot reported an nmac in the pattern at vdf airport.,vdf airport|AIRPORT,vdf airport|AIRPORT,vdf airport|AIRPORT
+S238,wishing to align the pfd heading bug to the aircraft heading of 295 degrees; the pilot not flying of a b737ng mistakenly reset the mcp altitude alert from the cleared 27;000 to 29;500.,heading of 295|HEADING; b737ng|AIRCRAFT_TYPE; 27;000|ALTITUDE; 29;500|ALTITUDE,heading of 295|HEADING,heading of 295|HEADING; b737ng|AIRCRAFT_TYPE; 29;500|FLIGHT_LEVEL
+S244,ecam actions are accomplished and flight returns to the departure airport.,,,
+S245,a320 captain reported a 'burning plastic' odor during descent which resulted in the entire flight crew experiencing physiological symptoms.,a320|AIRCRAFT_TYPE,a320|AIRCRAFT_TYPE,a320|AIRCRAFT_TYPE
+S248,atc issues a climb to 3;000 ft and indicates the mva in this area is being revised.,3;000 ft|ALTITUDE,3;000 ft|ALTITUDE,3;000 ft|ALTITUDE
+S250,an ac90 on tkof clb btwn 700-1000 ft returned to the dep arpt due to capt's altimeter reading field elevation.,ac90|AIRCRAFT_TYPE; 700-1000 ft|ALTITUDE,1000 ft|ALTITUDE; dep arpt|AIRPORT,ac90|AIRCRAFT_TYPE; 700-|ALTITUDE; 1000 ft|ALTITUDE
+S253,emb-145 flight crew mistook frequency assignment of 134.02 for clearance to fl340 and climbed over 3;000 ft above their assigned altitude until advised by atc of the error.,emb-145|AIRCRAFT_TYPE; 134.02|FREQUENCY; fl340|FLIGHT_LEVEL; 3;000 ft|ALTITUDE,134.02|FREQUENCY; fl340|FLIGHT_LEVEL; 3;000 ft|ALTITUDE,emb-145|AIRCRAFT_TYPE; 134.02|FREQUENCY; fl340|FLIGHT_LEVEL

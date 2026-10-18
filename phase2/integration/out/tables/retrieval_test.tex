@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{Retrieval, test Q021--Q100, rel $\geq$ 1 (provisional labels)}
+\label{tab:retrieval}
+\begin{tabular}{lrrrrrrr}
+\toprule
+System & p1 & p5 & p10 & mrr & map10 & recall10 & ndcg10 \\
+\midrule
+hybrid & 0.800 & 0.790 & 0.795 & 0.875 & 0.724 & 0.336 & 0.591 \\
+bm25 & 0.912 & 0.845 & 0.824 & 0.936 & 0.780 & 0.351 & 0.660 \\
+faiss & 0.863 & 0.807 & 0.800 & 0.913 & 0.733 & 0.342 & 0.616 \\
+rrf & 0.950 & 0.863 & 0.833 & 0.960 & 0.792 & 0.351 & 0.691 \\
+ce & 0.963 & 0.897 & 0.853 & 0.981 & 0.830 & 0.376 & 0.773 \\
+ce\_recency & 0.850 & 0.810 & 0.790 & 0.899 & 0.743 & 0.340 & 0.653 \\
+\bottomrule
+\end{tabular}
+\end{table}
